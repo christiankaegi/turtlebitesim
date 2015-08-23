@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{opacity:0.96;fill:none;stroke:#24AFC4;stroke-width:31.4529;stroke-opacity:0.5333;enable-background:new    ;}
+	.st1{fill:none;stroke:#24AFC4;stroke-width:34;}
+	.st2{fill:#595959;}
+	.st3{fill:#00CC00;}</style>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="514" width="514" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_9" height="496.000028" width="494.000019" y="10.016655" x="9" stroke-width="20" stroke="#7f0000" fill="#a0a0a0"/>
+  <g id="svg_10">
+   <text transform="matrix(1.43041, 0, 0, 1.43041, -54.3846, -169.978)" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_5" y="388.545996" x="90.896732" stroke-width="0" stroke="#000" fill="#000000">0</text>
+   <text transform="matrix(1.43041, 0, 0, 1.43041, -54.3846, -169.978)" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_4" y="388.545996" x="228.896732" stroke-width="0" stroke="#000" fill="#00ff00">1</text>
+  </g>
+ </g>
+</svg>

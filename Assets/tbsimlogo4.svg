@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+ <style type="text/css">.st0{opacity:0.96;fill:none;stroke:#24AFC4;stroke-width:31.4529;stroke-opacity:0.5333;enable-background:new    ;}
+	.st1{fill:none;stroke:#24AFC4;stroke-width:34;}
+	.st2{fill:#595959;}
+	.st3{fill:#00CC00;}</style>
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="514" height="514" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#a0a0a0" stroke="#7f0000" stroke-width="20" x="9" y="10.016655" width="494.000019" height="493.000031" id="svg_9"/>
+  <rect id="svg_1" height="255" width="128.000002" y="130.016663" x="119.499999" stroke-width="40" stroke="#000000" fill="none"/>
+  <rect id="svg_3" height="295.000006" width="60" y="110.016661" x="331.5" stroke-width="0" fill="#00ff00"/>
+ </g>
+</svg>

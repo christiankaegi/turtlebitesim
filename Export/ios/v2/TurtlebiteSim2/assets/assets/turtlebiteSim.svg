@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-255 129 512 512" style="enable-background:new -255 129 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{display:inline;fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:#24AFC4;stroke:#24AFC4;}
+	.st4{opacity:0.96;fill:none;stroke:#24AFC4;stroke-width:31.4529;stroke-opacity:0.5333;enable-background:new    ;}
+	.st5{fill:none;stroke:#24AFC4;stroke-width:34;}
+	.st6{fill:#595959;}
+	.st7{font-family:'FFFProtege';}
+	.st8{font-size:280px;}
+	.st9{fill:#00CC00;}
+	.st10{font-family:'FFFProtegeBold';}
+</style>
+<g id="Ebene_4" class="st0">
+	<rect x="-284" y="100" class="st1" width="590" height="560"/>
+</g>
+<g id="svg2" inkscape:export-filename="/home/joshua/Pictures/icon.jpg.png" inkscape:export-xdpi="109.33035" sodipodi:docname="icon.svg" inkscape:version="0.48.4 r9939" inkscape:export-ydpi="109.33035" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" class="st0">
+	
+		<sodipodi:namedview  showgrid="false" pagecolor="#ffffff" inkscape:cx="84.961554" inkscape:zoom="0.7" borderopacity="1.0" inkscape:cy="326.00319" bordercolor="#666666" id="base" inkscape:document-units="px" inkscape:current-layer="g4234" inkscape:window-width="1600" inkscape:window-height="846" inkscape:window-x="0" inkscape:window-y="27" inkscape:window-maximized="1" inkscape:pageshadow="2" inkscape:pageopacity="0.0">
+		</sodipodi:namedview>
+	
+		<ellipse transform="matrix(1 -6.883045e-03 6.883045e-03 1 -2.6522 1.344255e-02)" class="st2" cx="0.6" cy="385.3" rx="248.6" ry="248.7"/>
+	<g id="layer1" transform="translate(0,-540.36218)" inkscape:label="Layer 1" inkscape:groupmode="layer">
+		<g id="g4234" transform="translate(1.4415405,-0.4314264)" class="st1">
+			<g id="g3158" transform="matrix(2.8603073,0,0,2.8603073,-311.59292,-1463.6586)">
+				<g id="g256-8" transform="matrix(1.7276842,0,0,-1.7276842,204.67111,757.16909)">
+					<path id="path258-0" sodipodi:nodetypes="ccccccccccc" inkscape:connector-curvature="0" class="st3" d="M-52.4-26.2l-20.5,0.1
+						v-36.7h7.8l0,15.4h12.2l0,5.2h-12.2v10.1h13.5L-52.4-26.2z"/>
+				</g>
+				<g id="g260-4" transform="matrix(1.7276842,0,0,-1.7276842,224.2475,756.80127)">
+					<path id="path262-2" sodipodi:nodetypes="ccssccccc" inkscape:connector-curvature="0" class="st3" d="M-52.8-26.1h-7.1V-56
+						c0-4.4,0.5-7,7-7h6l0.9,5.2H-52c-1,0.1-0.7,1-0.8,2.2L-52.8-26.1z"/>
+				</g>
+			</g>
+			
+				<path id="path4148" sodipodi:rx="183.34268" sodipodi:cy="227.64206" sodipodi:cx="240.92139" sodipodi:type="arc" sodipodi:ry="183.34268" class="st4" d="
+				M197.7,925.8c0,109.5-88.7,198.2-198.2,198.2s-198.2-88.7-198.2-198.2s88.7-198.2,198.2-198.2S197.7,816.3,197.7,925.8z"/>
+			<g id="g6983">
+				<path id="path6981" inkscape:connector-curvature="0" class="st5" d="M24.6,729.2c97.6,12.3,173.2,95.6,173.2,196.6l0,0l0,0
+					c0,101-75.5,184.3-173.2,196.6"/>
+				<path id="path6977" inkscape:connector-curvature="0" class="st5" d="M-25.5,1122.4c-97.6-12.3-173.2-95.6-173.2-196.6
+					s75.5-184.3,173.2-196.6"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Ebene_2" class="st0">
+	<text transform="matrix(1 0 0 1 -172 521)" class="st1"><tspan x="0" y="0" class="st6 st7 st8">0</tspan><tspan x="210" y="0" class="st9 st10 st8">1</tspan></text>
+</g>
+<g id="Ebene_2_Kopie">
+	<g>
+		<path class="st6" d="M-145.5,491H-164V281h19.3v-16.2h15.7V246h105v19.6h17.9V281H11v210H-7.8v14.8H-24V526h-105v-16.8h-16.5V491z
+			 M-24,491V281h-105v210H-24z"/>
+		<path class="st9" d="M46,491h35V316H46v-35h35v-35h70.3v245h35v35H46V491z"/>
+	</g>
+</g>
+</svg>

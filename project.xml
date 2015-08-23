@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <meta title="TurtlebiteSim3" package="net.kaegi.TurtlebiteSim3" version="1.0.0" company="Christian Kaegi"/>
+    <app main="App" path="Export" file="TurtlebiteSim3"/>
+
+    <source path="src"/>
+
+    <haxelib name="openfl"/>
+
+    <assets path="Assets" rename="assets" exclude="tbsimlogo4.svg"/>
+    <icon path="assets/tbsimlogo4.svg"/>
+    <assets path="assets/fonts" rename="fonts"/>
+
+    <window width="1024" height="768" background="#6f6f6f" unless="ios"/>
+    <window width="0" height="0" background="#6f6f6f" if="ios"/>
+
+</project>
