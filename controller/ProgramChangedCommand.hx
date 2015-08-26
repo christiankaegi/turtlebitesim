@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package controller;
 import model.proxy.ProgramProxy;
 import org.puremvc.haxe.multicore.patterns.command.SimpleCommand;

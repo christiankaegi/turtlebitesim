@@ -574,18 +574,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("assets/tbsimlogo.svg");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/tbsimlogo2.svg");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
-		urls.push ("assets/tbsimlogo3.svg");
-		types.push (lime.Assets.AssetType.TEXT);
-		
-		
 		urls.push ("fonts/Consolas Bold.eot");
 		types.push (lime.Assets.AssetType.BINARY);
 		

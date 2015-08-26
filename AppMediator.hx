@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package ;
 import model.proxy.AppProxy;
 import events.AppEvent;
@@ -14,7 +20,6 @@ class AppMediator extends Mediator {
     }
 
     override public function onRegister():Void {
-//trace("AppMediator on register");
         appProxy = cast(facade.retrieveProxy(AppProxy.NAME), AppProxy);
         getView().addEventListener(AppEvent.DRAG_START, dragStartHandler);
         getView().addEventListener(AppEvent.DRAG_STOP, dragStopHandler);

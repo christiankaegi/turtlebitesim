@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package controller.startup;
 import view.component.EnterInstruction;
 import view.mediator.EnterInstructionMediator;
@@ -56,7 +62,6 @@ class PrepareViewCommand extends SimpleCommand {
 
     override function execute(note:INotification):Void {
         if (note.getName() == AppConstants.PREPARE_VIEW) {
-//trace("hello PrepareViewCommand");
             var app = cast(note.getBody(), App);
             facade.registerMediator(new AppMediator(app));
             facade.registerMediator(new BottomLayerMediator(new BottomLayer()));

@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package controller.startup;
 import model.data.SnapshotData;
 import model.proxy.SnapshotProxy;

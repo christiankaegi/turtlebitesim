@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package model.proxy;
 import model.vo.FrequencyVO;
 import model.data.ClockData;

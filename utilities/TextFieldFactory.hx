@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package utilities;
 import openfl.text.TextFormatAlign;
 import openfl.text.TextFormat;

@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package model.vo;
 import utilities.NumberFormat;
 class InstructionVO {
@@ -67,7 +73,7 @@ class InstructionVO {
                 codeOpcode = "0100";
                 codeAddress = NumberFormat.decimalToBinary(Std.parseInt(asmAddress));
             case "LDA" :
-                description = "«Load Data» Lade den Wert von Zelle " + asmAddress + " im Ram in den Akkumulator";
+                description = "«Load Data» Lade den Wert von Zelle " + asmAddress + " im RAM in den Akkumulator";
                 codeOpcode = "0101";
                 codeAddress = NumberFormat.decimalToBinary(Std.parseInt(asmAddress));
             case "INP" :

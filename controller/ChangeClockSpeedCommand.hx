@@ -1,6 +1,11 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package controller;
 import org.puremvc.haxe.multicore.patterns.command.SimpleCommand;
-import model.data.ClockData;
 import model.proxy.ClockProxy;
 import org.puremvc.haxe.multicore.interfaces.INotification;
 class ChangeClockSpeedCommand extends SimpleCommand {

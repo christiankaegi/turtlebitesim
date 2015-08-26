@@ -1,5 +1,10 @@
-package;
+/*
 
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
+package;
 
 import openfl.display.StageAlign;
 import openfl.display.StageScaleMode;
@@ -17,9 +22,6 @@ class App extends Sprite {
 
     public function new() {
         super();
-//trace(Assets.getFont("fonts/Consolas Bold.ttf").fontName);
-//trace(Assets.getFont("fonts/MyriadPro-Regular.otf").fontName);
-//trace(Assets.getFont("fonts/MyriadPro-Bold.otf").fontName);
         stage.scaleMode = StageScaleMode.NO_SCALE;
         stage.align = StageAlign.TOP_LEFT;
         zoomContainer = new Sprite();

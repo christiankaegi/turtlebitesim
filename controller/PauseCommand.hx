@@ -1,9 +1,12 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package controller;
 import model.proxy.ClockProxy;
 import model.proxy.AppProxy;
-import view.component.EditRom;
-import view.mediator.EditRomMediator;
-import model.proxy.ProgramProxy;
 import org.puremvc.haxe.multicore.patterns.command.SimpleCommand;
 import org.puremvc.haxe.multicore.interfaces.INotification;
 class PauseCommand extends SimpleCommand {

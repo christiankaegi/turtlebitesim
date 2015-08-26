@@ -315,12 +315,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/top_layer2048.png", AssetType.IMAGE);
 		className.set ("assets/images/top_layer_colored.png", __ASSET__assets_images_top_layer_colored_png);
 		type.set ("assets/images/top_layer_colored.png", AssetType.IMAGE);
-		className.set ("assets/tbsimlogo.svg", __ASSET__assets_tbsimlogo_svg);
-		type.set ("assets/tbsimlogo.svg", AssetType.TEXT);
-		className.set ("assets/tbsimlogo2.svg", __ASSET__assets_tbsimlogo2_svg);
-		type.set ("assets/tbsimlogo2.svg", AssetType.TEXT);
-		className.set ("assets/tbsimlogo3.svg", __ASSET__assets_tbsimlogo3_svg);
-		type.set ("assets/tbsimlogo3.svg", AssetType.TEXT);
 		className.set ("fonts/Consolas Bold.eot", __ASSET__fonts_consolas_bold_eot);
 		type.set ("fonts/Consolas Bold.eot", AssetType.BINARY);
 		className.set ("fonts/Consolas Bold.svg", __ASSET__fonts_consolas_bold_svg);
@@ -886,18 +880,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "assets/tbsimlogo.svg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/tbsimlogo2.svg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
-		id = "assets/tbsimlogo3.svg";
-		path.set (id, id);
-		
-		type.set (id, AssetType.TEXT);
 		id = "fonts/Consolas Bold.eot";
 		path.set (id, id);
 		
@@ -960,9 +942,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_fonts_myriadpro_regular_otf);
-		
-		
-		
 		
 		
 		
@@ -1510,15 +1489,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/top_layer_colored.png", __ASSET__assets_images_top_layer_colored_png);
 		type.set ("assets/images/top_layer_colored.png", AssetType.IMAGE);
-		
-		className.set ("assets/tbsimlogo.svg", __ASSET__assets_tbsimlogo_svg);
-		type.set ("assets/tbsimlogo.svg", AssetType.TEXT);
-		
-		className.set ("assets/tbsimlogo2.svg", __ASSET__assets_tbsimlogo2_svg);
-		type.set ("assets/tbsimlogo2.svg", AssetType.TEXT);
-		
-		className.set ("assets/tbsimlogo3.svg", __ASSET__assets_tbsimlogo3_svg);
-		type.set ("assets/tbsimlogo3.svg", AssetType.TEXT);
 		
 		className.set ("fonts/Consolas Bold.eot", __ASSET__fonts_consolas_bold_eot);
 		type.set ("fonts/Consolas Bold.eot", AssetType.BINARY);
@@ -2285,9 +2255,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_top_layer_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_top_layer2048_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_top_layer_colored_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_tbsimlogo_svg extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_tbsimlogo2_svg extends flash.utils.ByteArray { }
-@:keep @:bind #if display private #end class __ASSET__assets_tbsimlogo3_svg extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__fonts_consolas_bold_eot extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__fonts_consolas_bold_svg extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__fonts_consolas_bold_ttf extends flash.text.Font { }
@@ -2311,9 +2278,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__assets_fonts_myriadpro_regular_otf extends lime.text.Font { public function new () { super (); name = "Myriad Pro"; } } 
-
-
-
 
 
 
@@ -2594,9 +2558,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("Assets/images/top_layer.png") #if display private #end class __ASSET__assets_images_top_layer_png extends lime.graphics.Image {}
 @:image("Assets/images/top_layer2048.png") #if display private #end class __ASSET__assets_images_top_layer2048_png extends lime.graphics.Image {}
 @:image("Assets/images/top_layer_colored.png") #if display private #end class __ASSET__assets_images_top_layer_colored_png extends lime.graphics.Image {}
-@:file("Assets/tbsimlogo.svg") #if display private #end class __ASSET__assets_tbsimlogo_svg extends lime.utils.ByteArray {}
-@:file("Assets/tbsimlogo2.svg") #if display private #end class __ASSET__assets_tbsimlogo2_svg extends lime.utils.ByteArray {}
-@:file("Assets/tbsimlogo3.svg") #if display private #end class __ASSET__assets_tbsimlogo3_svg extends lime.utils.ByteArray {}
 @:file("assets/fonts/Consolas Bold.eot") #if display private #end class __ASSET__fonts_consolas_bold_eot extends lime.utils.ByteArray {}
 @:file("assets/fonts/Consolas Bold.svg") #if display private #end class __ASSET__fonts_consolas_bold_svg extends lime.utils.ByteArray {}
 @:font("assets/fonts/Consolas Bold.ttf") #if display private #end class __ASSET__fonts_consolas_bold_ttf extends lime.text.Font {}

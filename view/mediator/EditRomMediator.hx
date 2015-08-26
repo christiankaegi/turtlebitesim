@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package view.mediator;
 
 import view.component.EditRom;
@@ -10,7 +16,7 @@ class EditRomMediator extends Mediator {
     public static inline var NAME:String = "EditRomMediator";
 
     private var programProxy:ProgramProxy;
-    private var newProgramPointer:Int;
+    private var newProgramPointer:Int = 0;
 
     public function new(viewComponent:EditRom) {
         super(NAME, viewComponent);

@@ -1,3 +1,9 @@
+/*
+
+Copyright (c) Christian Kaegi, August 2015, www.kaegi.net/turtlebitesim
+
+*/
+
 package view.component.lines;
 import model.vo.InstructionVO;
 import openfl.display.Shape;
