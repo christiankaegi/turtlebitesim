@@ -51,12 +51,12 @@ namespace lines{
 
 Void Decoder_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Decoder","new",0xf6815fed,"view.component.lines.Decoder.new","view/component/lines/Decoder.hx",16,0x11a6b6a6)
+HX_STACK_FRAME("view.component.lines.Decoder","new",0xf6815fed,"view.component.lines.Decoder.new","view/component/lines/Decoder.hx",22,0x11a6b6a6)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(17)
+	HX_STACK_LINE(23)
 	super::__construct();
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(24)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,16 +78,16 @@ Dynamic Decoder_obj::__Create(hx::DynamicArray inArgs)
 
 Void Decoder_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","addedToStageHandler",0x6fe25134,"view.component.lines.Decoder.addedToStageHandler","view/component/lines/Decoder.hx",21,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","addedToStageHandler",0x6fe25134,"view.component.lines.Decoder.addedToStageHandler","view/component/lines/Decoder.hx",27,0x11a6b6a6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/Decoder-out-1.png")),this->out1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/Decoder-out-2.png")),this->out2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/Decoder-out-3.png")),this->out3LoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -98,18 +98,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Decoder_obj,addedToStageHandler,(void))
 
 Void Decoder_obj::out1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","out1LoadCompleteHandler",0x35da1275,"view.component.lines.Decoder.out1LoadCompleteHandler","view/component/lines/Decoder.hx",28,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","out1LoadCompleteHandler",0x35da1275,"view.component.lines.Decoder.out1LoadCompleteHandler","view/component/lines/Decoder.hx",34,0x11a6b6a6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->out1 = _g;
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->out1->set_name(HX_CSTRING("decOut1"));
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		Float _g1 = this->out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->out1->set_scaleX(_g1);
 	}
 return null();
@@ -120,18 +120,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Decoder_obj,out1LoadCompleteHandler,(void))
 
 Void Decoder_obj::out2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","out2LoadCompleteHandler",0x9c3eb714,"view.component.lines.Decoder.out2LoadCompleteHandler","view/component/lines/Decoder.hx",34,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","out2LoadCompleteHandler",0x9c3eb714,"view.component.lines.Decoder.out2LoadCompleteHandler","view/component/lines/Decoder.hx",40,0x11a6b6a6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		this->out2 = _g;
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->out2->set_name(HX_CSTRING("decOut2"));
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		Float _g1 = this->out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		this->out2->set_scaleX(_g1);
 	}
 return null();
@@ -142,22 +142,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Decoder_obj,out2LoadCompleteHandler,(void))
 
 Void Decoder_obj::out3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","out3LoadCompleteHandler",0x02a35bb3,"view.component.lines.Decoder.out3LoadCompleteHandler","view/component/lines/Decoder.hx",40,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","out3LoadCompleteHandler",0x02a35bb3,"view.component.lines.Decoder.out3LoadCompleteHandler","view/component/lines/Decoder.hx",46,0x11a6b6a6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(47)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(47)
 		this->out3 = _g;
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->out3->set_name(HX_CSTRING("decOut3"));
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		Float _g1 = this->out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		this->out3->set_scaleX(_g1);
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -168,23 +168,23 @@ HX_DEFINE_DYNAMIC_FUNC1(Decoder_obj,out3LoadCompleteHandler,(void))
 
 Void Decoder_obj::showLines( ::String code){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","showLines",0x5dfb7b0f,"view.component.lines.Decoder.showLines","view/component/lines/Decoder.hx",52,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","showLines",0x5dfb7b0f,"view.component.lines.Decoder.showLines","view/component/lines/Decoder.hx",58,0x11a6b6a6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(code,"code")
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		::String _g = code.substr((int)4,(int)2);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::MULTIPLEXER_ACCUMULATOR)){
-			HX_STACK_LINE(54)
+			HX_STACK_LINE(60)
 			this->addChild(this->out3);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MULTIPLEXER_REGISTER1)){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->addChild(this->out2);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MULTIPLEXER_REGISTER2)){
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->addChild(this->out1);
 		}
 	}
@@ -196,26 +196,26 @@ HX_DEFINE_DYNAMIC_FUNC1(Decoder_obj,showLines,(void))
 
 Void Decoder_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Decoder","hideAllLines",0x0d17b6d3,"view.component.lines.Decoder.hideAllLines","view/component/lines/Decoder.hx",63,0x11a6b6a6)
+		HX_STACK_FRAME("view.component.lines.Decoder","hideAllLines",0x0d17b6d3,"view.component.lines.Decoder.hideAllLines","view/component/lines/Decoder.hx",69,0x11a6b6a6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(69)
 		int _g = (int)1;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(69)
 		while((true)){
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(63)
+				HX_STACK_LINE(69)
 				break;
 			}
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(65)
+			HX_STACK_LINE(71)
 			::openfl::display::DisplayObject _g1 = this->getChildByName((HX_CSTRING("decOut") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(65)
+			HX_STACK_LINE(71)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(66)
+				HX_STACK_LINE(72)
 				::openfl::display::DisplayObject _g11 = this->getChildByName((HX_CSTRING("decOut") + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(66)
+				HX_STACK_LINE(72)
 				this->removeChild(_g11);
 			}
 		}

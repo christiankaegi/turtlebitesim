@@ -8,14 +8,14 @@ namespace vo{
 
 Void FrequencyVO_obj::__construct(Float ms,::String label)
 {
-HX_STACK_FRAME("model.vo.FrequencyVO","new",0x7dd07e97,"model.vo.FrequencyVO.new","model/vo/FrequencyVO.hx",5,0x92202f59)
+HX_STACK_FRAME("model.vo.FrequencyVO","new",0x7dd07e97,"model.vo.FrequencyVO.new","model/vo/FrequencyVO.hx",11,0x92202f59)
 HX_STACK_THIS(this)
 HX_STACK_ARG(ms,"ms")
 HX_STACK_ARG(label,"label")
 {
-	HX_STACK_LINE(6)
+	HX_STACK_LINE(12)
 	this->ms = ms;
-	HX_STACK_LINE(7)
+	HX_STACK_LINE(13)
 	this->label = label;
 }
 ;

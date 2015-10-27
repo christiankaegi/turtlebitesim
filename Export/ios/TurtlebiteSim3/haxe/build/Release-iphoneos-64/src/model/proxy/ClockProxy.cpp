@@ -50,11 +50,11 @@ namespace proxy{
 
 Void ClockProxy_obj::__construct(::model::data::ClockData data)
 {
-HX_STACK_FRAME("model.proxy.ClockProxy","new",0x5839d1b7,"model.proxy.ClockProxy.new","model/proxy/ClockProxy.hx",15,0x97ac0997)
+HX_STACK_FRAME("model.proxy.ClockProxy","new",0x5839d1b7,"model.proxy.ClockProxy.new","model/proxy/ClockProxy.hx",21,0x97ac0997)
 HX_STACK_THIS(this)
 HX_STACK_ARG(data,"data")
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct(::model::proxy::ClockProxy_obj::NAME,data);
 }
 ;
@@ -76,15 +76,15 @@ Dynamic ClockProxy_obj::__Create(hx::DynamicArray inArgs)
 
 Void ClockProxy_obj::onRegister( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","onRegister",0x61c7622b,"model.proxy.ClockProxy.onRegister","model/proxy/ClockProxy.hx",18,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","onRegister",0x61c7622b,"model.proxy.ClockProxy.onRegister","model/proxy/ClockProxy.hx",24,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->appProxy = _g;
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->sendNotification(::AppConstants_obj::PROXY_INITIALIZED,null(),::model::proxy::ClockProxy_obj::NAME);
 	}
 return null();
@@ -93,23 +93,23 @@ return null();
 
 Void ClockProxy_obj::startClock( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","startClock",0x17eac995,"model.proxy.ClockProxy.startClock","model/proxy/ClockProxy.hx",23,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","startClock",0x17eac995,"model.proxy.ClockProxy.startClock","model/proxy/ClockProxy.hx",29,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(24)
-		this->stopClock();
-		HX_STACK_LINE(25)
-		::model::vo::FrequencyVO frequency = this->getCurrentFrequency();		HX_STACK_VAR(frequency,"frequency");
-		HX_STACK_LINE(26)
-		::openfl::_legacy::utils::Timer _g = ::openfl::_legacy::utils::Timer_obj::__new(frequency->ms,null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(26)
-		this->timer = _g;
-		HX_STACK_LINE(27)
-		this->timer->addEventListener(::openfl::events::TimerEvent_obj::TIMER,this->sendClockSignal_dyn(),null(),null(),null());
-		HX_STACK_LINE(28)
-		this->getData()->__FieldRef(HX_CSTRING("clockOn")) = true;
-		HX_STACK_LINE(29)
-		this->sendNotification(::AppConstants_obj::CLOCK_SIGNAL,this->getData()->__Field(HX_CSTRING("clockOn"),true),null());
 		HX_STACK_LINE(30)
+		this->stopClock();
+		HX_STACK_LINE(31)
+		::model::vo::FrequencyVO frequency = this->getCurrentFrequency();		HX_STACK_VAR(frequency,"frequency");
+		HX_STACK_LINE(32)
+		::openfl::_legacy::utils::Timer _g = ::openfl::_legacy::utils::Timer_obj::__new(frequency->ms,null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(32)
+		this->timer = _g;
+		HX_STACK_LINE(33)
+		this->timer->addEventListener(::openfl::events::TimerEvent_obj::TIMER,this->sendClockSignal_dyn(),null(),null(),null());
+		HX_STACK_LINE(34)
+		this->getData()->__FieldRef(HX_CSTRING("clockOn")) = true;
+		HX_STACK_LINE(35)
+		this->sendNotification(::AppConstants_obj::CLOCK_SIGNAL,this->getData()->__Field(HX_CSTRING("clockOn"),true),null());
+		HX_STACK_LINE(36)
 		this->timer->start();
 	}
 return null();
@@ -120,13 +120,13 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,startClock,(void))
 
 Void ClockProxy_obj::stopClock( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","stopClock",0x584d5f03,"model.proxy.ClockProxy.stopClock","model/proxy/ClockProxy.hx",34,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","stopClock",0x584d5f03,"model.proxy.ClockProxy.stopClock","model/proxy/ClockProxy.hx",40,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		if (((  (((this->timer != null()))) ? bool(this->timer->hasEventListener(::openfl::events::TimerEvent_obj::TIMER)) : bool(false) ))){
-			HX_STACK_LINE(35)
+			HX_STACK_LINE(41)
 			this->timer->stop();
-			HX_STACK_LINE(36)
+			HX_STACK_LINE(42)
 			this->timer->removeEventListener(::openfl::events::TimerEvent_obj::TIMER,this->sendClockSignal_dyn(),null());
 		}
 	}
@@ -138,12 +138,12 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,stopClock,(void))
 
 Void ClockProxy_obj::sendClockSignal( ::openfl::events::TimerEvent event){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","sendClockSignal",0x2a182245,"model.proxy.ClockProxy.sendClockSignal","model/proxy/ClockProxy.hx",40,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","sendClockSignal",0x2a182245,"model.proxy.ClockProxy.sendClockSignal","model/proxy/ClockProxy.hx",46,0x97ac0997)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(47)
 		this->sendNotification(::AppConstants_obj::CLOCK_SIGNAL,this->getData()->__Field(HX_CSTRING("clockOn"),true),null());
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->toggleClockOn();
 	}
 return null();
@@ -153,9 +153,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ClockProxy_obj,sendClockSignal,(void))
 
 int ClockProxy_obj::getCurrentFrequencyPointer( ){
-	HX_STACK_FRAME("model.proxy.ClockProxy","getCurrentFrequencyPointer",0xadd86f6d,"model.proxy.ClockProxy.getCurrentFrequencyPointer","model/proxy/ClockProxy.hx",46,0x97ac0997)
+	HX_STACK_FRAME("model.proxy.ClockProxy","getCurrentFrequencyPointer",0xadd86f6d,"model.proxy.ClockProxy.getCurrentFrequencyPointer","model/proxy/ClockProxy.hx",52,0x97ac0997)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(52)
 	return this->getData()->__Field(HX_CSTRING("currentFrequencyPointer"),true);
 }
 
@@ -164,14 +164,14 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,getCurrentFrequencyPointer,return )
 
 Void ClockProxy_obj::setCurrentFrequencyPointer( int pos){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","setCurrentFrequencyPointer",0x0d6d35e1,"model.proxy.ClockProxy.setCurrentFrequencyPointer","model/proxy/ClockProxy.hx",49,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","setCurrentFrequencyPointer",0x0d6d35e1,"model.proxy.ClockProxy.setCurrentFrequencyPointer","model/proxy/ClockProxy.hx",55,0x97ac0997)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pos,"pos")
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->getData()->__FieldRef(HX_CSTRING("currentFrequencyPointer")) = pos;
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		if (((this->getData()->__Field(HX_CSTRING("currentFrequencyPointer"),true) > (this->getData()->__Field(HX_CSTRING("frequencies"),true)->__Field(HX_CSTRING("length"),true) - (int)1)))){
-			HX_STACK_LINE(52)
+			HX_STACK_LINE(58)
 			this->getData()->__FieldRef(HX_CSTRING("currentFrequencyPointer")) = (int)0;
 		}
 	}
@@ -183,16 +183,16 @@ HX_DEFINE_DYNAMIC_FUNC1(ClockProxy_obj,setCurrentFrequencyPointer,(void))
 
 Void ClockProxy_obj::changeClockSpeed( int pointer){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","changeClockSpeed",0xac5e28b2,"model.proxy.ClockProxy.changeClockSpeed","model/proxy/ClockProxy.hx",56,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","changeClockSpeed",0xac5e28b2,"model.proxy.ClockProxy.changeClockSpeed","model/proxy/ClockProxy.hx",62,0x97ac0997)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		this->setCurrentFrequencyPointer(pointer);
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->sendNotification(::AppConstants_obj::CLOCK_SPEED_CHANGED,null(),null());
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		if ((this->appProxy->getAutoClockOn())){
-			HX_STACK_LINE(60)
+			HX_STACK_LINE(66)
 			this->startClock();
 		}
 	}
@@ -203,9 +203,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ClockProxy_obj,changeClockSpeed,(void))
 
 ::model::vo::FrequencyVO ClockProxy_obj::getCurrentFrequency( ){
-	HX_STACK_FRAME("model.proxy.ClockProxy","getCurrentFrequency",0xe1d5bf30,"model.proxy.ClockProxy.getCurrentFrequency","model/proxy/ClockProxy.hx",65,0x97ac0997)
+	HX_STACK_FRAME("model.proxy.ClockProxy","getCurrentFrequency",0xe1d5bf30,"model.proxy.ClockProxy.getCurrentFrequency","model/proxy/ClockProxy.hx",71,0x97ac0997)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(65)
+	HX_STACK_LINE(71)
 	return this->getData()->__Field(HX_CSTRING("frequencies"),true)->__GetItem(this->getData()->__Field(HX_CSTRING("currentFrequencyPointer"),true));
 }
 
@@ -213,9 +213,9 @@ HX_DEFINE_DYNAMIC_FUNC1(ClockProxy_obj,changeClockSpeed,(void))
 HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,getCurrentFrequency,return )
 
 Array< ::Dynamic > ClockProxy_obj::getFrequencies( ){
-	HX_STACK_FRAME("model.proxy.ClockProxy","getFrequencies",0x926dc90d,"model.proxy.ClockProxy.getFrequencies","model/proxy/ClockProxy.hx",69,0x97ac0997)
+	HX_STACK_FRAME("model.proxy.ClockProxy","getFrequencies",0x926dc90d,"model.proxy.ClockProxy.getFrequencies","model/proxy/ClockProxy.hx",75,0x97ac0997)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(69)
+	HX_STACK_LINE(75)
 	return this->getData()->__Field(HX_CSTRING("frequencies"),true);
 }
 
@@ -224,9 +224,9 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,getFrequencies,return )
 
 Void ClockProxy_obj::toggleClockOn( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","toggleClockOn",0x3cb8d570,"model.proxy.ClockProxy.toggleClockOn","model/proxy/ClockProxy.hx",73,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","toggleClockOn",0x3cb8d570,"model.proxy.ClockProxy.toggleClockOn","model/proxy/ClockProxy.hx",79,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		this->getData()->__FieldRef(HX_CSTRING("clockOn")) = !(this->getData()->__Field(HX_CSTRING("clockOn"),true));
 	}
 return null();
@@ -237,9 +237,9 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,toggleClockOn,(void))
 
 Void ClockProxy_obj::setClockOff( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","setClockOff",0xd289505a,"model.proxy.ClockProxy.setClockOff","model/proxy/ClockProxy.hx",77,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","setClockOff",0xd289505a,"model.proxy.ClockProxy.setClockOff","model/proxy/ClockProxy.hx",83,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		this->getData()->__FieldRef(HX_CSTRING("clockOn")) = false;
 	}
 return null();
@@ -249,9 +249,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,setClockOff,(void))
 
 bool ClockProxy_obj::getClockOn( ){
-	HX_STACK_FRAME("model.proxy.ClockProxy","getClockOn",0x71664c20,"model.proxy.ClockProxy.getClockOn","model/proxy/ClockProxy.hx",81,0x97ac0997)
+	HX_STACK_FRAME("model.proxy.ClockProxy","getClockOn",0x71664c20,"model.proxy.ClockProxy.getClockOn","model/proxy/ClockProxy.hx",87,0x97ac0997)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(81)
+	HX_STACK_LINE(87)
 	return this->getData()->__Field(HX_CSTRING("clockOn"),true);
 }
 
@@ -260,11 +260,11 @@ HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,getClockOn,return )
 
 Void ClockProxy_obj::reset( ){
 {
-		HX_STACK_FRAME("model.proxy.ClockProxy","reset",0x85328ee6,"model.proxy.ClockProxy.reset","model/proxy/ClockProxy.hx",84,0x97ac0997)
+		HX_STACK_FRAME("model.proxy.ClockProxy","reset",0x85328ee6,"model.proxy.ClockProxy.reset","model/proxy/ClockProxy.hx",90,0x97ac0997)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(85)
+		HX_STACK_LINE(91)
 		this->stopClock();
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		this->getData()->__FieldRef(HX_CSTRING("clockOn")) = false;
 	}
 return null();
@@ -274,9 +274,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(ClockProxy_obj,reset,(void))
 
 Dynamic ClockProxy_obj::getData( ){
-	HX_STACK_FRAME("model.proxy.ClockProxy","getData",0xd63cfeb7,"model.proxy.ClockProxy.getData","model/proxy/ClockProxy.hx",90,0x97ac0997)
+	HX_STACK_FRAME("model.proxy.ClockProxy","getData",0xd63cfeb7,"model.proxy.ClockProxy.getData","model/proxy/ClockProxy.hx",96,0x97ac0997)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(90)
+	HX_STACK_LINE(96)
 	return this->data;
 }
 

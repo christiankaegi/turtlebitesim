@@ -69,13 +69,13 @@ namespace lines{
 
 Void ClockMediator_obj::__construct(::view::component::lines::Clock viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.ClockMediator","new",0x0e744032,"view.mediator.lines.ClockMediator.new","view/mediator/lines/ClockMediator.hx",9,0x64117d5f)
+HX_STACK_FRAME("view.mediator.lines.ClockMediator","new",0x0e744032,"view.mediator.lines.ClockMediator.new","view/mediator/lines/ClockMediator.hx",15,0x64117d5f)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	this->clockOn = false;
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct(HX_CSTRING("ClockMediator"),viewComponent);
 }
 ;
@@ -97,19 +97,19 @@ Dynamic ClockMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void ClockMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.ClockMediator","onRegister",0x6f138910,"view.mediator.lines.ClockMediator.onRegister","view/mediator/lines/ClockMediator.hx",18,0x64117d5f)
+		HX_STACK_FRAME("view.mediator.lines.ClockMediator","onRegister",0x6f138910,"view.mediator.lines.ClockMediator.onRegister","view/mediator/lines/ClockMediator.hx",24,0x64117d5f)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->appProxy = _g;
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::view::component::lines::Clock _g1 = this->getView();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g1,null());
 	}
 return null();
@@ -117,36 +117,36 @@ return null();
 
 
 Array< ::String > ClockMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.ClockMediator","listNotificationInterests",0x5f0a2632,"view.mediator.lines.ClockMediator.listNotificationInterests","view/mediator/lines/ClockMediator.hx",25,0x64117d5f)
+	HX_STACK_FRAME("view.mediator.lines.ClockMediator","listNotificationInterests",0x5f0a2632,"view.mediator.lines.ClockMediator.listNotificationInterests","view/mediator/lines/ClockMediator.hx",31,0x64117d5f)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(31)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::CLOCK_OFF).Add(::AppConstants_obj::CHANGE_CLOCK_SPEED).Add(::AppConstants_obj::MODEL_RESET_COMPLETE);
 }
 
 
 Void ClockMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.ClockMediator","handleNotification",0xc75bcf21,"view.mediator.lines.ClockMediator.handleNotification","view/mediator/lines/ClockMediator.hx",34,0x64117d5f)
+		HX_STACK_FRAME("view.mediator.lines.ClockMediator","handleNotification",0xc75bcf21,"view.mediator.lines.ClockMediator.handleNotification","view/mediator/lines/ClockMediator.hx",40,0x64117d5f)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(37)
+			HX_STACK_LINE(43)
 			this->getView()->showLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CLOCK_OFF)){
-			HX_STACK_LINE(39)
+			HX_STACK_LINE(45)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CHANGE_CLOCK_SPEED)){
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(43)
+			HX_STACK_LINE(49)
 			this->getView()->hideAllLines();
 		}
 	}
@@ -156,10 +156,10 @@ return null();
 
 Void ClockMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.ClockMediator","viewReadyHandler",0xe30cf09a,"view.mediator.lines.ClockMediator.viewReadyHandler","view/mediator/lines/ClockMediator.hx",48,0x64117d5f)
+		HX_STACK_FRAME("view.mediator.lines.ClockMediator","viewReadyHandler",0xe30cf09a,"view.mediator.lines.ClockMediator.viewReadyHandler","view/mediator/lines/ClockMediator.hx",54,0x64117d5f)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("ClockMediator"));
 	}
 return null();
@@ -169,9 +169,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ClockMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::Clock ClockMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.ClockMediator","getView",0x237ba2ed,"view.mediator.lines.ClockMediator.getView","view/mediator/lines/ClockMediator.hx",52,0x64117d5f)
+	HX_STACK_FRAME("view.mediator.lines.ClockMediator","getView",0x237ba2ed,"view.mediator.lines.ClockMediator.getView","view/mediator/lines/ClockMediator.hx",58,0x64117d5f)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(52)
+	HX_STACK_LINE(58)
 	return this->viewComponent;
 }
 

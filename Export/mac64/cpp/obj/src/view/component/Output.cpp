@@ -50,12 +50,12 @@ namespace component{
 
 Void Output_obj::__construct()
 {
-HX_STACK_FRAME("view.component.Output","new",0xa0ac5d4d,"view.component.Output.new","view/component/Output.hx",22,0xe160a741)
+HX_STACK_FRAME("view.component.Output","new",0xa0ac5d4d,"view.component.Output.new","view/component/Output.hx",28,0xe160a741)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(23)
+	HX_STACK_LINE(29)
 	super::__construct();
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -77,20 +77,20 @@ Dynamic Output_obj::__Create(hx::DynamicArray inArgs)
 
 Void Output_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.Output","addedToStageHandler",0xa0060e94,"view.component.Output.addedToStageHandler","view/component/Output.hx",27,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","addedToStageHandler",0xa0060e94,"view.component.Output.addedToStageHandler","view/component/Output.hx",33,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->createRegister1Display();
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->createRegister2Display();
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->createAccumulatorDisplay();
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->createRomDisplay();
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		this->createRamDisplay();
 	}
 return null();
@@ -101,17 +101,17 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,addedToStageHandler,(void))
 
 Void Output_obj::createRomDisplay( ){
 {
-		HX_STACK_FRAME("view.component.Output","createRomDisplay",0x3ccf7321,"view.component.Output.createRomDisplay","view/component/Output.hx",39,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","createRomDisplay",0x3ccf7321,"view.component.Output.createRomDisplay","view/component/Output.hx",45,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		::view::elements::RomRamDisplay _g = ::view::elements::RomRamDisplay_obj::__new((int)4494335);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		this->rom = _g;
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(47)
 		this->rom->set_x(((int)432 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->rom->set_y(((int)541 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		this->addChild(this->rom);
 	}
 return null();
@@ -122,17 +122,17 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,createRomDisplay,(void))
 
 Void Output_obj::createRamDisplay( ){
 {
-		HX_STACK_FRAME("view.component.Output","createRamDisplay",0xb39bb513,"view.component.Output.createRamDisplay","view/component/Output.hx",46,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","createRamDisplay",0xb39bb513,"view.component.Output.createRamDisplay","view/component/Output.hx",52,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		::view::elements::RomRamDisplay _g = ::view::elements::RomRamDisplay_obj::__new((int)65280);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		this->ram = _g;
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		this->ram->set_x(((int)797 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->ram->set_y(((int)377 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->addChild(this->ram);
 	}
 return null();
@@ -143,19 +143,19 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,createRamDisplay,(void))
 
 Void Output_obj::createRegister1Display( ){
 {
-		HX_STACK_FRAME("view.component.Output","createRegister1Display",0x5de8c1c3,"view.component.Output.createRegister1Display","view/component/Output.hx",53,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","createRegister1Display",0x5de8c1c3,"view.component.Output.createRegister1Display","view/component/Output.hx",59,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		::openfl::text::TextField _g = ::utilities::TextFieldFactory_obj::getOutputTFBold();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->r1 = _g;
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		this->r1->set_x(((int)532 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(56)
+		HX_STACK_LINE(62)
 		this->r1->set_y(((int)281 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		this->r1->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->addChild(this->r1);
 	}
 return null();
@@ -166,19 +166,19 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,createRegister1Display,(void))
 
 Void Output_obj::createRegister2Display( ){
 {
-		HX_STACK_FRAME("view.component.Output","createRegister2Display",0x971b33e2,"view.component.Output.createRegister2Display","view/component/Output.hx",61,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","createRegister2Display",0x971b33e2,"view.component.Output.createRegister2Display","view/component/Output.hx",67,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		::openfl::text::TextField _g = ::utilities::TextFieldFactory_obj::getOutputTFBold();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		this->r2 = _g;
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(69)
 		this->r2->set_x(((int)532 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(64)
+		HX_STACK_LINE(70)
 		this->r2->set_y(((int)206 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		this->r2->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->addChild(this->r2);
 	}
 return null();
@@ -189,19 +189,19 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,createRegister2Display,(void))
 
 Void Output_obj::createAccumulatorDisplay( ){
 {
-		HX_STACK_FRAME("view.component.Output","createAccumulatorDisplay",0x362525ab,"view.component.Output.createAccumulatorDisplay","view/component/Output.hx",69,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","createAccumulatorDisplay",0x362525ab,"view.component.Output.createAccumulatorDisplay","view/component/Output.hx",75,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		::openfl::text::TextField _g = ::utilities::TextFieldFactory_obj::getOutputTFBold();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		this->accu = _g;
-		HX_STACK_LINE(71)
+		HX_STACK_LINE(77)
 		this->accu->set_x(((int)775 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		this->accu->set_y(((int)219 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		this->accu->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		this->addChild(this->accu);
 	}
 return null();
@@ -212,12 +212,12 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,createAccumulatorDisplay,(void))
 
 Void Output_obj::setRegister1( ::String value){
 {
-		HX_STACK_FRAME("view.component.Output","setRegister1",0x32889ddf,"view.component.Output.setRegister1","view/component/Output.hx",81,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","setRegister1",0x32889ddf,"view.component.Output.setRegister1","view/component/Output.hx",87,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		this->r1->set_text(value);
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		this->r1->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
 	}
 return null();
@@ -228,12 +228,12 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,setRegister1,(void))
 
 Void Output_obj::setRegister2( ::String value){
 {
-		HX_STACK_FRAME("view.component.Output","setRegister2",0x32889de0,"view.component.Output.setRegister2","view/component/Output.hx",86,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","setRegister2",0x32889de0,"view.component.Output.setRegister2","view/component/Output.hx",92,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		this->r2->set_text(value);
-		HX_STACK_LINE(88)
+		HX_STACK_LINE(94)
 		this->r2->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
 	}
 return null();
@@ -244,12 +244,12 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,setRegister2,(void))
 
 Void Output_obj::setAccumulator( ::String value){
 {
-		HX_STACK_FRAME("view.component.Output","setAccumulator",0x192ff4f7,"view.component.Output.setAccumulator","view/component/Output.hx",91,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","setAccumulator",0x192ff4f7,"view.component.Output.setAccumulator","view/component/Output.hx",97,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		this->accu->set_text(value);
-		HX_STACK_LINE(93)
+		HX_STACK_LINE(99)
 		this->accu->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
 	}
 return null();
@@ -260,12 +260,12 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,setAccumulator,(void))
 
 Void Output_obj::loadRomDisplay( Array< ::Dynamic > instructions){
 {
-		HX_STACK_FRAME("view.component.Output","loadRomDisplay",0x2e704c0b,"view.component.Output.loadRomDisplay","view/component/Output.hx",96,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","loadRomDisplay",0x2e704c0b,"view.component.Output.loadRomDisplay","view/component/Output.hx",102,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(instructions,"instructions")
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		this->rom->clear(null());
-		HX_STACK_LINE(98)
+		HX_STACK_LINE(104)
 		this->rom->loadMemory(instructions);
 	}
 return null();
@@ -276,15 +276,15 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,loadRomDisplay,(void))
 
 Void Output_obj::powerOn( ){
 {
-		HX_STACK_FRAME("view.component.Output","powerOn",0x964f63f1,"view.component.Output.powerOn","view/component/Output.hx",101,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","powerOn",0x964f63f1,"view.component.Output.powerOn","view/component/Output.hx",107,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(102)
+		HX_STACK_LINE(108)
 		this->ram->clear(null());
-		HX_STACK_LINE(103)
+		HX_STACK_LINE(109)
 		this->r1->set_text(HX_CSTRING("0"));
-		HX_STACK_LINE(104)
+		HX_STACK_LINE(110)
 		this->r2->set_text(HX_CSTRING("0"));
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		this->accu->set_text(HX_CSTRING("0"));
 	}
 return null();
@@ -295,17 +295,17 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,powerOn,(void))
 
 Void Output_obj::powerOff( ){
 {
-		HX_STACK_FRAME("view.component.Output","powerOff",0xef28085d,"view.component.Output.powerOff","view/component/Output.hx",108,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","powerOff",0xef28085d,"view.component.Output.powerOff","view/component/Output.hx",114,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(109)
+		HX_STACK_LINE(115)
 		this->rom->clear(true);
-		HX_STACK_LINE(110)
+		HX_STACK_LINE(116)
 		this->ram->clear(true);
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(117)
 		this->r1->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(118)
 		this->r2->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		this->accu->set_text(HX_CSTRING(""));
 	}
 return null();
@@ -316,10 +316,10 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,powerOff,(void))
 
 Void Output_obj::setProgramCountPointer( int pointer){
 {
-		HX_STACK_FRAME("view.component.Output","setProgramCountPointer",0x9d3bfd03,"view.component.Output.setProgramCountPointer","view/component/Output.hx",117,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","setProgramCountPointer",0x9d3bfd03,"view.component.Output.setProgramCountPointer","view/component/Output.hx",123,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(117)
+		HX_STACK_LINE(123)
 		this->rom->setPointer(pointer);
 	}
 return null();
@@ -330,11 +330,11 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,setProgramCountPointer,(void))
 
 Void Output_obj::updateRam( Array< ::Dynamic > values,int pointer){
 {
-		HX_STACK_FRAME("view.component.Output","updateRam",0x318c3002,"view.component.Output.updateRam","view/component/Output.hx",121,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","updateRam",0x318c3002,"view.component.Output.updateRam","view/component/Output.hx",127,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(values,"values")
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(121)
+		HX_STACK_LINE(127)
 		this->ram->updateCell(values,pointer);
 	}
 return null();
@@ -345,9 +345,9 @@ HX_DEFINE_DYNAMIC_FUNC2(Output_obj,updateRam,(void))
 
 Void Output_obj::resetRamPointer( ){
 {
-		HX_STACK_FRAME("view.component.Output","resetRamPointer",0x6ba5ad9b,"view.component.Output.resetRamPointer","view/component/Output.hx",125,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","resetRamPointer",0x6ba5ad9b,"view.component.Output.resetRamPointer","view/component/Output.hx",131,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(125)
+		HX_STACK_LINE(131)
 		this->ram->resetPointer();
 	}
 return null();
@@ -358,10 +358,10 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,resetRamPointer,(void))
 
 Void Output_obj::setRamPointer( int pointer){
 {
-		HX_STACK_FRAME("view.component.Output","setRamPointer",0x17f0bfee,"view.component.Output.setRamPointer","view/component/Output.hx",129,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","setRamPointer",0x17f0bfee,"view.component.Output.setRamPointer","view/component/Output.hx",135,0xe160a741)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(129)
+		HX_STACK_LINE(135)
 		this->ram->setPointer(pointer);
 	}
 return null();
@@ -372,9 +372,9 @@ HX_DEFINE_DYNAMIC_FUNC1(Output_obj,setRamPointer,(void))
 
 Void Output_obj::resetRam( ){
 {
-		HX_STACK_FRAME("view.component.Output","resetRam",0x299d8742,"view.component.Output.resetRam","view/component/Output.hx",133,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","resetRam",0x299d8742,"view.component.Output.resetRam","view/component/Output.hx",139,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(133)
+		HX_STACK_LINE(139)
 		this->ram->clear(null());
 	}
 return null();
@@ -385,17 +385,17 @@ HX_DEFINE_DYNAMIC_FUNC0(Output_obj,resetRam,(void))
 
 Void Output_obj::resetAll( ){
 {
-		HX_STACK_FRAME("view.component.Output","resetAll",0x2990aa85,"view.component.Output.resetAll","view/component/Output.hx",136,0xe160a741)
+		HX_STACK_FRAME("view.component.Output","resetAll",0x2990aa85,"view.component.Output.resetAll","view/component/Output.hx",142,0xe160a741)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(137)
+		HX_STACK_LINE(143)
 		this->ram->clear(null());
-		HX_STACK_LINE(138)
+		HX_STACK_LINE(144)
 		this->rom->resetPointer();
-		HX_STACK_LINE(139)
+		HX_STACK_LINE(145)
 		this->r1->set_text(HX_CSTRING("0"));
-		HX_STACK_LINE(140)
+		HX_STACK_LINE(146)
 		this->r2->set_text(HX_CSTRING("0"));
-		HX_STACK_LINE(141)
+		HX_STACK_LINE(147)
 		this->accu->set_text(HX_CSTRING("0"));
 	}
 return null();

@@ -46,10 +46,10 @@ namespace controller{
 
 Void ResetCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.ResetCommand","new",0xe5c03660,"controller.ResetCommand.new","controller/ResetCommand.hx",12,0x6fd2de2f)
+HX_STACK_FRAME("controller.ResetCommand","new",0xe5c03660,"controller.ResetCommand.new","controller/ResetCommand.hx",18,0x6fd2de2f)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct();
 }
 ;
@@ -71,48 +71,48 @@ Dynamic ResetCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void ResetCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.ResetCommand","execute",0xb6a47035,"controller.ResetCommand.execute","controller/ResetCommand.hx",15,0x6fd2de2f)
+		HX_STACK_FRAME("controller.ResetCommand","execute",0xb6a47035,"controller.ResetCommand.execute","controller/ResetCommand.hx",21,0x6fd2de2f)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(17)
-		::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-		HX_STACK_LINE(17)
-		appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(18)
-		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-		HX_STACK_LINE(18)
-		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-		HX_STACK_LINE(19)
-		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(19)
-		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(20)
-		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(20)
-		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(22)
-		appProxy->reset();
 		HX_STACK_LINE(23)
-		clockProxy->reset();
+		::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
+		HX_STACK_LINE(23)
+		appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
 		HX_STACK_LINE(24)
-		programProxy->reset();
+		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
+		HX_STACK_LINE(24)
+		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
 		HX_STACK_LINE(25)
-		snapshotProxy->reset();
-		HX_STACK_LINE(27)
-		appProxy->setCharCodeActive(false);
+		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
+		HX_STACK_LINE(25)
+		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
+		HX_STACK_LINE(26)
+		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
+		HX_STACK_LINE(26)
+		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
+		HX_STACK_LINE(28)
+		appProxy->reset();
 		HX_STACK_LINE(29)
-		appProxy->setShowUnitsOn(false);
+		clockProxy->reset();
 		HX_STACK_LINE(30)
-		this->sendNotification(::AppConstants_obj::HIDE_OVERLAY_UNITS,null(),null());
-		HX_STACK_LINE(32)
-		appProxy->setShowHightlightOn(false);
+		programProxy->reset();
+		HX_STACK_LINE(31)
+		snapshotProxy->reset();
 		HX_STACK_LINE(33)
-		this->sendNotification(::AppConstants_obj::HIDE_HIGHLIGHT,null(),null());
+		appProxy->setCharCodeActive(false);
 		HX_STACK_LINE(35)
-		appProxy->setShowFlowOn(false);
+		appProxy->setShowUnitsOn(false);
 		HX_STACK_LINE(36)
-		this->sendNotification(::AppConstants_obj::HIDE_OVERLAY_FLOW,null(),null());
+		this->sendNotification(::AppConstants_obj::HIDE_OVERLAY_UNITS,null(),null());
 		HX_STACK_LINE(38)
+		appProxy->setShowHightlightOn(false);
+		HX_STACK_LINE(39)
+		this->sendNotification(::AppConstants_obj::HIDE_HIGHLIGHT,null(),null());
+		HX_STACK_LINE(41)
+		appProxy->setShowFlowOn(false);
+		HX_STACK_LINE(42)
+		this->sendNotification(::AppConstants_obj::HIDE_OVERLAY_FLOW,null(),null());
+		HX_STACK_LINE(44)
 		this->sendNotification(::AppConstants_obj::MODEL_RESET_COMPLETE,null(),null());
 	}
 return null();

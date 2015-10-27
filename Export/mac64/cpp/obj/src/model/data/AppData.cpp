@@ -32,35 +32,35 @@ namespace data{
 
 Void AppData_obj::__construct(::App app)
 {
-HX_STACK_FRAME("model.data.AppData","new",0x0cd337de,"model.data.AppData.new","model/data/AppData.hx",2,0xbc0f81b2)
+HX_STACK_FRAME("model.data.AppData","new",0x0cd337de,"model.data.AppData.new","model/data/AppData.hx",8,0xbc0f81b2)
 HX_STACK_THIS(this)
 HX_STACK_ARG(app,"app")
 {
-	HX_STACK_LINE(17)
+	HX_STACK_LINE(23)
 	this->enterInstructionOutputValid = true;
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	this->enterInstructionActive = false;
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	this->charCodeActive = false;
-	HX_STACK_LINE(14)
-	this->detailPopupActive = false;
-	HX_STACK_LINE(13)
-	this->showHighlightOn = false;
-	HX_STACK_LINE(12)
-	this->showFlowOn = false;
-	HX_STACK_LINE(11)
-	this->showUnitsOn = false;
-	HX_STACK_LINE(10)
-	this->componentsSubmenuActive = false;
-	HX_STACK_LINE(9)
-	this->hertzSubmenuActive = false;
-	HX_STACK_LINE(8)
-	this->autoClockOn = false;
-	HX_STACK_LINE(7)
-	this->powerOn = false;
-	HX_STACK_LINE(6)
-	this->isZoomed = false;
 	HX_STACK_LINE(20)
+	this->detailPopupActive = false;
+	HX_STACK_LINE(19)
+	this->showHighlightOn = false;
+	HX_STACK_LINE(18)
+	this->showFlowOn = false;
+	HX_STACK_LINE(17)
+	this->showUnitsOn = false;
+	HX_STACK_LINE(16)
+	this->componentsSubmenuActive = false;
+	HX_STACK_LINE(15)
+	this->hertzSubmenuActive = false;
+	HX_STACK_LINE(14)
+	this->autoClockOn = false;
+	HX_STACK_LINE(13)
+	this->powerOn = false;
+	HX_STACK_LINE(12)
+	this->isZoomed = false;
+	HX_STACK_LINE(26)
 	this->app = app;
 }
 ;

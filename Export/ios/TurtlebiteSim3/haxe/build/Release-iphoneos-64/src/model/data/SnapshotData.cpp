@@ -11,10 +11,10 @@ namespace data{
 
 Void SnapshotData_obj::__construct()
 {
-HX_STACK_FRAME("model.data.SnapshotData","new",0xeac206df,"model.data.SnapshotData.new","model/data/SnapshotData.hx",14,0xc6404911)
+HX_STACK_FRAME("model.data.SnapshotData","new",0xeac206df,"model.data.SnapshotData.new","model/data/SnapshotData.hx",20,0xc6404911)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(20)
 	this->reset();
 }
 ;
@@ -36,48 +36,48 @@ Dynamic SnapshotData_obj::__Create(hx::DynamicArray inArgs)
 
 Void SnapshotData_obj::reset( ){
 {
-		HX_STACK_FRAME("model.data.SnapshotData","reset",0xf2105e0e,"model.data.SnapshotData.reset","model/data/SnapshotData.hx",17,0xc6404911)
+		HX_STACK_FRAME("model.data.SnapshotData","reset",0xf2105e0e,"model.data.SnapshotData.reset","model/data/SnapshotData.hx",23,0xc6404911)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(18)
-		::model::vo::SnapshotVO _g = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(18)
-		this->register1 = _g;
-		HX_STACK_LINE(19)
-		::model::vo::SnapshotVO _g1 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(19)
-		this->register2 = _g1;
-		HX_STACK_LINE(20)
-		::model::vo::SnapshotVO _g2 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(20)
-		this->accumulator = _g2;
-		HX_STACK_LINE(21)
-		::model::vo::SnapshotVO _g3 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(21)
-		this->keyboard = _g3;
-		HX_STACK_LINE(22)
-		Array< ::Dynamic > _g4 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(22)
-		this->rom = _g4;
-		HX_STACK_LINE(23)
-		Array< ::Dynamic > _g5 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(23)
-		this->ram = _g5;
 		HX_STACK_LINE(24)
+		::model::vo::SnapshotVO _g = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(24)
+		this->register1 = _g;
+		HX_STACK_LINE(25)
+		::model::vo::SnapshotVO _g1 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(25)
+		this->register2 = _g1;
+		HX_STACK_LINE(26)
+		::model::vo::SnapshotVO _g2 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(26)
+		this->accumulator = _g2;
+		HX_STACK_LINE(27)
+		::model::vo::SnapshotVO _g3 = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(27)
+		this->keyboard = _g3;
+		HX_STACK_LINE(28)
+		Array< ::Dynamic > _g4 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(28)
+		this->rom = _g4;
+		HX_STACK_LINE(29)
+		Array< ::Dynamic > _g5 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(29)
+		this->ram = _g5;
+		HX_STACK_LINE(30)
 		{
-			HX_STACK_LINE(24)
+			HX_STACK_LINE(30)
 			int _g6 = (int)0;		HX_STACK_VAR(_g6,"_g6");
-			HX_STACK_LINE(24)
+			HX_STACK_LINE(30)
 			while((true)){
-				HX_STACK_LINE(24)
+				HX_STACK_LINE(30)
 				if ((!(((_g6 < (int)16))))){
-					HX_STACK_LINE(24)
+					HX_STACK_LINE(30)
 					break;
 				}
-				HX_STACK_LINE(24)
+				HX_STACK_LINE(30)
 				int i = (_g6)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				this->rom[i] = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());
-				HX_STACK_LINE(26)
+				HX_STACK_LINE(32)
 				this->ram[i] = ::model::vo::SnapshotVO_obj::__new(null(),null(),null());
 			}
 		}

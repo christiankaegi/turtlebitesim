@@ -33,8 +33,8 @@ class DecoderMediator extends Mediator {
             AppConstants.BROADCAST_MOV,
             AppConstants.BROADCAST_INP,
             AppConstants.CHANGE_CLOCK_SPEED,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

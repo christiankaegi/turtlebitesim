@@ -15,14 +15,14 @@
 
 Void __ASSET__assets_fonts_myriadpro_regular_otf_obj::__construct()
 {
-HX_STACK_FRAME("__ASSET__assets_fonts_myriadpro_regular_otf","new",0xefc87cf1,"__ASSET__assets_fonts_myriadpro_regular_otf.new","DefaultAssetLibrary.hx",2052,0x0fc48912)
+HX_STACK_FRAME("__ASSET__assets_fonts_myriadpro_regular_otf","new",0xefc87cf1,"__ASSET__assets_fonts_myriadpro_regular_otf.new","DefaultAssetLibrary.hx",2025,0x0fc48912)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(2052)
+	HX_STACK_LINE(2025)
 	super::__construct(null(),null(),null());
-	HX_STACK_LINE(2052)
+	HX_STACK_LINE(2025)
 	this->__fontPath = HX_CSTRING("assets/fonts/MyriadPro-Regular.otf");
-	HX_STACK_LINE(2052)
+	HX_STACK_LINE(2025)
 	this->fontName = HX_CSTRING("Myriad Pro");
 }
 ;

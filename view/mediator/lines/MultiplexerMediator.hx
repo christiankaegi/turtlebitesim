@@ -37,8 +37,8 @@ class MultiplexerMediator extends Mediator {
             AppConstants.CLOCK_ON,
             AppConstants.CLOCK_OFF,
             AppConstants.ALU_OUT_ACTIVE,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

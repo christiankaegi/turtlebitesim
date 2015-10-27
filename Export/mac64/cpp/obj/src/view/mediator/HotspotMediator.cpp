@@ -71,13 +71,13 @@ namespace mediator{
 
 Void HotspotMediator_obj::__construct(::view::component::Hotspot viewComponent)
 {
-HX_STACK_FRAME("view.mediator.HotspotMediator","new",0x36730422,"view.mediator.HotspotMediator.new","view/mediator/HotspotMediator.hx",10,0xf502456e)
+HX_STACK_FRAME("view.mediator.HotspotMediator","new",0x36730422,"view.mediator.HotspotMediator.new","view/mediator/HotspotMediator.hx",16,0xf502456e)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	this->clockOn = true;
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(24)
 	super::__construct(HX_CSTRING("HotspotMediator"),viewComponent);
 }
 ;
@@ -99,27 +99,27 @@ Dynamic HotspotMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void HotspotMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.HotspotMediator","onRegister",0x6f0e2320,"view.mediator.HotspotMediator.onRegister","view/mediator/HotspotMediator.hx",21,0xf502456e)
+		HX_STACK_FRAME("view.mediator.HotspotMediator","onRegister",0x6f0e2320,"view.mediator.HotspotMediator.onRegister","view/mediator/HotspotMediator.hx",27,0xf502456e)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		this->getView()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->appProxy = _g;
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::model::proxy::ClockProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		_g1 = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->clockProxy = _g1;
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::view::component::Hotspot _g2 = this->getView();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g2,null());
 	}
 return null();
@@ -127,16 +127,16 @@ return null();
 
 
 Array< ::String > HotspotMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.HotspotMediator","listNotificationInterests",0xd40f5e22,"view.mediator.HotspotMediator.listNotificationInterests","view/mediator/HotspotMediator.hx",30,0xf502456e)
+	HX_STACK_FRAME("view.mediator.HotspotMediator","listNotificationInterests",0xd40f5e22,"view.mediator.HotspotMediator.listNotificationInterests","view/mediator/HotspotMediator.hx",36,0xf502456e)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(30)
+	HX_STACK_LINE(36)
 	return Array_obj< ::String >::__new();
 }
 
 
 Void HotspotMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.HotspotMediator","handleNotification",0xb996f931,"view.mediator.HotspotMediator.handleNotification","view/mediator/HotspotMediator.hx",33,0xf502456e)
+		HX_STACK_FRAME("view.mediator.HotspotMediator","handleNotification",0xb996f931,"view.mediator.HotspotMediator.handleNotification","view/mediator/HotspotMediator.hx",39,0xf502456e)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
 	}
@@ -146,30 +146,30 @@ return null();
 
 Void HotspotMediator_obj::dataEventHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.HotspotMediator","dataEventHandler",0xb653fb18,"view.mediator.HotspotMediator.dataEventHandler","view/mediator/HotspotMediator.hx",38,0xf502456e)
+		HX_STACK_FRAME("view.mediator.HotspotMediator","dataEventHandler",0xb653fb18,"view.mediator.HotspotMediator.dataEventHandler","view/mediator/HotspotMediator.hx",44,0xf502456e)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		Dynamic _g = event->data->__Field(HX_CSTRING("id"),true);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		Dynamic _switch_1 = (_g);
 		if (  ( _switch_1==HX_CSTRING("clockButton"))){
-			HX_STACK_LINE(40)
+			HX_STACK_LINE(46)
 			this->sendNotification(::AppConstants_obj::MANUAL_MODE_ON,null(),null());
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			if ((this->appProxy->getEnterInstructionOutputValid())){
-				HX_STACK_LINE(42)
+				HX_STACK_LINE(48)
 				bool _g1 = this->clockProxy->getClockOn();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(42)
+				HX_STACK_LINE(48)
 				this->sendNotification(::AppConstants_obj::CLOCK_SIGNAL,_g1,null());
 			}
 		}
 		else if (  ( _switch_1==HX_CSTRING("accumulatorButton"))){
-			HX_STACK_LINE(45)
+			HX_STACK_LINE(51)
 			this->sendNotification(::AppConstants_obj::DETAIL_ACCUMULATOR,null(),null());
 		}
 		else if (  ( _switch_1==HX_CSTRING("romButton"))){
-			HX_STACK_LINE(47)
+			HX_STACK_LINE(53)
 			this->sendNotification(::AppConstants_obj::ENTER_INSTRUCTION,null(),null());
 		}
 	}
@@ -181,10 +181,10 @@ HX_DEFINE_DYNAMIC_FUNC1(HotspotMediator_obj,dataEventHandler,(void))
 
 Void HotspotMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.HotspotMediator","viewReadyHandler",0x9d4e76aa,"view.mediator.HotspotMediator.viewReadyHandler","view/mediator/HotspotMediator.hx",52,0xf502456e)
+		HX_STACK_FRAME("view.mediator.HotspotMediator","viewReadyHandler",0x9d4e76aa,"view.mediator.HotspotMediator.viewReadyHandler","view/mediator/HotspotMediator.hx",58,0xf502456e)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("HotspotMediator"));
 	}
 return null();
@@ -194,9 +194,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(HotspotMediator_obj,viewReadyHandler,(void))
 
 ::view::component::Hotspot HotspotMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.HotspotMediator","getView",0x75c31edd,"view.mediator.HotspotMediator.getView","view/mediator/HotspotMediator.hx",56,0xf502456e)
+	HX_STACK_FRAME("view.mediator.HotspotMediator","getView",0x75c31edd,"view.mediator.HotspotMediator.getView","view/mediator/HotspotMediator.hx",62,0xf502456e)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(56)
+	HX_STACK_LINE(62)
 	return this->viewComponent;
 }
 

@@ -8,7 +8,7 @@ namespace vo{
 
 Void SnapshotVO_obj::__construct(::String __o_binary,::String __o_hex,Dynamic __o_decimal)
 {
-HX_STACK_FRAME("model.vo.SnapshotVO","new",0x0723379f,"model.vo.SnapshotVO.new","model/vo/SnapshotVO.hx",8,0x83a70611)
+HX_STACK_FRAME("model.vo.SnapshotVO","new",0x0723379f,"model.vo.SnapshotVO.new","model/vo/SnapshotVO.hx",14,0x83a70611)
 HX_STACK_THIS(this)
 HX_STACK_ARG(__o_binary,"binary")
 HX_STACK_ARG(__o_hex,"hex")
@@ -17,13 +17,13 @@ HX_STACK_ARG(__o_decimal,"decimal")
 ::String hex = __o_hex.Default(HX_CSTRING("0"));
 Dynamic decimal = __o_decimal.Default(0);
 {
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	this->binary = binary;
-	HX_STACK_LINE(10)
+	HX_STACK_LINE(16)
 	this->hex = hex;
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	this->decimal = decimal;
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	this->createCodeArray();
 }
 ;
@@ -45,45 +45,45 @@ Dynamic SnapshotVO_obj::__Create(hx::DynamicArray inArgs)
 
 Void SnapshotVO_obj::createCodeArray( ){
 {
-		HX_STACK_FRAME("model.vo.SnapshotVO","createCodeArray",0x78874c4f,"model.vo.SnapshotVO.createCodeArray","model/vo/SnapshotVO.hx",15,0x83a70611)
+		HX_STACK_FRAME("model.vo.SnapshotVO","createCodeArray",0x78874c4f,"model.vo.SnapshotVO.createCodeArray","model/vo/SnapshotVO.hx",21,0x83a70611)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		Array< bool > _g = Array_obj< bool >::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->codeArr = _g;
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		{
-			HX_STACK_LINE(17)
+			HX_STACK_LINE(23)
 			int _g1 = (int)0;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(17)
+			HX_STACK_LINE(23)
 			while((true)){
-				HX_STACK_LINE(17)
+				HX_STACK_LINE(23)
 				if ((!(((_g1 < (int)4))))){
-					HX_STACK_LINE(17)
+					HX_STACK_LINE(23)
 					break;
 				}
-				HX_STACK_LINE(17)
+				HX_STACK_LINE(23)
 				int i = (_g1)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(18)
+				HX_STACK_LINE(24)
 				::String _g11 = this->binary.substr(i,(int)1);		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(18)
+				HX_STACK_LINE(24)
 				if (((_g11 == HX_CSTRING("1")))){
-					HX_STACK_LINE(19)
+					HX_STACK_LINE(25)
 					this->codeArr[i] = true;
 				}
 				else{
-					HX_STACK_LINE(21)
+					HX_STACK_LINE(27)
 					this->codeArr[i] = false;
 				}
 			}
 		}
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->codeArr->unshift(false);
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->codeArr->unshift(false);
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->codeArr->unshift(false);
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->codeArr->unshift(false);
 	}
 return null();
@@ -93,9 +93,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,createCodeArray,(void))
 
 ::String SnapshotVO_obj::getBinary( ){
-	HX_STACK_FRAME("model.vo.SnapshotVO","getBinary",0x540125b6,"model.vo.SnapshotVO.getBinary","model/vo/SnapshotVO.hx",32,0x83a70611)
+	HX_STACK_FRAME("model.vo.SnapshotVO","getBinary",0x540125b6,"model.vo.SnapshotVO.getBinary","model/vo/SnapshotVO.hx",38,0x83a70611)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(38)
 	return this->binary;
 }
 
@@ -103,9 +103,9 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,createCodeArray,(void))
 HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,getBinary,return )
 
 ::String SnapshotVO_obj::getHex( ){
-	HX_STACK_FRAME("model.vo.SnapshotVO","getHex",0xc64de606,"model.vo.SnapshotVO.getHex","model/vo/SnapshotVO.hx",36,0x83a70611)
+	HX_STACK_FRAME("model.vo.SnapshotVO","getHex",0xc64de606,"model.vo.SnapshotVO.getHex","model/vo/SnapshotVO.hx",42,0x83a70611)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(36)
+	HX_STACK_LINE(42)
 	return this->hex;
 }
 
@@ -113,9 +113,9 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,getBinary,return )
 HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,getHex,return )
 
 int SnapshotVO_obj::getDecimal( ){
-	HX_STACK_FRAME("model.vo.SnapshotVO","getDecimal",0x969ac93c,"model.vo.SnapshotVO.getDecimal","model/vo/SnapshotVO.hx",40,0x83a70611)
+	HX_STACK_FRAME("model.vo.SnapshotVO","getDecimal",0x969ac93c,"model.vo.SnapshotVO.getDecimal","model/vo/SnapshotVO.hx",46,0x83a70611)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(40)
+	HX_STACK_LINE(46)
 	return this->decimal;
 }
 
@@ -123,9 +123,9 @@ int SnapshotVO_obj::getDecimal( ){
 HX_DEFINE_DYNAMIC_FUNC0(SnapshotVO_obj,getDecimal,return )
 
 Array< bool > SnapshotVO_obj::getCodeArr( ){
-	HX_STACK_FRAME("model.vo.SnapshotVO","getCodeArr",0xfd3753df,"model.vo.SnapshotVO.getCodeArr","model/vo/SnapshotVO.hx",44,0x83a70611)
+	HX_STACK_FRAME("model.vo.SnapshotVO","getCodeArr",0xfd3753df,"model.vo.SnapshotVO.getCodeArr","model/vo/SnapshotVO.hx",50,0x83a70611)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(44)
+	HX_STACK_LINE(50)
 	return this->codeArr;
 }
 

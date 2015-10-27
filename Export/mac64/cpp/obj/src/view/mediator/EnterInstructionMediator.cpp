@@ -89,11 +89,11 @@ namespace mediator{
 
 Void EnterInstructionMediator_obj::__construct(::view::component::EnterInstruction viewComponent)
 {
-HX_STACK_FRAME("view.mediator.EnterInstructionMediator","new",0x69d2700d,"view.mediator.EnterInstructionMediator.new","view/mediator/EnterInstructionMediator.hx",23,0xbe0d2423)
+HX_STACK_FRAME("view.mediator.EnterInstructionMediator","new",0x69d2700d,"view.mediator.EnterInstructionMediator.new","view/mediator/EnterInstructionMediator.hx",29,0xbe0d2423)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(23)
+	HX_STACK_LINE(29)
 	super::__construct(HX_CSTRING("EnterInstructionMediator"),viewComponent);
 }
 ;
@@ -115,41 +115,41 @@ Dynamic EnterInstructionMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void EnterInstructionMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","onRegister",0x8c90da95,"view.mediator.EnterInstructionMediator.onRegister","view/mediator/EnterInstructionMediator.hx",26,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","onRegister",0x8c90da95,"view.mediator.EnterInstructionMediator.onRegister","view/mediator/EnterInstructionMediator.hx",32,0xbe0d2423)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->getView()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->getView()->set_y(((int)5 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->appProxy = _g;
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		::model::proxy::ClockProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		_g1 = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->clockProxy = _g1;
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		::model::proxy::ProgramProxy _g2;		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		_g2 = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->programProxy = _g2;
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		::model::proxy::SnapshotProxy _g3;		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		_g3 = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		this->snapshotProxy = _g3;
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		::view::component::EnterInstruction _g4 = this->getView();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g4,null());
 	}
 return null();
@@ -158,9 +158,9 @@ return null();
 
 Void EnterInstructionMediator_obj::onRemove( ){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","onRemove",0x3c13fff6,"view.mediator.EnterInstructionMediator.onRemove","view/mediator/EnterInstructionMediator.hx",38,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","onRemove",0x3c13fff6,"view.mediator.EnterInstructionMediator.onRemove","view/mediator/EnterInstructionMediator.hx",44,0xbe0d2423)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		this->getView()->destroy();
 	}
 return null();
@@ -168,36 +168,36 @@ return null();
 
 
 Array< ::String > EnterInstructionMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.EnterInstructionMediator","listNotificationInterests",0xaf35524d,"view.mediator.EnterInstructionMediator.listNotificationInterests","view/mediator/EnterInstructionMediator.hx",42,0xbe0d2423)
+	HX_STACK_FRAME("view.mediator.EnterInstructionMediator","listNotificationInterests",0xaf35524d,"view.mediator.EnterInstructionMediator.listNotificationInterests","view/mediator/EnterInstructionMediator.hx",48,0xbe0d2423)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(42)
+	HX_STACK_LINE(48)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::PLAY).Add(::AppConstants_obj::MODEL_RESET_COMPLETE).Add(::AppConstants_obj::POWER_OFF);
 }
 
 
 Void EnterInstructionMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","handleNotification",0x237dada6,"view.mediator.EnterInstructionMediator.handleNotification","view/mediator/EnterInstructionMediator.hx",51,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","handleNotification",0x237dada6,"view.mediator.EnterInstructionMediator.handleNotification","view/mediator/EnterInstructionMediator.hx",57,0xbe0d2423)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(54)
+			HX_STACK_LINE(60)
 			this->getView()->hideBarriere();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->destroy();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::PLAY)){
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->destroy();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(60)
+			HX_STACK_LINE(66)
 			this->destroy();
 		}
 	}
@@ -207,259 +207,219 @@ return null();
 
 Void EnterInstructionMediator_obj::dataEventHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","dataEventHandler",0xba89384d,"view.mediator.EnterInstructionMediator.dataEventHandler","view/mediator/EnterInstructionMediator.hx",65,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","dataEventHandler",0xba89384d,"view.mediator.EnterInstructionMediator.dataEventHandler","view/mediator/EnterInstructionMediator.hx",71,0xbe0d2423)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		if (((event->data->__Field(HX_CSTRING("id"),true) == HX_CSTRING("closeButton")))){
-			HX_STACK_LINE(66)
+			HX_STACK_LINE(72)
 			this->destroy();
 		}
 		else{
-			HX_STACK_LINE(68)
+			HX_STACK_LINE(74)
 			this->appProxy->setEnterInstructionOutputValid(false);
-			HX_STACK_LINE(69)
+			HX_STACK_LINE(75)
 			this->sendNotification(::AppConstants_obj::ENTER_INSTRUCTION_CHANGED,null(),null());
-			HX_STACK_LINE(70)
+			HX_STACK_LINE(76)
 			::String opc = HX_CSTRING("");		HX_STACK_VAR(opc,"opc");
-			HX_STACK_LINE(71)
+			HX_STACK_LINE(77)
 			::String addr = HX_CSTRING("");		HX_STACK_VAR(addr,"addr");
-			HX_STACK_LINE(72)
+			HX_STACK_LINE(78)
 			if (((event->data->__Field(HX_CSTRING("id"),true) == HX_CSTRING("opcodeMenu")))){
-				HX_STACK_LINE(73)
+				HX_STACK_LINE(79)
 				opc = event->data->__Field(HX_CSTRING("opcode"),true);
-				HX_STACK_LINE(74)
+				HX_STACK_LINE(80)
 				addr = event->data->__Field(HX_CSTRING("address"),true);
-				HX_STACK_LINE(75)
+				HX_STACK_LINE(81)
 				this->getView()->showLines(opc,addr);
 			}
 			else{
-				HX_STACK_LINE(77)
+				HX_STACK_LINE(83)
 				if ((event->data->__Field(HX_CSTRING("on"),true))){
-					HX_STACK_LINE(78)
+					HX_STACK_LINE(84)
 					this->getView()->hideLine(event->data->__Field(HX_CSTRING("id"),true));
 				}
 				else{
-					HX_STACK_LINE(80)
+					HX_STACK_LINE(86)
 					this->getView()->showLine(event->data->__Field(HX_CSTRING("id"),true));
 				}
-				HX_STACK_LINE(82)
+				HX_STACK_LINE(88)
 				::String _g = this->getView()->getOpcode();		HX_STACK_VAR(_g,"_g");
-				HX_STACK_LINE(82)
+				HX_STACK_LINE(88)
 				opc = _g;
-				HX_STACK_LINE(83)
+				HX_STACK_LINE(89)
 				::String _g1 = this->getView()->getAddress();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(83)
+				HX_STACK_LINE(89)
 				addr = _g1;
 			}
-			HX_STACK_LINE(85)
+			HX_STACK_LINE(91)
 			::String opcode = HX_CSTRING("?");		HX_STACK_VAR(opcode,"opcode");
-			HX_STACK_LINE(86)
+			HX_STACK_LINE(92)
 			::String address = HX_CSTRING("?");		HX_STACK_VAR(address,"address");
-			HX_STACK_LINE(87)
+			HX_STACK_LINE(93)
 			::String _switch_2 = (opc);
 			if (  ( _switch_2==::AppConstants_obj::OPCODE_NOP)){
-				HX_STACK_LINE(89)
+				HX_STACK_LINE(95)
 				opcode = HX_CSTRING("NOP");
-				HX_STACK_LINE(90)
+				HX_STACK_LINE(96)
 				address = HX_CSTRING("");
-				HX_STACK_LINE(91)
+				HX_STACK_LINE(97)
 				if (((addr != HX_CSTRING("0000")))){
-					HX_STACK_LINE(92)
+					HX_STACK_LINE(98)
 					opcode = HX_CSTRING("?");
-					HX_STACK_LINE(93)
+					HX_STACK_LINE(99)
 					address = HX_CSTRING("?");
 				}
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_MOV)){
-				HX_STACK_LINE(96)
+				HX_STACK_LINE(102)
 				opcode = HX_CSTRING("MOV");
-				HX_STACK_LINE(97)
+				HX_STACK_LINE(103)
 				::String _switch_3 = (addr);
 				if (  ( _switch_3==::AppConstants_obj::ADDRESS_REGISTER1)){
-					HX_STACK_LINE(99)
+					HX_STACK_LINE(105)
 					address = HX_CSTRING("R1");
 				}
 				else if (  ( _switch_3==::AppConstants_obj::ADDRESS_REGISTER2)){
-					HX_STACK_LINE(101)
+					HX_STACK_LINE(107)
 					address = HX_CSTRING("R2");
 				}
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_LDI)){
-				HX_STACK_LINE(104)
+				HX_STACK_LINE(110)
 				opcode = HX_CSTRING("LDI");
 				struct _Function_3_1{
 					inline static Float Block( ::String &addr){
-						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",105,0xbe0d2423)
+						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",111,0xbe0d2423)
 						{
-							HX_STACK_LINE(105)
+							HX_STACK_LINE(111)
 							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
-							HX_STACK_LINE(105)
+							HX_STACK_LINE(111)
 							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 						}
 						return null();
 					}
 				};
-				HX_STACK_LINE(105)
+				HX_STACK_LINE(111)
 				::String _g2 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g2,"_g2");
-				HX_STACK_LINE(105)
+				HX_STACK_LINE(111)
 				address = _g2;
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_ALU)){
-				HX_STACK_LINE(107)
+				HX_STACK_LINE(113)
 				opcode = HX_CSTRING("(ALU)");
-				HX_STACK_LINE(108)
+				HX_STACK_LINE(114)
 				::String _switch_4 = (addr);
 				if (  ( _switch_4==::AppConstants_obj::ADDRESS_ADD)){
-					HX_STACK_LINE(110)
-					opcode = HX_CSTRING("ADD");
-					HX_STACK_LINE(111)
-					address = HX_CSTRING("<---");
-				}
-				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_SUB)){
-					HX_STACK_LINE(113)
-					opcode = HX_CSTRING("SUB");
-					HX_STACK_LINE(114)
-					address = HX_CSTRING("<---");
-				}
-				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_INC)){
 					HX_STACK_LINE(116)
-					opcode = HX_CSTRING("INC");
+					opcode = HX_CSTRING("ADD");
 					HX_STACK_LINE(117)
 					address = HX_CSTRING("<---");
 				}
-				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_DEC)){
+				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_SUB)){
 					HX_STACK_LINE(119)
-					opcode = HX_CSTRING("DEC");
+					opcode = HX_CSTRING("SUB");
 					HX_STACK_LINE(120)
+					address = HX_CSTRING("<---");
+				}
+				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_INC)){
+					HX_STACK_LINE(122)
+					opcode = HX_CSTRING("INC");
+					HX_STACK_LINE(123)
+					address = HX_CSTRING("<---");
+				}
+				else if (  ( _switch_4==::AppConstants_obj::ADDRESS_DEC)){
+					HX_STACK_LINE(125)
+					opcode = HX_CSTRING("DEC");
+					HX_STACK_LINE(126)
 					address = HX_CSTRING("<---");
 				}
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_SDA)){
-				HX_STACK_LINE(124)
+				HX_STACK_LINE(130)
 				opcode = HX_CSTRING("SDA");
 				struct _Function_3_1{
 					inline static Float Block( ::String &addr){
-						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",125,0xbe0d2423)
+						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",131,0xbe0d2423)
 						{
-							HX_STACK_LINE(125)
+							HX_STACK_LINE(131)
 							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
-							HX_STACK_LINE(125)
+							HX_STACK_LINE(131)
 							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 						}
 						return null();
 					}
 				};
-				HX_STACK_LINE(125)
+				HX_STACK_LINE(131)
 				::String _g3 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g3,"_g3");
-				HX_STACK_LINE(125)
+				HX_STACK_LINE(131)
 				address = _g3;
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_LDA)){
-				HX_STACK_LINE(127)
+				HX_STACK_LINE(133)
 				opcode = HX_CSTRING("LDA");
 				struct _Function_3_1{
 					inline static Float Block( ::String &addr){
-						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",128,0xbe0d2423)
+						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",134,0xbe0d2423)
 						{
-							HX_STACK_LINE(128)
+							HX_STACK_LINE(134)
 							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
-							HX_STACK_LINE(128)
+							HX_STACK_LINE(134)
 							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 						}
 						return null();
 					}
 				};
-				HX_STACK_LINE(128)
+				HX_STACK_LINE(134)
 				::String _g4 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g4,"_g4");
-				HX_STACK_LINE(128)
+				HX_STACK_LINE(134)
 				address = _g4;
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_INP)){
-				HX_STACK_LINE(130)
+				HX_STACK_LINE(136)
 				opcode = HX_CSTRING("INP");
-				HX_STACK_LINE(131)
+				HX_STACK_LINE(137)
 				::String _switch_5 = (addr);
 				if (  ( _switch_5==::AppConstants_obj::ADDRESS_ACCUMULATOR)){
-					HX_STACK_LINE(133)
+					HX_STACK_LINE(139)
 					address = HX_CSTRING("A");
 				}
 				else if (  ( _switch_5==::AppConstants_obj::ADDRESS_REGISTER1)){
-					HX_STACK_LINE(135)
+					HX_STACK_LINE(141)
 					address = HX_CSTRING("R1");
 				}
 				else if (  ( _switch_5==::AppConstants_obj::ADDRESS_REGISTER2)){
-					HX_STACK_LINE(137)
+					HX_STACK_LINE(143)
 					address = HX_CSTRING("R2");
 				}
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_OUT)){
-				HX_STACK_LINE(140)
+				HX_STACK_LINE(146)
 				opcode = HX_CSTRING("OUT");
-				HX_STACK_LINE(141)
+				HX_STACK_LINE(147)
 				::String _switch_6 = (addr);
 				if (  ( _switch_6==HX_CSTRING(""))){
-					HX_STACK_LINE(143)
+					HX_STACK_LINE(149)
 					addr = HX_CSTRING("0000");
-					HX_STACK_LINE(144)
+					HX_STACK_LINE(150)
 					address = HX_CSTRING("A");
 				}
 				else if (  ( _switch_6==::AppConstants_obj::ADDRESS_ACCUMULATOR)){
-					HX_STACK_LINE(146)
+					HX_STACK_LINE(152)
 					address = HX_CSTRING("A");
 				}
 				else if (  ( _switch_6==::AppConstants_obj::ADDRESS_REGISTER1)){
-					HX_STACK_LINE(148)
+					HX_STACK_LINE(154)
 					address = HX_CSTRING("R1");
 				}
 				else if (  ( _switch_6==::AppConstants_obj::ADDRESS_REGISTER2)){
-					HX_STACK_LINE(150)
+					HX_STACK_LINE(156)
 					address = HX_CSTRING("R2");
 				}
 			}
 			else if (  ( _switch_2==::AppConstants_obj::OPCODE_JE)){
-				HX_STACK_LINE(153)
-				opcode = HX_CSTRING("JE");
-				struct _Function_3_1{
-					inline static Float Block( ::String &addr){
-						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",154,0xbe0d2423)
-						{
-							HX_STACK_LINE(154)
-							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
-							HX_STACK_LINE(154)
-							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-						}
-						return null();
-					}
-				};
-				HX_STACK_LINE(154)
-				::String _g5 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g5,"_g5");
-				HX_STACK_LINE(154)
-				address = _g5;
-			}
-			else if (  ( _switch_2==::AppConstants_obj::OPCODE_JNE)){
-				HX_STACK_LINE(156)
-				opcode = HX_CSTRING("JNE");
-				struct _Function_3_1{
-					inline static Float Block( ::String &addr){
-						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",157,0xbe0d2423)
-						{
-							HX_STACK_LINE(157)
-							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
-							HX_STACK_LINE(157)
-							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-						}
-						return null();
-					}
-				};
-				HX_STACK_LINE(157)
-				::String _g6 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g6,"_g6");
-				HX_STACK_LINE(157)
-				address = _g6;
-			}
-			else if (  ( _switch_2==::AppConstants_obj::OPCODE_JMP)){
 				HX_STACK_LINE(159)
-				opcode = HX_CSTRING("JMP");
+				opcode = HX_CSTRING("JE");
 				struct _Function_3_1{
 					inline static Float Block( ::String &addr){
 						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",160,0xbe0d2423)
@@ -473,28 +433,68 @@ Void EnterInstructionMediator_obj::dataEventHandler( ::events::AppEvent event){
 					}
 				};
 				HX_STACK_LINE(160)
-				::String _g7 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g7,"_g7");
+				::String _g5 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g5,"_g5");
 				HX_STACK_LINE(160)
+				address = _g5;
+			}
+			else if (  ( _switch_2==::AppConstants_obj::OPCODE_JNE)){
+				HX_STACK_LINE(162)
+				opcode = HX_CSTRING("JNE");
+				struct _Function_3_1{
+					inline static Float Block( ::String &addr){
+						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",163,0xbe0d2423)
+						{
+							HX_STACK_LINE(163)
+							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
+							HX_STACK_LINE(163)
+							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+						}
+						return null();
+					}
+				};
+				HX_STACK_LINE(163)
+				::String _g6 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g6,"_g6");
+				HX_STACK_LINE(163)
+				address = _g6;
+			}
+			else if (  ( _switch_2==::AppConstants_obj::OPCODE_JMP)){
+				HX_STACK_LINE(165)
+				opcode = HX_CSTRING("JMP");
+				struct _Function_3_1{
+					inline static Float Block( ::String &addr){
+						HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/mediator/EnterInstructionMediator.hx",166,0xbe0d2423)
+						{
+							HX_STACK_LINE(166)
+							int _int = ::utilities::NumberFormat_obj::binaryToDecimal(addr)->dec;		HX_STACK_VAR(_int,"int");
+							HX_STACK_LINE(166)
+							return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+						}
+						return null();
+					}
+				};
+				HX_STACK_LINE(166)
+				::String _g7 = ::Std_obj::string(_Function_3_1::Block(addr));		HX_STACK_VAR(_g7,"_g7");
+				HX_STACK_LINE(166)
 				address = _g7;
 			}
-			HX_STACK_LINE(162)
+			HX_STACK_LINE(168)
 			this->getView()->setTfOpcode(opcode);
-			HX_STACK_LINE(163)
+			HX_STACK_LINE(169)
 			this->getView()->setTfAddress(address);
-			HX_STACK_LINE(164)
+			HX_STACK_LINE(170)
 			if (((bool((opcode != HX_CSTRING("?"))) && bool((address != HX_CSTRING("?")))))){
-				HX_STACK_LINE(165)
+				HX_STACK_LINE(171)
 				::model::vo::InstructionVO vo = ::model::vo::InstructionVO_obj::__new((int)0,((opcode + HX_CSTRING(" ")) + address));		HX_STACK_VAR(vo,"vo");
-				HX_STACK_LINE(166)
+				HX_STACK_LINE(172)
 				this->programProxy->setManualInstruction(vo);
-				HX_STACK_LINE(167)
+				HX_STACK_LINE(173)
 				this->appProxy->setEnterInstructionOutputValid(true);
 			}
-			HX_STACK_LINE(169)
+			HX_STACK_LINE(175)
 			this->clockProxy->setClockOff();
-			HX_STACK_LINE(170)
+			HX_STACK_LINE(176)
 			bool _g8 = this->clockProxy->getClockOn();		HX_STACK_VAR(_g8,"_g8");
-			HX_STACK_LINE(170)
+			HX_STACK_LINE(176)
 			this->sendNotification(::AppConstants_obj::CLOCK_SIGNAL,_g8,null());
 		}
 	}
@@ -506,11 +506,11 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstructionMediator_obj,dataEventHandler,(void))
 
 Void EnterInstructionMediator_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","destroy",0x7792a727,"view.mediator.EnterInstructionMediator.destroy","view/mediator/EnterInstructionMediator.hx",174,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","destroy",0x7792a727,"view.mediator.EnterInstructionMediator.destroy","view/mediator/EnterInstructionMediator.hx",180,0xbe0d2423)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(175)
+		HX_STACK_LINE(181)
 		this->appProxy->setEnterInstructionActive(false);
-		HX_STACK_LINE(176)
+		HX_STACK_LINE(182)
 		this->get_facade()->removeMediator(HX_CSTRING("EnterInstructionMediator"));
 	}
 return null();
@@ -521,10 +521,10 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstructionMediator_obj,destroy,(void))
 
 Void EnterInstructionMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","viewReadyHandler",0xa183b3df,"view.mediator.EnterInstructionMediator.viewReadyHandler","view/mediator/EnterInstructionMediator.hx",180,0xbe0d2423)
+		HX_STACK_FRAME("view.mediator.EnterInstructionMediator","viewReadyHandler",0xa183b3df,"view.mediator.EnterInstructionMediator.viewReadyHandler","view/mediator/EnterInstructionMediator.hx",186,0xbe0d2423)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(180)
+		HX_STACK_LINE(186)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("EnterInstructionMediator"));
 	}
 return null();
@@ -534,9 +534,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(EnterInstructionMediator_obj,viewReadyHandler,(void))
 
 ::view::component::EnterInstruction EnterInstructionMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.EnterInstructionMediator","getView",0x73de5c48,"view.mediator.EnterInstructionMediator.getView","view/mediator/EnterInstructionMediator.hx",184,0xbe0d2423)
+	HX_STACK_FRAME("view.mediator.EnterInstructionMediator","getView",0x73de5c48,"view.mediator.EnterInstructionMediator.getView","view/mediator/EnterInstructionMediator.hx",190,0xbe0d2423)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(184)
+	HX_STACK_LINE(190)
 	return this->viewComponent;
 }
 

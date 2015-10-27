@@ -71,11 +71,13 @@ namespace mediator{
 
 Void EditRomMediator_obj::__construct(::view::component::EditRom viewComponent)
 {
-HX_STACK_FRAME("view.mediator.EditRomMediator","new",0x25f67fb9,"view.mediator.EditRomMediator.new","view/mediator/EditRomMediator.hx",16,0x86ba89b7)
+HX_STACK_FRAME("view.mediator.EditRomMediator","new",0x25f67fb9,"view.mediator.EditRomMediator.new","view/mediator/EditRomMediator.hx",15,0x86ba89b7)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(19)
+	this->newProgramPointer = (int)0;
+	HX_STACK_LINE(22)
 	super::__construct(HX_CSTRING("EditRomMediator"),viewComponent);
 }
 ;
@@ -97,21 +99,21 @@ Dynamic EditRomMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void EditRomMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","onRegister",0xbf815869,"view.mediator.EditRomMediator.onRegister","view/mediator/EditRomMediator.hx",19,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","onRegister",0xbf815869,"view.mediator.EditRomMediator.onRegister","view/mediator/EditRomMediator.hx",25,0x86ba89b7)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->getView()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::model::proxy::ProgramProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		_g = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		this->programProxy = _g;
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		::view::component::EditRom _g1 = this->getView();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->sendNotification(::AppConstants_obj::ADD_TO_NAVIG_VIEW,_g1,null());
 	}
 return null();
@@ -120,9 +122,9 @@ return null();
 
 Void EditRomMediator_obj::onRemove( ){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","onRemove",0x1d3ba0ca,"view.mediator.EditRomMediator.onRemove","view/mediator/EditRomMediator.hx",27,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","onRemove",0x1d3ba0ca,"view.mediator.EditRomMediator.onRemove","view/mediator/EditRomMediator.hx",33,0x86ba89b7)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->getView()->destroy();
 	}
 return null();
@@ -130,16 +132,16 @@ return null();
 
 
 Array< ::String > EditRomMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.EditRomMediator","listNotificationInterests",0xc23b82f9,"view.mediator.EditRomMediator.listNotificationInterests","view/mediator/EditRomMediator.hx",31,0x86ba89b7)
+	HX_STACK_FRAME("view.mediator.EditRomMediator","listNotificationInterests",0xc23b82f9,"view.mediator.EditRomMediator.listNotificationInterests","view/mediator/EditRomMediator.hx",37,0x86ba89b7)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(37)
 	return Array_obj< ::String >::__new();
 }
 
 
 Void EditRomMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","handleNotification",0x569e1f7a,"view.mediator.EditRomMediator.handleNotification","view/mediator/EditRomMediator.hx",34,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","handleNotification",0x569e1f7a,"view.mediator.EditRomMediator.handleNotification","view/mediator/EditRomMediator.hx",40,0x86ba89b7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
 	}
@@ -149,33 +151,33 @@ return null();
 
 Void EditRomMediator_obj::dataEventHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","dataEventHandler",0x2c3bcd21,"view.mediator.EditRomMediator.dataEventHandler","view/mediator/EditRomMediator.hx",38,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","dataEventHandler",0x2c3bcd21,"view.mediator.EditRomMediator.dataEventHandler","view/mediator/EditRomMediator.hx",44,0x86ba89b7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		Dynamic _g = event->data->__Field(HX_CSTRING("id"),true);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		Dynamic _switch_1 = (_g);
 		if (  ( _switch_1==HX_CSTRING("okButton"))){
-			HX_STACK_LINE(40)
+			HX_STACK_LINE(46)
 			this->sendNotification(::AppConstants_obj::PROGRAM_CHANGED,this->newProgramPointer,null());
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			this->get_facade()->removeMediator(HX_CSTRING("EditRomMediator"));
 		}
 		else if (  ( _switch_1==HX_CSTRING("cancelButton"))){
-			HX_STACK_LINE(43)
+			HX_STACK_LINE(49)
 			this->get_facade()->removeMediator(HX_CSTRING("EditRomMediator"));
 		}
 		else if (  ( _switch_1==HX_CSTRING("sample1Button"))){
-			HX_STACK_LINE(45)
+			HX_STACK_LINE(51)
 			this->populateRomRows((int)0);
 		}
 		else if (  ( _switch_1==HX_CSTRING("sample2Button"))){
-			HX_STACK_LINE(47)
+			HX_STACK_LINE(53)
 			this->populateRomRows((int)1);
 		}
 		else if (  ( _switch_1==HX_CSTRING("sample3Button"))){
-			HX_STACK_LINE(49)
+			HX_STACK_LINE(55)
 			this->populateRomRows((int)2);
 		}
 	}
@@ -187,16 +189,16 @@ HX_DEFINE_DYNAMIC_FUNC1(EditRomMediator_obj,dataEventHandler,(void))
 
 Void EditRomMediator_obj::populateRomRows( int id){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","populateRomRows",0x1b539658,"view.mediator.EditRomMediator.populateRomRows","view/mediator/EditRomMediator.hx",53,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","populateRomRows",0x1b539658,"view.mediator.EditRomMediator.populateRomRows","view/mediator/EditRomMediator.hx",59,0x86ba89b7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->newProgramPointer = id;
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		this->getView()->setActiveSample((id + (int)1));
-		HX_STACK_LINE(56)
+		HX_STACK_LINE(62)
 		Array< ::Dynamic > _g = this->programProxy->getInstructionsByProgramPointer(id);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(56)
+		HX_STACK_LINE(62)
 		this->getView()->populateRomRows(_g);
 	}
 return null();
@@ -207,20 +209,20 @@ HX_DEFINE_DYNAMIC_FUNC1(EditRomMediator_obj,populateRomRows,(void))
 
 Void EditRomMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.EditRomMediator","viewReadyHandler",0x133648b3,"view.mediator.EditRomMediator.viewReadyHandler","view/mediator/EditRomMediator.hx",59,0x86ba89b7)
+		HX_STACK_FRAME("view.mediator.EditRomMediator","viewReadyHandler",0x133648b3,"view.mediator.EditRomMediator.viewReadyHandler","view/mediator/EditRomMediator.hx",65,0x86ba89b7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		int _g = this->programProxy->getProgramPointer();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		int _g1 = (_g + (int)1);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		this->getView()->setActiveSample(_g1);
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		Array< ::Dynamic > _g2 = this->programProxy->getCurrentInstructions();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		this->getView()->populateRomRows(_g2);
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("EditRomMediator"));
 	}
 return null();
@@ -230,9 +232,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(EditRomMediator_obj,viewReadyHandler,(void))
 
 ::view::component::EditRom EditRomMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.EditRomMediator","getView",0x1da1b1f4,"view.mediator.EditRomMediator.getView","view/mediator/EditRomMediator.hx",66,0x86ba89b7)
+	HX_STACK_FRAME("view.mediator.EditRomMediator","getView",0x1da1b1f4,"view.mediator.EditRomMediator.getView","view/mediator/EditRomMediator.hx",72,0x86ba89b7)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(66)
+	HX_STACK_LINE(72)
 	return this->viewComponent;
 }
 

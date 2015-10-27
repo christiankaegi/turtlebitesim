@@ -37,10 +37,10 @@ namespace controller{
 
 Void ProgramChangedCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.ProgramChangedCommand","new",0x9582b05b,"controller.ProgramChangedCommand.new","controller/ProgramChangedCommand.hx",9,0xaf020e76)
+HX_STACK_FRAME("controller.ProgramChangedCommand","new",0x9582b05b,"controller.ProgramChangedCommand.new","controller/ProgramChangedCommand.hx",15,0xaf020e76)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	super::__construct();
 }
 ;
@@ -62,24 +62,24 @@ Dynamic ProgramChangedCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void ProgramChangedCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.ProgramChangedCommand","execute",0x712b03b0,"controller.ProgramChangedCommand.execute","controller/ProgramChangedCommand.hx",12,0xaf020e76)
+		HX_STACK_FRAME("controller.ProgramChangedCommand","execute",0x712b03b0,"controller.ProgramChangedCommand.execute","controller/ProgramChangedCommand.hx",18,0xaf020e76)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(14)
+		HX_STACK_LINE(20)
 		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(14)
+		HX_STACK_LINE(20)
 		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		int programPointer = note->getBody();		HX_STACK_VAR(programPointer,"programPointer");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		int _g = programProxy->getProgramPointer();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		if (((_g != programPointer))){
-			HX_STACK_LINE(18)
+			HX_STACK_LINE(24)
 			programProxy->setProgramPointer(programPointer);
-			HX_STACK_LINE(19)
+			HX_STACK_LINE(25)
 			this->sendNotification(::AppConstants_obj::RESET,null(),null());
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			this->sendNotification(::AppConstants_obj::LOAD_ROM,programPointer,null());
 		}
 	}

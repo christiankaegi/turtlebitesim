@@ -56,24 +56,24 @@ namespace elements{
 
 Void OneBitMemory_obj::__construct(bool inputActive,bool setActive)
 {
-HX_STACK_FRAME("view.elements.OneBitMemory","new",0x68cc6c48,"view.elements.OneBitMemory.new","view/elements/OneBitMemory.hx",38,0xd66d1848)
+HX_STACK_FRAME("view.elements.OneBitMemory","new",0x68cc6c48,"view.elements.OneBitMemory.new","view/elements/OneBitMemory.hx",44,0xd66d1848)
 HX_STACK_THIS(this)
 HX_STACK_ARG(inputActive,"inputActive")
 HX_STACK_ARG(setActive,"setActive")
 {
-	HX_STACK_LINE(39)
+	HX_STACK_LINE(45)
 	super::__construct();
-	HX_STACK_LINE(40)
+	HX_STACK_LINE(46)
 	this->inputActive = inputActive;
-	HX_STACK_LINE(41)
+	HX_STACK_LINE(47)
 	this->setActive = setActive;
-	HX_STACK_LINE(42)
+	HX_STACK_LINE(48)
 	::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(42)
+	HX_STACK_LINE(48)
 	this->bmpContainer = _g;
-	HX_STACK_LINE(43)
+	HX_STACK_LINE(49)
 	this->addChild(this->bmpContainer);
-	HX_STACK_LINE(44)
+	HX_STACK_LINE(50)
 	this->addEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -95,36 +95,36 @@ Dynamic OneBitMemory_obj::__Create(hx::DynamicArray inArgs)
 
 Void OneBitMemory_obj::addedToStageHandler( ::openfl::_legacy::events::Event event){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","addedToStageHandler",0x62b1038f,"view.elements.OneBitMemory.addedToStageHandler","view/elements/OneBitMemory.hx",47,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","addedToStageHandler",0x62b1038f,"view.elements.OneBitMemory.addedToStageHandler","view/elements/OneBitMemory.hx",53,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(48)
-		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(49)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_bottomLayer2048.png")),this->bottomLayerLoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(50)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate1_out.png")),this->gate1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(51)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate2_out.png")),this->gate2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(52)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate3_out.png")),this->gate3LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(53)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate4_out.png")),this->gate4LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(54)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_input.png")),this->inputLoadCompleteHandler_dyn(),null());
+		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
 		HX_STACK_LINE(55)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_set.png")),this->setLoadCompleteHandler_dyn(),null());
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_bottomLayer2048.png")),this->bottomLayerLoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(56)
-		this->showGate1Line();
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate1_out.png")),this->gate1LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(57)
-		this->showGate3Line();
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate2_out.png")),this->gate2LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(58)
-		this->showGate4Line();
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate3_out.png")),this->gate3LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(59)
-		this->setStatus(this->inputActive,this->setActive);
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_gate4_out.png")),this->gate4LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(60)
-		this->createInputButton();
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_input.png")),this->inputLoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(61)
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_1Bit_set.png")),this->setLoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(62)
+		this->showGate1Line();
+		HX_STACK_LINE(63)
+		this->showGate3Line();
+		HX_STACK_LINE(64)
+		this->showGate4Line();
+		HX_STACK_LINE(65)
+		this->setStatus(this->inputActive,this->setActive);
+		HX_STACK_LINE(66)
+		this->createInputButton();
+		HX_STACK_LINE(67)
 		this->createSetButton();
 	}
 return null();
@@ -135,18 +135,18 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,addedToStageHandler,(void))
 
 Void OneBitMemory_obj::bottomLayerLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","bottomLayerLoadCompleteHandler",0xe8b16e5d,"view.elements.OneBitMemory.bottomLayerLoadCompleteHandler","view/elements/OneBitMemory.hx",65,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","bottomLayerLoadCompleteHandler",0xe8b16e5d,"view.elements.OneBitMemory.bottomLayerLoadCompleteHandler","view/elements/OneBitMemory.hx",71,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->bottomLayerBmpData = bmd;
-		HX_STACK_LINE(67)
-		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->bottomLayerBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(67)
-		this->bottomLayer = _g;
-		HX_STACK_LINE(68)
-		this->bottomLayer->set_name(HX_CSTRING("bottomLayer"));
 		HX_STACK_LINE(73)
+		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->bottomLayerBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(73)
+		this->bottomLayer = _g;
+		HX_STACK_LINE(74)
+		this->bottomLayer->set_name(HX_CSTRING("bottomLayer"));
+		HX_STACK_LINE(79)
 		this->bmpContainer->addChild(this->bottomLayer);
 	}
 return null();
@@ -157,20 +157,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,bottomLayerLoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::gate1LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","gate1LoadCompleteHandler",0x00645f7d,"view.elements.OneBitMemory.gate1LoadCompleteHandler","view/elements/OneBitMemory.hx",76,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","gate1LoadCompleteHandler",0x00645f7d,"view.elements.OneBitMemory.gate1LoadCompleteHandler","view/elements/OneBitMemory.hx",82,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		this->gate1BmpData = bmd;
-		HX_STACK_LINE(78)
+		HX_STACK_LINE(84)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->gate1BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(78)
+		HX_STACK_LINE(84)
 		this->gate1 = _g;
-		HX_STACK_LINE(79)
+		HX_STACK_LINE(85)
 		this->gate1->set_name(HX_CSTRING("gate1"));
-		HX_STACK_LINE(80)
+		HX_STACK_LINE(86)
 		Float _g1 = this->gate1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(80)
+		HX_STACK_LINE(86)
 		this->gate1->set_scaleX(_g1);
 	}
 return null();
@@ -181,20 +181,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,gate1LoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::gate2LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","gate2LoadCompleteHandler",0x66c9041c,"view.elements.OneBitMemory.gate2LoadCompleteHandler","view/elements/OneBitMemory.hx",83,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","gate2LoadCompleteHandler",0x66c9041c,"view.elements.OneBitMemory.gate2LoadCompleteHandler","view/elements/OneBitMemory.hx",89,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(84)
+		HX_STACK_LINE(90)
 		this->gate2BmpData = bmd;
-		HX_STACK_LINE(85)
+		HX_STACK_LINE(91)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->gate2BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(85)
+		HX_STACK_LINE(91)
 		this->gate2 = _g;
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		this->gate2->set_name(HX_CSTRING("gate2"));
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		Float _g1 = this->gate2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		this->gate2->set_scaleX(_g1);
 	}
 return null();
@@ -205,20 +205,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,gate2LoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::gate3LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","gate3LoadCompleteHandler",0xcd2da8bb,"view.elements.OneBitMemory.gate3LoadCompleteHandler","view/elements/OneBitMemory.hx",90,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","gate3LoadCompleteHandler",0xcd2da8bb,"view.elements.OneBitMemory.gate3LoadCompleteHandler","view/elements/OneBitMemory.hx",96,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(91)
+		HX_STACK_LINE(97)
 		this->gate3BmpData = bmd;
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->gate3BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		this->gate3 = _g;
-		HX_STACK_LINE(93)
+		HX_STACK_LINE(99)
 		this->gate3->set_name(HX_CSTRING("gate3"));
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		Float _g1 = this->gate3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		this->gate3->set_scaleX(_g1);
 	}
 return null();
@@ -229,20 +229,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,gate3LoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::gate4LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","gate4LoadCompleteHandler",0x33924d5a,"view.elements.OneBitMemory.gate4LoadCompleteHandler","view/elements/OneBitMemory.hx",97,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","gate4LoadCompleteHandler",0x33924d5a,"view.elements.OneBitMemory.gate4LoadCompleteHandler","view/elements/OneBitMemory.hx",103,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(98)
+		HX_STACK_LINE(104)
 		this->gate4BmpData = bmd;
-		HX_STACK_LINE(99)
+		HX_STACK_LINE(105)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->gate4BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(99)
+		HX_STACK_LINE(105)
 		this->gate4 = _g;
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		this->gate4->set_name(HX_CSTRING("gate4"));
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(107)
 		Float _g1 = this->gate4->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(107)
 		this->gate4->set_scaleX(_g1);
 	}
 return null();
@@ -253,20 +253,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,gate4LoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::inputLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","inputLoadCompleteHandler",0xb146a5b9,"view.elements.OneBitMemory.inputLoadCompleteHandler","view/elements/OneBitMemory.hx",104,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","inputLoadCompleteHandler",0xb146a5b9,"view.elements.OneBitMemory.inputLoadCompleteHandler","view/elements/OneBitMemory.hx",110,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		this->inputBmpData = bmd;
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->inputBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		this->input = _g;
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(113)
 		this->input->set_name(HX_CSTRING("input"));
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		Float _g1 = this->input->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		this->input->set_scaleX(_g1);
 	}
 return null();
@@ -277,20 +277,20 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,inputLoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::setLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","setLoadCompleteHandler",0x63977721,"view.elements.OneBitMemory.setLoadCompleteHandler","view/elements/OneBitMemory.hx",111,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","setLoadCompleteHandler",0x63977721,"view.elements.OneBitMemory.setLoadCompleteHandler","view/elements/OneBitMemory.hx",117,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(118)
 		this->setBmpData = bmd;
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(this->setBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		this->set = _g;
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		this->set->set_name(HX_CSTRING("set"));
-		HX_STACK_LINE(115)
+		HX_STACK_LINE(121)
 		Float _g1 = this->set->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(115)
+		HX_STACK_LINE(121)
 		this->set->set_scaleX(_g1);
 	}
 return null();
@@ -301,25 +301,25 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,setLoadCompleteHandler,(void))
 
 Void OneBitMemory_obj::createInputButton( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","createInputButton",0xc9efb9e8,"view.elements.OneBitMemory.createInputButton","view/elements/OneBitMemory.hx",118,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","createInputButton",0xc9efb9e8,"view.elements.OneBitMemory.createInputButton","view/elements/OneBitMemory.hx",124,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(119)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)100 * ::AppConstants_obj::SCALE_FACTOR),((int)60 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
-		HX_STACK_LINE(120)
-		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(120)
-		this->inputButton = _g;
-		HX_STACK_LINE(121)
-		this->inputButton->addChild(s);
-		HX_STACK_LINE(122)
-		this->inputButton->buttonMode = true;
-		HX_STACK_LINE(123)
-		this->inputButton->set_x(((int)30 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(124)
-		this->inputButton->set_y(((int)98 * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(125)
-		this->inputButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->inputButtonEventHandler_dyn(),null(),null(),null());
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)100 * ::AppConstants_obj::SCALE_FACTOR),((int)60 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(126)
+		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(126)
+		this->inputButton = _g;
+		HX_STACK_LINE(127)
+		this->inputButton->addChild(s);
+		HX_STACK_LINE(128)
+		this->inputButton->buttonMode = true;
+		HX_STACK_LINE(129)
+		this->inputButton->set_x(((int)30 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(130)
+		this->inputButton->set_y(((int)98 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(131)
+		this->inputButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->inputButtonEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(132)
 		this->addChild(this->inputButton);
 	}
 return null();
@@ -330,25 +330,25 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,createInputButton,(void))
 
 Void OneBitMemory_obj::createSetButton( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","createSetButton",0xd9636880,"view.elements.OneBitMemory.createSetButton","view/elements/OneBitMemory.hx",129,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","createSetButton",0xd9636880,"view.elements.OneBitMemory.createSetButton","view/elements/OneBitMemory.hx",135,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(130)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)100 * ::AppConstants_obj::SCALE_FACTOR),((int)60 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
-		HX_STACK_LINE(131)
-		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(131)
-		this->setButton = _g;
-		HX_STACK_LINE(132)
-		this->setButton->addChild(s);
-		HX_STACK_LINE(133)
-		this->setButton->buttonMode = true;
-		HX_STACK_LINE(134)
-		this->setButton->set_x(((int)30 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(135)
-		this->setButton->set_y(((int)210 * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(136)
-		this->setButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->setButtonEventHandler_dyn(),null(),null(),null());
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)100 * ::AppConstants_obj::SCALE_FACTOR),((int)60 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(137)
+		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(137)
+		this->setButton = _g;
+		HX_STACK_LINE(138)
+		this->setButton->addChild(s);
+		HX_STACK_LINE(139)
+		this->setButton->buttonMode = true;
+		HX_STACK_LINE(140)
+		this->setButton->set_x(((int)30 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(141)
+		this->setButton->set_y(((int)210 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(142)
+		this->setButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->setButtonEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(143)
 		this->addChild(this->setButton);
 	}
 return null();
@@ -359,38 +359,7 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,createSetButton,(void))
 
 Void OneBitMemory_obj::inputButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","inputButtonEventHandler",0x59622a74,"view.elements.OneBitMemory.inputButtonEventHandler","view/elements/OneBitMemory.hx",140,0xd66d1848)
-		HX_STACK_THIS(this)
-		HX_STACK_ARG(event,"event")
-		struct _Function_1_1{
-			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/OneBitMemory.hx",141,0xd66d1848)
-				{
-					hx::Anon __result = hx::Anon_obj::Create();
-					__result->Add(HX_CSTRING("id") , HX_CSTRING("oneBitMemoryManualMode"),false);
-					return __result;
-				}
-				return null();
-			}
-		};
-		HX_STACK_LINE(141)
-		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(141)
-		this->dispatchEvent(_g);
-		HX_STACK_LINE(142)
-		this->inputActive = !(this->inputActive);
-		HX_STACK_LINE(143)
-		this->setStatus(this->inputActive,this->setActive);
-	}
-return null();
-}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,inputButtonEventHandler,(void))
-
-Void OneBitMemory_obj::setButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
-{
-		HX_STACK_FRAME("view.elements.OneBitMemory","setButtonEventHandler",0xc05a7e0c,"view.elements.OneBitMemory.setButtonEventHandler","view/elements/OneBitMemory.hx",146,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","inputButtonEventHandler",0x59622a74,"view.elements.OneBitMemory.inputButtonEventHandler","view/elements/OneBitMemory.hx",146,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
@@ -409,8 +378,39 @@ Void OneBitMemory_obj::setButtonEventHandler( ::openfl::_legacy::events::MouseEv
 		HX_STACK_LINE(147)
 		this->dispatchEvent(_g);
 		HX_STACK_LINE(148)
-		this->setActive = !(this->setActive);
+		this->inputActive = !(this->inputActive);
 		HX_STACK_LINE(149)
+		this->setStatus(this->inputActive,this->setActive);
+	}
+return null();
+}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,inputButtonEventHandler,(void))
+
+Void OneBitMemory_obj::setButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
+{
+		HX_STACK_FRAME("view.elements.OneBitMemory","setButtonEventHandler",0xc05a7e0c,"view.elements.OneBitMemory.setButtonEventHandler","view/elements/OneBitMemory.hx",152,0xd66d1848)
+		HX_STACK_THIS(this)
+		HX_STACK_ARG(event,"event")
+		struct _Function_1_1{
+			inline static Dynamic Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/OneBitMemory.hx",153,0xd66d1848)
+				{
+					hx::Anon __result = hx::Anon_obj::Create();
+					__result->Add(HX_CSTRING("id") , HX_CSTRING("oneBitMemoryManualMode"),false);
+					return __result;
+				}
+				return null();
+			}
+		};
+		HX_STACK_LINE(153)
+		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(153)
+		this->dispatchEvent(_g);
+		HX_STACK_LINE(154)
+		this->setActive = !(this->setActive);
+		HX_STACK_LINE(155)
 		this->setStatus(this->inputActive,this->setActive);
 	}
 return null();
@@ -421,11 +421,11 @@ HX_DEFINE_DYNAMIC_FUNC1(OneBitMemory_obj,setButtonEventHandler,(void))
 
 Void OneBitMemory_obj::showGate1Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showGate1Line",0x414a0005,"view.elements.OneBitMemory.showGate1Line","view/elements/OneBitMemory.hx",152,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showGate1Line",0x414a0005,"view.elements.OneBitMemory.showGate1Line","view/elements/OneBitMemory.hx",158,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(153)
+		HX_STACK_LINE(159)
 		this->hideGate1Line();
-		HX_STACK_LINE(154)
+		HX_STACK_LINE(160)
 		this->bmpContainer->addChild(this->gate1);
 	}
 return null();
@@ -436,15 +436,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showGate1Line,(void))
 
 Void OneBitMemory_obj::hideGate1Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate1Line",0x74f8ffa0,"view.elements.OneBitMemory.hideGate1Line","view/elements/OneBitMemory.hx",157,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate1Line",0x74f8ffa0,"view.elements.OneBitMemory.hideGate1Line","view/elements/OneBitMemory.hx",163,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(158)
+		HX_STACK_LINE(164)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("gate1"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(158)
+		HX_STACK_LINE(164)
 		if (((_g != null()))){
-			HX_STACK_LINE(159)
+			HX_STACK_LINE(165)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("gate1"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(159)
+			HX_STACK_LINE(165)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -456,11 +456,11 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideGate1Line,(void))
 
 Void OneBitMemory_obj::showGate2Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showGate2Line",0xd4b09486,"view.elements.OneBitMemory.showGate2Line","view/elements/OneBitMemory.hx",163,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showGate2Line",0xd4b09486,"view.elements.OneBitMemory.showGate2Line","view/elements/OneBitMemory.hx",169,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(164)
+		HX_STACK_LINE(170)
 		this->hideGate2Line();
-		HX_STACK_LINE(165)
+		HX_STACK_LINE(171)
 		this->bmpContainer->addChild(this->gate2);
 	}
 return null();
@@ -471,15 +471,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showGate2Line,(void))
 
 Void OneBitMemory_obj::hideGate2Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate2Line",0x085f9421,"view.elements.OneBitMemory.hideGate2Line","view/elements/OneBitMemory.hx",168,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate2Line",0x085f9421,"view.elements.OneBitMemory.hideGate2Line","view/elements/OneBitMemory.hx",174,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(169)
+		HX_STACK_LINE(175)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("gate2"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(169)
+		HX_STACK_LINE(175)
 		if (((_g != null()))){
-			HX_STACK_LINE(170)
+			HX_STACK_LINE(176)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("gate2"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(170)
+			HX_STACK_LINE(176)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -491,11 +491,11 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideGate2Line,(void))
 
 Void OneBitMemory_obj::showGate3Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showGate3Line",0x68172907,"view.elements.OneBitMemory.showGate3Line","view/elements/OneBitMemory.hx",174,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showGate3Line",0x68172907,"view.elements.OneBitMemory.showGate3Line","view/elements/OneBitMemory.hx",180,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(175)
+		HX_STACK_LINE(181)
 		this->hideGate3Line();
-		HX_STACK_LINE(176)
+		HX_STACK_LINE(182)
 		this->bmpContainer->addChild(this->gate3);
 	}
 return null();
@@ -506,15 +506,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showGate3Line,(void))
 
 Void OneBitMemory_obj::hideGate3Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate3Line",0x9bc628a2,"view.elements.OneBitMemory.hideGate3Line","view/elements/OneBitMemory.hx",179,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate3Line",0x9bc628a2,"view.elements.OneBitMemory.hideGate3Line","view/elements/OneBitMemory.hx",185,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(180)
+		HX_STACK_LINE(186)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("gate3"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(180)
+		HX_STACK_LINE(186)
 		if (((_g != null()))){
-			HX_STACK_LINE(181)
+			HX_STACK_LINE(187)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("gate3"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(181)
+			HX_STACK_LINE(187)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -526,11 +526,11 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideGate3Line,(void))
 
 Void OneBitMemory_obj::showGate4Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showGate4Line",0xfb7dbd88,"view.elements.OneBitMemory.showGate4Line","view/elements/OneBitMemory.hx",185,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showGate4Line",0xfb7dbd88,"view.elements.OneBitMemory.showGate4Line","view/elements/OneBitMemory.hx",191,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(186)
+		HX_STACK_LINE(192)
 		this->hideGate4Line();
-		HX_STACK_LINE(187)
+		HX_STACK_LINE(193)
 		this->bmpContainer->addChild(this->gate4);
 	}
 return null();
@@ -541,15 +541,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showGate4Line,(void))
 
 Void OneBitMemory_obj::hideGate4Line( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate4Line",0x2f2cbd23,"view.elements.OneBitMemory.hideGate4Line","view/elements/OneBitMemory.hx",190,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideGate4Line",0x2f2cbd23,"view.elements.OneBitMemory.hideGate4Line","view/elements/OneBitMemory.hx",196,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(191)
+		HX_STACK_LINE(197)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("gate4"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(191)
+		HX_STACK_LINE(197)
 		if (((_g != null()))){
-			HX_STACK_LINE(192)
+			HX_STACK_LINE(198)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("gate4"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(192)
+			HX_STACK_LINE(198)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -561,11 +561,11 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideGate4Line,(void))
 
 Void OneBitMemory_obj::showInputLine( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showInputLine",0x21f56649,"view.elements.OneBitMemory.showInputLine","view/elements/OneBitMemory.hx",200,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showInputLine",0x21f56649,"view.elements.OneBitMemory.showInputLine","view/elements/OneBitMemory.hx",206,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(201)
+		HX_STACK_LINE(207)
 		this->hideInputLine();
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		this->bmpContainer->addChild(this->input);
 	}
 return null();
@@ -576,15 +576,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showInputLine,(void))
 
 Void OneBitMemory_obj::hideInputLine( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideInputLine",0x55a465e4,"view.elements.OneBitMemory.hideInputLine","view/elements/OneBitMemory.hx",205,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideInputLine",0x55a465e4,"view.elements.OneBitMemory.hideInputLine","view/elements/OneBitMemory.hx",211,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(206)
+		HX_STACK_LINE(212)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("input"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(206)
+		HX_STACK_LINE(212)
 		if (((_g != null()))){
-			HX_STACK_LINE(207)
+			HX_STACK_LINE(213)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("input"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(207)
+			HX_STACK_LINE(213)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -596,11 +596,11 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideInputLine,(void))
 
 Void OneBitMemory_obj::showSetLine( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","showSetLine",0xdfa5b921,"view.elements.OneBitMemory.showSetLine","view/elements/OneBitMemory.hx",211,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","showSetLine",0xdfa5b921,"view.elements.OneBitMemory.showSetLine","view/elements/OneBitMemory.hx",217,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(212)
+		HX_STACK_LINE(218)
 		this->hideSetLine();
-		HX_STACK_LINE(213)
+		HX_STACK_LINE(219)
 		this->bmpContainer->addChild(this->set);
 	}
 return null();
@@ -611,15 +611,15 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,showSetLine,(void))
 
 Void OneBitMemory_obj::hideSetLine( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","hideSetLine",0x00760bfc,"view.elements.OneBitMemory.hideSetLine","view/elements/OneBitMemory.hx",216,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","hideSetLine",0x00760bfc,"view.elements.OneBitMemory.hideSetLine","view/elements/OneBitMemory.hx",222,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(217)
+		HX_STACK_LINE(223)
 		::openfl::_legacy::display::DisplayObject _g = this->bmpContainer->getChildByName(HX_CSTRING("set"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(217)
+		HX_STACK_LINE(223)
 		if (((_g != null()))){
-			HX_STACK_LINE(218)
+			HX_STACK_LINE(224)
 			::openfl::_legacy::display::DisplayObject _g1 = this->bmpContainer->getChildByName(HX_CSTRING("set"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(218)
+			HX_STACK_LINE(224)
 			this->bmpContainer->removeChild(_g1);
 		}
 	}
@@ -631,84 +631,84 @@ HX_DEFINE_DYNAMIC_FUNC0(OneBitMemory_obj,hideSetLine,(void))
 
 Void OneBitMemory_obj::setStatus( bool input,bool set){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","setStatus",0xa675d65c,"view.elements.OneBitMemory.setStatus","view/elements/OneBitMemory.hx",222,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","setStatus",0xa675d65c,"view.elements.OneBitMemory.setStatus","view/elements/OneBitMemory.hx",228,0xd66d1848)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(input,"input")
 		HX_STACK_ARG(set,"set")
-		HX_STACK_LINE(223)
-		this->inputActive = input;
-		HX_STACK_LINE(224)
-		this->setActive = set;
-		HX_STACK_LINE(225)
-		this->hideInputLine();
-		HX_STACK_LINE(226)
-		this->hideSetLine();
-		HX_STACK_LINE(227)
-		this->hideGate1Line();
-		HX_STACK_LINE(228)
-		this->hideGate2Line();
 		HX_STACK_LINE(229)
-		this->hideGate3Line();
+		this->inputActive = input;
 		HX_STACK_LINE(230)
-		this->hideGate4Line();
+		this->setActive = set;
 		HX_STACK_LINE(231)
+		this->hideInputLine();
+		HX_STACK_LINE(232)
+		this->hideSetLine();
+		HX_STACK_LINE(233)
+		this->hideGate1Line();
+		HX_STACK_LINE(234)
+		this->hideGate2Line();
+		HX_STACK_LINE(235)
+		this->hideGate3Line();
+		HX_STACK_LINE(236)
+		this->hideGate4Line();
+		HX_STACK_LINE(237)
 		if (((bool(this->setActive) && bool(this->inputActive)))){
-			HX_STACK_LINE(232)
+			HX_STACK_LINE(238)
 			this->outActive = true;
-			HX_STACK_LINE(233)
+			HX_STACK_LINE(239)
 			this->showInputLine();
-			HX_STACK_LINE(234)
+			HX_STACK_LINE(240)
 			this->showSetLine();
-			HX_STACK_LINE(235)
+			HX_STACK_LINE(241)
 			this->showGate2Line();
-			HX_STACK_LINE(236)
+			HX_STACK_LINE(242)
 			this->showGate3Line();
 		}
 		else{
-			HX_STACK_LINE(237)
+			HX_STACK_LINE(243)
 			if (((bool(this->setActive) && bool(!(this->inputActive))))){
-				HX_STACK_LINE(238)
+				HX_STACK_LINE(244)
 				this->outActive = false;
-				HX_STACK_LINE(239)
+				HX_STACK_LINE(245)
 				this->showSetLine();
-				HX_STACK_LINE(240)
+				HX_STACK_LINE(246)
 				this->showGate1Line();
-				HX_STACK_LINE(241)
+				HX_STACK_LINE(247)
 				this->showGate4Line();
 			}
 			else{
-				HX_STACK_LINE(242)
+				HX_STACK_LINE(248)
 				if (((bool(!(this->setActive)) && bool(this->inputActive)))){
-					HX_STACK_LINE(243)
+					HX_STACK_LINE(249)
 					this->showInputLine();
-					HX_STACK_LINE(244)
+					HX_STACK_LINE(250)
 					this->showGate1Line();
-					HX_STACK_LINE(245)
+					HX_STACK_LINE(251)
 					this->showGate3Line();
-					HX_STACK_LINE(246)
+					HX_STACK_LINE(252)
 					if ((!(this->outActive))){
-						HX_STACK_LINE(247)
+						HX_STACK_LINE(253)
 						this->showGate4Line();
 					}
 					else{
-						HX_STACK_LINE(249)
+						HX_STACK_LINE(255)
 						this->showGate2Line();
 					}
 				}
 				else{
-					HX_STACK_LINE(252)
+					HX_STACK_LINE(258)
 					if (((bool(!(this->setActive)) && bool(!(this->inputActive))))){
-						HX_STACK_LINE(253)
+						HX_STACK_LINE(259)
 						this->showGate1Line();
-						HX_STACK_LINE(254)
+						HX_STACK_LINE(260)
 						this->showGate3Line();
-						HX_STACK_LINE(255)
+						HX_STACK_LINE(261)
 						if ((!(this->outActive))){
-							HX_STACK_LINE(256)
+							HX_STACK_LINE(262)
 							this->showGate4Line();
 						}
 						else{
-							HX_STACK_LINE(258)
+							HX_STACK_LINE(264)
 							this->showGate2Line();
 						}
 					}
@@ -724,71 +724,71 @@ HX_DEFINE_DYNAMIC_FUNC2(OneBitMemory_obj,setStatus,(void))
 
 Void OneBitMemory_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.elements.OneBitMemory","destroy",0xd9dedce2,"view.elements.OneBitMemory.destroy","view/elements/OneBitMemory.hx",263,0xd66d1848)
+		HX_STACK_FRAME("view.elements.OneBitMemory","destroy",0xd9dedce2,"view.elements.OneBitMemory.destroy","view/elements/OneBitMemory.hx",269,0xd66d1848)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(264)
-		this->bottomLayerBmpData->dispose();
-		HX_STACK_LINE(265)
-		this->gate1BmpData->dispose();
-		HX_STACK_LINE(266)
-		this->gate2BmpData->dispose();
-		HX_STACK_LINE(267)
-		this->gate3BmpData->dispose();
-		HX_STACK_LINE(268)
-		this->gate4BmpData->dispose();
-		HX_STACK_LINE(269)
-		this->inputBmpData->dispose();
 		HX_STACK_LINE(270)
+		this->bottomLayerBmpData->dispose();
+		HX_STACK_LINE(271)
+		this->gate1BmpData->dispose();
+		HX_STACK_LINE(272)
+		this->gate2BmpData->dispose();
+		HX_STACK_LINE(273)
+		this->gate3BmpData->dispose();
+		HX_STACK_LINE(274)
+		this->gate4BmpData->dispose();
+		HX_STACK_LINE(275)
+		this->inputBmpData->dispose();
+		HX_STACK_LINE(276)
 		this->setBmpData->dispose();
-		HX_STACK_LINE(271)
+		HX_STACK_LINE(277)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("bottomLayer"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(271)
+		HX_STACK_LINE(277)
 		if (((_g != null()))){
-			HX_STACK_LINE(272)
+			HX_STACK_LINE(278)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("bottomLayer"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(272)
+			HX_STACK_LINE(278)
 			this->removeChild(_g1);
 		}
-		HX_STACK_LINE(274)
+		HX_STACK_LINE(280)
 		{
-			HX_STACK_LINE(274)
+			HX_STACK_LINE(280)
 			int _g1 = (int)1;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(274)
+			HX_STACK_LINE(280)
 			while((true)){
-				HX_STACK_LINE(274)
+				HX_STACK_LINE(280)
 				if ((!(((_g1 < (int)5))))){
-					HX_STACK_LINE(274)
+					HX_STACK_LINE(280)
 					break;
 				}
-				HX_STACK_LINE(274)
+				HX_STACK_LINE(280)
 				int i = (_g1)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(275)
+				HX_STACK_LINE(281)
 				::openfl::_legacy::display::DisplayObject _g2 = this->bmpContainer->getChildByName((HX_CSTRING("gate") + i));		HX_STACK_VAR(_g2,"_g2");
-				HX_STACK_LINE(275)
+				HX_STACK_LINE(281)
 				if (((_g2 != null()))){
-					HX_STACK_LINE(276)
+					HX_STACK_LINE(282)
 					::openfl::_legacy::display::DisplayObject _g3 = this->bmpContainer->getChildByName((HX_CSTRING("gate") + i));		HX_STACK_VAR(_g3,"_g3");
-					HX_STACK_LINE(276)
+					HX_STACK_LINE(282)
 					this->bmpContainer->removeChild(_g3);
 				}
 			}
 		}
-		HX_STACK_LINE(279)
+		HX_STACK_LINE(285)
 		::openfl::_legacy::display::DisplayObject _g4 = this->bmpContainer->getChildByName(HX_CSTRING("input"));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(279)
+		HX_STACK_LINE(285)
 		if (((_g4 != null()))){
-			HX_STACK_LINE(280)
+			HX_STACK_LINE(286)
 			::openfl::_legacy::display::DisplayObject _g5 = this->bmpContainer->getChildByName(HX_CSTRING("input"));		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(280)
+			HX_STACK_LINE(286)
 			this->bmpContainer->removeChild(_g5);
 		}
-		HX_STACK_LINE(282)
+		HX_STACK_LINE(288)
 		this->removeChild(this->inputButton);
-		HX_STACK_LINE(283)
+		HX_STACK_LINE(289)
 		this->removeChild(this->setButton);
-		HX_STACK_LINE(284)
+		HX_STACK_LINE(290)
 		this->hideSetLine();
-		HX_STACK_LINE(285)
+		HX_STACK_LINE(291)
 		this->removeChild(this->bmpContainer);
 	}
 return null();

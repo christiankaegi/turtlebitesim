@@ -51,12 +51,12 @@ namespace lines{
 
 Void BottomLayer_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.BottomLayer","new",0x55a82bcf,"view.component.lines.BottomLayer.new","view/component/lines/BottomLayer.hx",13,0x41f07a84)
+HX_STACK_FRAME("view.component.lines.BottomLayer","new",0x55a82bcf,"view.component.lines.BottomLayer.new","view/component/lines/BottomLayer.hx",19,0x41f07a84)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(20)
 	super::__construct();
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,12 +78,12 @@ Dynamic BottomLayer_obj::__Create(hx::DynamicArray inArgs)
 
 Void BottomLayer_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.BottomLayer","addedToStageHandler",0xedce8116,"view.component.lines.BottomLayer.addedToStageHandler","view/component/lines/BottomLayer.hx",18,0x41f07a84)
+		HX_STACK_FRAME("view.component.lines.BottomLayer","addedToStageHandler",0xedce8116,"view.component.lines.BottomLayer.addedToStageHandler","view/component/lines/BottomLayer.hx",24,0x41f07a84)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/bottom_layer.png")),this->bmpLoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -94,22 +94,22 @@ HX_DEFINE_DYNAMIC_FUNC1(BottomLayer_obj,addedToStageHandler,(void))
 
 Void BottomLayer_obj::bmpLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.BottomLayer","bmpLoadCompleteHandler",0x4c179937,"view.component.lines.BottomLayer.bmpLoadCompleteHandler","view/component/lines/BottomLayer.hx",23,0x41f07a84)
+		HX_STACK_FRAME("view.component.lines.BottomLayer","bmpLoadCompleteHandler",0x4c179937,"view.component.lines.BottomLayer.bmpLoadCompleteHandler","view/component/lines/BottomLayer.hx",29,0x41f07a84)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->bmp = _g;
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		Float _g1 = this->bmp->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->bmp->set_scaleX(_g1);
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->addChild(this->bmp);
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->dispatchEvent(_g2);
 	}
 return null();

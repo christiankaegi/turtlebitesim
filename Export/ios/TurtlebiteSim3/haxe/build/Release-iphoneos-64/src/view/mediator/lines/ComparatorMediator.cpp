@@ -72,11 +72,11 @@ namespace lines{
 
 Void ComparatorMediator_obj::__construct(::view::component::lines::Comparator viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","new",0xaa7e2d5c,"view.mediator.lines.ComparatorMediator.new","view/mediator/lines/ComparatorMediator.hx",14,0x6b1d1013)
+HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","new",0xaa7e2d5c,"view.mediator.lines.ComparatorMediator.new","view/mediator/lines/ComparatorMediator.hx",20,0x6b1d1013)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(20)
 	super::__construct(HX_CSTRING("ComparatorMediator"),viewComponent);
 }
 ;
@@ -98,19 +98,19 @@ Dynamic ComparatorMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void ComparatorMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","onRegister",0x6c17f526,"view.mediator.lines.ComparatorMediator.onRegister","view/mediator/lines/ComparatorMediator.hx",17,0x6b1d1013)
+		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","onRegister",0x6c17f526,"view.mediator.lines.ComparatorMediator.onRegister","view/mediator/lines/ComparatorMediator.hx",23,0x6b1d1013)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->appProxy = _g;
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::view::component::lines::Comparator _g1 = this->getView();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g1,null());
 	}
 return null();
@@ -118,49 +118,49 @@ return null();
 
 
 Array< ::String > ComparatorMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","listNotificationInterests",0x1602c2dc,"view.mediator.lines.ComparatorMediator.listNotificationInterests","view/mediator/lines/ComparatorMediator.hx",24,0x6b1d1013)
+	HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","listNotificationInterests",0x1602c2dc,"view.mediator.lines.ComparatorMediator.listNotificationInterests","view/mediator/lines/ComparatorMediator.hx",30,0x6b1d1013)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::CHANGE_CLOCK_SPEED).Add(::AppConstants_obj::POWER_ON).Add(::AppConstants_obj::POWER_OFF).Add(::AppConstants_obj::MODEL_RESET_COMPLETE).Add(::AppConstants_obj::DETAIL_POPUP_ACTIVE);
 }
 
 
 Void ComparatorMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","handleNotification",0x616b4137,"view.mediator.lines.ComparatorMediator.handleNotification","view/mediator/lines/ComparatorMediator.hx",35,0x6b1d1013)
+		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","handleNotification",0x616b4137,"view.mediator.lines.ComparatorMediator.handleNotification","view/mediator/lines/ComparatorMediator.hx",41,0x6b1d1013)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(38)
+			HX_STACK_LINE(44)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(39)
+				HX_STACK_LINE(45)
 				Dynamic _g1 = note->getBody();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(39)
+				HX_STACK_LINE(45)
 				this->getView()->showLines(_g1);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CHANGE_CLOCK_SPEED)){
-			HX_STACK_LINE(42)
+			HX_STACK_LINE(48)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(44)
+			HX_STACK_LINE(50)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::DETAIL_POPUP_ACTIVE)){
-			HX_STACK_LINE(46)
+			HX_STACK_LINE(52)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_ON)){
-			HX_STACK_LINE(48)
+			HX_STACK_LINE(54)
 			this->getView()->showCompStaticLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(50)
+			HX_STACK_LINE(56)
 			this->getView()->hideCompStaticLines();
 		}
 	}
@@ -170,10 +170,10 @@ return null();
 
 Void ComparatorMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","viewReadyHandler",0x1c029130,"view.mediator.lines.ComparatorMediator.viewReadyHandler","view/mediator/lines/ComparatorMediator.hx",55,0x6b1d1013)
+		HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","viewReadyHandler",0x1c029130,"view.mediator.lines.ComparatorMediator.viewReadyHandler","view/mediator/lines/ComparatorMediator.hx",61,0x6b1d1013)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("ComparatorMediator"));
 	}
 return null();
@@ -183,9 +183,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ComparatorMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::Comparator ComparatorMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","getView",0x1e546d17,"view.mediator.lines.ComparatorMediator.getView","view/mediator/lines/ComparatorMediator.hx",59,0x6b1d1013)
+	HX_STACK_FRAME("view.mediator.lines.ComparatorMediator","getView",0x1e546d17,"view.mediator.lines.ComparatorMediator.getView","view/mediator/lines/ComparatorMediator.hx",65,0x6b1d1013)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(59)
+	HX_STACK_LINE(65)
 	return this->viewComponent;
 }
 

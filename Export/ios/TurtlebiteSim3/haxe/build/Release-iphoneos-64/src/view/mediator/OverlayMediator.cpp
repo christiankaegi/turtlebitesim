@@ -56,11 +56,11 @@ namespace mediator{
 
 Void OverlayMediator_obj::__construct(::view::component::Overlay viewComponent)
 {
-HX_STACK_FRAME("view.mediator.OverlayMediator","new",0xca6a0823,"view.mediator.OverlayMediator.new","view/mediator/OverlayMediator.hx",12,0x371b7c8d)
+HX_STACK_FRAME("view.mediator.OverlayMediator","new",0xca6a0823,"view.mediator.OverlayMediator.new","view/mediator/OverlayMediator.hx",18,0x371b7c8d)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct(HX_CSTRING("OverlayMediator"),viewComponent);
 }
 ;
@@ -82,13 +82,13 @@ Dynamic OverlayMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void OverlayMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.OverlayMediator","onRegister",0x5af2113f,"view.mediator.OverlayMediator.onRegister","view/mediator/OverlayMediator.hx",15,0x371b7c8d)
+		HX_STACK_FRAME("view.mediator.OverlayMediator","onRegister",0x5af2113f,"view.mediator.OverlayMediator.onRegister","view/mediator/OverlayMediator.hx",21,0x371b7c8d)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::view::component::Overlay _g = this->getView();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g,null());
 	}
 return null();
@@ -96,36 +96,36 @@ return null();
 
 
 Array< ::String > OverlayMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.OverlayMediator","listNotificationInterests",0xa49c2ae3,"view.mediator.OverlayMediator.listNotificationInterests","view/mediator/OverlayMediator.hx",21,0x371b7c8d)
+	HX_STACK_FRAME("view.mediator.OverlayMediator","listNotificationInterests",0xa49c2ae3,"view.mediator.OverlayMediator.listNotificationInterests","view/mediator/OverlayMediator.hx",27,0x371b7c8d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(27)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::SHOW_OVERLAY_UNITS).Add(::AppConstants_obj::HIDE_OVERLAY_UNITS).Add(::AppConstants_obj::SHOW_OVERLAY_FLOW).Add(::AppConstants_obj::HIDE_OVERLAY_FLOW);
 }
 
 
 Void OverlayMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.OverlayMediator","handleNotification",0xbb549e50,"view.mediator.OverlayMediator.handleNotification","view/mediator/OverlayMediator.hx",30,0x371b7c8d)
+		HX_STACK_FRAME("view.mediator.OverlayMediator","handleNotification",0xbb549e50,"view.mediator.OverlayMediator.handleNotification","view/mediator/OverlayMediator.hx",36,0x371b7c8d)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::SHOW_OVERLAY_UNITS)){
-			HX_STACK_LINE(33)
+			HX_STACK_LINE(39)
 			this->getView()->showUnits();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::HIDE_OVERLAY_UNITS)){
-			HX_STACK_LINE(35)
+			HX_STACK_LINE(41)
 			this->getView()->hideUnits();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::SHOW_OVERLAY_FLOW)){
-			HX_STACK_LINE(37)
+			HX_STACK_LINE(43)
 			this->getView()->showFlow();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::HIDE_OVERLAY_FLOW)){
-			HX_STACK_LINE(39)
+			HX_STACK_LINE(45)
 			this->getView()->hideFlow();
 		}
 	}
@@ -135,10 +135,10 @@ return null();
 
 Void OverlayMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.OverlayMediator","viewReadyHandler",0x12f24609,"view.mediator.OverlayMediator.viewReadyHandler","view/mediator/OverlayMediator.hx",44,0x371b7c8d)
+		HX_STACK_FRAME("view.mediator.OverlayMediator","viewReadyHandler",0x12f24609,"view.mediator.OverlayMediator.viewReadyHandler","view/mediator/OverlayMediator.hx",50,0x371b7c8d)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("OverlayMediator"));
 	}
 return null();
@@ -148,9 +148,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(OverlayMediator_obj,viewReadyHandler,(void))
 
 ::view::component::Overlay OverlayMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.OverlayMediator","getView",0xfef2b75e,"view.mediator.OverlayMediator.getView","view/mediator/OverlayMediator.hx",48,0x371b7c8d)
+	HX_STACK_FRAME("view.mediator.OverlayMediator","getView",0xfef2b75e,"view.mediator.OverlayMediator.getView","view/mediator/OverlayMediator.hx",54,0x371b7c8d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(48)
+	HX_STACK_LINE(54)
 	return this->viewComponent;
 }
 

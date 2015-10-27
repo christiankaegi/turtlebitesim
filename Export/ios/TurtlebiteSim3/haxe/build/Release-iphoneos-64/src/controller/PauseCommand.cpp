@@ -37,10 +37,10 @@ namespace controller{
 
 Void PauseCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.PauseCommand","new",0x7f1b7c99,"controller.PauseCommand.new","controller/PauseCommand.hx",13,0xd2170216)
+HX_STACK_FRAME("controller.PauseCommand","new",0x7f1b7c99,"controller.PauseCommand.new","controller/PauseCommand.hx",16,0xd2170216)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(13)
+	HX_STACK_LINE(16)
 	super::__construct();
 }
 ;
@@ -62,20 +62,20 @@ Dynamic PauseCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void PauseCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.PauseCommand","execute",0x77f1c6ee,"controller.PauseCommand.execute","controller/PauseCommand.hx",16,0xd2170216)
+		HX_STACK_FRAME("controller.PauseCommand","execute",0x77f1c6ee,"controller.PauseCommand.execute","controller/PauseCommand.hx",19,0xd2170216)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(18)
-		::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-		HX_STACK_LINE(18)
-		appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(19)
-		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-		HX_STACK_LINE(19)
-		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
 		HX_STACK_LINE(21)
-		appProxy->setAutoClockOn(false);
+		::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
+		HX_STACK_LINE(21)
+		appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
 		HX_STACK_LINE(22)
+		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
+		HX_STACK_LINE(22)
+		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
+		HX_STACK_LINE(24)
+		appProxy->setAutoClockOn(false);
+		HX_STACK_LINE(25)
 		clockProxy->stopClock();
 	}
 return null();

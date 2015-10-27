@@ -11,42 +11,42 @@ namespace data{
 
 Void ClockData_obj::__construct()
 {
-HX_STACK_FRAME("model.data.ClockData","new",0x7efdfc4b,"model.data.ClockData.new","model/data/ClockData.hx",3,0x8455c1e5)
+HX_STACK_FRAME("model.data.ClockData","new",0x7efdfc4b,"model.data.ClockData.new","model/data/ClockData.hx",9,0x8455c1e5)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(7)
-	this->clockOn = false;
-	HX_STACK_LINE(6)
-	this->currentFrequencyPointer = (int)4;
-	HX_STACK_LINE(10)
-	Array< ::Dynamic > _g = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(10)
-	this->frequencies = _g;
 	HX_STACK_LINE(13)
-	::model::vo::FrequencyVO _g1 = ::model::vo::FrequencyVO_obj::__new(1000.0,HX_CSTRING("1Hz"));		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(14)
-	::model::vo::FrequencyVO _g2 = ::model::vo::FrequencyVO_obj::__new(500.0,HX_CSTRING("2Hz"));		HX_STACK_VAR(_g2,"_g2");
-	HX_STACK_LINE(15)
-	::model::vo::FrequencyVO _g3 = ::model::vo::FrequencyVO_obj::__new(250.0,HX_CSTRING("4Hz"));		HX_STACK_VAR(_g3,"_g3");
+	this->clockOn = false;
+	HX_STACK_LINE(12)
+	this->currentFrequencyPointer = (int)4;
 	HX_STACK_LINE(16)
-	::model::vo::FrequencyVO _g4 = ::model::vo::FrequencyVO_obj::__new(125.0,HX_CSTRING("8Hz"));		HX_STACK_VAR(_g4,"_g4");
-	HX_STACK_LINE(17)
-	::model::vo::FrequencyVO _g5 = ::model::vo::FrequencyVO_obj::__new(62.5,HX_CSTRING("16Hz"));		HX_STACK_VAR(_g5,"_g5");
-	HX_STACK_LINE(18)
-	::model::vo::FrequencyVO _g6 = ::model::vo::FrequencyVO_obj::__new(31.25,HX_CSTRING("32Hz"));		HX_STACK_VAR(_g6,"_g6");
+	Array< ::Dynamic > _g = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(16)
+	this->frequencies = _g;
 	HX_STACK_LINE(19)
-	::model::vo::FrequencyVO _g7 = ::model::vo::FrequencyVO_obj::__new(15.625,HX_CSTRING("64Hz"));		HX_STACK_VAR(_g7,"_g7");
+	::model::vo::FrequencyVO _g1 = ::model::vo::FrequencyVO_obj::__new(1000.0,HX_CSTRING("1Hz"));		HX_STACK_VAR(_g1,"_g1");
 	HX_STACK_LINE(20)
-	::model::vo::FrequencyVO _g8 = ::model::vo::FrequencyVO_obj::__new(7.8125,HX_CSTRING("128Hz"));		HX_STACK_VAR(_g8,"_g8");
+	::model::vo::FrequencyVO _g2 = ::model::vo::FrequencyVO_obj::__new(500.0,HX_CSTRING("2Hz"));		HX_STACK_VAR(_g2,"_g2");
 	HX_STACK_LINE(21)
-	::model::vo::FrequencyVO _g9 = ::model::vo::FrequencyVO_obj::__new(3.9,HX_CSTRING("256Hz"));		HX_STACK_VAR(_g9,"_g9");
+	::model::vo::FrequencyVO _g3 = ::model::vo::FrequencyVO_obj::__new(250.0,HX_CSTRING("4Hz"));		HX_STACK_VAR(_g3,"_g3");
 	HX_STACK_LINE(22)
-	::model::vo::FrequencyVO _g10 = ::model::vo::FrequencyVO_obj::__new(1.953,HX_CSTRING("512Hz"));		HX_STACK_VAR(_g10,"_g10");
+	::model::vo::FrequencyVO _g4 = ::model::vo::FrequencyVO_obj::__new(125.0,HX_CSTRING("8Hz"));		HX_STACK_VAR(_g4,"_g4");
 	HX_STACK_LINE(23)
+	::model::vo::FrequencyVO _g5 = ::model::vo::FrequencyVO_obj::__new(62.5,HX_CSTRING("16Hz"));		HX_STACK_VAR(_g5,"_g5");
+	HX_STACK_LINE(24)
+	::model::vo::FrequencyVO _g6 = ::model::vo::FrequencyVO_obj::__new(31.25,HX_CSTRING("32Hz"));		HX_STACK_VAR(_g6,"_g6");
+	HX_STACK_LINE(25)
+	::model::vo::FrequencyVO _g7 = ::model::vo::FrequencyVO_obj::__new(15.625,HX_CSTRING("64Hz"));		HX_STACK_VAR(_g7,"_g7");
+	HX_STACK_LINE(26)
+	::model::vo::FrequencyVO _g8 = ::model::vo::FrequencyVO_obj::__new(7.8125,HX_CSTRING("128Hz"));		HX_STACK_VAR(_g8,"_g8");
+	HX_STACK_LINE(27)
+	::model::vo::FrequencyVO _g9 = ::model::vo::FrequencyVO_obj::__new(3.9,HX_CSTRING("256Hz"));		HX_STACK_VAR(_g9,"_g9");
+	HX_STACK_LINE(28)
+	::model::vo::FrequencyVO _g10 = ::model::vo::FrequencyVO_obj::__new(1.953,HX_CSTRING("512Hz"));		HX_STACK_VAR(_g10,"_g10");
+	HX_STACK_LINE(29)
 	::model::vo::FrequencyVO _g11 = ::model::vo::FrequencyVO_obj::__new(0.976,HX_CSTRING("1KHz"));		HX_STACK_VAR(_g11,"_g11");
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	Array< ::Dynamic > _g12 = Array_obj< ::Dynamic >::__new().Add(_g1).Add(_g2).Add(_g3).Add(_g4).Add(_g5).Add(_g6).Add(_g7).Add(_g8).Add(_g9).Add(_g10).Add(_g11);		HX_STACK_VAR(_g12,"_g12");
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	this->frequencies = _g12;
 }
 ;

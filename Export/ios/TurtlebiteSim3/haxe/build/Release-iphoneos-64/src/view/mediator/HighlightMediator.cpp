@@ -71,11 +71,11 @@ namespace mediator{
 
 Void HighlightMediator_obj::__construct(::view::component::Highlight viewComponent)
 {
-HX_STACK_FRAME("view.mediator.HighlightMediator","new",0x7e841047,"view.mediator.HighlightMediator.new","view/mediator/HighlightMediator.hx",15,0x60e47ce9)
+HX_STACK_FRAME("view.mediator.HighlightMediator","new",0x7e841047,"view.mediator.HighlightMediator.new","view/mediator/HighlightMediator.hx",21,0x60e47ce9)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct(HX_CSTRING("HighlightMediator"),viewComponent);
 }
 ;
@@ -97,19 +97,19 @@ Dynamic HighlightMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void HighlightMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.HighlightMediator","onRegister",0x5cc1159b,"view.mediator.HighlightMediator.onRegister","view/mediator/HighlightMediator.hx",18,0x60e47ce9)
+		HX_STACK_FRAME("view.mediator.HighlightMediator","onRegister",0x5cc1159b,"view.mediator.HighlightMediator.onRegister","view/mediator/HighlightMediator.hx",24,0x60e47ce9)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->appProxy = _g;
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::view::component::Highlight _g1 = this->getView();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g1,null());
 	}
 return null();
@@ -117,133 +117,133 @@ return null();
 
 
 Array< ::String > HighlightMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.HighlightMediator","listNotificationInterests",0x59a06e07,"view.mediator.HighlightMediator.listNotificationInterests","view/mediator/HighlightMediator.hx",25,0x60e47ce9)
+	HX_STACK_FRAME("view.mediator.HighlightMediator","listNotificationInterests",0x59a06e07,"view.mediator.HighlightMediator.listNotificationInterests","view/mediator/HighlightMediator.hx",31,0x60e47ce9)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(31)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::ENTER_INSTRUCTION_CHANGED).Add(::AppConstants_obj::REGISTER_1_CHANGED).Add(::AppConstants_obj::REGISTER_2_CHANGED).Add(::AppConstants_obj::ACCUMULATOR_CHANGED).Add(::AppConstants_obj::OPCODE_OUT).Add(::AppConstants_obj::SHOW_HIGHLIGHT).Add(::AppConstants_obj::HIDE_HIGHLIGHT).Add(::AppConstants_obj::MODEL_RESET_COMPLETE);
 }
 
 
 Void HighlightMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.HighlightMediator","handleNotification",0x38895eac,"view.mediator.HighlightMediator.handleNotification","view/mediator/HighlightMediator.hx",39,0x60e47ce9)
+		HX_STACK_FRAME("view.mediator.HighlightMediator","handleNotification",0x38895eac,"view.mediator.HighlightMediator.handleNotification","view/mediator/HighlightMediator.hx",45,0x60e47ce9)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(42)
+			HX_STACK_LINE(48)
 			this->getView()->resetVisibilityAll(null());
-			HX_STACK_LINE(43)
+			HX_STACK_LINE(49)
 			::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-			HX_STACK_LINE(43)
+			HX_STACK_LINE(49)
 			instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-			HX_STACK_LINE(44)
+			HX_STACK_LINE(50)
 			{
-				HX_STACK_LINE(44)
+				HX_STACK_LINE(50)
 				::String _g1 = instruction->codeOpcode;		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(44)
+				HX_STACK_LINE(50)
 				::String _switch_2 = (_g1);
 				if (  ( _switch_2==::AppConstants_obj::OPCODE_MOV)){
-					HX_STACK_LINE(47)
+					HX_STACK_LINE(53)
 					this->getView()->setVisibilityMOV(false);
-					HX_STACK_LINE(48)
+					HX_STACK_LINE(54)
 					this->getView()->setVisibilityDecoder(false);
-					HX_STACK_LINE(49)
+					HX_STACK_LINE(55)
 					this->getView()->setVisibilityMultiplexer(false);
-					HX_STACK_LINE(50)
+					HX_STACK_LINE(56)
 					this->checkForAddressCover(instruction->asmAddress);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_LDI)){
-					HX_STACK_LINE(52)
+					HX_STACK_LINE(58)
 					this->getView()->setVisibilityLDI(false);
-					HX_STACK_LINE(53)
+					HX_STACK_LINE(59)
 					this->getView()->setVisibilityEnabler2(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_ALU)){
-					HX_STACK_LINE(55)
+					HX_STACK_LINE(61)
 					this->getView()->setVisibilityALU(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_SDA)){
-					HX_STACK_LINE(57)
+					HX_STACK_LINE(63)
 					this->getView()->setVisibilitySDA(false);
-					HX_STACK_LINE(58)
+					HX_STACK_LINE(64)
 					this->getView()->setVisibilityMultiplexer(false);
-					HX_STACK_LINE(59)
+					HX_STACK_LINE(65)
 					this->getView()->setVisibilityRam(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_LDA)){
-					HX_STACK_LINE(61)
+					HX_STACK_LINE(67)
 					this->getView()->setVisibilityLDA(false);
-					HX_STACK_LINE(62)
+					HX_STACK_LINE(68)
 					this->getView()->setVisibilityEnabler1(false);
-					HX_STACK_LINE(63)
+					HX_STACK_LINE(69)
 					this->getView()->setVisibilityRam(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_INP)){
-					HX_STACK_LINE(65)
+					HX_STACK_LINE(71)
 					this->getView()->setVisibilityINP(false);
-					HX_STACK_LINE(66)
+					HX_STACK_LINE(72)
 					this->getView()->setVisibilityDecoder(false);
-					HX_STACK_LINE(67)
+					HX_STACK_LINE(73)
 					this->getView()->setVisibilityMultiplexer(false);
-					HX_STACK_LINE(68)
+					HX_STACK_LINE(74)
 					this->checkForAddressCover(instruction->asmAddress);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_OUT)){
-					HX_STACK_LINE(70)
+					HX_STACK_LINE(76)
 					this->getView()->setVisibilityOUT(false);
-					HX_STACK_LINE(71)
+					HX_STACK_LINE(77)
 					this->getView()->setVisibilityDecoder(false);
-					HX_STACK_LINE(72)
+					HX_STACK_LINE(78)
 					this->getView()->setVisibilityMultiplexer(false);
-					HX_STACK_LINE(73)
+					HX_STACK_LINE(79)
 					this->getView()->setVisibilityDisplay(false);
-					HX_STACK_LINE(74)
+					HX_STACK_LINE(80)
 					this->checkForAddressCover(instruction->codeAddress);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_JE)){
-					HX_STACK_LINE(76)
+					HX_STACK_LINE(82)
 					this->getView()->setVisibilityJE(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_JNE)){
-					HX_STACK_LINE(78)
+					HX_STACK_LINE(84)
 					this->getView()->setVisibilityJNE(false);
 				}
 				else if (  ( _switch_2==::AppConstants_obj::OPCODE_JMP)){
-					HX_STACK_LINE(80)
+					HX_STACK_LINE(86)
 					this->getView()->setVisibilityJMP(false);
 				}
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::ENTER_INSTRUCTION_CHANGED)){
-			HX_STACK_LINE(83)
+			HX_STACK_LINE(89)
 			this->getView()->resetVisibilityAll(null());
 		}
 		else if (  ( _switch_1==::AppConstants_obj::REGISTER_1_CHANGED)){
-			HX_STACK_LINE(85)
+			HX_STACK_LINE(91)
 			this->getView()->setVisibilityRegister1(false);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::REGISTER_2_CHANGED)){
-			HX_STACK_LINE(87)
+			HX_STACK_LINE(93)
 			this->getView()->setVisibilityRegister2(false);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::ACCUMULATOR_CHANGED)){
-			HX_STACK_LINE(89)
+			HX_STACK_LINE(95)
 			this->getView()->setVisibilityAccumulator(false);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(91)
+			HX_STACK_LINE(97)
 			this->getView()->resetVisibilityAll(true);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::SHOW_HIGHLIGHT)){
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			this->getView()->set_visible(true);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::HIDE_HIGHLIGHT)){
-			HX_STACK_LINE(95)
+			HX_STACK_LINE(101)
 			this->getView()->set_visible(false);
 		}
 	}
@@ -253,21 +253,21 @@ return null();
 
 Void HighlightMediator_obj::checkForAddressCover( ::String address){
 {
-		HX_STACK_FRAME("view.mediator.HighlightMediator","checkForAddressCover",0xeb4249dd,"view.mediator.HighlightMediator.checkForAddressCover","view/mediator/HighlightMediator.hx",100,0x60e47ce9)
+		HX_STACK_FRAME("view.mediator.HighlightMediator","checkForAddressCover",0xeb4249dd,"view.mediator.HighlightMediator.checkForAddressCover","view/mediator/HighlightMediator.hx",106,0x60e47ce9)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(address,"address")
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		::String _switch_3 = (address);
 		if (  ( _switch_3==::AppConstants_obj::ADDRESS_ACCUMULATOR)){
-			HX_STACK_LINE(102)
+			HX_STACK_LINE(108)
 			this->getView()->setVisibilityAccumulator(false);
 		}
 		else if (  ( _switch_3==::AppConstants_obj::ADDRESS_REGISTER1)){
-			HX_STACK_LINE(104)
+			HX_STACK_LINE(110)
 			this->getView()->setVisibilityRegister1(false);
 		}
 		else if (  ( _switch_3==::AppConstants_obj::ADDRESS_REGISTER2)){
-			HX_STACK_LINE(106)
+			HX_STACK_LINE(112)
 			this->getView()->setVisibilityRegister2(false);
 		}
 	}
@@ -279,17 +279,17 @@ HX_DEFINE_DYNAMIC_FUNC1(HighlightMediator_obj,checkForAddressCover,(void))
 
 Void HighlightMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.HighlightMediator","viewReadyHandler",0x2192f765,"view.mediator.HighlightMediator.viewReadyHandler","view/mediator/HighlightMediator.hx",110,0x60e47ce9)
+		HX_STACK_FRAME("view.mediator.HighlightMediator","viewReadyHandler",0x2192f765,"view.mediator.HighlightMediator.viewReadyHandler","view/mediator/HighlightMediator.hx",116,0x60e47ce9)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(117)
 		bool _g = this->appProxy->getShowHighlightOn();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(117)
 		if (((_g == false))){
-			HX_STACK_LINE(112)
+			HX_STACK_LINE(118)
 			this->getView()->set_visible(false);
 		}
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("HighlightMediator"));
 	}
 return null();
@@ -299,9 +299,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(HighlightMediator_obj,viewReadyHandler,(void))
 
 ::view::component::Highlight HighlightMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.HighlightMediator","getView",0xb71da182,"view.mediator.HighlightMediator.getView","view/mediator/HighlightMediator.hx",118,0x60e47ce9)
+	HX_STACK_FRAME("view.mediator.HighlightMediator","getView",0xb71da182,"view.mediator.HighlightMediator.getView","view/mediator/HighlightMediator.hx",124,0x60e47ce9)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(118)
+	HX_STACK_LINE(124)
 	return this->viewComponent;
 }
 

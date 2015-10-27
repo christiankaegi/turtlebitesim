@@ -32,8 +32,8 @@ class ComparatorMediator extends Mediator {
             AppConstants.CHANGE_CLOCK_SPEED,
             AppConstants.POWER_ON,
             AppConstants.POWER_OFF,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

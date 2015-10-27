@@ -44,12 +44,12 @@ namespace component{
 
 Void Hotspot_obj::__construct()
 {
-HX_STACK_FRAME("view.component.Hotspot","new",0xedfa7767,"view.component.Hotspot.new","view/component/Hotspot.hx",19,0xe98f83ab)
+HX_STACK_FRAME("view.component.Hotspot","new",0xedfa7767,"view.component.Hotspot.new","view/component/Hotspot.hx",25,0xe98f83ab)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	super::__construct();
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(27)
 	this->addEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -71,20 +71,20 @@ Dynamic Hotspot_obj::__Create(hx::DynamicArray inArgs)
 
 Void Hotspot_obj::addedToStageHandler( ::openfl::_legacy::events::Event event){
 {
-		HX_STACK_FRAME("view.component.Hotspot","addedToStageHandler",0xf96b7cae,"view.component.Hotspot.addedToStageHandler","view/component/Hotspot.hx",24,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","addedToStageHandler",0xf96b7cae,"view.component.Hotspot.addedToStageHandler","view/component/Hotspot.hx",30,0xe98f83ab)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->createClockButton();
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->createAccumulatorButton();
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->createRomButton();
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -95,25 +95,25 @@ HX_DEFINE_DYNAMIC_FUNC1(Hotspot_obj,addedToStageHandler,(void))
 
 Void Hotspot_obj::createClockButton( ){
 {
-		HX_STACK_FRAME("view.component.Hotspot","createClockButton",0xc9694e0b,"view.component.Hotspot.createClockButton","view/component/Hotspot.hx",32,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","createClockButton",0xc9694e0b,"view.component.Hotspot.createClockButton","view/component/Hotspot.hx",38,0xe98f83ab)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(33)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)37 * ::AppConstants_obj::SCALE_FACTOR),((int)37 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
-		HX_STACK_LINE(34)
-		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(34)
-		this->clockButton = _g;
-		HX_STACK_LINE(35)
-		this->clockButton->addChild(s);
-		HX_STACK_LINE(36)
-		this->clockButton->buttonMode = true;
-		HX_STACK_LINE(37)
-		this->clockButton->set_x(((int)569 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(38)
-		this->clockButton->set_y(((int)583 * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(39)
-		this->clockButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->clockButtonEventHandler_dyn(),null(),null(),null());
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)37 * ::AppConstants_obj::SCALE_FACTOR),((int)37 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(40)
+		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(40)
+		this->clockButton = _g;
+		HX_STACK_LINE(41)
+		this->clockButton->addChild(s);
+		HX_STACK_LINE(42)
+		this->clockButton->buttonMode = true;
+		HX_STACK_LINE(43)
+		this->clockButton->set_x(((int)569 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(44)
+		this->clockButton->set_y(((int)583 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(45)
+		this->clockButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->clockButtonEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(46)
 		this->addChild(this->clockButton);
 	}
 return null();
@@ -124,25 +124,25 @@ HX_DEFINE_DYNAMIC_FUNC0(Hotspot_obj,createClockButton,(void))
 
 Void Hotspot_obj::createAccumulatorButton( ){
 {
-		HX_STACK_FRAME("view.component.Hotspot","createAccumulatorButton",0xcba509c3,"view.component.Hotspot.createAccumulatorButton","view/component/Hotspot.hx",43,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","createAccumulatorButton",0xcba509c3,"view.component.Hotspot.createAccumulatorButton","view/component/Hotspot.hx",49,0xe98f83ab)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(44)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)33 * ::AppConstants_obj::SCALE_FACTOR),((int)70 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
-		HX_STACK_LINE(45)
-		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(45)
-		this->accumulatorButton = _g;
-		HX_STACK_LINE(46)
-		this->accumulatorButton->addChild(s);
-		HX_STACK_LINE(47)
-		this->accumulatorButton->buttonMode = true;
-		HX_STACK_LINE(48)
-		this->accumulatorButton->set_x(((int)767 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(49)
-		this->accumulatorButton->set_y(((int)215 * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(50)
-		this->accumulatorButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->accumulatorButtonEventHandler_dyn(),null(),null(),null());
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)33 * ::AppConstants_obj::SCALE_FACTOR),((int)70 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(51)
+		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(51)
+		this->accumulatorButton = _g;
+		HX_STACK_LINE(52)
+		this->accumulatorButton->addChild(s);
+		HX_STACK_LINE(53)
+		this->accumulatorButton->buttonMode = true;
+		HX_STACK_LINE(54)
+		this->accumulatorButton->set_x(((int)767 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(55)
+		this->accumulatorButton->set_y(((int)215 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(56)
+		this->accumulatorButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->accumulatorButtonEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(57)
 		this->addChild(this->accumulatorButton);
 	}
 return null();
@@ -153,25 +153,25 @@ HX_DEFINE_DYNAMIC_FUNC0(Hotspot_obj,createAccumulatorButton,(void))
 
 Void Hotspot_obj::createRomButton( ){
 {
-		HX_STACK_FRAME("view.component.Hotspot","createRomButton",0x6935f30d,"view.component.Hotspot.createRomButton","view/component/Hotspot.hx",54,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","createRomButton",0x6935f30d,"view.component.Hotspot.createRomButton","view/component/Hotspot.hx",60,0xe98f83ab)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(55)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)147 * ::AppConstants_obj::SCALE_FACTOR),((int)52 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
-		HX_STACK_LINE(56)
-		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(56)
-		this->romButton = _g;
-		HX_STACK_LINE(57)
-		this->romButton->addChild(s);
-		HX_STACK_LINE(58)
-		this->romButton->buttonMode = true;
-		HX_STACK_LINE(59)
-		this->romButton->set_x(((int)431 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(60)
-		this->romButton->set_y(((int)518 * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(61)
-		this->romButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->romButtonEventHandler_dyn(),null(),null(),null());
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)147 * ::AppConstants_obj::SCALE_FACTOR),((int)52 * ::AppConstants_obj::SCALE_FACTOR),::view::component::Hotspot_obj::COLOR,::view::component::Hotspot_obj::ALPHA,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(62)
+		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(62)
+		this->romButton = _g;
+		HX_STACK_LINE(63)
+		this->romButton->addChild(s);
+		HX_STACK_LINE(64)
+		this->romButton->buttonMode = true;
+		HX_STACK_LINE(65)
+		this->romButton->set_x(((int)431 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(66)
+		this->romButton->set_y(((int)518 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(67)
+		this->romButton->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->romButtonEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(68)
 		this->addChild(this->romButton);
 	}
 return null();
@@ -182,12 +182,12 @@ HX_DEFINE_DYNAMIC_FUNC0(Hotspot_obj,createRomButton,(void))
 
 Void Hotspot_obj::clockButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.Hotspot","clockButtonEventHandler",0x0eb725d7,"view.component.Hotspot.clockButtonEventHandler","view/component/Hotspot.hx",65,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","clockButtonEventHandler",0x0eb725d7,"view.component.Hotspot.clockButtonEventHandler","view/component/Hotspot.hx",71,0xe98f83ab)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
 			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",66,0xe98f83ab)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",72,0xe98f83ab)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , HX_CSTRING("clockButton"),false);
@@ -196,9 +196,9 @@ Void Hotspot_obj::clockButtonEventHandler( ::openfl::_legacy::events::MouseEvent
 				return null();
 			}
 		};
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -209,12 +209,12 @@ HX_DEFINE_DYNAMIC_FUNC1(Hotspot_obj,clockButtonEventHandler,(void))
 
 Void Hotspot_obj::accumulatorButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.Hotspot","accumulatorButtonEventHandler",0xe710428f,"view.component.Hotspot.accumulatorButtonEventHandler","view/component/Hotspot.hx",69,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","accumulatorButtonEventHandler",0xe710428f,"view.component.Hotspot.accumulatorButtonEventHandler","view/component/Hotspot.hx",75,0xe98f83ab)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
 			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",70,0xe98f83ab)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",76,0xe98f83ab)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , HX_CSTRING("accumulatorButton"),false);
@@ -223,9 +223,9 @@ Void Hotspot_obj::accumulatorButtonEventHandler( ::openfl::_legacy::events::Mous
 				return null();
 			}
 		};
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -236,12 +236,12 @@ HX_DEFINE_DYNAMIC_FUNC1(Hotspot_obj,accumulatorButtonEventHandler,(void))
 
 Void Hotspot_obj::romButtonEventHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.Hotspot","romButtonEventHandler",0x006436d9,"view.component.Hotspot.romButtonEventHandler","view/component/Hotspot.hx",73,0xe98f83ab)
+		HX_STACK_FRAME("view.component.Hotspot","romButtonEventHandler",0x006436d9,"view.component.Hotspot.romButtonEventHandler","view/component/Hotspot.hx",79,0xe98f83ab)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
 			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",74,0xe98f83ab)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/Hotspot.hx",80,0xe98f83ab)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , HX_CSTRING("romButton"),false);
@@ -250,9 +250,9 @@ Void Hotspot_obj::romButtonEventHandler( ::openfl::_legacy::events::MouseEvent e
 				return null();
 			}
 		};
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		this->dispatchEvent(_g);
 	}
 return null();

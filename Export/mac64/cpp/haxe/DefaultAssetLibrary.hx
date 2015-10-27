@@ -315,12 +315,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/top_layer2048.png", AssetType.IMAGE);
 		path.set ("assets/images/top_layer_colored.png", "assets/images/top_layer_colored.png");
 		type.set ("assets/images/top_layer_colored.png", AssetType.IMAGE);
-		path.set ("assets/tbsimlogo.svg", "assets/tbsimlogo.svg");
-		type.set ("assets/tbsimlogo.svg", AssetType.TEXT);
-		path.set ("assets/tbsimlogo2.svg", "assets/tbsimlogo2.svg");
-		type.set ("assets/tbsimlogo2.svg", AssetType.TEXT);
-		path.set ("assets/tbsimlogo3.svg", "assets/tbsimlogo3.svg");
-		type.set ("assets/tbsimlogo3.svg", AssetType.TEXT);
 		path.set ("fonts/Consolas Bold.eot", "fonts/Consolas Bold.eot");
 		type.set ("fonts/Consolas Bold.eot", AssetType.BINARY);
 		path.set ("fonts/Consolas Bold.svg", "fonts/Consolas Bold.svg");
@@ -751,15 +745,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/top_layer_colored.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
-		id = "assets/tbsimlogo.svg";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/tbsimlogo2.svg";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/tbsimlogo3.svg";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
 		id = "fonts/Consolas Bold.eot";
 		path.set (id, id);
 		type.set (id, AssetType.BINARY);
@@ -940,9 +925,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__fonts_consolas_bold_ttf);
 		
 		
@@ -972,9 +954,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/fonts/MyriadPro-Regular.otf", __ASSET__assets_fonts_myriadpro_regular_otf);
 		type.set ("assets/fonts/MyriadPro-Regular.otf", AssetType.FONT);
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1865,9 +1844,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
 #elseif html5
 
 
@@ -1879,9 +1855,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__assets_fonts_myriadpro_regular_otf extends lime.text.Font { public function new () { super (); name = "Myriad Pro"; } } 
-
-
-
 
 
 

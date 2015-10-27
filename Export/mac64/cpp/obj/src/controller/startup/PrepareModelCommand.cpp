@@ -83,10 +83,10 @@ namespace startup{
 
 Void PrepareModelCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.startup.PrepareModelCommand","new",0x09921618,"controller.startup.PrepareModelCommand.new","controller/startup/PrepareModelCommand.hx",14,0x670deeda)
+HX_STACK_FRAME("controller.startup.PrepareModelCommand","new",0x09921618,"controller.startup.PrepareModelCommand.new","controller/startup/PrepareModelCommand.hx",20,0x670deeda)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(20)
 	super::__construct();
 }
 ;
@@ -108,63 +108,63 @@ Dynamic PrepareModelCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void PrepareModelCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.startup.PrepareModelCommand","execute",0xe40c8bed,"controller.startup.PrepareModelCommand.execute","controller/startup/PrepareModelCommand.hx",17,0x670deeda)
+		HX_STACK_FRAME("controller.startup.PrepareModelCommand","execute",0xe40c8bed,"controller.startup.PrepareModelCommand.execute","controller/startup/PrepareModelCommand.hx",23,0x670deeda)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		if (((_g == ::AppConstants_obj::PREPARE_MODEL))){
-			HX_STACK_LINE(19)
+			HX_STACK_LINE(25)
 			::App app;		HX_STACK_VAR(app,"app");
-			HX_STACK_LINE(19)
+			HX_STACK_LINE(25)
 			app = hx::TCast< App >::cast(note->getBody());
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			::model::data::AppData _g1 = ::model::data::AppData_obj::__new(app);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			::model::proxy::AppProxy _g2 = ::model::proxy::AppProxy_obj::__new(_g1);		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			this->get_facade()->registerProxy(_g2);
 		}
 		else{
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-			HX_STACK_LINE(23)
+			HX_STACK_LINE(29)
 			{
-				HX_STACK_LINE(23)
+				HX_STACK_LINE(29)
 				::String _g1 = note->getType();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(23)
+				HX_STACK_LINE(29)
 				::String _switch_1 = (_g1);
 				if (  ( _switch_1==::model::proxy::AppProxy_obj::NAME)){
-					HX_STACK_LINE(26)
+					HX_STACK_LINE(32)
 					::model::data::ProgramData _g3 = ::model::data::ProgramData_obj::__new();		HX_STACK_VAR(_g3,"_g3");
-					HX_STACK_LINE(26)
+					HX_STACK_LINE(32)
 					::model::proxy::ProgramProxy _g4 = ::model::proxy::ProgramProxy_obj::__new(_g3);		HX_STACK_VAR(_g4,"_g4");
-					HX_STACK_LINE(26)
+					HX_STACK_LINE(32)
 					this->get_facade()->registerProxy(_g4);
 				}
 				else if (  ( _switch_1==::model::proxy::ProgramProxy_obj::NAME)){
-					HX_STACK_LINE(29)
+					HX_STACK_LINE(35)
 					::model::data::SnapshotData _g5 = ::model::data::SnapshotData_obj::__new();		HX_STACK_VAR(_g5,"_g5");
-					HX_STACK_LINE(29)
+					HX_STACK_LINE(35)
 					::model::proxy::SnapshotProxy _g6 = ::model::proxy::SnapshotProxy_obj::__new(_g5);		HX_STACK_VAR(_g6,"_g6");
-					HX_STACK_LINE(29)
+					HX_STACK_LINE(35)
 					this->get_facade()->registerProxy(_g6);
 				}
 				else if (  ( _switch_1==::model::proxy::SnapshotProxy_obj::NAME)){
-					HX_STACK_LINE(32)
+					HX_STACK_LINE(38)
 					::model::data::ClockData _g7 = ::model::data::ClockData_obj::__new();		HX_STACK_VAR(_g7,"_g7");
-					HX_STACK_LINE(32)
+					HX_STACK_LINE(38)
 					::model::proxy::ClockProxy _g8 = ::model::proxy::ClockProxy_obj::__new(_g7);		HX_STACK_VAR(_g8,"_g8");
-					HX_STACK_LINE(32)
+					HX_STACK_LINE(38)
 					this->get_facade()->registerProxy(_g8);
 				}
 				else if (  ( _switch_1==::model::proxy::ClockProxy_obj::NAME)){
-					HX_STACK_LINE(35)
+					HX_STACK_LINE(41)
 					::App _g9 = appProxy->getApp();		HX_STACK_VAR(_g9,"_g9");
-					HX_STACK_LINE(35)
+					HX_STACK_LINE(41)
 					this->sendNotification(::AppConstants_obj::PREPARE_VIEW,_g9,null());
 				}
 			}

@@ -10,7 +10,7 @@ namespace events{
 
 Void AppEvent_obj::__construct(::String type,Dynamic data,hx::Null< bool >  __o_bubbles,hx::Null< bool >  __o_cancelable)
 {
-HX_STACK_FRAME("events.AppEvent","new",0xefd493c0,"events.AppEvent.new","events/AppEvent.hx",14,0x932e914f)
+HX_STACK_FRAME("events.AppEvent","new",0xefd493c0,"events.AppEvent.new","events/AppEvent.hx",20,0x932e914f)
 HX_STACK_THIS(this)
 HX_STACK_ARG(type,"type")
 HX_STACK_ARG(data,"data")
@@ -19,9 +19,9 @@ HX_STACK_ARG(__o_cancelable,"cancelable")
 bool bubbles = __o_bubbles.Default(false);
 bool cancelable = __o_cancelable.Default(false);
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct(type,bubbles,cancelable);
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	this->data = data;
 }
 ;

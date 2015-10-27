@@ -48,12 +48,12 @@ namespace lines{
 
 Void Clock_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Clock","new",0x55200f77,"view.component.lines.Clock.new","view/component/lines/Clock.hx",14,0x17cb0f9c)
+HX_STACK_FRAME("view.component.lines.Clock","new",0x55200f77,"view.component.lines.Clock.new","view/component/lines/Clock.hx",20,0x17cb0f9c)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct();
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -75,12 +75,12 @@ Dynamic Clock_obj::__Create(hx::DynamicArray inArgs)
 
 Void Clock_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Clock","addedToStageHandler",0xae7e34be,"view.component.lines.Clock.addedToStageHandler","view/component/lines/Clock.hx",19,0x17cb0f9c)
+		HX_STACK_FRAME("view.component.lines.Clock","addedToStageHandler",0xae7e34be,"view.component.lines.Clock.addedToStageHandler","view/component/lines/Clock.hx",25,0x17cb0f9c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/Clock.png")),this->outLoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -91,18 +91,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Clock_obj,addedToStageHandler,(void))
 
 Void Clock_obj::outLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Clock","outLoadCompleteHandler",0x41ed2be6,"view.component.lines.Clock.outLoadCompleteHandler","view/component/lines/Clock.hx",24,0x17cb0f9c)
+		HX_STACK_FRAME("view.component.lines.Clock","outLoadCompleteHandler",0x41ed2be6,"view.component.lines.Clock.outLoadCompleteHandler","view/component/lines/Clock.hx",30,0x17cb0f9c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->out = _g;
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->out->set_name(HX_CSTRING("clockOut"));
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		Float _g1 = this->out->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->out->set_scaleX(_g1);
 	}
 return null();
@@ -113,9 +113,9 @@ HX_DEFINE_DYNAMIC_FUNC1(Clock_obj,outLoadCompleteHandler,(void))
 
 Void Clock_obj::showLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Clock","showLines",0x1dd96e19,"view.component.lines.Clock.showLines","view/component/lines/Clock.hx",31,0x17cb0f9c)
+		HX_STACK_FRAME("view.component.lines.Clock","showLines",0x1dd96e19,"view.component.lines.Clock.showLines","view/component/lines/Clock.hx",37,0x17cb0f9c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->addChild(this->out);
 	}
 return null();
@@ -126,15 +126,15 @@ HX_DEFINE_DYNAMIC_FUNC0(Clock_obj,showLines,(void))
 
 Void Clock_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Clock","hideAllLines",0x7acfc609,"view.component.lines.Clock.hideAllLines","view/component/lines/Clock.hx",34,0x17cb0f9c)
+		HX_STACK_FRAME("view.component.lines.Clock","hideAllLines",0x7acfc609,"view.component.lines.Clock.hideAllLines","view/component/lines/Clock.hx",40,0x17cb0f9c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("clockOut"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		if (((_g != null()))){
-			HX_STACK_LINE(36)
+			HX_STACK_LINE(42)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("clockOut"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(36)
+			HX_STACK_LINE(42)
 			this->removeChild(_g1);
 		}
 	}

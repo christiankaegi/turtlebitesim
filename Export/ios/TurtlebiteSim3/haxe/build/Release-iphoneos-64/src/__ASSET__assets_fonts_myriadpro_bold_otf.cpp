@@ -15,14 +15,14 @@
 
 Void __ASSET__assets_fonts_myriadpro_bold_otf_obj::__construct()
 {
-HX_STACK_FRAME("__ASSET__assets_fonts_myriadpro_bold_otf","new",0x32850278,"__ASSET__assets_fonts_myriadpro_bold_otf.new","DefaultAssetLibrary.hx",2051,0x0fc48912)
+HX_STACK_FRAME("__ASSET__assets_fonts_myriadpro_bold_otf","new",0x32850278,"__ASSET__assets_fonts_myriadpro_bold_otf.new","DefaultAssetLibrary.hx",2024,0x0fc48912)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(2051)
+	HX_STACK_LINE(2024)
 	super::__construct(null(),null(),null());
-	HX_STACK_LINE(2051)
+	HX_STACK_LINE(2024)
 	this->__fontPath = HX_CSTRING("assets/fonts/MyriadPro-Bold.otf");
-	HX_STACK_LINE(2051)
+	HX_STACK_LINE(2024)
 	this->fontName = HX_CSTRING("Myriad Pro Bold");
 }
 ;

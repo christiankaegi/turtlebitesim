@@ -34,10 +34,10 @@ namespace controller{
 
 Void ChangeClockSpeedCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.ChangeClockSpeedCommand","new",0x5c4386e2,"controller.ChangeClockSpeedCommand.new","controller/ChangeClockSpeedCommand.hx",11,0xfbeb280f)
+HX_STACK_FRAME("controller.ChangeClockSpeedCommand","new",0x5c4386e2,"controller.ChangeClockSpeedCommand.new","controller/ChangeClockSpeedCommand.hx",16,0xfbeb280f)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(16)
 	super::__construct();
 }
 ;
@@ -59,27 +59,27 @@ Dynamic ChangeClockSpeedCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void ChangeClockSpeedCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.ChangeClockSpeedCommand","execute",0x132729b7,"controller.ChangeClockSpeedCommand.execute","controller/ChangeClockSpeedCommand.hx",14,0xfbeb280f)
+		HX_STACK_FRAME("controller.ChangeClockSpeedCommand","execute",0x132729b7,"controller.ChangeClockSpeedCommand.execute","controller/ChangeClockSpeedCommand.hx",19,0xfbeb280f)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(21)
 		::String pointer;		HX_STACK_VAR(pointer,"pointer");
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(21)
 		pointer = hx::TCast< String >::cast(note->getBody());
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(22)
 		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(22)
 		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(24)
 		if (((pointer == HX_CSTRING("+")))){
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(25)
 			int _g = clockProxy->getCurrentFrequencyPointer();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(25)
 			int _g1 = (_g + (int)1);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(25)
 			this->pos = _g1;
 		}
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(27)
 		clockProxy->changeClockSpeed(this->pos);
 	}
 return null();

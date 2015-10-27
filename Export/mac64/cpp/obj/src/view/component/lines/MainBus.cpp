@@ -54,16 +54,16 @@ namespace lines{
 
 Void MainBus_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.MainBus","new",0xa8e1de70,"view.component.lines.MainBus.new","view/component/lines/MainBus.hx",11,0x5508b983)
+HX_STACK_FRAME("view.component.lines.MainBus","new",0xa8e1de70,"view.component.lines.MainBus.new","view/component/lines/MainBus.hx",17,0x5508b983)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	this->maxLines = (int)8;
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	this->currentLineNum = (int)0;
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(25)
 	super::__construct();
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -85,16 +85,16 @@ Dynamic MainBus_obj::__Create(hx::DynamicArray inArgs)
 
 Void MainBus_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","addedToStageHandler",0xe66345b7,"view.component.lines.MainBus.addedToStageHandler","view/component/lines/MainBus.hx",23,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","addedToStageHandler",0xe66345b7,"view.component.lines.MainBus.addedToStageHandler","view/component/lines/MainBus.hx",29,0x5508b983)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		Array< ::Dynamic > _g = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->linesActive = _g;
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->loadLine();
 	}
 return null();
@@ -105,27 +105,27 @@ HX_DEFINE_DYNAMIC_FUNC1(MainBus_obj,addedToStageHandler,(void))
 
 Void MainBus_obj::showLines( ::model::vo::InstructionVO instruction){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","showLines",0xf04a3dd2,"view.component.lines.MainBus.showLines","view/component/lines/MainBus.hx",29,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","showLines",0xf04a3dd2,"view.component.lines.MainBus.showLines","view/component/lines/MainBus.hx",35,0x5508b983)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(instruction,"instruction")
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->hideAllLines();
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		{
-			HX_STACK_LINE(31)
+			HX_STACK_LINE(37)
 			int _g1 = (int)0;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(31)
+			HX_STACK_LINE(37)
 			int _g = this->linesActive->length;		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(31)
+			HX_STACK_LINE(37)
 			while((true)){
-				HX_STACK_LINE(31)
+				HX_STACK_LINE(37)
 				if ((!(((_g1 < _g))))){
-					HX_STACK_LINE(31)
+					HX_STACK_LINE(37)
 					break;
 				}
-				HX_STACK_LINE(31)
-				int i = (_g1)++;		HX_STACK_VAR(i,"i");
 				HX_STACK_LINE(37)
+				int i = (_g1)++;		HX_STACK_VAR(i,"i");
+				HX_STACK_LINE(43)
 				this->linesActive->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_visible(instruction->codeArr->__get(i));
 			}
 		}
@@ -138,9 +138,9 @@ HX_DEFINE_DYNAMIC_FUNC1(MainBus_obj,showLines,(void))
 
 Void MainBus_obj::loadLine( ){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","loadLine",0xb1c7e12a,"view.component.lines.MainBus.loadLine","view/component/lines/MainBus.hx",43,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","loadLine",0xb1c7e12a,"view.component.lines.MainBus.loadLine","view/component/lines/MainBus.hx",49,0x5508b983)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		::openfl::Assets_obj::loadBitmapData(((((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/busline")) + this->currentLineNum) + HX_CSTRING(".png")),this->bmpLoadCompleteHandler_dyn(),true);
 	}
 return null();
@@ -151,34 +151,34 @@ HX_DEFINE_DYNAMIC_FUNC0(MainBus_obj,loadLine,(void))
 
 Void MainBus_obj::bmpLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","bmpLoadCompleteHandler",0xe040af36,"view.component.lines.MainBus.bmpLoadCompleteHandler","view/component/lines/MainBus.hx",46,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","bmpLoadCompleteHandler",0xe040af36,"view.component.lines.MainBus.bmpLoadCompleteHandler","view/component/lines/MainBus.hx",52,0x5508b983)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(47)
-		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(47)
-		this->linesActive->push(_g);
-		HX_STACK_LINE(48)
-		Float _g1 = this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(48)
-		this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g1);
-		HX_STACK_LINE(49)
-		this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("line") + this->currentLineNum));
-		HX_STACK_LINE(52)
-		this->addChild(this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >());
 		HX_STACK_LINE(53)
+		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(53)
+		this->linesActive->push(_g);
+		HX_STACK_LINE(54)
+		Float _g1 = this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(54)
+		this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g1);
+		HX_STACK_LINE(55)
+		this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("line") + this->currentLineNum));
+		HX_STACK_LINE(58)
+		this->addChild(this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >());
+		HX_STACK_LINE(59)
 		this->linesActive->__get(this->currentLineNum).StaticCast< ::openfl::display::Bitmap >()->set_visible(false);
-		HX_STACK_LINE(56)
+		HX_STACK_LINE(62)
 		if (((this->currentLineNum < (this->maxLines - (int)1)))){
-			HX_STACK_LINE(57)
+			HX_STACK_LINE(63)
 			(this->currentLineNum)++;
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->loadLine();
 		}
 		else{
-			HX_STACK_LINE(61)
+			HX_STACK_LINE(67)
 			::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(61)
+			HX_STACK_LINE(67)
 			this->dispatchEvent(_g2);
 		}
 	}
@@ -190,11 +190,11 @@ HX_DEFINE_DYNAMIC_FUNC1(MainBus_obj,bmpLoadCompleteHandler,(void))
 
 Void MainBus_obj::toggleSingleLine( int id,bool on){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","toggleSingleLine",0xc43d7b40,"view.component.lines.MainBus.toggleSingleLine","view/component/lines/MainBus.hx",78,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","toggleSingleLine",0xc43d7b40,"view.component.lines.MainBus.toggleSingleLine","view/component/lines/MainBus.hx",84,0x5508b983)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(78)
+		HX_STACK_LINE(84)
 		this->linesActive->__get(id).StaticCast< ::openfl::display::Bitmap >()->set_visible(on);
 	}
 return null();
@@ -205,22 +205,22 @@ HX_DEFINE_DYNAMIC_FUNC2(MainBus_obj,toggleSingleLine,(void))
 
 Void MainBus_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.MainBus","hideAllLines",0x1bd2cff0,"view.component.lines.MainBus.hideAllLines","view/component/lines/MainBus.hx",83,0x5508b983)
+		HX_STACK_FRAME("view.component.lines.MainBus","hideAllLines",0x1bd2cff0,"view.component.lines.MainBus.hideAllLines","view/component/lines/MainBus.hx",89,0x5508b983)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		int _g1 = (int)0;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		int _g = this->linesActive->length;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		while((true)){
-			HX_STACK_LINE(83)
+			HX_STACK_LINE(89)
 			if ((!(((_g1 < _g))))){
-				HX_STACK_LINE(83)
+				HX_STACK_LINE(89)
 				break;
 			}
-			HX_STACK_LINE(83)
-			int i = (_g1)++;		HX_STACK_VAR(i,"i");
 			HX_STACK_LINE(89)
+			int i = (_g1)++;		HX_STACK_VAR(i,"i");
+			HX_STACK_LINE(95)
 			this->linesActive->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_visible(false);
 		}
 	}

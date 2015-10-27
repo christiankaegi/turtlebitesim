@@ -56,11 +56,11 @@ namespace mediator{
 
 Void WelcomeMediator_obj::__construct(::view::component::Welcome viewComponent)
 {
-HX_STACK_FRAME("view.mediator.WelcomeMediator","new",0x0f111c35,"view.mediator.WelcomeMediator.new","view/mediator/WelcomeMediator.hx",12,0x39b610bb)
+HX_STACK_FRAME("view.mediator.WelcomeMediator","new",0x0f111c35,"view.mediator.WelcomeMediator.new","view/mediator/WelcomeMediator.hx",18,0x39b610bb)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct(HX_CSTRING("WelcomeMediator"),viewComponent);
 }
 ;
@@ -82,13 +82,13 @@ Dynamic WelcomeMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void WelcomeMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.WelcomeMediator","onRegister",0xffa1836d,"view.mediator.WelcomeMediator.onRegister","view/mediator/WelcomeMediator.hx",15,0x39b610bb)
+		HX_STACK_FRAME("view.mediator.WelcomeMediator","onRegister",0xffa1836d,"view.mediator.WelcomeMediator.onRegister","view/mediator/WelcomeMediator.hx",21,0x39b610bb)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::view::component::Welcome _g = this->getView();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g,null());
 	}
 return null();
@@ -96,32 +96,32 @@ return null();
 
 
 Array< ::String > WelcomeMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.WelcomeMediator","listNotificationInterests",0xd9c45c75,"view.mediator.WelcomeMediator.listNotificationInterests","view/mediator/WelcomeMediator.hx",21,0x39b610bb)
+	HX_STACK_FRAME("view.mediator.WelcomeMediator","listNotificationInterests",0xd9c45c75,"view.mediator.WelcomeMediator.listNotificationInterests","view/mediator/WelcomeMediator.hx",27,0x39b610bb)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(27)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::POWER_ON).Add(::AppConstants_obj::POWER_OFF).Add(::AppConstants_obj::SHOW_ARCHITECTURE);
 }
 
 
 Void WelcomeMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.WelcomeMediator","handleNotification",0x8f26ee7e,"view.mediator.WelcomeMediator.handleNotification","view/mediator/WelcomeMediator.hx",30,0x39b610bb)
+		HX_STACK_FRAME("view.mediator.WelcomeMediator","handleNotification",0x8f26ee7e,"view.mediator.WelcomeMediator.handleNotification","view/mediator/WelcomeMediator.hx",36,0x39b610bb)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::POWER_ON)){
-			HX_STACK_LINE(33)
+			HX_STACK_LINE(39)
 			this->getView()->hide();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(35)
+			HX_STACK_LINE(41)
 			this->getView()->show();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::SHOW_ARCHITECTURE)){
-			HX_STACK_LINE(37)
+			HX_STACK_LINE(43)
 			this->getView()->toggleArchitecture();
 		}
 	}
@@ -131,10 +131,10 @@ return null();
 
 Void WelcomeMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.WelcomeMediator","viewReadyHandler",0xec9e8eb7,"view.mediator.WelcomeMediator.viewReadyHandler","view/mediator/WelcomeMediator.hx",42,0x39b610bb)
+		HX_STACK_FRAME("view.mediator.WelcomeMediator","viewReadyHandler",0xec9e8eb7,"view.mediator.WelcomeMediator.viewReadyHandler","view/mediator/WelcomeMediator.hx",48,0x39b610bb)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("WelcomeMediator"));
 	}
 return null();
@@ -144,9 +144,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(WelcomeMediator_obj,viewReadyHandler,(void))
 
 ::view::component::Welcome WelcomeMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.WelcomeMediator","getView",0x83ea3c70,"view.mediator.WelcomeMediator.getView","view/mediator/WelcomeMediator.hx",46,0x39b610bb)
+	HX_STACK_FRAME("view.mediator.WelcomeMediator","getView",0x83ea3c70,"view.mediator.WelcomeMediator.getView","view/mediator/WelcomeMediator.hx",52,0x39b610bb)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(52)
 	return this->viewComponent;
 }
 

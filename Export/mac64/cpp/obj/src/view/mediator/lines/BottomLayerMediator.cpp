@@ -57,11 +57,11 @@ namespace lines{
 
 Void BottomLayerMediator_obj::__construct(::view::component::lines::BottomLayer viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","new",0xe918d28a,"view.mediator.lines.BottomLayerMediator.new","view/mediator/lines/BottomLayerMediator.hx",12,0x3b459cc7)
+HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","new",0xe918d28a,"view.mediator.lines.BottomLayerMediator.new","view/mediator/lines/BottomLayerMediator.hx",18,0x3b459cc7)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct(HX_CSTRING("BottomLayerMediator"),viewComponent);
 }
 ;
@@ -83,13 +83,13 @@ Dynamic BottomLayerMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void BottomLayerMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","onRegister",0x5f5c71b8,"view.mediator.lines.BottomLayerMediator.onRegister","view/mediator/lines/BottomLayerMediator.hx",15,0x3b459cc7)
+		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","onRegister",0x5f5c71b8,"view.mediator.lines.BottomLayerMediator.onRegister","view/mediator/lines/BottomLayerMediator.hx",21,0x3b459cc7)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::view::component::lines::BottomLayer _g = this->getView();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g,null());
 	}
 return null();
@@ -97,16 +97,16 @@ return null();
 
 
 Array< ::String > BottomLayerMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","listNotificationInterests",0x5ca13a8a,"view.mediator.lines.BottomLayerMediator.listNotificationInterests","view/mediator/lines/BottomLayerMediator.hx",21,0x3b459cc7)
+	HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","listNotificationInterests",0x5ca13a8a,"view.mediator.lines.BottomLayerMediator.listNotificationInterests","view/mediator/lines/BottomLayerMediator.hx",27,0x3b459cc7)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(27)
 	return Array_obj< ::String >::__new();
 }
 
 
 Void BottomLayerMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","handleNotification",0x75399fc9,"view.mediator.lines.BottomLayerMediator.handleNotification","view/mediator/lines/BottomLayerMediator.hx",24,0x3b459cc7)
+		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","handleNotification",0x75399fc9,"view.mediator.lines.BottomLayerMediator.handleNotification","view/mediator/lines/BottomLayerMediator.hx",30,0x3b459cc7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
 	}
@@ -116,10 +116,10 @@ return null();
 
 Void BottomLayerMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","viewReadyHandler",0xf709c742,"view.mediator.lines.BottomLayerMediator.viewReadyHandler","view/mediator/lines/BottomLayerMediator.hx",28,0x3b459cc7)
+		HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","viewReadyHandler",0xf709c742,"view.mediator.lines.BottomLayerMediator.viewReadyHandler","view/mediator/lines/BottomLayerMediator.hx",34,0x3b459cc7)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("BottomLayerMediator"));
 	}
 return null();
@@ -129,9 +129,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(BottomLayerMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::BottomLayer BottomLayerMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","getView",0x4c144145,"view.mediator.lines.BottomLayerMediator.getView","view/mediator/lines/BottomLayerMediator.hx",32,0x3b459cc7)
+	HX_STACK_FRAME("view.mediator.lines.BottomLayerMediator","getView",0x4c144145,"view.mediator.lines.BottomLayerMediator.getView","view/mediator/lines/BottomLayerMediator.hx",38,0x3b459cc7)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(38)
 	return this->viewComponent;
 }
 

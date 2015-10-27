@@ -34,7 +34,7 @@ namespace utilities{
 
 Void TextFieldFactory_obj::__construct()
 {
-HX_STACK_FRAME("utilities.TextFieldFactory","new",0xd3205f33,"utilities.TextFieldFactory.new","utilities/TextFieldFactory.hx",45,0x3bb76c3c)
+HX_STACK_FRAME("utilities.TextFieldFactory","new",0xd3205f33,"utilities.TextFieldFactory.new","utilities/TextFieldFactory.hx",51,0x3bb76c3c)
 HX_STACK_THIS(this)
 {
 }
@@ -80,28 +80,28 @@ int TextFieldFactory_obj::TEXT_ACTIVE_COLOR;
 int TextFieldFactory_obj::TEXT_INACTIVE_COLOR;
 
 ::openfl::_legacy::text::TextField TextFieldFactory_obj::getOutputTFBold( ){
-	HX_STACK_FRAME("utilities.TextFieldFactory","getOutputTFBold",0x19c2b2e1,"utilities.TextFieldFactory.getOutputTFBold","utilities/TextFieldFactory.hx",48,0x3bb76c3c)
-	HX_STACK_LINE(49)
-	::openfl::_legacy::text::TextField tf = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
-	HX_STACK_LINE(50)
-	tf->set_defaultTextFormat(::utilities::TextFieldFactory_obj::OUTPUT_TEXT_FORMAT_BOLD);
-	HX_STACK_LINE(51)
-	tf->set_embedFonts(true);
-	HX_STACK_LINE(52)
-	tf->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
-	HX_STACK_LINE(53)
-	tf->set_border(true);
-	HX_STACK_LINE(54)
-	tf->set_borderColor((int)10526880);
+	HX_STACK_FRAME("utilities.TextFieldFactory","getOutputTFBold",0x19c2b2e1,"utilities.TextFieldFactory.getOutputTFBold","utilities/TextFieldFactory.hx",54,0x3bb76c3c)
 	HX_STACK_LINE(55)
-	tf->set_background(true);
+	::openfl::_legacy::text::TextField tf = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
 	HX_STACK_LINE(56)
-	tf->set_backgroundColor((int)0);
+	tf->set_defaultTextFormat(::utilities::TextFieldFactory_obj::OUTPUT_TEXT_FORMAT_BOLD);
 	HX_STACK_LINE(57)
-	tf->set_width(::utilities::TextFieldFactory_obj::TF_WIDTH);
+	tf->set_embedFonts(true);
 	HX_STACK_LINE(58)
-	tf->set_height(::utilities::TextFieldFactory_obj::TF_HEIGHT);
+	tf->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
 	HX_STACK_LINE(59)
+	tf->set_border(true);
+	HX_STACK_LINE(60)
+	tf->set_borderColor((int)10526880);
+	HX_STACK_LINE(61)
+	tf->set_background(true);
+	HX_STACK_LINE(62)
+	tf->set_backgroundColor((int)0);
+	HX_STACK_LINE(63)
+	tf->set_width(::utilities::TextFieldFactory_obj::TF_WIDTH);
+	HX_STACK_LINE(64)
+	tf->set_height(::utilities::TextFieldFactory_obj::TF_HEIGHT);
+	HX_STACK_LINE(65)
 	return tf;
 }
 
@@ -109,20 +109,20 @@ int TextFieldFactory_obj::TEXT_INACTIVE_COLOR;
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(TextFieldFactory_obj,getOutputTFBold,return )
 
 ::openfl::_legacy::text::TextField TextFieldFactory_obj::getInstructionOutput( ){
-	HX_STACK_FRAME("utilities.TextFieldFactory","getInstructionOutput",0xfb750206,"utilities.TextFieldFactory.getInstructionOutput","utilities/TextFieldFactory.hx",62,0x3bb76c3c)
-	HX_STACK_LINE(63)
-	::openfl::_legacy::text::TextField tf = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
-	HX_STACK_LINE(65)
-	::openfl::_legacy::text::TextFormat _g = ::openfl::_legacy::text::TextFormat_obj::__new(HX_CSTRING("Myriad Pro"),(int)40,(int)16777215,null(),null(),null(),null(),null(),null(),null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(65)
-	tf->set_defaultTextFormat(_g);
+	HX_STACK_FRAME("utilities.TextFieldFactory","getInstructionOutput",0xfb750206,"utilities.TextFieldFactory.getInstructionOutput","utilities/TextFieldFactory.hx",68,0x3bb76c3c)
 	HX_STACK_LINE(69)
-	tf->set_embedFonts(true);
-	HX_STACK_LINE(70)
-	tf->set_textColor((int)16777215);
+	::openfl::_legacy::text::TextField tf = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
 	HX_STACK_LINE(71)
+	::openfl::_legacy::text::TextFormat _g = ::openfl::_legacy::text::TextFormat_obj::__new(HX_CSTRING("Myriad Pro"),(int)40,(int)16777215,null(),null(),null(),null(),null(),null(),null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(71)
+	tf->set_defaultTextFormat(_g);
+	HX_STACK_LINE(75)
+	tf->set_embedFonts(true);
+	HX_STACK_LINE(76)
+	tf->set_textColor((int)16777215);
+	HX_STACK_LINE(77)
 	tf->set_autoSize(::openfl::text::TextFieldAutoSize_obj::LEFT);
-	HX_STACK_LINE(72)
+	HX_STACK_LINE(78)
 	return tf;
 }
 

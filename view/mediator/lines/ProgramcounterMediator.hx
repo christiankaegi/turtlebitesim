@@ -36,8 +36,8 @@ class ProgramcounterMediator extends Mediator {
         return [
             AppConstants.CLOCK_ON,
             AppConstants.BROADCAST_JUMP,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

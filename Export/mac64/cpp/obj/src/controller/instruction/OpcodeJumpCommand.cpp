@@ -53,10 +53,10 @@ namespace instruction{
 
 Void OpcodeJumpCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.instruction.OpcodeJumpCommand","new",0x388dcf6f,"controller.instruction.OpcodeJumpCommand.new","controller/instruction/OpcodeJumpCommand.hx",15,0x521a3d63)
+HX_STACK_FRAME("controller.instruction.OpcodeJumpCommand","new",0x388dcf6f,"controller.instruction.OpcodeJumpCommand.new","controller/instruction/OpcodeJumpCommand.hx",21,0x521a3d63)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct();
 }
 ;
@@ -78,86 +78,86 @@ Dynamic OpcodeJumpCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeJumpCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.instruction.OpcodeJumpCommand","execute",0xe5b53cc4,"controller.instruction.OpcodeJumpCommand.execute","controller/instruction/OpcodeJumpCommand.hx",18,0x521a3d63)
+		HX_STACK_FRAME("controller.instruction.OpcodeJumpCommand","execute",0xe5b53cc4,"controller.instruction.OpcodeJumpCommand.execute","controller/instruction/OpcodeJumpCommand.hx",24,0x521a3d63)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::String _g = instruction->code.substr((int)4,(int)4);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::model::vo::DecHexVO newPointer = ::utilities::NumberFormat_obj::binaryToDecimal(_g);		HX_STACK_VAR(newPointer,"newPointer");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		bool equal;		HX_STACK_VAR(equal,"equal");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		{
-			HX_STACK_LINE(25)
+			HX_STACK_LINE(31)
 			int a = snapshotProxy->getAccumulator()->getDecimal();		HX_STACK_VAR(a,"a");
-			HX_STACK_LINE(25)
+			HX_STACK_LINE(31)
 			Float b;		HX_STACK_VAR(b,"b");
-			HX_STACK_LINE(25)
+			HX_STACK_LINE(31)
 			{
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				int this1 = snapshotProxy->getRegister1()->getDecimal();		HX_STACK_VAR(this1,"this1");
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				int _int = this1;		HX_STACK_VAR(_int,"int");
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				if (((_int < (int)0))){
-					HX_STACK_LINE(25)
+					HX_STACK_LINE(31)
 					b = (4294967296.0 + _int);
 				}
 				else{
-					HX_STACK_LINE(25)
+					HX_STACK_LINE(31)
 					b = (_int + 0.0);
 				}
 			}
 			struct _Function_2_1{
 				inline static Float Block( int &a){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","controller/instruction/OpcodeJumpCommand.hx",25,0x521a3d63)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","controller/instruction/OpcodeJumpCommand.hx",31,0x521a3d63)
 					{
-						HX_STACK_LINE(25)
+						HX_STACK_LINE(31)
 						int _int = a;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(25)
+						HX_STACK_LINE(31)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(25)
+			HX_STACK_LINE(31)
 			equal = (_Function_2_1::Block(a) == b);
 		}
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		{
-			HX_STACK_LINE(27)
+			HX_STACK_LINE(33)
 			::String _g1 = instruction->code.substr((int)0,(int)4);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(27)
+			HX_STACK_LINE(33)
 			::String _switch_1 = (_g1);
 			if (  ( _switch_1==::AppConstants_obj::OPCODE_JE)){
-				HX_STACK_LINE(29)
+				HX_STACK_LINE(35)
 				if ((equal)){
-					HX_STACK_LINE(30)
+					HX_STACK_LINE(36)
 					programProxy->setInstructionPointer((newPointer->dec - (int)1));
 				}
 			}
 			else if (  ( _switch_1==::AppConstants_obj::OPCODE_JNE)){
-				HX_STACK_LINE(33)
+				HX_STACK_LINE(39)
 				if ((!(equal))){
-					HX_STACK_LINE(34)
+					HX_STACK_LINE(40)
 					programProxy->setInstructionPointer((newPointer->dec - (int)1));
 				}
 			}
 			else if (  ( _switch_1==::AppConstants_obj::OPCODE_JMP)){
-				HX_STACK_LINE(37)
+				HX_STACK_LINE(43)
 				programProxy->setInstructionPointer((newPointer->dec - (int)1));
 			}
 		}

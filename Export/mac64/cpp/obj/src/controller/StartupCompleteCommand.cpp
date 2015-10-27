@@ -34,10 +34,10 @@ namespace controller{
 
 Void StartupCompleteCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.StartupCompleteCommand","new",0xa6cb40f9,"controller.StartupCompleteCommand.new","controller/StartupCompleteCommand.hx",8,0xa00e2676)
+HX_STACK_FRAME("controller.StartupCompleteCommand","new",0xa6cb40f9,"controller.StartupCompleteCommand.new","controller/StartupCompleteCommand.hx",14,0xa00e2676)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(8)
+	HX_STACK_LINE(14)
 	super::__construct();
 }
 ;
@@ -59,12 +59,12 @@ Dynamic StartupCompleteCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void StartupCompleteCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.StartupCompleteCommand","execute",0x734b3b4e,"controller.StartupCompleteCommand.execute","controller/StartupCompleteCommand.hx",13,0xa00e2676)
+		HX_STACK_FRAME("controller.StartupCompleteCommand","execute",0x734b3b4e,"controller.StartupCompleteCommand.execute","controller/StartupCompleteCommand.hx",19,0xa00e2676)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(13)
+		HX_STACK_LINE(19)
 		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-		HX_STACK_LINE(13)
+		HX_STACK_LINE(19)
 		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
 	}
 return null();

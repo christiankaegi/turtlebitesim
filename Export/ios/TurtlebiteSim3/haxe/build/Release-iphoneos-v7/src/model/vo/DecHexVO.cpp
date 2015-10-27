@@ -8,14 +8,14 @@ namespace vo{
 
 Void DecHexVO_obj::__construct(int dec,::String hex)
 {
-HX_STACK_FRAME("model.vo.DecHexVO","new",0x79baff54,"model.vo.DecHexVO.new","model/vo/DecHexVO.hx",7,0xef6253fc)
+HX_STACK_FRAME("model.vo.DecHexVO","new",0x79baff54,"model.vo.DecHexVO.new","model/vo/DecHexVO.hx",13,0xef6253fc)
 HX_STACK_THIS(this)
 HX_STACK_ARG(dec,"dec")
 HX_STACK_ARG(hex,"hex")
 {
-	HX_STACK_LINE(8)
+	HX_STACK_LINE(14)
 	this->dec = dec;
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	this->hex = hex;
 }
 ;

@@ -51,12 +51,12 @@ namespace lines{
 
 Void Programcounter_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Programcounter","new",0x05b3a553,"view.component.lines.Programcounter.new","view/component/lines/Programcounter.hx",23,0x0a66515a)
+HX_STACK_FRAME("view.component.lines.Programcounter","new",0x05b3a553,"view.component.lines.Programcounter.new","view/component/lines/Programcounter.hx",29,0x0a66515a)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	super::__construct();
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(31)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,18 +78,18 @@ Dynamic Programcounter_obj::__Create(hx::DynamicArray inArgs)
 
 Void Programcounter_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","addedToStageHandler",0x67d4429a,"view.component.lines.Programcounter.addedToStageHandler","view/component/lines/Programcounter.hx",28,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","addedToStageHandler",0x67d4429a,"view.component.lines.Programcounter.addedToStageHandler","view/component/lines/Programcounter.hx",34,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/pc-out-0.png")),this->out0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/pc-out-1.png")),this->out1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/pc-out-2.png")),this->out2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/pc-out-3.png")),this->out3LoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -100,18 +100,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,addedToStageHandler,(void))
 
 Void Programcounter_obj::out0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","out0LoadCompleteHandler",0x60930a3c,"view.component.lines.Programcounter.out0LoadCompleteHandler","view/component/lines/Programcounter.hx",36,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","out0LoadCompleteHandler",0x60930a3c,"view.component.lines.Programcounter.out0LoadCompleteHandler","view/component/lines/Programcounter.hx",42,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		this->out0 = _g;
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		this->out0->set_name(HX_CSTRING("pcOut0"));
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		Float _g1 = this->out0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		this->out0->set_scaleX(_g1);
 	}
 return null();
@@ -122,18 +122,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,out0LoadCompleteHandler,(void))
 
 Void Programcounter_obj::out1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","out1LoadCompleteHandler",0xc6f7aedb,"view.component.lines.Programcounter.out1LoadCompleteHandler","view/component/lines/Programcounter.hx",42,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","out1LoadCompleteHandler",0xc6f7aedb,"view.component.lines.Programcounter.out1LoadCompleteHandler","view/component/lines/Programcounter.hx",48,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		this->out1 = _g;
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->out1->set_name(HX_CSTRING("pcOut1"));
-		HX_STACK_LINE(45)
+		HX_STACK_LINE(51)
 		Float _g1 = this->out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(45)
+		HX_STACK_LINE(51)
 		this->out1->set_scaleX(_g1);
 	}
 return null();
@@ -144,18 +144,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,out1LoadCompleteHandler,(void))
 
 Void Programcounter_obj::out2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","out2LoadCompleteHandler",0x2d5c537a,"view.component.lines.Programcounter.out2LoadCompleteHandler","view/component/lines/Programcounter.hx",48,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","out2LoadCompleteHandler",0x2d5c537a,"view.component.lines.Programcounter.out2LoadCompleteHandler","view/component/lines/Programcounter.hx",54,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->out2 = _g;
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->out2->set_name(HX_CSTRING("pcOut2"));
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		Float _g1 = this->out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		this->out2->set_scaleX(_g1);
 	}
 return null();
@@ -166,22 +166,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,out2LoadCompleteHandler,(void))
 
 Void Programcounter_obj::out3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","out3LoadCompleteHandler",0x93c0f819,"view.component.lines.Programcounter.out3LoadCompleteHandler","view/component/lines/Programcounter.hx",54,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","out3LoadCompleteHandler",0x93c0f819,"view.component.lines.Programcounter.out3LoadCompleteHandler","view/component/lines/Programcounter.hx",60,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		this->out3 = _g;
-		HX_STACK_LINE(56)
+		HX_STACK_LINE(62)
 		this->out3->set_name(HX_CSTRING("pcOut3"));
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		Float _g1 = this->out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		this->out3->set_scaleX(_g1);
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -192,29 +192,29 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,out3LoadCompleteHandler,(void))
 
 Void Programcounter_obj::showLines( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","showLines",0xb93cd0f5,"view.component.lines.Programcounter.showLines","view/component/lines/Programcounter.hx",65,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","showLines",0xb93cd0f5,"view.component.lines.Programcounter.showLines","view/component/lines/Programcounter.hx",71,0x0a66515a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->hideAllLines();
-		HX_STACK_LINE(67)
+		HX_STACK_LINE(73)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(68)
+			HX_STACK_LINE(74)
 			this->addChild(this->out3);
 		}
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(71)
+			HX_STACK_LINE(77)
 			this->addChild(this->out2);
 		}
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(74)
+			HX_STACK_LINE(80)
 			this->addChild(this->out1);
 		}
-		HX_STACK_LINE(76)
+		HX_STACK_LINE(82)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(77)
+			HX_STACK_LINE(83)
 			this->addChild(this->out0);
 		}
 	}
@@ -226,26 +226,26 @@ HX_DEFINE_DYNAMIC_FUNC1(Programcounter_obj,showLines,(void))
 
 Void Programcounter_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Programcounter","hideAllLines",0x37a094ad,"view.component.lines.Programcounter.hideAllLines","view/component/lines/Programcounter.hx",82,0x0a66515a)
+		HX_STACK_FRAME("view.component.lines.Programcounter","hideAllLines",0x37a094ad,"view.component.lines.Programcounter.hideAllLines","view/component/lines/Programcounter.hx",88,0x0a66515a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		while((true)){
-			HX_STACK_LINE(82)
+			HX_STACK_LINE(88)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(82)
+				HX_STACK_LINE(88)
 				break;
 			}
-			HX_STACK_LINE(82)
+			HX_STACK_LINE(88)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(83)
+			HX_STACK_LINE(89)
 			::openfl::display::DisplayObject _g1 = this->getChildByName((HX_CSTRING("pcOut") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(83)
+			HX_STACK_LINE(89)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(84)
+				HX_STACK_LINE(90)
 				::openfl::display::DisplayObject _g11 = this->getChildByName((HX_CSTRING("pcOut") + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(84)
+				HX_STACK_LINE(90)
 				this->removeChild(_g11);
 			}
 		}

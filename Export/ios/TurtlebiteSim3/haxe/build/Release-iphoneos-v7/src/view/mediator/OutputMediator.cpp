@@ -80,11 +80,11 @@ namespace mediator{
 
 Void OutputMediator_obj::__construct(::view::component::Output viewComponent)
 {
-HX_STACK_FRAME("view.mediator.OutputMediator","new",0x214b2938,"view.mediator.OutputMediator.new","view/mediator/OutputMediator.hx",20,0x8c529158)
+HX_STACK_FRAME("view.mediator.OutputMediator","new",0x214b2938,"view.mediator.OutputMediator.new","view/mediator/OutputMediator.hx",26,0x8c529158)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	super::__construct(HX_CSTRING("OutputMediator"),viewComponent);
 }
 ;
@@ -106,31 +106,31 @@ Dynamic OutputMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void OutputMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.OutputMediator","onRegister",0x440a6cca,"view.mediator.OutputMediator.onRegister","view/mediator/OutputMediator.hx",23,0x8c529158)
+		HX_STACK_FRAME("view.mediator.OutputMediator","onRegister",0x440a6cca,"view.mediator.OutputMediator.onRegister","view/mediator/OutputMediator.hx",29,0x8c529158)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::view::component::Output _g = this->getView();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g,null());
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::model::proxy::AppProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		_g1 = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->appProxy = _g1;
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::model::proxy::ProgramProxy _g2;		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		_g2 = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->programProxy = _g2;
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::model::proxy::SnapshotProxy _g3;		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		_g3 = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->snapshotProxy = _g3;
 	}
 return null();
@@ -138,83 +138,83 @@ return null();
 
 
 Array< ::String > OutputMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.OutputMediator","listNotificationInterests",0xfc4883b8,"view.mediator.OutputMediator.listNotificationInterests","view/mediator/OutputMediator.hx",32,0x8c529158)
+	HX_STACK_FRAME("view.mediator.OutputMediator","listNotificationInterests",0xfc4883b8,"view.mediator.OutputMediator.listNotificationInterests","view/mediator/OutputMediator.hx",38,0x8c529158)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(38)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::CLOCK_OFF).Add(::AppConstants_obj::BROADCAST_SDA).Add(::AppConstants_obj::BROADCAST_LDA).Add(::AppConstants_obj::REGISTER_1_CHANGED).Add(::AppConstants_obj::REGISTER_2_CHANGED).Add(::AppConstants_obj::ACCUMULATOR_CHANGED).Add(::AppConstants_obj::LOAD_ROM).Add(::AppConstants_obj::POWER_ON).Add(::AppConstants_obj::POWER_OFF).Add(::AppConstants_obj::MODEL_RESET_COMPLETE);
 }
 
 
 Void OutputMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.OutputMediator","handleNotification",0xd5d3fcdb,"view.mediator.OutputMediator.handleNotification","view/mediator/OutputMediator.hx",48,0x8c529158)
+		HX_STACK_FRAME("view.mediator.OutputMediator","handleNotification",0xd5d3fcdb,"view.mediator.OutputMediator.handleNotification","view/mediator/OutputMediator.hx",54,0x8c529158)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(51)
+			HX_STACK_LINE(57)
 			if ((!(this->appProxy->getEnterInstructionActive()))){
-				HX_STACK_LINE(52)
+				HX_STACK_LINE(58)
 				::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-				HX_STACK_LINE(52)
+				HX_STACK_LINE(58)
 				instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-				HX_STACK_LINE(53)
+				HX_STACK_LINE(59)
 				this->getView()->setProgramCountPointer(instruction->pointer);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::BROADCAST_LDA)){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->getView()->setRamPointer(note->getBody()->__Field(HX_CSTRING("pointer"),true));
 		}
 		else if (  ( _switch_1==::AppConstants_obj::BROADCAST_SDA)){
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->getView()->updateRam(note->getBody()->__Field(HX_CSTRING("ram"),true),note->getBody()->__Field(HX_CSTRING("pointer"),true));
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CLOCK_OFF)){
-			HX_STACK_LINE(60)
+			HX_STACK_LINE(66)
 			this->getView()->resetRamPointer();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::REGISTER_1_CHANGED)){
-			HX_STACK_LINE(62)
+			HX_STACK_LINE(68)
 			::String _g1 = this->snapshotProxy->getRegister1()->getHex();		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(62)
+			HX_STACK_LINE(68)
 			this->getView()->setRegister1(_g1);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::REGISTER_2_CHANGED)){
-			HX_STACK_LINE(64)
+			HX_STACK_LINE(70)
 			::String _g1 = this->snapshotProxy->getRegister2()->getHex();		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(64)
+			HX_STACK_LINE(70)
 			this->getView()->setRegister2(_g1);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::ACCUMULATOR_CHANGED)){
-			HX_STACK_LINE(66)
+			HX_STACK_LINE(72)
 			::String _g2 = this->snapshotProxy->getAccumulator()->getHex();		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(66)
+			HX_STACK_LINE(72)
 			this->getView()->setAccumulator(_g2);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::LOAD_ROM)){
-			HX_STACK_LINE(68)
+			HX_STACK_LINE(74)
 			Array< ::Dynamic > _g3 = this->programProxy->getCurrentInstructions();		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(68)
+			HX_STACK_LINE(74)
 			this->getView()->loadRomDisplay(_g3);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_ON)){
-			HX_STACK_LINE(70)
+			HX_STACK_LINE(76)
 			this->getView()->powerOn();
-			HX_STACK_LINE(71)
+			HX_STACK_LINE(77)
 			Array< ::Dynamic > _g4 = this->programProxy->getCurrentInstructions();		HX_STACK_VAR(_g4,"_g4");
-			HX_STACK_LINE(71)
+			HX_STACK_LINE(77)
 			this->getView()->loadRomDisplay(_g4);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(73)
+			HX_STACK_LINE(79)
 			this->getView()->powerOff();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(75)
+			HX_STACK_LINE(81)
 			this->getView()->resetAll();
 		}
 	}
@@ -224,10 +224,10 @@ return null();
 
 Void OutputMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.OutputMediator","viewReadyHandler",0x93685bd4,"view.mediator.OutputMediator.viewReadyHandler","view/mediator/OutputMediator.hx",80,0x8c529158)
+		HX_STACK_FRAME("view.mediator.OutputMediator","viewReadyHandler",0x93685bd4,"view.mediator.OutputMediator.viewReadyHandler","view/mediator/OutputMediator.hx",86,0x8c529158)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(80)
+		HX_STACK_LINE(86)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("OutputMediator"));
 	}
 return null();
@@ -237,9 +237,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(OutputMediator_obj,viewReadyHandler,(void))
 
 ::view::component::Output OutputMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.OutputMediator","getView",0x2ae286f3,"view.mediator.OutputMediator.getView","view/mediator/OutputMediator.hx",84,0x8c529158)
+	HX_STACK_FRAME("view.mediator.OutputMediator","getView",0x2ae286f3,"view.mediator.OutputMediator.getView","view/mediator/OutputMediator.hx",90,0x8c529158)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(84)
+	HX_STACK_LINE(90)
 	return this->viewComponent;
 }
 

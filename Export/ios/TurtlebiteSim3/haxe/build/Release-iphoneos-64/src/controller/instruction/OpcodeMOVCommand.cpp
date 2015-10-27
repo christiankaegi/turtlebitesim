@@ -47,10 +47,10 @@ namespace instruction{
 
 Void OpcodeMOVCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.instruction.OpcodeMOVCommand","new",0xe175fb49,"controller.instruction.OpcodeMOVCommand.new","controller/instruction/OpcodeMOVCommand.hx",12,0x3c33fc05)
+HX_STACK_FRAME("controller.instruction.OpcodeMOVCommand","new",0xe175fb49,"controller.instruction.OpcodeMOVCommand.new","controller/instruction/OpcodeMOVCommand.hx",18,0x3c33fc05)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct();
 }
 ;
@@ -72,45 +72,45 @@ Dynamic OpcodeMOVCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeMOVCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.instruction.OpcodeMOVCommand","execute",0xe2e95d9e,"controller.instruction.OpcodeMOVCommand.execute","controller/instruction/OpcodeMOVCommand.hx",15,0x3c33fc05)
+		HX_STACK_FRAME("controller.instruction.OpcodeMOVCommand","execute",0xe2e95d9e,"controller.instruction.OpcodeMOVCommand.execute","controller/instruction/OpcodeMOVCommand.hx",21,0x3c33fc05)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		{
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			::String _g = programProxy->getAddressOrData();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			::String _switch_1 = (_g);
 			if (  ( _switch_1==::AppConstants_obj::ADDRESS_REGISTER1)){
-				HX_STACK_LINE(22)
+				HX_STACK_LINE(28)
 				::String _g1 = snapshotProxy->getAccumulator()->getBinary();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(22)
+				HX_STACK_LINE(28)
 				snapshotProxy->setRegister1(_g1);
-				HX_STACK_LINE(23)
+				HX_STACK_LINE(29)
 				Array< bool > _g11 = snapshotProxy->getAccumulator()->getCodeArr();		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(23)
+				HX_STACK_LINE(29)
 				this->sendNotification(::AppConstants_obj::REGISTER_1_CHANGED,_g11,null());
 			}
 			else if (  ( _switch_1==::AppConstants_obj::ADDRESS_REGISTER2)){
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				::String _g2 = snapshotProxy->getAccumulator()->getBinary();		HX_STACK_VAR(_g2,"_g2");
-				HX_STACK_LINE(25)
+				HX_STACK_LINE(31)
 				snapshotProxy->setRegister2(_g2);
-				HX_STACK_LINE(26)
+				HX_STACK_LINE(32)
 				Array< bool > _g3 = snapshotProxy->getAccumulator()->getCodeArr();		HX_STACK_VAR(_g3,"_g3");
-				HX_STACK_LINE(26)
+				HX_STACK_LINE(32)
 				this->sendNotification(::AppConstants_obj::REGISTER_2_CHANGED,_g3,null());
 			}
 		}
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->sendNotification(::AppConstants_obj::BROADCAST_MOV,programProxy->getInstruction()->code,null());
 	}
 return null();

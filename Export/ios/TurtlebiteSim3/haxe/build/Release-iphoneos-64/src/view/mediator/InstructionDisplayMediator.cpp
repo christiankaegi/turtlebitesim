@@ -71,11 +71,11 @@ namespace mediator{
 
 Void InstructionDisplayMediator_obj::__construct(::view::component::InstructionDisplay viewComponent)
 {
-HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","new",0x0dc5478b,"view.mediator.InstructionDisplayMediator.new","view/mediator/InstructionDisplayMediator.hx",15,0x885d8e65)
+HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","new",0x0dc5478b,"view.mediator.InstructionDisplayMediator.new","view/mediator/InstructionDisplayMediator.hx",21,0x885d8e65)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct(HX_CSTRING("InstructionDisplayMediator"),viewComponent);
 }
 ;
@@ -97,25 +97,25 @@ Dynamic InstructionDisplayMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void InstructionDisplayMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","onRegister",0xaf8b0ed7,"view.mediator.InstructionDisplayMediator.onRegister","view/mediator/InstructionDisplayMediator.hx",18,0x885d8e65)
+		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","onRegister",0xaf8b0ed7,"view.mediator.InstructionDisplayMediator.onRegister","view/mediator/InstructionDisplayMediator.hx",24,0x885d8e65)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::proxy::ProgramProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		_g = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->programProxy = _g;
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		this->getView()->set_visible(false);
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		this->getView()->set_x(((int)495 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->getView()->set_y(((int)657 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::view::component::InstructionDisplay _g1 = this->getView();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->sendNotification(::AppConstants_obj::ADD_TO_NAVIG_VIEW,_g1,null());
 	}
 return null();
@@ -123,42 +123,42 @@ return null();
 
 
 Array< ::String > InstructionDisplayMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","listNotificationInterests",0x1840384b,"view.mediator.InstructionDisplayMediator.listNotificationInterests","view/mediator/InstructionDisplayMediator.hx",28,0x885d8e65)
+	HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","listNotificationInterests",0x1840384b,"view.mediator.InstructionDisplayMediator.listNotificationInterests","view/mediator/InstructionDisplayMediator.hx",34,0x885d8e65)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(28)
+	HX_STACK_LINE(34)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::RESET).Add(::AppConstants_obj::POWER_ON).Add(::AppConstants_obj::POWER_OFF);
 }
 
 
 Void InstructionDisplayMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","handleNotification",0x3c08f3e8,"view.mediator.InstructionDisplayMediator.handleNotification","view/mediator/InstructionDisplayMediator.hx",38,0x885d8e65)
+		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","handleNotification",0x3c08f3e8,"view.mediator.InstructionDisplayMediator.handleNotification","view/mediator/InstructionDisplayMediator.hx",44,0x885d8e65)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			instruction = hx::TCast< model::vo::InstructionVO >::cast(this->programProxy->getInstruction());
-			HX_STACK_LINE(42)
+			HX_STACK_LINE(48)
 			this->getView()->setOutput(instruction);
-			HX_STACK_LINE(43)
+			HX_STACK_LINE(49)
 			this->programProxy->setManualInstruction(instruction);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_ON)){
-			HX_STACK_LINE(45)
+			HX_STACK_LINE(51)
 			this->getView()->set_visible(true);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(47)
+			HX_STACK_LINE(53)
 			this->getView()->set_visible(false);
 		}
 		else if (  ( _switch_1==::AppConstants_obj::RESET)){
-			HX_STACK_LINE(49)
+			HX_STACK_LINE(55)
 			this->getView()->clearOutput();
 		}
 	}
@@ -168,10 +168,10 @@ return null();
 
 Void InstructionDisplayMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","viewReadyHandler",0x50a585a1,"view.mediator.InstructionDisplayMediator.viewReadyHandler","view/mediator/InstructionDisplayMediator.hx",54,0x885d8e65)
+		HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","viewReadyHandler",0x50a585a1,"view.mediator.InstructionDisplayMediator.viewReadyHandler","view/mediator/InstructionDisplayMediator.hx",60,0x885d8e65)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("InstructionDisplayMediator"));
 	}
 return null();
@@ -181,9 +181,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(InstructionDisplayMediator_obj,viewReadyHandler,(void))
 
 ::view::component::InstructionDisplay InstructionDisplayMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","getView",0xac05cac6,"view.mediator.InstructionDisplayMediator.getView","view/mediator/InstructionDisplayMediator.hx",58,0x885d8e65)
+	HX_STACK_FRAME("view.mediator.InstructionDisplayMediator","getView",0xac05cac6,"view.mediator.InstructionDisplayMediator.getView","view/mediator/InstructionDisplayMediator.hx",64,0x885d8e65)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(58)
+	HX_STACK_LINE(64)
 	return this->viewComponent;
 }
 

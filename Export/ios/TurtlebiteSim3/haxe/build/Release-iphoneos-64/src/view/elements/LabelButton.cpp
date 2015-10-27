@@ -56,7 +56,7 @@ namespace elements{
 
 Void LabelButton_obj::__construct(Float width,::String __o_label,Dynamic __o_hasCheckbox,Dynamic __o_inactive)
 {
-HX_STACK_FRAME("view.elements.LabelButton","new",0x783687ca,"view.elements.LabelButton.new","view/elements/LabelButton.hx",10,0x10657ec6)
+HX_STACK_FRAME("view.elements.LabelButton","new",0x783687ca,"view.elements.LabelButton.new","view/elements/LabelButton.hx",16,0x10657ec6)
 HX_STACK_THIS(this)
 HX_STACK_ARG(width,"width")
 HX_STACK_ARG(__o_label,"label")
@@ -66,28 +66,28 @@ HX_STACK_ARG(__o_inactive,"inactive")
 Dynamic hasCheckbox = __o_hasCheckbox.Default(false);
 Dynamic inactive = __o_inactive.Default(false);
 {
-	HX_STACK_LINE(29)
+	HX_STACK_LINE(35)
 	this->hasCheckbox = false;
-	HX_STACK_LINE(41)
-	super::__construct();
-	HX_STACK_LINE(42)
-	this->btnWidth = (width * ::AppConstants_obj::SCALE_FACTOR);
-	HX_STACK_LINE(43)
-	this->labelText = label;
-	HX_STACK_LINE(44)
-	this->inactive = inactive;
-	HX_STACK_LINE(45)
-	this->createBG();
-	HX_STACK_LINE(46)
-	this->hasCheckbox = hasCheckbox;
 	HX_STACK_LINE(47)
+	super::__construct();
+	HX_STACK_LINE(48)
+	this->btnWidth = (width * ::AppConstants_obj::SCALE_FACTOR);
+	HX_STACK_LINE(49)
+	this->labelText = label;
+	HX_STACK_LINE(50)
+	this->inactive = inactive;
+	HX_STACK_LINE(51)
+	this->createBG();
+	HX_STACK_LINE(52)
+	this->hasCheckbox = hasCheckbox;
+	HX_STACK_LINE(53)
 	if ((this->hasCheckbox)){
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		this->createCheckbox();
 	}
-	HX_STACK_LINE(50)
+	HX_STACK_LINE(56)
 	this->createLabel();
-	HX_STACK_LINE(51)
+	HX_STACK_LINE(57)
 	this->createClickArea();
 }
 ;
@@ -109,87 +109,87 @@ Dynamic LabelButton_obj::__Create(hx::DynamicArray inArgs)
 
 Void LabelButton_obj::createBG( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","createBG",0x91ae8017,"view.elements.LabelButton.createBG","view/elements/LabelButton.hx",55,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","createBG",0x91ae8017,"view.elements.LabelButton.createBG","view/elements/LabelButton.hx",61,0x10657ec6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		if ((this->inactive)){
 			struct _Function_2_1{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",56,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",62,0x10657ec6)
 					{
-						HX_STACK_LINE(56)
+						HX_STACK_LINE(62)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(56)
+						HX_STACK_LINE(62)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			::view::elements::SimpleRectangle _g = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_1::Block(),::view::elements::LabelButton_obj::BG_INACTIVE_COLOR,(int)1,true,null());		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->bg = _g;
-			HX_STACK_LINE(57)
+			HX_STACK_LINE(63)
 			this->addChild(this->bg);
 		}
 		else{
 			struct _Function_2_1{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",59,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",65,0x10657ec6)
 					{
-						HX_STACK_LINE(59)
+						HX_STACK_LINE(65)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(59)
+						HX_STACK_LINE(65)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			::view::elements::SimpleRectangle _g1 = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_1::Block(),::view::elements::LabelButton_obj::BG_COLOR,(int)1,true,null());		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			this->bg = _g1;
-			HX_STACK_LINE(60)
+			HX_STACK_LINE(66)
 			this->addChild(this->bg);
 			struct _Function_2_2{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",61,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",67,0x10657ec6)
 					{
-						HX_STACK_LINE(61)
+						HX_STACK_LINE(67)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(61)
+						HX_STACK_LINE(67)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(61)
+			HX_STACK_LINE(67)
 			::view::elements::SimpleRectangle _g2 = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_2::Block(),::view::elements::LabelButton_obj::BG_COLOR_HIGHLIGHT,0.2,null(),null());		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(61)
+			HX_STACK_LINE(67)
 			this->bgHighlight = _g2;
-			HX_STACK_LINE(62)
+			HX_STACK_LINE(68)
 			this->bgHighlight->set_visible(false);
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			this->addChild(this->bgHighlight);
 			struct _Function_2_3{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",64,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",70,0x10657ec6)
 					{
-						HX_STACK_LINE(64)
+						HX_STACK_LINE(70)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(64)
+						HX_STACK_LINE(70)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(64)
+			HX_STACK_LINE(70)
 			::view::elements::SimpleRectangle _g3 = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_3::Block(),::view::elements::LabelButton_obj::BG_COLOR_ACTIVE,(int)1,null(),null());		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(64)
+			HX_STACK_LINE(70)
 			this->bgActive = _g3;
-			HX_STACK_LINE(65)
+			HX_STACK_LINE(71)
 			this->bgActive->set_visible(false);
-			HX_STACK_LINE(66)
+			HX_STACK_LINE(72)
 			this->addChild(this->bgActive);
 		}
 	}
@@ -201,95 +201,21 @@ HX_DEFINE_DYNAMIC_FUNC0(LabelButton_obj,createBG,(void))
 
 Void LabelButton_obj::createCheckbox( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","createCheckbox",0xbf2e5e35,"view.elements.LabelButton.createCheckbox","view/elements/LabelButton.hx",70,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","createCheckbox",0xbf2e5e35,"view.elements.LabelButton.createCheckbox","view/elements/LabelButton.hx",76,0x10657ec6)
 		HX_STACK_THIS(this)
 		struct _Function_1_1{
 			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",71,0x10657ec6)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",77,0x10657ec6)
 				{
-					HX_STACK_LINE(71)
+					HX_STACK_LINE(77)
 					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(71)
+					HX_STACK_LINE(77)
 					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 				}
 				return null();
 			}
 		};
 		struct _Function_1_2{
-			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",71,0x10657ec6)
-				{
-					HX_STACK_LINE(71)
-					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(71)
-					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-				}
-				return null();
-			}
-		};
-		HX_STACK_LINE(71)
-		::view::elements::SimpleRectangle _g = ::view::elements::SimpleRectangle_obj::__new((_Function_1_1::Block() * 0.5),(_Function_1_2::Block() * 0.5),(int)16777215,0.2,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(71)
-		this->checkboxBgUnselected = _g;
-		struct _Function_1_3{
-			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",72,0x10657ec6)
-				{
-					HX_STACK_LINE(72)
-					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(72)
-					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-				}
-				return null();
-			}
-		};
-		HX_STACK_LINE(72)
-		this->checkboxBgUnselected->set_x((_Function_1_3::Block() * 0.25));
-		struct _Function_1_4{
-			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",73,0x10657ec6)
-				{
-					HX_STACK_LINE(73)
-					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(73)
-					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-				}
-				return null();
-			}
-		};
-		HX_STACK_LINE(73)
-		this->checkboxBgUnselected->set_y((_Function_1_4::Block() * 0.25));
-		HX_STACK_LINE(74)
-		this->addChild(this->checkboxBgUnselected);
-		struct _Function_1_5{
-			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",76,0x10657ec6)
-				{
-					HX_STACK_LINE(76)
-					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(76)
-					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-				}
-				return null();
-			}
-		};
-		struct _Function_1_6{
-			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",76,0x10657ec6)
-				{
-					HX_STACK_LINE(76)
-					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(76)
-					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
-				}
-				return null();
-			}
-		};
-		HX_STACK_LINE(76)
-		::view::elements::SimpleRectangle _g1 = ::view::elements::SimpleRectangle_obj::__new((_Function_1_5::Block() * 0.5),(_Function_1_6::Block() * 0.5),::view::elements::LabelButton_obj::BG_COLOR_ACTIVE,(int)1,null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(76)
-		this->checkboxBgSelected = _g1;
-		struct _Function_1_7{
 			inline static Float Block( ){
 				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",77,0x10657ec6)
 				{
@@ -302,8 +228,10 @@ Void LabelButton_obj::createCheckbox( ){
 			}
 		};
 		HX_STACK_LINE(77)
-		this->checkboxBgSelected->set_x((_Function_1_7::Block() * 0.25));
-		struct _Function_1_8{
+		::view::elements::SimpleRectangle _g = ::view::elements::SimpleRectangle_obj::__new((_Function_1_1::Block() * 0.5),(_Function_1_2::Block() * 0.5),(int)16777215,0.2,null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(77)
+		this->checkboxBgUnselected = _g;
+		struct _Function_1_3{
 			inline static Float Block( ){
 				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",78,0x10657ec6)
 				{
@@ -316,10 +244,82 @@ Void LabelButton_obj::createCheckbox( ){
 			}
 		};
 		HX_STACK_LINE(78)
-		this->checkboxBgSelected->set_y((_Function_1_8::Block() * 0.25));
+		this->checkboxBgUnselected->set_x((_Function_1_3::Block() * 0.25));
+		struct _Function_1_4{
+			inline static Float Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",79,0x10657ec6)
+				{
+					HX_STACK_LINE(79)
+					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
+					HX_STACK_LINE(79)
+					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+				}
+				return null();
+			}
+		};
 		HX_STACK_LINE(79)
-		this->checkboxBgSelected->set_visible(false);
+		this->checkboxBgUnselected->set_y((_Function_1_4::Block() * 0.25));
 		HX_STACK_LINE(80)
+		this->addChild(this->checkboxBgUnselected);
+		struct _Function_1_5{
+			inline static Float Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",82,0x10657ec6)
+				{
+					HX_STACK_LINE(82)
+					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
+					HX_STACK_LINE(82)
+					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+				}
+				return null();
+			}
+		};
+		struct _Function_1_6{
+			inline static Float Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",82,0x10657ec6)
+				{
+					HX_STACK_LINE(82)
+					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
+					HX_STACK_LINE(82)
+					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+				}
+				return null();
+			}
+		};
+		HX_STACK_LINE(82)
+		::view::elements::SimpleRectangle _g1 = ::view::elements::SimpleRectangle_obj::__new((_Function_1_5::Block() * 0.5),(_Function_1_6::Block() * 0.5),::view::elements::LabelButton_obj::BG_COLOR_ACTIVE,(int)1,null(),null());		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(82)
+		this->checkboxBgSelected = _g1;
+		struct _Function_1_7{
+			inline static Float Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",83,0x10657ec6)
+				{
+					HX_STACK_LINE(83)
+					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
+					HX_STACK_LINE(83)
+					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+				}
+				return null();
+			}
+		};
+		HX_STACK_LINE(83)
+		this->checkboxBgSelected->set_x((_Function_1_7::Block() * 0.25));
+		struct _Function_1_8{
+			inline static Float Block( ){
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",84,0x10657ec6)
+				{
+					HX_STACK_LINE(84)
+					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
+					HX_STACK_LINE(84)
+					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
+				}
+				return null();
+			}
+		};
+		HX_STACK_LINE(84)
+		this->checkboxBgSelected->set_y((_Function_1_8::Block() * 0.25));
+		HX_STACK_LINE(85)
+		this->checkboxBgSelected->set_visible(false);
+		HX_STACK_LINE(86)
 		this->addChild(this->checkboxBgSelected);
 	}
 return null();
@@ -330,76 +330,76 @@ HX_DEFINE_DYNAMIC_FUNC0(LabelButton_obj,createCheckbox,(void))
 
 Void LabelButton_obj::createLabel( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","createLabel",0xad1176c2,"view.elements.LabelButton.createLabel","view/elements/LabelButton.hx",83,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","createLabel",0xad1176c2,"view.elements.LabelButton.createLabel","view/elements/LabelButton.hx",89,0x10657ec6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(84)
-		::openfl::_legacy::text::TextField _g = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(84)
-		this->tfLabel = _g;
-		HX_STACK_LINE(85)
-		this->tfLabel->set_defaultTextFormat(::utilities::TextFieldFactory_obj::TEXT_FORMAT_BUTTON_LABEL);
-		HX_STACK_LINE(86)
-		this->tfLabel->set_embedFonts(true);
-		HX_STACK_LINE(87)
-		this->tfLabel->set_textColor((int)16777215);
-		HX_STACK_LINE(88)
-		this->tfLabel->set_alpha(0.7);
-		HX_STACK_LINE(89)
-		this->tfLabel->set_selectable(false);
 		HX_STACK_LINE(90)
-		this->tfLabel->set_y(((int)16 * ::AppConstants_obj::SCALE_FACTOR));
+		::openfl::_legacy::text::TextField _g = ::openfl::_legacy::text::TextField_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(90)
+		this->tfLabel = _g;
 		HX_STACK_LINE(91)
+		this->tfLabel->set_defaultTextFormat(::utilities::TextFieldFactory_obj::TEXT_FORMAT_BUTTON_LABEL);
+		HX_STACK_LINE(92)
+		this->tfLabel->set_embedFonts(true);
+		HX_STACK_LINE(93)
+		this->tfLabel->set_textColor((int)16777215);
+		HX_STACK_LINE(94)
+		this->tfLabel->set_alpha(0.7);
+		HX_STACK_LINE(95)
+		this->tfLabel->set_selectable(false);
+		HX_STACK_LINE(96)
+		this->tfLabel->set_y(((int)16 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(97)
 		if ((this->hasCheckbox)){
-			HX_STACK_LINE(92)
+			HX_STACK_LINE(98)
 			this->tfLabel->set_autoSize(::openfl::text::TextFieldAutoSize_obj::LEFT);
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			Float _g1 = this->checkboxBgUnselected->get_x();		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			Float _g2 = this->checkboxBgUnselected->get_width();		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			Float _g4;		HX_STACK_VAR(_g4,"_g4");
 			struct _Function_2_1{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",93,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",99,0x10657ec6)
 					{
-						HX_STACK_LINE(93)
+						HX_STACK_LINE(99)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(93)
+						HX_STACK_LINE(99)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			_g4 = (_g3 + (_Function_2_1::Block() * 0.20));
-			HX_STACK_LINE(93)
+			HX_STACK_LINE(99)
 			this->tfLabel->set_x(_g4);
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			Float _g5 = this->bg->get_width();		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			Float _g6 = this->checkboxBgUnselected->get_x();		HX_STACK_VAR(_g6,"_g6");
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			Float _g7 = (_g5 - _g6);		HX_STACK_VAR(_g7,"_g7");
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			Float _g8 = this->checkboxBgUnselected->get_width();		HX_STACK_VAR(_g8,"_g8");
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			Float _g9 = (_g7 - _g8);		HX_STACK_VAR(_g9,"_g9");
-			HX_STACK_LINE(94)
+			HX_STACK_LINE(100)
 			this->tfLabel->set_width(_g9);
 		}
 		else{
-			HX_STACK_LINE(96)
+			HX_STACK_LINE(102)
 			Float _g10 = this->bg->get_width();		HX_STACK_VAR(_g10,"_g10");
-			HX_STACK_LINE(96)
+			HX_STACK_LINE(102)
 			this->tfLabel->set_width(_g10);
 		}
-		HX_STACK_LINE(98)
+		HX_STACK_LINE(104)
 		this->tfLabel->set_height(((int)25 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(99)
+		HX_STACK_LINE(105)
 		this->tfLabel->set_text(this->labelText);
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		this->addChild(this->tfLabel);
 	}
 return null();
@@ -410,39 +410,39 @@ HX_DEFINE_DYNAMIC_FUNC0(LabelButton_obj,createLabel,(void))
 
 Void LabelButton_obj::createClickArea( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","createClickArea",0xfeb5dfc3,"view.elements.LabelButton.createClickArea","view/elements/LabelButton.hx",104,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","createClickArea",0xfeb5dfc3,"view.elements.LabelButton.createClickArea","view/elements/LabelButton.hx",110,0x10657ec6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(104)
+		HX_STACK_LINE(110)
 		if ((!(this->inactive))){
 			struct _Function_2_1{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",105,0x10657ec6)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",111,0x10657ec6)
 					{
-						HX_STACK_LINE(105)
+						HX_STACK_LINE(111)
 						int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(105)
+						HX_STACK_LINE(111)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(105)
-			::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_1::Block(),(int)0,(int)0,null(),null());		HX_STACK_VAR(s,"s");
-			HX_STACK_LINE(106)
-			::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(106)
-			this->clickArea = _g;
-			HX_STACK_LINE(107)
-			this->clickArea->addChild(s);
-			HX_STACK_LINE(108)
-			this->clickArea->buttonMode = true;
-			HX_STACK_LINE(109)
-			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->buttonDownHandler_dyn(),null(),null(),null());
-			HX_STACK_LINE(110)
-			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_UP,this->buttonUpHandler_dyn(),null(),null(),null());
 			HX_STACK_LINE(111)
-			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_OUT,this->buttonUpHandler_dyn(),null(),null(),null());
+			::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(this->btnWidth,_Function_2_1::Block(),(int)0,(int)0,null(),null());		HX_STACK_VAR(s,"s");
 			HX_STACK_LINE(112)
+			::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+			HX_STACK_LINE(112)
+			this->clickArea = _g;
+			HX_STACK_LINE(113)
+			this->clickArea->addChild(s);
+			HX_STACK_LINE(114)
+			this->clickArea->buttonMode = true;
+			HX_STACK_LINE(115)
+			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->buttonDownHandler_dyn(),null(),null(),null());
+			HX_STACK_LINE(116)
+			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_UP,this->buttonUpHandler_dyn(),null(),null(),null());
+			HX_STACK_LINE(117)
+			this->clickArea->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_OUT,this->buttonUpHandler_dyn(),null(),null(),null());
+			HX_STACK_LINE(118)
 			this->addChild(this->clickArea);
 		}
 	}
@@ -454,16 +454,16 @@ HX_DEFINE_DYNAMIC_FUNC0(LabelButton_obj,createClickArea,(void))
 
 Void LabelButton_obj::buttonDownHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","buttonDownHandler",0x00ce23a0,"view.elements.LabelButton.buttonDownHandler","view/elements/LabelButton.hx",116,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","buttonDownHandler",0x00ce23a0,"view.elements.LabelButton.buttonDownHandler","view/elements/LabelButton.hx",122,0x10657ec6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(117)
+		HX_STACK_LINE(123)
 		this->bgHighlight->set_visible(true);
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		::String _g = this->get_name();		HX_STACK_VAR(_g,"_g");
 		struct _Function_1_1{
 			inline static Dynamic Block( ::String &_g){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",118,0x10657ec6)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/LabelButton.hx",124,0x10657ec6)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , _g,false);
@@ -472,11 +472,11 @@ Void LabelButton_obj::buttonDownHandler( ::openfl::_legacy::events::MouseEvent e
 				return null();
 			}
 		};
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		Dynamic _g1 = _Function_1_1::Block(_g);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_g1,null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -487,10 +487,10 @@ HX_DEFINE_DYNAMIC_FUNC1(LabelButton_obj,buttonDownHandler,(void))
 
 Void LabelButton_obj::buttonUpHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","buttonUpHandler",0x499ea0c7,"view.elements.LabelButton.buttonUpHandler","view/elements/LabelButton.hx",122,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","buttonUpHandler",0x499ea0c7,"view.elements.LabelButton.buttonUpHandler","view/elements/LabelButton.hx",128,0x10657ec6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(122)
+		HX_STACK_LINE(128)
 		this->bgHighlight->set_visible(false);
 	}
 return null();
@@ -501,10 +501,10 @@ HX_DEFINE_DYNAMIC_FUNC1(LabelButton_obj,buttonUpHandler,(void))
 
 Void LabelButton_obj::setLabel( ::String label){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","setLabel",0xe39d9f48,"view.elements.LabelButton.setLabel","view/elements/LabelButton.hx",126,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","setLabel",0xe39d9f48,"view.elements.LabelButton.setLabel","view/elements/LabelButton.hx",132,0x10657ec6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(label,"label")
-		HX_STACK_LINE(126)
+		HX_STACK_LINE(132)
 		this->tfLabel->set_text(label);
 	}
 return null();
@@ -515,16 +515,16 @@ HX_DEFINE_DYNAMIC_FUNC1(LabelButton_obj,setLabel,(void))
 
 Void LabelButton_obj::setActive( bool on){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","setActive",0x1316d9f2,"view.elements.LabelButton.setActive","view/elements/LabelButton.hx",130,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","setActive",0x1316d9f2,"view.elements.LabelButton.setActive","view/elements/LabelButton.hx",136,0x10657ec6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(130)
+		HX_STACK_LINE(136)
 		if ((this->hasCheckbox)){
-			HX_STACK_LINE(131)
+			HX_STACK_LINE(137)
 			this->checkboxBgSelected->set_visible(on);
 		}
 		else{
-			HX_STACK_LINE(133)
+			HX_STACK_LINE(139)
 			this->bgActive->set_visible(on);
 		}
 	}
@@ -536,15 +536,15 @@ HX_DEFINE_DYNAMIC_FUNC1(LabelButton_obj,setActive,(void))
 
 Void LabelButton_obj::reset( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","reset",0x26572fb9,"view.elements.LabelButton.reset","view/elements/LabelButton.hx",137,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","reset",0x26572fb9,"view.elements.LabelButton.reset","view/elements/LabelButton.hx",143,0x10657ec6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(138)
+		HX_STACK_LINE(144)
 		bool _g = this->bgHighlight->set_visible(false);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(138)
+		HX_STACK_LINE(144)
 		this->bgActive->set_visible(_g);
-		HX_STACK_LINE(139)
+		HX_STACK_LINE(145)
 		if ((this->hasCheckbox)){
-			HX_STACK_LINE(140)
+			HX_STACK_LINE(146)
 			this->checkboxBgSelected->set_visible(false);
 		}
 	}
@@ -556,32 +556,32 @@ HX_DEFINE_DYNAMIC_FUNC0(LabelButton_obj,reset,(void))
 
 Void LabelButton_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.elements.LabelButton","destroy",0x9209e164,"view.elements.LabelButton.destroy","view/elements/LabelButton.hx",144,0x10657ec6)
+		HX_STACK_FRAME("view.elements.LabelButton","destroy",0x9209e164,"view.elements.LabelButton.destroy","view/elements/LabelButton.hx",150,0x10657ec6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(151)
 		this->removeChild(this->bg);
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(152)
 		this->removeChild(this->tfLabel);
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		if ((!(this->inactive))){
-			HX_STACK_LINE(148)
+			HX_STACK_LINE(154)
 			this->removeChild(this->bgHighlight);
-			HX_STACK_LINE(149)
+			HX_STACK_LINE(155)
 			this->removeChild(this->bgActive);
-			HX_STACK_LINE(150)
+			HX_STACK_LINE(156)
 			this->clickArea->removeEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->buttonDownHandler_dyn(),null());
-			HX_STACK_LINE(151)
+			HX_STACK_LINE(157)
 			this->clickArea->removeEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_UP,this->buttonUpHandler_dyn(),null());
-			HX_STACK_LINE(152)
+			HX_STACK_LINE(158)
 			this->clickArea->removeEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_OUT,this->buttonUpHandler_dyn(),null());
-			HX_STACK_LINE(153)
+			HX_STACK_LINE(159)
 			this->removeChild(this->clickArea);
 		}
-		HX_STACK_LINE(155)
+		HX_STACK_LINE(161)
 		if ((this->hasCheckbox)){
-			HX_STACK_LINE(156)
+			HX_STACK_LINE(162)
 			this->removeChild(this->checkboxBgSelected);
-			HX_STACK_LINE(157)
+			HX_STACK_LINE(163)
 			this->removeChild(this->checkboxBgUnselected);
 		}
 	}

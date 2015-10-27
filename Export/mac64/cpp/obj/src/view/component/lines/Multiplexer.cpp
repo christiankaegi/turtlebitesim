@@ -51,12 +51,12 @@ namespace lines{
 
 Void Multiplexer_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Multiplexer","new",0x738e673e,"view.component.lines.Multiplexer.new","view/component/lines/Multiplexer.hx",18,0x9148c1f5)
+HX_STACK_FRAME("view.component.lines.Multiplexer","new",0x738e673e,"view.component.lines.Multiplexer.new","view/component/lines/Multiplexer.hx",24,0x9148c1f5)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(25)
 	super::__construct();
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,18 +78,18 @@ Dynamic Multiplexer_obj::__Create(hx::DynamicArray inArgs)
 
 Void Multiplexer_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","addedToStageHandler",0xb0d2ca85,"view.component.lines.Multiplexer.addedToStageHandler","view/component/lines/Multiplexer.hx",23,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","addedToStageHandler",0xb0d2ca85,"view.component.lines.Multiplexer.addedToStageHandler","view/component/lines/Multiplexer.hx",29,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/MUX-out-0.png")),this->out0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/MUX-out-1.png")),this->out1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/MUX-out-2.png")),this->out2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/MUX-out-3.png")),this->out3LoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -100,18 +100,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,addedToStageHandler,(void))
 
 Void Multiplexer_obj::out0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","out0LoadCompleteHandler",0x680b63a7,"view.component.lines.Multiplexer.out0LoadCompleteHandler","view/component/lines/Multiplexer.hx",31,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","out0LoadCompleteHandler",0x680b63a7,"view.component.lines.Multiplexer.out0LoadCompleteHandler","view/component/lines/Multiplexer.hx",37,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->out0 = _g;
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		this->out0->set_name(HX_CSTRING("muxOut0"));
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		Float _g1 = this->out0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		this->out0->set_scaleX(_g1);
 	}
 return null();
@@ -122,18 +122,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,out0LoadCompleteHandler,(void))
 
 Void Multiplexer_obj::out1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","out1LoadCompleteHandler",0xce700846,"view.component.lines.Multiplexer.out1LoadCompleteHandler","view/component/lines/Multiplexer.hx",37,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","out1LoadCompleteHandler",0xce700846,"view.component.lines.Multiplexer.out1LoadCompleteHandler","view/component/lines/Multiplexer.hx",43,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		this->out1 = _g;
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		this->out1->set_name(HX_CSTRING("muxOut1"));
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		Float _g1 = this->out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		this->out1->set_scaleX(_g1);
 	}
 return null();
@@ -144,18 +144,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,out1LoadCompleteHandler,(void))
 
 Void Multiplexer_obj::out2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","out2LoadCompleteHandler",0x34d4ace5,"view.component.lines.Multiplexer.out2LoadCompleteHandler","view/component/lines/Multiplexer.hx",43,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","out2LoadCompleteHandler",0x34d4ace5,"view.component.lines.Multiplexer.out2LoadCompleteHandler","view/component/lines/Multiplexer.hx",49,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->out2 = _g;
-		HX_STACK_LINE(45)
+		HX_STACK_LINE(51)
 		this->out2->set_name(HX_CSTRING("muxOut2"));
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		Float _g1 = this->out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		this->out2->set_scaleX(_g1);
 	}
 return null();
@@ -166,22 +166,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,out2LoadCompleteHandler,(void))
 
 Void Multiplexer_obj::out3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","out3LoadCompleteHandler",0x9b395184,"view.component.lines.Multiplexer.out3LoadCompleteHandler","view/component/lines/Multiplexer.hx",49,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","out3LoadCompleteHandler",0x9b395184,"view.component.lines.Multiplexer.out3LoadCompleteHandler","view/component/lines/Multiplexer.hx",55,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->out3 = _g;
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		this->out3->set_name(HX_CSTRING("muxOut3"));
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		Float _g1 = this->out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->out3->set_scaleX(_g1);
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -192,29 +192,29 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,out3LoadCompleteHandler,(void))
 
 Void Multiplexer_obj::showLines( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","showLines",0xe1525520,"view.component.lines.Multiplexer.showLines","view/component/lines/Multiplexer.hx",60,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","showLines",0xe1525520,"view.component.lines.Multiplexer.showLines","view/component/lines/Multiplexer.hx",66,0x9148c1f5)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		this->hideAllLines();
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			this->addChild(this->out3);
 		}
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(66)
+			HX_STACK_LINE(72)
 			this->addChild(this->out2);
 		}
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(69)
+			HX_STACK_LINE(75)
 			this->addChild(this->out1);
 		}
-		HX_STACK_LINE(71)
+		HX_STACK_LINE(77)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(72)
+			HX_STACK_LINE(78)
 			this->addChild(this->out0);
 		}
 	}
@@ -226,26 +226,26 @@ HX_DEFINE_DYNAMIC_FUNC1(Multiplexer_obj,showLines,(void))
 
 Void Multiplexer_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Multiplexer","hideAllLines",0xe741bd62,"view.component.lines.Multiplexer.hideAllLines","view/component/lines/Multiplexer.hx",77,0x9148c1f5)
+		HX_STACK_FRAME("view.component.lines.Multiplexer","hideAllLines",0xe741bd62,"view.component.lines.Multiplexer.hideAllLines","view/component/lines/Multiplexer.hx",83,0x9148c1f5)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		while((true)){
-			HX_STACK_LINE(77)
+			HX_STACK_LINE(83)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(77)
+				HX_STACK_LINE(83)
 				break;
 			}
-			HX_STACK_LINE(77)
+			HX_STACK_LINE(83)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(78)
+			HX_STACK_LINE(84)
 			::openfl::display::DisplayObject _g1 = this->getChildByName((HX_CSTRING("muxOut") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(78)
+			HX_STACK_LINE(84)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(79)
+				HX_STACK_LINE(85)
 				::openfl::display::DisplayObject _g11 = this->getChildByName((HX_CSTRING("muxOut") + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(79)
+				HX_STACK_LINE(85)
 				this->removeChild(_g11);
 			}
 		}

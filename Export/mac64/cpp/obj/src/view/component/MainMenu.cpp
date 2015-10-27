@@ -74,16 +74,16 @@ namespace component{
 
 Void MainMenu_obj::__construct()
 {
-HX_STACK_FRAME("view.component.MainMenu","new",0x0722fac4,"view.component.MainMenu.new","view/component/MainMenu.hx",15,0x5147412a)
+HX_STACK_FRAME("view.component.MainMenu","new",0x0722fac4,"view.component.MainMenu.new","view/component/MainMenu.hx",21,0x5147412a)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(30)
+	HX_STACK_LINE(36)
 	this->buttonGap = (int)5;
-	HX_STACK_LINE(29)
+	HX_STACK_LINE(35)
 	this->buttonWidth = (int)60;
-	HX_STACK_LINE(56)
+	HX_STACK_LINE(62)
 	super::__construct();
-	HX_STACK_LINE(57)
+	HX_STACK_LINE(63)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -105,38 +105,38 @@ Dynamic MainMenu_obj::__Create(hx::DynamicArray inArgs)
 
 Void MainMenu_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.MainMenu","addedToStageHandler",0x399d4a0b,"view.component.MainMenu.addedToStageHandler","view/component/MainMenu.hx",60,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","addedToStageHandler",0x399d4a0b,"view.component.MainMenu.addedToStageHandler","view/component/MainMenu.hx",66,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(61)
-		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(62)
-		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(62)
-		this->menuContainer = _g;
-		HX_STACK_LINE(63)
-		this->addChild(this->menuContainer);
-		HX_STACK_LINE(64)
-		this->createBG();
-		HX_STACK_LINE(65)
-		this->createStepController();
-		HX_STACK_LINE(66)
-		this->createZoomButton();
 		HX_STACK_LINE(67)
-		this->createEditRomButton();
+		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
 		HX_STACK_LINE(68)
-		this->createMiddleMenuContainer();
+		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(68)
+		this->menuContainer = _g;
 		HX_STACK_LINE(69)
-		this->createMiddleMenuButtons();
+		this->addChild(this->menuContainer);
 		HX_STACK_LINE(70)
-		this->createComponentsSubmenu();
+		this->createBG();
 		HX_STACK_LINE(71)
-		this->createArchitectureButton();
+		this->createStepController();
 		HX_STACK_LINE(72)
+		this->createZoomButton();
+		HX_STACK_LINE(73)
+		this->createEditRomButton();
+		HX_STACK_LINE(74)
+		this->createMiddleMenuContainer();
+		HX_STACK_LINE(75)
+		this->createMiddleMenuButtons();
+		HX_STACK_LINE(76)
+		this->createComponentsSubmenu();
+		HX_STACK_LINE(77)
+		this->createArchitectureButton();
+		HX_STACK_LINE(78)
 		this->showButtons(false);
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		::events::AppEvent _g1 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		this->dispatchEvent(_g1);
 	}
 return null();
@@ -147,19 +147,19 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,addedToStageHandler,(void))
 
 Void MainMenu_obj::createBG( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createBG",0x0f9d02dd,"view.component.MainMenu.createBG","view/component/MainMenu.hx",76,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createBG",0x0f9d02dd,"view.component.MainMenu.createBG","view/component/MainMenu.hx",82,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(77)
-		::openfl::display::Shape _g = ::openfl::display::Shape_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(77)
-		this->bg = _g;
-		HX_STACK_LINE(78)
-		this->bg->get_graphics()->beginFill((int)3684408,(int)1);
 		HX_STACK_LINE(83)
-		this->bg->get_graphics()->drawRect((int)0,(int)0,this->stage->stageWidth,::view::component::MainMenu_obj::NAVIG_BG_HEIGHT);
+		::openfl::display::Shape _g = ::openfl::display::Shape_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(83)
+		this->bg = _g;
 		HX_STACK_LINE(84)
+		this->bg->get_graphics()->beginFill((int)3684408,(int)1);
+		HX_STACK_LINE(89)
+		this->bg->get_graphics()->drawRect((int)0,(int)0,this->stage->stageWidth,::view::component::MainMenu_obj::NAVIG_BG_HEIGHT);
+		HX_STACK_LINE(90)
 		this->menuContainer->set_y((this->stage->stageHeight - ::view::component::MainMenu_obj::NAVIG_BG_HEIGHT));
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		this->menuContainer->addChild(this->bg);
 	}
 return null();
@@ -170,190 +170,190 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createBG,(void))
 
 Void MainMenu_obj::createStepController( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createStepController",0xbce1bc40,"view.component.MainMenu.createStepController","view/component/MainMenu.hx",89,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createStepController",0xbce1bc40,"view.component.MainMenu.createStepController","view/component/MainMenu.hx",95,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		this->stepController = _g;
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		::view::elements::LabelButton _g1 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Reset"),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		this->resetButton = _g1;
-		HX_STACK_LINE(93)
+		HX_STACK_LINE(99)
 		this->resetButton->set_name(HX_CSTRING("resetButton"));
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		this->resetButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		this->stepController->addChild(this->resetButton);
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		::openfl::display::Sprite _g2 = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		this->stepCountContainer = _g2;
 		struct _Function_1_1{
 			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",98,0x5147412a)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",104,0x5147412a)
 				{
-					HX_STACK_LINE(98)
+					HX_STACK_LINE(104)
 					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(98)
+					HX_STACK_LINE(104)
 					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 				}
 				return null();
 			}
 		};
-		HX_STACK_LINE(98)
-		::view::elements::SimpleRectangle stepCountBG = ::view::elements::SimpleRectangle_obj::__new((this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR),_Function_1_1::Block(),(int)0,(int)1,null(),null());		HX_STACK_VAR(stepCountBG,"stepCountBG");
-		HX_STACK_LINE(99)
-		Float _g3 = this->resetButton->get_x();		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(99)
-		Float _g4 = (_g3 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(99)
-		Float _g5 = (_g4 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(99)
-		this->stepCountContainer->set_x(_g5);
-		HX_STACK_LINE(100)
-		this->stepCountContainer->addChild(stepCountBG);
-		HX_STACK_LINE(101)
-		::openfl::text::TextField _g6 = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(101)
-		this->tfStepCount = _g6;
-		HX_STACK_LINE(102)
-		this->tfStepCount->set_defaultTextFormat(::utilities::TextFieldFactory_obj::STEP_TEXT_FORMAT);
-		HX_STACK_LINE(103)
-		this->tfStepCount->embedFonts = true;
 		HX_STACK_LINE(104)
-		this->tfStepCount->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
+		::view::elements::SimpleRectangle stepCountBG = ::view::elements::SimpleRectangle_obj::__new((this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR),_Function_1_1::Block(),(int)0,(int)1,null(),null());		HX_STACK_VAR(stepCountBG,"stepCountBG");
 		HX_STACK_LINE(105)
+		Float _g3 = this->resetButton->get_x();		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(105)
+		Float _g4 = (_g3 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(105)
+		Float _g5 = (_g4 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(105)
+		this->stepCountContainer->set_x(_g5);
+		HX_STACK_LINE(106)
+		this->stepCountContainer->addChild(stepCountBG);
+		HX_STACK_LINE(107)
+		::openfl::text::TextField _g6 = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(107)
+		this->tfStepCount = _g6;
+		HX_STACK_LINE(108)
+		this->tfStepCount->set_defaultTextFormat(::utilities::TextFieldFactory_obj::STEP_TEXT_FORMAT);
+		HX_STACK_LINE(109)
+		this->tfStepCount->embedFonts = true;
+		HX_STACK_LINE(110)
+		this->tfStepCount->set_textColor(::utilities::TextFieldFactory_obj::TEXT_ACTIVE_COLOR);
+		HX_STACK_LINE(111)
 		this->tfStepCount->set_width((this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));
 		struct _Function_1_2{
 			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",106,0x5147412a)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",112,0x5147412a)
 				{
-					HX_STACK_LINE(106)
+					HX_STACK_LINE(112)
 					int _int = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(106)
+					HX_STACK_LINE(112)
 					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 				}
 				return null();
 			}
 		};
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		this->tfStepCount->set_height(_Function_1_2::Block());
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(113)
 		this->tfStepCount->set_y(((int)15 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(108)
-		this->tfStepCount->set_selectable(false);
-		HX_STACK_LINE(109)
-		this->tfStepCount->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(110)
-		this->stepCountContainer->addChild(this->tfStepCount);
-		HX_STACK_LINE(111)
-		this->stepController->addChild(this->stepCountContainer);
-		HX_STACK_LINE(113)
-		::view::elements::LabelButton _g7 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Ein"),null(),null());		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(113)
-		this->powerButton = _g7;
 		HX_STACK_LINE(114)
-		this->powerButton->set_name(HX_CSTRING("powerButton"));
+		this->tfStepCount->set_selectable(false);
 		HX_STACK_LINE(115)
+		this->tfStepCount->set_text(HX_CSTRING(""));
+		HX_STACK_LINE(116)
+		this->stepCountContainer->addChild(this->tfStepCount);
+		HX_STACK_LINE(117)
+		this->stepController->addChild(this->stepCountContainer);
+		HX_STACK_LINE(119)
+		::view::elements::LabelButton _g7 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Ein"),null(),null());		HX_STACK_VAR(_g7,"_g7");
+		HX_STACK_LINE(119)
+		this->powerButton = _g7;
+		HX_STACK_LINE(120)
+		this->powerButton->set_name(HX_CSTRING("powerButton"));
+		HX_STACK_LINE(121)
 		this->powerButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(116)
+		HX_STACK_LINE(122)
 		Float _g8;		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(116)
+		HX_STACK_LINE(122)
 		{
-			HX_STACK_LINE(116)
+			HX_STACK_LINE(122)
 			Float _g11 = this->resetButton->get_y();		HX_STACK_VAR(_g11,"_g11");
-			HX_STACK_LINE(116)
+			HX_STACK_LINE(122)
 			int _g9 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_g9,"_g9");
 			struct _Function_2_1{
 				inline static Float Block( int &_g9){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",116,0x5147412a)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",122,0x5147412a)
 					{
-						HX_STACK_LINE(116)
+						HX_STACK_LINE(122)
 						int _int = _g9;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(116)
+						HX_STACK_LINE(122)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(116)
+			HX_STACK_LINE(122)
 			_g8 = (_Function_2_1::Block(_g9) + _g11);
 		}
-		HX_STACK_LINE(116)
+		HX_STACK_LINE(122)
 		Float _g9 = (_g8 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(116)
+		HX_STACK_LINE(122)
 		this->powerButton->set_y(_g9);
-		HX_STACK_LINE(117)
+		HX_STACK_LINE(123)
 		this->stepController->addChild(this->powerButton);
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		::view::elements::LabelButton _g10 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Play"),null(),null());		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		this->playButton = _g10;
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(126)
 		this->playButton->set_name(HX_CSTRING("playButton"));
-		HX_STACK_LINE(121)
-		this->playButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(122)
-		Float _g11 = this->powerButton->get_y();		HX_STACK_VAR(_g11,"_g11");
-		HX_STACK_LINE(122)
-		this->playButton->set_y(_g11);
-		HX_STACK_LINE(123)
-		Float _g12 = this->powerButton->get_x();		HX_STACK_VAR(_g12,"_g12");
-		HX_STACK_LINE(123)
-		Float _g13 = (_g12 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g13,"_g13");
-		HX_STACK_LINE(123)
-		Float _g14 = (_g13 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g14,"_g14");
-		HX_STACK_LINE(123)
-		this->playButton->set_x(_g14);
-		HX_STACK_LINE(124)
-		this->stepController->addChild(this->playButton);
-		HX_STACK_LINE(126)
-		::view::elements::LabelButton _g15 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Takt"),null(),null());		HX_STACK_VAR(_g15,"_g15");
-		HX_STACK_LINE(126)
-		this->manualClockButton = _g15;
 		HX_STACK_LINE(127)
-		this->manualClockButton->set_name(HX_CSTRING("manualClockButton"));
+		this->playButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(128)
-		this->manualClockButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		Float _g11 = this->powerButton->get_y();		HX_STACK_VAR(_g11,"_g11");
+		HX_STACK_LINE(128)
+		this->playButton->set_y(_g11);
 		HX_STACK_LINE(129)
-		Float _g16 = this->playButton->get_y();		HX_STACK_VAR(_g16,"_g16");
+		Float _g12 = this->powerButton->get_x();		HX_STACK_VAR(_g12,"_g12");
 		HX_STACK_LINE(129)
-		this->manualClockButton->set_y(_g16);
+		Float _g13 = (_g12 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g13,"_g13");
+		HX_STACK_LINE(129)
+		Float _g14 = (_g13 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g14,"_g14");
+		HX_STACK_LINE(129)
+		this->playButton->set_x(_g14);
 		HX_STACK_LINE(130)
-		Float _g17 = this->playButton->get_x();		HX_STACK_VAR(_g17,"_g17");
-		HX_STACK_LINE(130)
-		Float _g18 = (_g17 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g18,"_g18");
-		HX_STACK_LINE(130)
-		Float _g19 = (_g18 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g19,"_g19");
-		HX_STACK_LINE(130)
-		this->manualClockButton->set_x(_g19);
-		HX_STACK_LINE(131)
-		this->stepController->addChild(this->manualClockButton);
+		this->stepController->addChild(this->playButton);
+		HX_STACK_LINE(132)
+		::view::elements::LabelButton _g15 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("Takt"),null(),null());		HX_STACK_VAR(_g15,"_g15");
+		HX_STACK_LINE(132)
+		this->manualClockButton = _g15;
 		HX_STACK_LINE(133)
-		::view::elements::LabelButton _g20 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("16Hz"),null(),null());		HX_STACK_VAR(_g20,"_g20");
-		HX_STACK_LINE(133)
-		this->hertzButton = _g20;
+		this->manualClockButton->set_name(HX_CSTRING("manualClockButton"));
 		HX_STACK_LINE(134)
-		this->hertzButton->set_name(HX_CSTRING("hertzButton"));
+		this->manualClockButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(135)
-		this->hertzButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		Float _g16 = this->playButton->get_y();		HX_STACK_VAR(_g16,"_g16");
+		HX_STACK_LINE(135)
+		this->manualClockButton->set_y(_g16);
 		HX_STACK_LINE(136)
-		Float _g21 = this->resetButton->get_y();		HX_STACK_VAR(_g21,"_g21");
+		Float _g17 = this->playButton->get_x();		HX_STACK_VAR(_g17,"_g17");
 		HX_STACK_LINE(136)
-		this->hertzButton->set_y(_g21);
+		Float _g18 = (_g17 + (this->buttonWidth * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g18,"_g18");
+		HX_STACK_LINE(136)
+		Float _g19 = (_g18 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g19,"_g19");
+		HX_STACK_LINE(136)
+		this->manualClockButton->set_x(_g19);
 		HX_STACK_LINE(137)
-		Float _g22 = this->manualClockButton->get_x();		HX_STACK_VAR(_g22,"_g22");
-		HX_STACK_LINE(137)
-		this->hertzButton->set_x(_g22);
-		HX_STACK_LINE(138)
-		this->stepController->addChild(this->hertzButton);
+		this->stepController->addChild(this->manualClockButton);
+		HX_STACK_LINE(139)
+		::view::elements::LabelButton _g20 = ::view::elements::LabelButton_obj::__new(this->buttonWidth,HX_CSTRING("16Hz"),null(),null());		HX_STACK_VAR(_g20,"_g20");
+		HX_STACK_LINE(139)
+		this->hertzButton = _g20;
 		HX_STACK_LINE(140)
-		this->stepController->set_x((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
+		this->hertzButton->set_name(HX_CSTRING("hertzButton"));
 		HX_STACK_LINE(141)
-		this->stepController->set_y((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
+		this->hertzButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(142)
+		Float _g21 = this->resetButton->get_y();		HX_STACK_VAR(_g21,"_g21");
+		HX_STACK_LINE(142)
+		this->hertzButton->set_y(_g21);
+		HX_STACK_LINE(143)
+		Float _g22 = this->manualClockButton->get_x();		HX_STACK_VAR(_g22,"_g22");
+		HX_STACK_LINE(143)
+		this->hertzButton->set_x(_g22);
+		HX_STACK_LINE(144)
+		this->stepController->addChild(this->hertzButton);
+		HX_STACK_LINE(146)
+		this->stepController->set_x((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(147)
+		this->stepController->set_y((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(148)
 		this->menuContainer->addChild(this->stepController);
 	}
 return null();
@@ -364,23 +364,23 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createStepController,(void))
 
 Void MainMenu_obj::createZoomButton( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createZoomButton",0xfe822e9d,"view.component.MainMenu.createZoomButton","view/component/MainMenu.hx",145,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createZoomButton",0xfe822e9d,"view.component.MainMenu.createZoomButton","view/component/MainMenu.hx",151,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(152)
 		Float w = (int)96;		HX_STACK_VAR(w,"w");
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Zoom"),true,null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		this->zoomButton = _g;
-		HX_STACK_LINE(148)
-		this->zoomButton->set_name(HX_CSTRING("zoomButton"));
-		HX_STACK_LINE(149)
-		this->zoomButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(150)
-		this->zoomButton->set_y((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
 		HX_STACK_LINE(154)
-		this->zoomButton->set_x(((this->stage->stageWidth - w) - (((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR)));
+		this->zoomButton->set_name(HX_CSTRING("zoomButton"));
+		HX_STACK_LINE(155)
+		this->zoomButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(156)
+		this->zoomButton->set_y((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(160)
+		this->zoomButton->set_x(((this->stage->stageWidth - w) - (((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR)));
+		HX_STACK_LINE(162)
 		this->menuContainer->addChild(this->zoomButton);
 	}
 return null();
@@ -391,50 +391,50 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createZoomButton,(void))
 
 Void MainMenu_obj::createEditRomButton( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createEditRomButton",0x2ed49680,"view.component.MainMenu.createEditRomButton","view/component/MainMenu.hx",159,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createEditRomButton",0x2ed49680,"view.component.MainMenu.createEditRomButton","view/component/MainMenu.hx",165,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(160)
+		HX_STACK_LINE(166)
 		Float w = (int)96;		HX_STACK_VAR(w,"w");
-		HX_STACK_LINE(161)
+		HX_STACK_LINE(167)
 		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Edit ROM"),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(161)
+		HX_STACK_LINE(167)
 		this->editRomButton = _g;
-		HX_STACK_LINE(162)
+		HX_STACK_LINE(168)
 		this->editRomButton->set_name(HX_CSTRING("editRomButton"));
-		HX_STACK_LINE(163)
+		HX_STACK_LINE(169)
 		this->editRomButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(164)
+		HX_STACK_LINE(170)
 		Float _g1 = this->zoomButton->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(164)
+		HX_STACK_LINE(170)
 		this->editRomButton->set_x(_g1);
-		HX_STACK_LINE(165)
+		HX_STACK_LINE(171)
 		Float _g2;		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(165)
+		HX_STACK_LINE(171)
 		{
-			HX_STACK_LINE(165)
+			HX_STACK_LINE(171)
 			Float _g11 = this->zoomButton->get_y();		HX_STACK_VAR(_g11,"_g11");
-			HX_STACK_LINE(165)
+			HX_STACK_LINE(171)
 			int _g3 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_g3,"_g3");
 			struct _Function_2_1{
 				inline static Float Block( int &_g3){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",165,0x5147412a)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",171,0x5147412a)
 					{
-						HX_STACK_LINE(165)
+						HX_STACK_LINE(171)
 						int _int = _g3;		HX_STACK_VAR(_int,"int");
-						HX_STACK_LINE(165)
+						HX_STACK_LINE(171)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(165)
+			HX_STACK_LINE(171)
 			_g2 = (_Function_2_1::Block(_g3) + _g11);
 		}
-		HX_STACK_LINE(165)
+		HX_STACK_LINE(171)
 		Float _g3 = (_g2 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(165)
+		HX_STACK_LINE(171)
 		this->editRomButton->set_y(_g3);
-		HX_STACK_LINE(166)
+		HX_STACK_LINE(172)
 		this->menuContainer->addChild(this->editRomButton);
 	}
 return null();
@@ -445,89 +445,89 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createEditRomButton,(void))
 
 Void MainMenu_obj::createHertzSubmenu( Array< ::Dynamic > vo){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createHertzSubmenu",0xa8af6bfc,"view.component.MainMenu.createHertzSubmenu","view/component/MainMenu.hx",169,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createHertzSubmenu",0xa8af6bfc,"view.component.MainMenu.createHertzSubmenu","view/component/MainMenu.hx",175,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(vo,"vo")
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		this->hertzSubmenuContainer = _g;
-		HX_STACK_LINE(171)
+		HX_STACK_LINE(177)
 		Array< ::Dynamic > _g1 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(171)
+		HX_STACK_LINE(177)
 		this->hertzSubmenuButtons = _g1;
-		HX_STACK_LINE(172)
+		HX_STACK_LINE(178)
 		{
-			HX_STACK_LINE(172)
+			HX_STACK_LINE(178)
 			int _g11 = (int)0;		HX_STACK_VAR(_g11,"_g11");
-			HX_STACK_LINE(172)
+			HX_STACK_LINE(178)
 			int _g2 = vo->length;		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(172)
+			HX_STACK_LINE(178)
 			while((true)){
-				HX_STACK_LINE(172)
+				HX_STACK_LINE(178)
 				if ((!(((_g11 < _g2))))){
-					HX_STACK_LINE(172)
+					HX_STACK_LINE(178)
 					break;
 				}
-				HX_STACK_LINE(172)
+				HX_STACK_LINE(178)
 				int i = (_g11)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(173)
+				HX_STACK_LINE(179)
 				this->hertzSubmenuButtons[i] = ::view::elements::LabelButton_obj::__new(this->buttonWidth,vo->__get(i).StaticCast< ::model::vo::FrequencyVO >()->label,null(),null());
-				HX_STACK_LINE(174)
+				HX_STACK_LINE(180)
 				this->hertzSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->set_name((HX_CSTRING("hertzSubmenuButton") + i));
-				HX_STACK_LINE(175)
+				HX_STACK_LINE(181)
 				this->hertzSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-				HX_STACK_LINE(176)
+				HX_STACK_LINE(182)
 				if (((i > (int)0))){
-					HX_STACK_LINE(177)
+					HX_STACK_LINE(183)
 					Float _g21;		HX_STACK_VAR(_g21,"_g21");
-					HX_STACK_LINE(177)
+					HX_STACK_LINE(183)
 					{
-						HX_STACK_LINE(177)
+						HX_STACK_LINE(183)
 						Float _g3 = this->hertzSubmenuButtons->__get((i - (int)1)).StaticCast< ::view::elements::LabelButton >()->get_y();		HX_STACK_VAR(_g3,"_g3");
-						HX_STACK_LINE(177)
+						HX_STACK_LINE(183)
 						int _g22 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_g22,"_g22");
 						struct _Function_5_1{
 							inline static Float Block( int &_g22){
-								HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",177,0x5147412a)
+								HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",183,0x5147412a)
 								{
-									HX_STACK_LINE(177)
+									HX_STACK_LINE(183)
 									int _int = _g22;		HX_STACK_VAR(_int,"int");
-									HX_STACK_LINE(177)
+									HX_STACK_LINE(183)
 									return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 								}
 								return null();
 							}
 						};
-						HX_STACK_LINE(177)
+						HX_STACK_LINE(183)
 						_g21 = (_Function_5_1::Block(_g22) + _g3);
 					}
-					HX_STACK_LINE(177)
+					HX_STACK_LINE(183)
 					Float _g3 = (_g21 - (int)1);		HX_STACK_VAR(_g3,"_g3");
-					HX_STACK_LINE(177)
+					HX_STACK_LINE(183)
 					this->hertzSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->set_y(_g3);
 				}
-				HX_STACK_LINE(179)
+				HX_STACK_LINE(185)
 				this->hertzSubmenuContainer->addChild(this->hertzSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >());
 			}
 		}
-		HX_STACK_LINE(181)
+		HX_STACK_LINE(187)
 		Float _g4 = this->hertzButton->get_x();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(181)
+		HX_STACK_LINE(187)
 		this->hertzSubmenuContainer->set_x(_g4);
-		HX_STACK_LINE(182)
+		HX_STACK_LINE(188)
 		Float _g5 = this->hertzButton->get_y();		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(182)
+		HX_STACK_LINE(188)
 		Float _g6 = this->hertzSubmenuContainer->get_height();		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(182)
+		HX_STACK_LINE(188)
 		Float _g7 = (_g5 - _g6);		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(182)
+		HX_STACK_LINE(188)
 		Float _g8 = (_g7 - (int)1);		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(182)
+		HX_STACK_LINE(188)
 		this->hertzSubmenuContainer->set_y(_g8);
-		HX_STACK_LINE(183)
+		HX_STACK_LINE(189)
 		this->hertzSubmenuContainer->set_visible(false);
-		HX_STACK_LINE(184)
+		HX_STACK_LINE(190)
 		this->stepController->addChild(this->hertzSubmenuContainer);
 	}
 return null();
@@ -538,157 +538,157 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,createHertzSubmenu,(void))
 
 Void MainMenu_obj::createComponentsSubmenu( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createComponentsSubmenu",0xd1b38271,"view.component.MainMenu.createComponentsSubmenu","view/component/MainMenu.hx",187,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createComponentsSubmenu",0xd1b38271,"view.component.MainMenu.createComponentsSubmenu","view/component/MainMenu.hx",193,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(188)
+		HX_STACK_LINE(194)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(188)
+		HX_STACK_LINE(194)
 		this->componentsSubmenuContainer = _g;
-		HX_STACK_LINE(189)
+		HX_STACK_LINE(195)
 		Array< ::Dynamic > _g1 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(189)
+		HX_STACK_LINE(195)
 		this->componentsSubmenuButtons = _g1;
-		HX_STACK_LINE(190)
+		HX_STACK_LINE(196)
 		Float w = (int)125;		HX_STACK_VAR(w,"w");
-		HX_STACK_LINE(191)
+		HX_STACK_LINE(197)
 		int i = (int)0;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(192)
+		HX_STACK_LINE(198)
 		int _g2 = (i)++;		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(192)
+		HX_STACK_LINE(198)
 		this->componentsSubmenuButtons[_g2] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Bus"),false,true);
-		HX_STACK_LINE(193)
+		HX_STACK_LINE(199)
 		int _g3 = (i)++;		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(193)
+		HX_STACK_LINE(199)
 		this->componentsSubmenuButtons[_g3] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Gates"),false,true);
-		HX_STACK_LINE(194)
+		HX_STACK_LINE(200)
 		int _g4 = (i)++;		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(194)
+		HX_STACK_LINE(200)
 		this->componentsSubmenuButtons[_g4] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Comparator"),false,true);
-		HX_STACK_LINE(195)
-		int _g5 = (i)++;		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(195)
-		this->componentsSubmenuButtons[_g5] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Decoder"),false,true);
-		HX_STACK_LINE(196)
-		int _g6 = (i)++;		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(196)
-		this->componentsSubmenuButtons[_g6] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Enabler"),false,true);
-		HX_STACK_LINE(197)
-		int _g7 = (i)++;		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(197)
-		this->componentsSubmenuButtons[_g7] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Register"),false,true);
-		HX_STACK_LINE(198)
-		int _g8 = (i)++;		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(198)
-		this->componentsSubmenuButtons[_g8] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Multiplexer"),false,true);
-		HX_STACK_LINE(199)
-		int _g9 = (i)++;		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(199)
-		this->componentsSubmenuButtons[_g9] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("ALU"),false,true);
 		HX_STACK_LINE(201)
+		int _g5 = (i)++;		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(201)
+		this->componentsSubmenuButtons[_g5] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Decoder"),false,true);
+		HX_STACK_LINE(202)
+		int _g6 = (i)++;		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(202)
+		this->componentsSubmenuButtons[_g6] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Enabler"),false,true);
+		HX_STACK_LINE(203)
+		int _g7 = (i)++;		HX_STACK_VAR(_g7,"_g7");
+		HX_STACK_LINE(203)
+		this->componentsSubmenuButtons[_g7] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Register"),false,true);
+		HX_STACK_LINE(204)
+		int _g8 = (i)++;		HX_STACK_VAR(_g8,"_g8");
+		HX_STACK_LINE(204)
+		this->componentsSubmenuButtons[_g8] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Multiplexer"),false,true);
+		HX_STACK_LINE(205)
+		int _g9 = (i)++;		HX_STACK_VAR(_g9,"_g9");
+		HX_STACK_LINE(205)
+		this->componentsSubmenuButtons[_g9] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("ALU"),false,true);
+		HX_STACK_LINE(207)
 		this->componentsSubmenuButtons[i] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Accumulator"),null(),null());
 		struct _Function_1_1{
 			inline static Float Block( int &i){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",202,0x5147412a)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",208,0x5147412a)
 				{
-					HX_STACK_LINE(202)
+					HX_STACK_LINE(208)
 					int _int = i;		HX_STACK_VAR(_int,"int");
-					HX_STACK_LINE(202)
+					HX_STACK_LINE(208)
 					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 				}
 				return null();
 			}
 		};
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		::String _g10 = ::Std_obj::string(_Function_1_1::Block(i));		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		::String _g11 = (HX_CSTRING("componentsSubmenuButton") + _g10);		HX_STACK_VAR(_g11,"_g11");
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		this->componentsSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->set_name(_g11);
-		HX_STACK_LINE(203)
-		int _g12 = (i)++;		HX_STACK_VAR(_g12,"_g12");
-		HX_STACK_LINE(203)
-		this->componentsSubmenuButtons->__get(_g12).StaticCast< ::view::elements::LabelButton >()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(205)
-		int _g13 = (i)++;		HX_STACK_VAR(_g13,"_g13");
-		HX_STACK_LINE(205)
-		this->componentsSubmenuButtons[_g13] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Program Counter"),false,true);
-		HX_STACK_LINE(206)
-		int _g14 = (i)++;		HX_STACK_VAR(_g14,"_g14");
-		HX_STACK_LINE(206)
-		this->componentsSubmenuButtons[_g14] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("RAM"),false,true);
-		HX_STACK_LINE(207)
-		int _g15 = (i)++;		HX_STACK_VAR(_g15,"_g15");
-		HX_STACK_LINE(207)
-		this->componentsSubmenuButtons[_g15] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("ROM"),false,true);
-		HX_STACK_LINE(208)
-		int _g16 = (i)++;		HX_STACK_VAR(_g16,"_g16");
-		HX_STACK_LINE(208)
-		this->componentsSubmenuButtons[_g16] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Clock"),false,true);
 		HX_STACK_LINE(209)
+		int _g12 = (i)++;		HX_STACK_VAR(_g12,"_g12");
+		HX_STACK_LINE(209)
+		this->componentsSubmenuButtons->__get(_g12).StaticCast< ::view::elements::LabelButton >()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(211)
+		int _g13 = (i)++;		HX_STACK_VAR(_g13,"_g13");
+		HX_STACK_LINE(211)
+		this->componentsSubmenuButtons[_g13] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Program Counter"),false,true);
+		HX_STACK_LINE(212)
+		int _g14 = (i)++;		HX_STACK_VAR(_g14,"_g14");
+		HX_STACK_LINE(212)
+		this->componentsSubmenuButtons[_g14] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("RAM"),false,true);
+		HX_STACK_LINE(213)
+		int _g15 = (i)++;		HX_STACK_VAR(_g15,"_g15");
+		HX_STACK_LINE(213)
+		this->componentsSubmenuButtons[_g15] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("ROM"),false,true);
+		HX_STACK_LINE(214)
+		int _g16 = (i)++;		HX_STACK_VAR(_g16,"_g16");
+		HX_STACK_LINE(214)
+		this->componentsSubmenuButtons[_g16] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Clock"),false,true);
+		HX_STACK_LINE(215)
 		this->componentsSubmenuContainer->addChild(this->componentsSubmenuButtons->__get((int)0).StaticCast< ::view::elements::LabelButton >());
-		HX_STACK_LINE(210)
+		HX_STACK_LINE(216)
 		{
-			HX_STACK_LINE(210)
+			HX_STACK_LINE(216)
 			int _g17 = (int)1;		HX_STACK_VAR(_g17,"_g17");
-			HX_STACK_LINE(210)
+			HX_STACK_LINE(216)
 			int _g18 = this->componentsSubmenuButtons->length;		HX_STACK_VAR(_g18,"_g18");
-			HX_STACK_LINE(210)
+			HX_STACK_LINE(216)
 			while((true)){
-				HX_STACK_LINE(210)
+				HX_STACK_LINE(216)
 				if ((!(((_g17 < _g18))))){
-					HX_STACK_LINE(210)
+					HX_STACK_LINE(216)
 					break;
 				}
-				HX_STACK_LINE(210)
+				HX_STACK_LINE(216)
 				int i1 = (_g17)++;		HX_STACK_VAR(i1,"i1");
-				HX_STACK_LINE(211)
+				HX_STACK_LINE(217)
 				this->componentsSubmenuContainer->addChild(this->componentsSubmenuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >());
-				HX_STACK_LINE(212)
+				HX_STACK_LINE(218)
 				Float _g171;		HX_STACK_VAR(_g171,"_g171");
-				HX_STACK_LINE(212)
+				HX_STACK_LINE(218)
 				{
-					HX_STACK_LINE(212)
+					HX_STACK_LINE(218)
 					Float _g31 = this->componentsSubmenuButtons->__get((i1 - (int)1)).StaticCast< ::view::elements::LabelButton >()->get_y();		HX_STACK_VAR(_g31,"_g31");
-					HX_STACK_LINE(212)
+					HX_STACK_LINE(218)
 					int _g21 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(_g21,"_g21");
 					struct _Function_4_1{
 						inline static Float Block( int &_g21){
-							HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",212,0x5147412a)
+							HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",218,0x5147412a)
 							{
-								HX_STACK_LINE(212)
+								HX_STACK_LINE(218)
 								int _int = _g21;		HX_STACK_VAR(_int,"int");
-								HX_STACK_LINE(212)
+								HX_STACK_LINE(218)
 								return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 							}
 							return null();
 						}
 					};
-					HX_STACK_LINE(212)
+					HX_STACK_LINE(218)
 					_g171 = (_Function_4_1::Block(_g21) + _g31);
 				}
-				HX_STACK_LINE(212)
+				HX_STACK_LINE(218)
 				Float _g181 = (_g171 - (int)1);		HX_STACK_VAR(_g181,"_g181");
-				HX_STACK_LINE(212)
+				HX_STACK_LINE(218)
 				this->componentsSubmenuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >()->set_y(_g181);
 			}
 		}
-		HX_STACK_LINE(214)
+		HX_STACK_LINE(220)
 		Float _g19 = this->componentsButton->get_x();		HX_STACK_VAR(_g19,"_g19");
-		HX_STACK_LINE(214)
+		HX_STACK_LINE(220)
 		this->componentsSubmenuContainer->set_x(_g19);
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		Float _g20 = this->componentsButton->get_y();		HX_STACK_VAR(_g20,"_g20");
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		Float _g21 = this->componentsSubmenuContainer->get_height();		HX_STACK_VAR(_g21,"_g21");
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		Float _g22 = (_g20 - _g21);		HX_STACK_VAR(_g22,"_g22");
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		Float _g23 = (_g22 - (int)1);		HX_STACK_VAR(_g23,"_g23");
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		this->componentsSubmenuContainer->set_y(_g23);
-		HX_STACK_LINE(216)
+		HX_STACK_LINE(222)
 		this->componentsSubmenuContainer->set_visible(false);
-		HX_STACK_LINE(217)
+		HX_STACK_LINE(223)
 		this->middleMenuContainer->addChild(this->componentsSubmenuContainer);
 	}
 return null();
@@ -699,25 +699,25 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createComponentsSubmenu,(void))
 
 Void MainMenu_obj::createMiddleMenuContainer( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createMiddleMenuContainer",0x0da022d5,"view.component.MainMenu.createMiddleMenuContainer","view/component/MainMenu.hx",220,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createMiddleMenuContainer",0x0da022d5,"view.component.MainMenu.createMiddleMenuContainer","view/component/MainMenu.hx",226,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(221)
+		HX_STACK_LINE(227)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(221)
+		HX_STACK_LINE(227)
 		this->middleMenuContainer = _g;
-		HX_STACK_LINE(222)
+		HX_STACK_LINE(228)
 		this->middleMenuContainer->set_y((((int)2 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(223)
+		HX_STACK_LINE(229)
 		Float _g1 = this->stepController->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(223)
+		HX_STACK_LINE(229)
 		Float _g2 = this->stepController->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(223)
+		HX_STACK_LINE(229)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(223)
+		HX_STACK_LINE(229)
 		Float _g4 = (_g3 + (((int)4 * this->buttonGap) * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(223)
+		HX_STACK_LINE(229)
 		this->middleMenuContainer->set_x(_g4);
-		HX_STACK_LINE(224)
+		HX_STACK_LINE(230)
 		this->menuContainer->addChild(this->middleMenuContainer);
 	}
 return null();
@@ -728,69 +728,69 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createMiddleMenuContainer,(void))
 
 Void MainMenu_obj::createMiddleMenuButtons( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createMiddleMenuButtons",0x0e59b2d5,"view.component.MainMenu.createMiddleMenuButtons","view/component/MainMenu.hx",227,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createMiddleMenuButtons",0x0e59b2d5,"view.component.MainMenu.createMiddleMenuButtons","view/component/MainMenu.hx",233,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(228)
+		HX_STACK_LINE(234)
 		Float w = (int)125;		HX_STACK_VAR(w,"w");
-		HX_STACK_LINE(229)
-		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Einheiten"),true,null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(229)
-		this->showUnitsButton = _g;
-		HX_STACK_LINE(230)
-		this->showUnitsButton->set_name(HX_CSTRING("showUnitsButton"));
-		HX_STACK_LINE(231)
-		this->showUnitsButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(232)
-		this->middleMenuContainer->addChild(this->showUnitsButton);
-		HX_STACK_LINE(234)
-		::view::elements::LabelButton _g1 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Datenfluss"),true,null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(234)
-		this->showFlowButton = _g1;
 		HX_STACK_LINE(235)
-		this->showFlowButton->set_name(HX_CSTRING("showFlowButton"));
+		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Einheiten"),true,null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(235)
+		this->showUnitsButton = _g;
 		HX_STACK_LINE(236)
-		this->showFlowButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		this->showUnitsButton->set_name(HX_CSTRING("showUnitsButton"));
 		HX_STACK_LINE(237)
-		Float _g2 = this->showUnitsButton->get_height();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(237)
-		Float _g3 = (_g2 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(237)
-		this->showFlowButton->set_y(_g3);
+		this->showUnitsButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(238)
-		this->middleMenuContainer->addChild(this->showFlowButton);
+		this->middleMenuContainer->addChild(this->showUnitsButton);
 		HX_STACK_LINE(240)
-		::view::elements::LabelButton _g4 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Highlight"),true,null());		HX_STACK_VAR(_g4,"_g4");
+		::view::elements::LabelButton _g1 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Datenfluss"),true,null());		HX_STACK_VAR(_g1,"_g1");
 		HX_STACK_LINE(240)
-		this->showHighlightButton = _g4;
+		this->showFlowButton = _g1;
 		HX_STACK_LINE(241)
-		this->showHighlightButton->set_name(HX_CSTRING("showHighlightButton"));
+		this->showFlowButton->set_name(HX_CSTRING("showFlowButton"));
 		HX_STACK_LINE(242)
-		this->showHighlightButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		this->showFlowButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(243)
-		Float _g5 = this->showUnitsButton->get_width();		HX_STACK_VAR(_g5,"_g5");
+		Float _g2 = this->showUnitsButton->get_height();		HX_STACK_VAR(_g2,"_g2");
 		HX_STACK_LINE(243)
-		Float _g6 = (_g5 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g6,"_g6");
+		Float _g3 = (_g2 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g3,"_g3");
 		HX_STACK_LINE(243)
-		this->showHighlightButton->set_x(_g6);
+		this->showFlowButton->set_y(_g3);
 		HX_STACK_LINE(244)
-		Float _g7 = this->showFlowButton->get_y();		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(244)
-		this->showHighlightButton->set_y(_g7);
-		HX_STACK_LINE(245)
-		this->middleMenuContainer->addChild(this->showHighlightButton);
+		this->middleMenuContainer->addChild(this->showFlowButton);
+		HX_STACK_LINE(246)
+		::view::elements::LabelButton _g4 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Highlight"),true,null());		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(246)
+		this->showHighlightButton = _g4;
 		HX_STACK_LINE(247)
-		::view::elements::LabelButton _g8 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Komponenten"),null(),null());		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(247)
-		this->componentsButton = _g8;
+		this->showHighlightButton->set_name(HX_CSTRING("showHighlightButton"));
 		HX_STACK_LINE(248)
-		this->componentsButton->set_name(HX_CSTRING("componentsButton"));
+		this->showHighlightButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(249)
-		this->componentsButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		Float _g5 = this->showUnitsButton->get_width();		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(249)
+		Float _g6 = (_g5 + (this->buttonGap * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(249)
+		this->showHighlightButton->set_x(_g6);
 		HX_STACK_LINE(250)
-		Float _g9 = this->showHighlightButton->get_x();		HX_STACK_VAR(_g9,"_g9");
+		Float _g7 = this->showFlowButton->get_y();		HX_STACK_VAR(_g7,"_g7");
 		HX_STACK_LINE(250)
-		this->componentsButton->set_x(_g9);
+		this->showHighlightButton->set_y(_g7);
 		HX_STACK_LINE(251)
+		this->middleMenuContainer->addChild(this->showHighlightButton);
+		HX_STACK_LINE(253)
+		::view::elements::LabelButton _g8 = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("Komponenten"),null(),null());		HX_STACK_VAR(_g8,"_g8");
+		HX_STACK_LINE(253)
+		this->componentsButton = _g8;
+		HX_STACK_LINE(254)
+		this->componentsButton->set_name(HX_CSTRING("componentsButton"));
+		HX_STACK_LINE(255)
+		this->componentsButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(256)
+		Float _g9 = this->showHighlightButton->get_x();		HX_STACK_VAR(_g9,"_g9");
+		HX_STACK_LINE(256)
+		this->componentsButton->set_x(_g9);
+		HX_STACK_LINE(257)
 		this->middleMenuContainer->addChild(this->componentsButton);
 	}
 return null();
@@ -801,35 +801,35 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createMiddleMenuButtons,(void))
 
 Void MainMenu_obj::createArchitectureButton( ){
 {
-		HX_STACK_FRAME("view.component.MainMenu","createArchitectureButton",0xfbf70c5d,"view.component.MainMenu.createArchitectureButton","view/component/MainMenu.hx",254,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","createArchitectureButton",0xfbf70c5d,"view.component.MainMenu.createArchitectureButton","view/component/MainMenu.hx",260,0x5147412a)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(255)
-		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new((int)120,HX_CSTRING("Architektur"),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(255)
-		this->architectureButton = _g;
-		HX_STACK_LINE(256)
-		this->architectureButton->set_name(HX_CSTRING("architectureButton"));
-		HX_STACK_LINE(257)
-		this->architectureButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(258)
-		Float _g1 = this->playButton->get_y();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(258)
-		Float _g2 = this->stepController->get_y();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(258)
-		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(258)
-		this->architectureButton->set_y(_g3);
-		HX_STACK_LINE(259)
-		Float _g4 = this->playButton->get_x();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(259)
-		Float _g5 = this->stepController->get_x();		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(259)
-		Float _g6 = (_g4 + _g5);		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(259)
-		this->architectureButton->set_x(_g6);
-		HX_STACK_LINE(260)
-		this->architectureButton->set_visible(false);
 		HX_STACK_LINE(261)
+		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new((int)120,HX_CSTRING("Architektur"),null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(261)
+		this->architectureButton = _g;
+		HX_STACK_LINE(262)
+		this->architectureButton->set_name(HX_CSTRING("architectureButton"));
+		HX_STACK_LINE(263)
+		this->architectureButton->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(264)
+		Float _g1 = this->playButton->get_y();		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(264)
+		Float _g2 = this->stepController->get_y();		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(264)
+		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(264)
+		this->architectureButton->set_y(_g3);
+		HX_STACK_LINE(265)
+		Float _g4 = this->playButton->get_x();		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(265)
+		Float _g5 = this->stepController->get_x();		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(265)
+		Float _g6 = (_g4 + _g5);		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(265)
+		this->architectureButton->set_x(_g6);
+		HX_STACK_LINE(266)
+		this->architectureButton->set_visible(false);
+		HX_STACK_LINE(267)
 		this->menuContainer->addChild(this->architectureButton);
 	}
 return null();
@@ -840,12 +840,12 @@ HX_DEFINE_DYNAMIC_FUNC0(MainMenu_obj,createArchitectureButton,(void))
 
 Void MainMenu_obj::dataEventHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.component.MainMenu","dataEventHandler",0xa4110736,"view.component.MainMenu.dataEventHandler","view/component/MainMenu.hx",264,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","dataEventHandler",0xa4110736,"view.component.MainMenu.dataEventHandler","view/component/MainMenu.hx",270,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
 			inline static Dynamic Block( ::events::AppEvent &event){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",265,0x5147412a)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/MainMenu.hx",271,0x5147412a)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , event->data->__Field(HX_CSTRING("id"),true),false);
@@ -854,9 +854,9 @@ Void MainMenu_obj::dataEventHandler( ::events::AppEvent event){
 				return null();
 			}
 		};
-		HX_STACK_LINE(265)
+		HX_STACK_LINE(271)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(event),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(265)
+		HX_STACK_LINE(271)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -867,10 +867,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,dataEventHandler,(void))
 
 Void MainMenu_obj::setProgramPointer( ::String pointer){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setProgramPointer",0x620a4f3f,"view.component.MainMenu.setProgramPointer","view/component/MainMenu.hx",273,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setProgramPointer",0x620a4f3f,"view.component.MainMenu.setProgramPointer","view/component/MainMenu.hx",279,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(273)
+		HX_STACK_LINE(279)
 		this->tfStepCount->set_text(pointer);
 	}
 return null();
@@ -881,10 +881,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setProgramPointer,(void))
 
 Void MainMenu_obj::setHertz( ::String label){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setHertz",0x16a2dbb5,"view.component.MainMenu.setHertz","view/component/MainMenu.hx",277,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setHertz",0x16a2dbb5,"view.component.MainMenu.setHertz","view/component/MainMenu.hx",283,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(label,"label")
-		HX_STACK_LINE(277)
+		HX_STACK_LINE(283)
 		this->hertzButton->setLabel(label);
 	}
 return null();
@@ -895,16 +895,16 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setHertz,(void))
 
 Void MainMenu_obj::setHertzActive( bool on,Dynamic __o_pointer){
 Dynamic pointer = __o_pointer.Default(-1);
-	HX_STACK_FRAME("view.component.MainMenu","setHertzActive",0x4a40c75b,"view.component.MainMenu.setHertzActive","view/component/MainMenu.hx",280,0x5147412a)
+	HX_STACK_FRAME("view.component.MainMenu","setHertzActive",0x4a40c75b,"view.component.MainMenu.setHertzActive","view/component/MainMenu.hx",286,0x5147412a)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(on,"on")
 	HX_STACK_ARG(pointer,"pointer")
 {
-		HX_STACK_LINE(281)
+		HX_STACK_LINE(287)
 		this->hertzButton->setActive(on);
-		HX_STACK_LINE(282)
+		HX_STACK_LINE(288)
 		this->resetHertzSubmenu(pointer);
-		HX_STACK_LINE(283)
+		HX_STACK_LINE(289)
 		this->hertzSubmenuContainer->set_visible(on);
 	}
 return null();
@@ -915,12 +915,12 @@ HX_DEFINE_DYNAMIC_FUNC2(MainMenu_obj,setHertzActive,(void))
 
 Void MainMenu_obj::setComponentsActive( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setComponentsActive",0x428beda2,"view.component.MainMenu.setComponentsActive","view/component/MainMenu.hx",286,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setComponentsActive",0x428beda2,"view.component.MainMenu.setComponentsActive","view/component/MainMenu.hx",292,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(287)
+		HX_STACK_LINE(293)
 		this->componentsButton->setActive(on);
-		HX_STACK_LINE(288)
+		HX_STACK_LINE(294)
 		this->componentsSubmenuContainer->set_visible(on);
 	}
 return null();
@@ -931,10 +931,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setComponentsActive,(void))
 
 Void MainMenu_obj::setZoomActive( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setZoomActive",0x9c0936df,"view.component.MainMenu.setZoomActive","view/component/MainMenu.hx",292,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setZoomActive",0x9c0936df,"view.component.MainMenu.setZoomActive","view/component/MainMenu.hx",298,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(292)
+		HX_STACK_LINE(298)
 		this->zoomButton->setActive(on);
 	}
 return null();
@@ -945,10 +945,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setZoomActive,(void))
 
 Void MainMenu_obj::setShowUnitsActive( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setShowUnitsActive",0xe3b1ef32,"view.component.MainMenu.setShowUnitsActive","view/component/MainMenu.hx",296,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setShowUnitsActive",0xe3b1ef32,"view.component.MainMenu.setShowUnitsActive","view/component/MainMenu.hx",302,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(296)
+		HX_STACK_LINE(302)
 		this->showUnitsButton->setActive(on);
 	}
 return null();
@@ -959,10 +959,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setShowUnitsActive,(void))
 
 Void MainMenu_obj::setShowFlowActive( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setShowFlowActive",0xf54de457,"view.component.MainMenu.setShowFlowActive","view/component/MainMenu.hx",300,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setShowFlowActive",0xf54de457,"view.component.MainMenu.setShowFlowActive","view/component/MainMenu.hx",306,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(300)
+		HX_STACK_LINE(306)
 		this->showFlowButton->setActive(on);
 	}
 return null();
@@ -973,10 +973,10 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setShowFlowActive,(void))
 
 Void MainMenu_obj::setShowHighlightActive( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setShowHighlightActive",0x81e25037,"view.component.MainMenu.setShowHighlightActive","view/component/MainMenu.hx",304,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setShowHighlightActive",0x81e25037,"view.component.MainMenu.setShowHighlightActive","view/component/MainMenu.hx",310,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(304)
+		HX_STACK_LINE(310)
 		this->showHighlightButton->setActive(on);
 	}
 return null();
@@ -987,31 +987,31 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setShowHighlightActive,(void))
 
 Void MainMenu_obj::resetHertzSubmenu( int pointer){
 {
-		HX_STACK_FRAME("view.component.MainMenu","resetHertzSubmenu",0x31c9aa97,"view.component.MainMenu.resetHertzSubmenu","view/component/MainMenu.hx",307,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","resetHertzSubmenu",0x31c9aa97,"view.component.MainMenu.resetHertzSubmenu","view/component/MainMenu.hx",313,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(308)
+		HX_STACK_LINE(314)
 		{
-			HX_STACK_LINE(308)
+			HX_STACK_LINE(314)
 			int _g1 = (int)0;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(308)
+			HX_STACK_LINE(314)
 			int _g = this->hertzSubmenuButtons->length;		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(308)
+			HX_STACK_LINE(314)
 			while((true)){
-				HX_STACK_LINE(308)
+				HX_STACK_LINE(314)
 				if ((!(((_g1 < _g))))){
-					HX_STACK_LINE(308)
+					HX_STACK_LINE(314)
 					break;
 				}
-				HX_STACK_LINE(308)
+				HX_STACK_LINE(314)
 				int i = (_g1)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(309)
+				HX_STACK_LINE(315)
 				this->hertzSubmenuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->reset();
 			}
 		}
-		HX_STACK_LINE(311)
+		HX_STACK_LINE(317)
 		if (((pointer > (int)-1))){
-			HX_STACK_LINE(312)
+			HX_STACK_LINE(318)
 			this->hertzSubmenuButtons->__get(pointer).StaticCast< ::view::elements::LabelButton >()->setActive(true);
 		}
 	}
@@ -1023,24 +1023,24 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,resetHertzSubmenu,(void))
 
 Void MainMenu_obj::setPowerOn( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setPowerOn",0x4d272b1e,"view.component.MainMenu.setPowerOn","view/component/MainMenu.hx",317,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setPowerOn",0x4d272b1e,"view.component.MainMenu.setPowerOn","view/component/MainMenu.hx",323,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(317)
+		HX_STACK_LINE(323)
 		if ((on)){
-			HX_STACK_LINE(318)
+			HX_STACK_LINE(324)
 			this->powerButton->setLabel(HX_CSTRING("Aus"));
-			HX_STACK_LINE(319)
+			HX_STACK_LINE(325)
 			this->powerButton->setActive(true);
-			HX_STACK_LINE(320)
+			HX_STACK_LINE(326)
 			this->showButtons(true);
 		}
 		else{
-			HX_STACK_LINE(322)
+			HX_STACK_LINE(328)
 			this->powerButton->setLabel(HX_CSTRING("Ein"));
-			HX_STACK_LINE(323)
+			HX_STACK_LINE(329)
 			this->powerButton->setActive(false);
-			HX_STACK_LINE(324)
+			HX_STACK_LINE(330)
 			this->showButtons(false);
 		}
 	}
@@ -1052,28 +1052,28 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,setPowerOn,(void))
 
 Void MainMenu_obj::showButtons( bool show){
 {
-		HX_STACK_FRAME("view.component.MainMenu","showButtons",0x96671d28,"view.component.MainMenu.showButtons","view/component/MainMenu.hx",329,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","showButtons",0x96671d28,"view.component.MainMenu.showButtons","view/component/MainMenu.hx",335,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(show,"show")
-		HX_STACK_LINE(330)
-		this->middleMenuContainer->set_visible(show);
-		HX_STACK_LINE(331)
-		this->hertzButton->set_visible(show);
-		HX_STACK_LINE(332)
-		this->manualClockButton->set_visible(show);
-		HX_STACK_LINE(333)
-		this->playButton->set_visible(show);
-		HX_STACK_LINE(334)
-		this->tfStepCount->set_visible(show);
-		HX_STACK_LINE(335)
-		this->resetButton->set_visible(show);
 		HX_STACK_LINE(336)
-		this->zoomButton->set_visible(show);
+		this->middleMenuContainer->set_visible(show);
 		HX_STACK_LINE(337)
-		this->editRomButton->set_visible(show);
+		this->hertzButton->set_visible(show);
 		HX_STACK_LINE(338)
-		this->stepCountContainer->set_visible(show);
+		this->manualClockButton->set_visible(show);
 		HX_STACK_LINE(339)
+		this->playButton->set_visible(show);
+		HX_STACK_LINE(340)
+		this->tfStepCount->set_visible(show);
+		HX_STACK_LINE(341)
+		this->resetButton->set_visible(show);
+		HX_STACK_LINE(342)
+		this->zoomButton->set_visible(show);
+		HX_STACK_LINE(343)
+		this->editRomButton->set_visible(show);
+		HX_STACK_LINE(344)
+		this->stepCountContainer->set_visible(show);
+		HX_STACK_LINE(345)
 		this->architectureButton->set_visible(!(show));
 	}
 return null();
@@ -1084,16 +1084,16 @@ HX_DEFINE_DYNAMIC_FUNC1(MainMenu_obj,showButtons,(void))
 
 Void MainMenu_obj::setPlay( bool on){
 {
-		HX_STACK_FRAME("view.component.MainMenu","setPlay",0x929c9b1a,"view.component.MainMenu.setPlay","view/component/MainMenu.hx",343,0x5147412a)
+		HX_STACK_FRAME("view.component.MainMenu","setPlay",0x929c9b1a,"view.component.MainMenu.setPlay","view/component/MainMenu.hx",349,0x5147412a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(on,"on")
-		HX_STACK_LINE(343)
+		HX_STACK_LINE(349)
 		if ((on)){
-			HX_STACK_LINE(344)
+			HX_STACK_LINE(350)
 			this->playButton->setLabel(HX_CSTRING("Pause"));
 		}
 		else{
-			HX_STACK_LINE(346)
+			HX_STACK_LINE(352)
 			this->playButton->setLabel(HX_CSTRING("Play"));
 		}
 	}

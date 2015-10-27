@@ -73,10 +73,10 @@ namespace controller{
 
 Void DetailAccumulatorCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.DetailAccumulatorCommand","new",0xa69c5aba,"controller.DetailAccumulatorCommand.new","controller/DetailAccumulatorCommand.hx",12,0x68ffb595)
+HX_STACK_FRAME("controller.DetailAccumulatorCommand","new",0xa69c5aba,"controller.DetailAccumulatorCommand.new","controller/DetailAccumulatorCommand.hx",18,0x68ffb595)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct();
 }
 ;
@@ -98,28 +98,28 @@ Dynamic DetailAccumulatorCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void DetailAccumulatorCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.DetailAccumulatorCommand","execute",0x5472c98f,"controller.DetailAccumulatorCommand.execute","controller/DetailAccumulatorCommand.hx",17,0x68ffb595)
+		HX_STACK_FRAME("controller.DetailAccumulatorCommand","execute",0x5472c98f,"controller.DetailAccumulatorCommand.execute","controller/DetailAccumulatorCommand.hx",23,0x68ffb595)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		if ((!(this->get_facade()->hasMediator(HX_CSTRING("DetailAccumulatorMediator"))))){
-			HX_STACK_LINE(18)
+			HX_STACK_LINE(24)
 			::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-			HX_STACK_LINE(18)
+			HX_STACK_LINE(24)
 			appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-			HX_STACK_LINE(19)
+			HX_STACK_LINE(25)
 			::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-			HX_STACK_LINE(19)
+			HX_STACK_LINE(25)
 			clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-			HX_STACK_LINE(21)
+			HX_STACK_LINE(27)
 			appProxy->setDetailPopupActive(true);
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::view::component::DetailAccumulator _g = ::view::component::DetailAccumulator_obj::__new();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::view::mediator::DetailAccumulatorMediator _g1 = ::view::mediator::DetailAccumulatorMediator_obj::__new(_g);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			this->get_facade()->registerMediator(_g1);
-			HX_STACK_LINE(23)
+			HX_STACK_LINE(29)
 			this->sendNotification(::AppConstants_obj::DETAIL_POPUP_ACTIVE,null(),null());
 		}
 	}

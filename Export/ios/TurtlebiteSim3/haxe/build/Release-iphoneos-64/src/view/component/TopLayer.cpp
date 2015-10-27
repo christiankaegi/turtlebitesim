@@ -50,12 +50,12 @@ namespace component{
 
 Void TopLayer_obj::__construct()
 {
-HX_STACK_FRAME("view.component.TopLayer","new",0x81b66148,"view.component.TopLayer.new","view/component/TopLayer.hx",15,0x958f1726)
+HX_STACK_FRAME("view.component.TopLayer","new",0x81b66148,"view.component.TopLayer.new","view/component/TopLayer.hx",21,0x958f1726)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	super::__construct();
-	HX_STACK_LINE(17)
+	HX_STACK_LINE(23)
 	this->addEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -77,14 +77,14 @@ Dynamic TopLayer_obj::__Create(hx::DynamicArray inArgs)
 
 Void TopLayer_obj::addedToStageHandler( ::openfl::_legacy::events::Event event){
 {
-		HX_STACK_FRAME("view.component.TopLayer","addedToStageHandler",0xf594f88f,"view.component.TopLayer.addedToStageHandler","view/component/TopLayer.hx",20,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","addedToStageHandler",0xf594f88f,"view.component.TopLayer.addedToStageHandler","view/component/TopLayer.hx",26,0x958f1726)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(21)
-		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(23)
-		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/top_layer2048.png")),this->bmp2048LoadCompleteHandler_dyn(),true);
 		HX_STACK_LINE(27)
+		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
+		HX_STACK_LINE(29)
+		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/top_layer2048.png")),this->bmp2048LoadCompleteHandler_dyn(),true);
+		HX_STACK_LINE(33)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/clockGlow.png")),this->clockLoadCompleteHandler_dyn(),true);
 	}
 return null();
@@ -95,14 +95,14 @@ HX_DEFINE_DYNAMIC_FUNC1(TopLayer_obj,addedToStageHandler,(void))
 
 Void TopLayer_obj::bmpLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.TopLayer","bmpLoadCompleteHandler",0xdc70535e,"view.component.TopLayer.bmpLoadCompleteHandler","view/component/TopLayer.hx",30,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","bmpLoadCompleteHandler",0xdc70535e,"view.component.TopLayer.bmpLoadCompleteHandler","view/component/TopLayer.hx",36,0x958f1726)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->bmp = _g;
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->addChild(this->bmp);
 	}
 return null();
@@ -113,14 +113,14 @@ HX_DEFINE_DYNAMIC_FUNC1(TopLayer_obj,bmpLoadCompleteHandler,(void))
 
 Void TopLayer_obj::bmp2048LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.TopLayer","bmp2048LoadCompleteHandler",0x3846455c,"view.component.TopLayer.bmp2048LoadCompleteHandler","view/component/TopLayer.hx",35,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","bmp2048LoadCompleteHandler",0x3846455c,"view.component.TopLayer.bmp2048LoadCompleteHandler","view/component/TopLayer.hx",41,0x958f1726)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->bmp2048 = _g;
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		this->addChild(this->bmp2048);
 	}
 return null();
@@ -131,22 +131,22 @@ HX_DEFINE_DYNAMIC_FUNC1(TopLayer_obj,bmp2048LoadCompleteHandler,(void))
 
 Void TopLayer_obj::clockLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.TopLayer","clockLoadCompleteHandler",0xd1327575,"view.component.TopLayer.clockLoadCompleteHandler","view/component/TopLayer.hx",40,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","clockLoadCompleteHandler",0xd1327575,"view.component.TopLayer.clockLoadCompleteHandler","view/component/TopLayer.hx",46,0x958f1726)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(41)
-		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(41)
-		this->clock = _g;
-		HX_STACK_LINE(42)
-		this->clock->set_name(HX_CSTRING("clockGlow"));
 		HX_STACK_LINE(47)
-		this->clock->set_x(((int)561 * ::AppConstants_obj::SCALE_FACTOR));
+		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(47)
+		this->clock = _g;
 		HX_STACK_LINE(48)
+		this->clock->set_name(HX_CSTRING("clockGlow"));
+		HX_STACK_LINE(53)
+		this->clock->set_x(((int)561 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(54)
 		this->clock->set_y(((int)574 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		::events::AppEvent _g1 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->dispatchEvent(_g1);
 	}
 return null();
@@ -157,11 +157,11 @@ HX_DEFINE_DYNAMIC_FUNC1(TopLayer_obj,clockLoadCompleteHandler,(void))
 
 Void TopLayer_obj::showClock( ){
 {
-		HX_STACK_FRAME("view.component.TopLayer","showClock",0xefe99e79,"view.component.TopLayer.showClock","view/component/TopLayer.hx",56,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","showClock",0xefe99e79,"view.component.TopLayer.showClock","view/component/TopLayer.hx",62,0x958f1726)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		this->hideClock();
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->addChild(this->clock);
 	}
 return null();
@@ -172,15 +172,15 @@ HX_DEFINE_DYNAMIC_FUNC0(TopLayer_obj,showClock,(void))
 
 Void TopLayer_obj::hideClock( ){
 {
-		HX_STACK_FRAME("view.component.TopLayer","hideClock",0x1ce3f494,"view.component.TopLayer.hideClock","view/component/TopLayer.hx",61,0x958f1726)
+		HX_STACK_FRAME("view.component.TopLayer","hideClock",0x1ce3f494,"view.component.TopLayer.hideClock","view/component/TopLayer.hx",67,0x958f1726)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("clockGlow"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		if (((_g != null()))){
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("clockGlow"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(63)
+			HX_STACK_LINE(69)
 			this->removeChild(_g1);
 		}
 	}

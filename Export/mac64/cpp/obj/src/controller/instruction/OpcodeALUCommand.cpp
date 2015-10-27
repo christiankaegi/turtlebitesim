@@ -47,10 +47,10 @@ namespace instruction{
 
 Void OpcodeALUCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.instruction.OpcodeALUCommand","new",0xae552cb3,"controller.instruction.OpcodeALUCommand.new","controller/instruction/OpcodeALUCommand.hx",13,0xb11165db)
+HX_STACK_FRAME("controller.instruction.OpcodeALUCommand","new",0xae552cb3,"controller.instruction.OpcodeALUCommand.new","controller/instruction/OpcodeALUCommand.hx",19,0xb11165db)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(13)
+	HX_STACK_LINE(19)
 	super::__construct();
 }
 ;
@@ -72,77 +72,77 @@ Dynamic OpcodeALUCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeALUCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.instruction.OpcodeALUCommand","execute",0xb62e8c08,"controller.instruction.OpcodeALUCommand.execute","controller/instruction/OpcodeALUCommand.hx",16,0xb11165db)
+		HX_STACK_FRAME("controller.instruction.OpcodeALUCommand","execute",0xb62e8c08,"controller.instruction.OpcodeALUCommand.execute","controller/instruction/OpcodeALUCommand.hx",22,0xb11165db)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(18)
-		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(18)
-		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(19)
-		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(19)
-		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(21)
-		int reg1 = snapshotProxy->getRegister1()->getDecimal();		HX_STACK_VAR(reg1,"reg1");
-		HX_STACK_LINE(22)
-		int accu = snapshotProxy->getAccumulator()->getDecimal();		HX_STACK_VAR(accu,"accu");
-		HX_STACK_LINE(23)
-		int result = (int)0;		HX_STACK_VAR(result,"result");
 		HX_STACK_LINE(24)
+		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
+		HX_STACK_LINE(24)
+		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
+		HX_STACK_LINE(25)
+		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
+		HX_STACK_LINE(25)
+		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
+		HX_STACK_LINE(27)
+		int reg1 = snapshotProxy->getRegister1()->getDecimal();		HX_STACK_VAR(reg1,"reg1");
+		HX_STACK_LINE(28)
+		int accu = snapshotProxy->getAccumulator()->getDecimal();		HX_STACK_VAR(accu,"accu");
+		HX_STACK_LINE(29)
+		int result = (int)0;		HX_STACK_VAR(result,"result");
+		HX_STACK_LINE(30)
 		{
-			HX_STACK_LINE(24)
+			HX_STACK_LINE(30)
 			::String _g = programProxy->getAddressOrData();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(24)
+			HX_STACK_LINE(30)
 			::String _switch_1 = (_g);
 			if (  ( _switch_1==::AppConstants_obj::ADDRESS_ADD)){
-				HX_STACK_LINE(26)
+				HX_STACK_LINE(32)
 				result = (reg1 + accu);
-				HX_STACK_LINE(27)
+				HX_STACK_LINE(33)
 				if (((result > (int)15))){
-					HX_STACK_LINE(28)
+					HX_STACK_LINE(34)
 					result = (hx::Mod(result,(int)15) - (int)1);
 				}
 			}
 			else if (  ( _switch_1==::AppConstants_obj::ADDRESS_SUB)){
-				HX_STACK_LINE(31)
+				HX_STACK_LINE(37)
 				result = (accu - reg1);
-				HX_STACK_LINE(32)
+				HX_STACK_LINE(38)
 				if (((result < (int)0))){
-					HX_STACK_LINE(33)
+					HX_STACK_LINE(39)
 					result = ((int)15 - hx::Mod(result,(int)15));
 				}
 			}
 			else if (  ( _switch_1==::AppConstants_obj::ADDRESS_INC)){
-				HX_STACK_LINE(36)
+				HX_STACK_LINE(42)
 				result = (accu + (int)1);
-				HX_STACK_LINE(37)
+				HX_STACK_LINE(43)
 				if (((result > (int)15))){
-					HX_STACK_LINE(38)
+					HX_STACK_LINE(44)
 					result = (hx::Mod(result,(int)15) - (int)1);
 				}
 			}
 			else if (  ( _switch_1==::AppConstants_obj::ADDRESS_DEC)){
-				HX_STACK_LINE(41)
+				HX_STACK_LINE(47)
 				result = (accu - (int)1);
-				HX_STACK_LINE(42)
+				HX_STACK_LINE(48)
 				if (((result < (int)0))){
-					HX_STACK_LINE(43)
+					HX_STACK_LINE(49)
 					result = (int)15;
 				}
 			}
 		}
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		::String bin = ::utilities::NumberFormat_obj::decimalToBinary(result);		HX_STACK_VAR(bin,"bin");
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		snapshotProxy->setAccumulator(bin);
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		::model::vo::SnapshotVO _g = ::model::vo::SnapshotVO_obj::__new(bin,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->sendNotification(::AppConstants_obj::ALU_OUT_ACTIVE,_g,null());
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		Array< bool > _g1 = snapshotProxy->getAccumulator()->getCodeArr();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->sendNotification(::AppConstants_obj::ACCUMULATOR_CHANGED,_g1,null());
 	}
 return null();

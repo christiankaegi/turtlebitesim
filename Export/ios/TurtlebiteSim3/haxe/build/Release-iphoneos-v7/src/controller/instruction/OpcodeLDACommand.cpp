@@ -50,10 +50,10 @@ namespace instruction{
 
 Void OpcodeLDACommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.instruction.OpcodeLDACommand","new",0xbacf4554,"controller.instruction.OpcodeLDACommand.new","controller/instruction/OpcodeLDACommand.hx",12,0x90fafc5a)
+HX_STACK_FRAME("controller.instruction.OpcodeLDACommand","new",0xbacf4554,"controller.instruction.OpcodeLDACommand.new","controller/instruction/OpcodeLDACommand.hx",18,0x90fafc5a)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct();
 }
 ;
@@ -75,26 +75,26 @@ Dynamic OpcodeLDACommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeLDACommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.instruction.OpcodeLDACommand","execute",0xd9180929,"controller.instruction.OpcodeLDACommand.execute","controller/instruction/OpcodeLDACommand.hx",15,0x90fafc5a)
+		HX_STACK_FRAME("controller.instruction.OpcodeLDACommand","execute",0xd9180929,"controller.instruction.OpcodeLDACommand.execute","controller/instruction/OpcodeLDACommand.hx",21,0x90fafc5a)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::String _g = programProxy->getAddressOrData();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::vo::DecHexVO pointer = ::utilities::NumberFormat_obj::binaryToDecimal(_g);		HX_STACK_VAR(pointer,"pointer");
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		Array< ::Dynamic > _g1 = snapshotProxy->getRam();		HX_STACK_VAR(_g1,"_g1");
 		struct _Function_1_1{
 			inline static Dynamic Block( Array< ::Dynamic > &_g1,::model::vo::DecHexVO &pointer){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","controller/instruction/OpcodeLDACommand.hx",22,0x90fafc5a)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","controller/instruction/OpcodeLDACommand.hx",28,0x90fafc5a)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("ram") , _g1,false);
@@ -104,21 +104,21 @@ Void OpcodeLDACommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces:
 				return null();
 			}
 		};
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		Dynamic _g2 = _Function_1_1::Block(_g1,pointer);		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(22)
+		HX_STACK_LINE(28)
 		this->sendNotification(::AppConstants_obj::BROADCAST_LDA,_g2,null());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		Array< ::Dynamic > _g3 = snapshotProxy->getRam();		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::model::vo::SnapshotVO vo = _g3->__get(pointer->dec).StaticCast< ::model::vo::SnapshotVO >();		HX_STACK_VAR(vo,"vo");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::String _g4 = vo->getBinary();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		snapshotProxy->setAccumulator(_g4);
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		Array< bool > _g5 = vo->getCodeArr();		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->sendNotification(::AppConstants_obj::ACCUMULATOR_CHANGED,_g5,null());
 	}
 return null();

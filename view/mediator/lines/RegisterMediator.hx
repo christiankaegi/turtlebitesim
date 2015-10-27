@@ -36,8 +36,8 @@ class RegisterMediator extends Mediator {
             AppConstants.CLOCK_OFF,
             AppConstants.REGISTER_1_CHANGED,
             AppConstants.REGISTER_2_CHANGED,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

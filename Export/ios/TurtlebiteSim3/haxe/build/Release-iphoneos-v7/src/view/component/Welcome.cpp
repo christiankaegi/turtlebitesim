@@ -50,12 +50,12 @@ namespace component{
 
 Void Welcome_obj::__construct()
 {
-HX_STACK_FRAME("view.component.Welcome","new",0x3418c47a,"view.component.Welcome.new","view/component/Welcome.hx",14,0xf680b9f8)
+HX_STACK_FRAME("view.component.Welcome","new",0x3418c47a,"view.component.Welcome.new","view/component/Welcome.hx",20,0xf680b9f8)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct();
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(22)
 	this->addEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -77,14 +77,14 @@ Dynamic Welcome_obj::__Create(hx::DynamicArray inArgs)
 
 Void Welcome_obj::addedToStageHandler( ::openfl::_legacy::events::Event event){
 {
-		HX_STACK_FRAME("view.component.Welcome","addedToStageHandler",0xe9cc5fc1,"view.component.Welcome.addedToStageHandler","view/component/Welcome.hx",19,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","addedToStageHandler",0xe9cc5fc1,"view.component.Welcome.addedToStageHandler","view/component/Welcome.hx",25,0xf680b9f8)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/architecture.png")),this->architectureLoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/PowerOffCover2048.png")),this->powerLoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -95,16 +95,16 @@ HX_DEFINE_DYNAMIC_FUNC1(Welcome_obj,addedToStageHandler,(void))
 
 Void Welcome_obj::powerLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.Welcome","powerLoadCompleteHandler",0x87d7152c,"view.component.Welcome.powerLoadCompleteHandler","view/component/Welcome.hx",29,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","powerLoadCompleteHandler",0x87d7152c,"view.component.Welcome.powerLoadCompleteHandler","view/component/Welcome.hx",35,0xf680b9f8)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->bmpPower = _g;
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->bmpPower->set_name(HX_CSTRING("powerOffCover"));
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->addChild(this->bmpPower);
 	}
 return null();
@@ -115,18 +115,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Welcome_obj,powerLoadCompleteHandler,(void))
 
 Void Welcome_obj::architectureLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.Welcome","architectureLoadCompleteHandler",0xd13d8e92,"view.component.Welcome.architectureLoadCompleteHandler","view/component/Welcome.hx",35,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","architectureLoadCompleteHandler",0xd13d8e92,"view.component.Welcome.architectureLoadCompleteHandler","view/component/Welcome.hx",41,0xf680b9f8)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->bmpArchitecture = _g;
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		this->bmpArchitecture->set_name(HX_CSTRING("architecture"));
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		::events::AppEvent _g1 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->dispatchEvent(_g1);
 	}
 return null();
@@ -137,11 +137,11 @@ HX_DEFINE_DYNAMIC_FUNC1(Welcome_obj,architectureLoadCompleteHandler,(void))
 
 Void Welcome_obj::show( ){
 {
-		HX_STACK_FRAME("view.component.Welcome","show",0x64e377a3,"view.component.Welcome.show","view/component/Welcome.hx",49,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","show",0x64e377a3,"view.component.Welcome.show","view/component/Welcome.hx",55,0xf680b9f8)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->hide();
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		this->addChild(this->bmpPower);
 	}
 return null();
@@ -152,24 +152,24 @@ HX_DEFINE_DYNAMIC_FUNC0(Welcome_obj,show,(void))
 
 Void Welcome_obj::hide( ){
 {
-		HX_STACK_FRAME("view.component.Welcome","hide",0x5d9ed768,"view.component.Welcome.hide","view/component/Welcome.hx",54,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","hide",0x5d9ed768,"view.component.Welcome.hide","view/component/Welcome.hx",60,0xf680b9f8)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("powerOffCover"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		if (((_g != null()))){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("powerOffCover"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->removeChild(_g1);
 		}
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		::openfl::_legacy::display::DisplayObject _g2 = this->getChildByName(HX_CSTRING("architecture"));		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		if (((_g2 != null()))){
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			::openfl::_legacy::display::DisplayObject _g3 = this->getChildByName(HX_CSTRING("architecture"));		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			this->removeChild(_g3);
 		}
 	}
@@ -181,19 +181,19 @@ HX_DEFINE_DYNAMIC_FUNC0(Welcome_obj,hide,(void))
 
 Void Welcome_obj::toggleArchitecture( ){
 {
-		HX_STACK_FRAME("view.component.Welcome","toggleArchitecture",0xc42d8bad,"view.component.Welcome.toggleArchitecture","view/component/Welcome.hx",63,0xf680b9f8)
+		HX_STACK_FRAME("view.component.Welcome","toggleArchitecture",0xc42d8bad,"view.component.Welcome.toggleArchitecture","view/component/Welcome.hx",69,0xf680b9f8)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(64)
+		HX_STACK_LINE(70)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("architecture"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(64)
+		HX_STACK_LINE(70)
 		if (((_g != null()))){
-			HX_STACK_LINE(65)
+			HX_STACK_LINE(71)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("architecture"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(65)
+			HX_STACK_LINE(71)
 			this->removeChild(_g1);
 		}
 		else{
-			HX_STACK_LINE(67)
+			HX_STACK_LINE(73)
 			this->addChild(this->bmpArchitecture);
 		}
 	}

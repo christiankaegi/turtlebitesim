@@ -73,10 +73,10 @@ namespace controller{
 
 Void EditRomCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.EditRomCommand","new",0x58537fe9,"controller.EditRomCommand.new","controller/EditRomCommand.hx",12,0xa36e9e86)
+HX_STACK_FRAME("controller.EditRomCommand","new",0x58537fe9,"controller.EditRomCommand.new","controller/EditRomCommand.hx",18,0xa36e9e86)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct();
 }
 ;
@@ -98,26 +98,26 @@ Dynamic EditRomCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void EditRomCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.EditRomCommand","execute",0x90f5b23e,"controller.EditRomCommand.execute","controller/EditRomCommand.hx",17,0xa36e9e86)
+		HX_STACK_FRAME("controller.EditRomCommand","execute",0x90f5b23e,"controller.EditRomCommand.execute","controller/EditRomCommand.hx",23,0xa36e9e86)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		if ((!(this->get_facade()->hasMediator(HX_CSTRING("EditRomMediator"))))){
-			HX_STACK_LINE(18)
+			HX_STACK_LINE(24)
 			::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-			HX_STACK_LINE(18)
+			HX_STACK_LINE(24)
 			programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-			HX_STACK_LINE(20)
+			HX_STACK_LINE(26)
 			this->sendNotification(::AppConstants_obj::PAUSE,null(),null());
-			HX_STACK_LINE(21)
+			HX_STACK_LINE(27)
 			this->get_facade()->removeMediator(HX_CSTRING("DetailAccumulatorMediator"));
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::model::data::ProgramData _g = programProxy->getData();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::view::component::EditRom _g1 = ::view::component::EditRom_obj::__new(_g);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			::view::mediator::EditRomMediator _g2 = ::view::mediator::EditRomMediator_obj::__new(_g1);		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(22)
+			HX_STACK_LINE(28)
 			this->get_facade()->registerMediator(_g2);
 		}
 	}

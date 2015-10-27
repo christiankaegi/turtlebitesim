@@ -77,19 +77,19 @@ namespace component{
 
 Void EnterInstruction_obj::__construct(::model::vo::InstructionVO initialInstruction)
 {
-HX_STACK_FRAME("view.component.EnterInstruction","new",0xc2e17922,"view.component.EnterInstruction.new","view/component/EnterInstruction.hx",20,0xe2d6668c)
+HX_STACK_FRAME("view.component.EnterInstruction","new",0xc2e17922,"view.component.EnterInstruction.new","view/component/EnterInstruction.hx",26,0xe2d6668c)
 HX_STACK_THIS(this)
 HX_STACK_ARG(initialInstruction,"initialInstruction")
 {
-	HX_STACK_LINE(36)
-	this->posY = ((int)447 * ::AppConstants_obj::SCALE_FACTOR);
-	HX_STACK_LINE(35)
-	this->posX = ((int)309 * ::AppConstants_obj::SCALE_FACTOR);
-	HX_STACK_LINE(41)
-	super::__construct();
 	HX_STACK_LINE(42)
+	this->posY = ((int)447 * ::AppConstants_obj::SCALE_FACTOR);
+	HX_STACK_LINE(41)
+	this->posX = ((int)309 * ::AppConstants_obj::SCALE_FACTOR);
+	HX_STACK_LINE(47)
+	super::__construct();
+	HX_STACK_LINE(48)
 	this->initialInstruction = initialInstruction;
-	HX_STACK_LINE(43)
+	HX_STACK_LINE(49)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -111,50 +111,50 @@ Dynamic EnterInstruction_obj::__Create(hx::DynamicArray inArgs)
 
 Void EnterInstruction_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","addedToStageHandler",0xe83ee469,"view.component.EnterInstruction.addedToStageHandler","view/component/EnterInstruction.hx",46,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","addedToStageHandler",0xe83ee469,"view.component.EnterInstruction.addedToStageHandler","view/component/EnterInstruction.hx",52,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(47)
-		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(48)
-		Array< ::Dynamic > _g = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(48)
-		this->lines = _g;
-		HX_STACK_LINE(49)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_BG.png")),this->bgLoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(50)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line0.png")),this->line0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(51)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line1.png")),this->line1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(52)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line2.png")),this->line2LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(53)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line3.png")),this->line3LoadCompleteHandler_dyn(),null());
+		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
 		HX_STACK_LINE(54)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line4.png")),this->line4LoadCompleteHandler_dyn(),null());
+		Array< ::Dynamic > _g = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(54)
+		this->lines = _g;
 		HX_STACK_LINE(55)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line5.png")),this->line5LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_BG.png")),this->bgLoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(56)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line6.png")),this->line6LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line0.png")),this->line0LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(57)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line7.png")),this->line7LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line1.png")),this->line1LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(58)
-		::openfl::display::Sprite _g1 = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(58)
-		this->linesContainer = _g1;
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line2.png")),this->line2LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(59)
-		this->addChild(this->linesContainer);
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line3.png")),this->line3LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(60)
-		this->createCloseButton();
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line4.png")),this->line4LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(61)
-		this->createTfAssembler();
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line5.png")),this->line5LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(62)
-		this->createLineButtons();
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line6.png")),this->line6LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(63)
-		this->createOpcodeMenu();
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/enterInstruction_line7.png")),this->line7LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(64)
-		this->createBarriere();
+		::openfl::display::Sprite _g1 = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(64)
+		this->linesContainer = _g1;
 		HX_STACK_LINE(65)
+		this->addChild(this->linesContainer);
+		HX_STACK_LINE(66)
+		this->createCloseButton();
+		HX_STACK_LINE(67)
+		this->createTfAssembler();
+		HX_STACK_LINE(68)
+		this->createLineButtons();
+		HX_STACK_LINE(69)
+		this->createOpcodeMenu();
+		HX_STACK_LINE(70)
+		this->createBarriere();
+		HX_STACK_LINE(71)
 		this->setInitialOutput();
 	}
 return null();
@@ -165,24 +165,24 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,addedToStageHandler,(void))
 
 Void EnterInstruction_obj::bgLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","bgLoadCompleteHandler",0x41e50b08,"view.component.EnterInstruction.bgLoadCompleteHandler","view/component/EnterInstruction.hx",68,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","bgLoadCompleteHandler",0x41e50b08,"view.component.EnterInstruction.bgLoadCompleteHandler","view/component/EnterInstruction.hx",74,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(75)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(75)
 		this->bg = _g;
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		this->bg->set_name(HX_CSTRING("enterInstructionBg"));
-		HX_STACK_LINE(71)
+		HX_STACK_LINE(77)
 		this->bg->set_x(this->posX);
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		this->bg->set_y(this->posY);
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		Float _g1 = this->bg->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		this->bg->set_scaleX(_g1);
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		this->addChild(this->bg);
 	}
 return null();
@@ -193,22 +193,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,bgLoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line0LoadCompleteHandler",0xb4e36c2d,"view.component.EnterInstruction.line0LoadCompleteHandler","view/component/EnterInstruction.hx",77,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line0LoadCompleteHandler",0xb4e36c2d,"view.component.EnterInstruction.line0LoadCompleteHandler","view/component/EnterInstruction.hx",83,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(78)
+		HX_STACK_LINE(84)
 		int i = (int)0;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(79)
+		HX_STACK_LINE(85)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(80)
+		HX_STACK_LINE(86)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -219,22 +219,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line0LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line1LoadCompleteHandler",0x1b4810cc,"view.component.EnterInstruction.line1LoadCompleteHandler","view/component/EnterInstruction.hx",86,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line1LoadCompleteHandler",0x1b4810cc,"view.component.EnterInstruction.line1LoadCompleteHandler","view/component/EnterInstruction.hx",92,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		int i = (int)1;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(88)
+		HX_STACK_LINE(94)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(89)
+		HX_STACK_LINE(95)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(91)
+		HX_STACK_LINE(97)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(92)
+		HX_STACK_LINE(98)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -245,22 +245,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line1LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line2LoadCompleteHandler",0x81acb56b,"view.component.EnterInstruction.line2LoadCompleteHandler","view/component/EnterInstruction.hx",95,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line2LoadCompleteHandler",0x81acb56b,"view.component.EnterInstruction.line2LoadCompleteHandler","view/component/EnterInstruction.hx",101,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(96)
+		HX_STACK_LINE(102)
 		int i = (int)2;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(98)
+		HX_STACK_LINE(104)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(99)
+		HX_STACK_LINE(105)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(107)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(107)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -271,22 +271,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line2LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line3LoadCompleteHandler",0xe8115a0a,"view.component.EnterInstruction.line3LoadCompleteHandler","view/component/EnterInstruction.hx",104,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line3LoadCompleteHandler",0xe8115a0a,"view.component.EnterInstruction.line3LoadCompleteHandler","view/component/EnterInstruction.hx",110,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		int i = (int)3;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(113)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(109)
+		HX_STACK_LINE(115)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(110)
+		HX_STACK_LINE(116)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(110)
+		HX_STACK_LINE(116)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -297,22 +297,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line3LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line4LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line4LoadCompleteHandler",0x4e75fea9,"view.component.EnterInstruction.line4LoadCompleteHandler","view/component/EnterInstruction.hx",113,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line4LoadCompleteHandler",0x4e75fea9,"view.component.EnterInstruction.line4LoadCompleteHandler","view/component/EnterInstruction.hx",119,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		int i = (int)4;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(115)
+		HX_STACK_LINE(121)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(116)
+		HX_STACK_LINE(122)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(117)
+		HX_STACK_LINE(123)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -323,22 +323,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line4LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line5LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line5LoadCompleteHandler",0xb4daa348,"view.component.EnterInstruction.line5LoadCompleteHandler","view/component/EnterInstruction.hx",122,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line5LoadCompleteHandler",0xb4daa348,"view.component.EnterInstruction.line5LoadCompleteHandler","view/component/EnterInstruction.hx",128,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(123)
+		HX_STACK_LINE(129)
 		int i = (int)5;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(124)
+		HX_STACK_LINE(130)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(125)
+		HX_STACK_LINE(131)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(126)
+		HX_STACK_LINE(132)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(127)
+		HX_STACK_LINE(133)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(128)
+		HX_STACK_LINE(134)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(128)
+		HX_STACK_LINE(134)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -349,22 +349,22 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line5LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line6LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line6LoadCompleteHandler",0x1b3f47e7,"view.component.EnterInstruction.line6LoadCompleteHandler","view/component/EnterInstruction.hx",131,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line6LoadCompleteHandler",0x1b3f47e7,"view.component.EnterInstruction.line6LoadCompleteHandler","view/component/EnterInstruction.hx",137,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(132)
+		HX_STACK_LINE(138)
 		int i = (int)6;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(133)
+		HX_STACK_LINE(139)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(134)
+		HX_STACK_LINE(140)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(135)
+		HX_STACK_LINE(141)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(136)
+		HX_STACK_LINE(142)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(137)
+		HX_STACK_LINE(143)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(137)
+		HX_STACK_LINE(143)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
 	}
 return null();
@@ -375,26 +375,26 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line6LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::line7LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","line7LoadCompleteHandler",0x81a3ec86,"view.component.EnterInstruction.line7LoadCompleteHandler","view/component/EnterInstruction.hx",140,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","line7LoadCompleteHandler",0x81a3ec86,"view.component.EnterInstruction.line7LoadCompleteHandler","view/component/EnterInstruction.hx",146,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(141)
+		HX_STACK_LINE(147)
 		int i = (int)7;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(142)
+		HX_STACK_LINE(148)
 		this->lines[i] = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());
-		HX_STACK_LINE(143)
+		HX_STACK_LINE(149)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_name((HX_CSTRING("enterInstructionLine") + i));
-		HX_STACK_LINE(144)
+		HX_STACK_LINE(150)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_x(this->posX);
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(151)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_y(this->posY);
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(152)
 		Float _g = this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(152)
 		this->lines->__get(i).StaticCast< ::openfl::display::Bitmap >()->set_scaleX(_g);
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		::events::AppEvent _g1 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		this->dispatchEvent(_g1);
 	}
 return null();
@@ -405,43 +405,43 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,line7LoadCompleteHandler,(void))
 
 Void EnterInstruction_obj::createTfAssembler( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","createTfAssembler",0xf0d315f4,"view.component.EnterInstruction.createTfAssembler","view/component/EnterInstruction.hx",150,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","createTfAssembler",0xf0d315f4,"view.component.EnterInstruction.createTfAssembler","view/component/EnterInstruction.hx",156,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(151)
+		HX_STACK_LINE(157)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(151)
+		HX_STACK_LINE(157)
 		this->tfAssemblerContainer = _g;
-		HX_STACK_LINE(153)
-		::openfl::text::TextField _g1 = this->getBasicTextField();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(153)
-		this->tfAssemblerOpcode = _g1;
-		HX_STACK_LINE(154)
-		this->tfAssemblerOpcode->set_text(HX_CSTRING("NOP"));
-		HX_STACK_LINE(155)
-		this->tfAssemblerContainer->addChild(this->tfAssemblerOpcode);
-		HX_STACK_LINE(157)
-		::openfl::text::TextField _g2 = this->getBasicTextField();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(157)
-		this->tfAssemblerAddress = _g2;
-		HX_STACK_LINE(158)
-		Float _g3 = this->tfAssemblerOpcode->get_x();		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(158)
-		Float _g4 = this->tfAssemblerOpcode->get_width();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(158)
-		Float _g5 = (_g3 + _g4);		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(158)
-		Float _g6 = (_g5 + ((int)4 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(158)
-		this->tfAssemblerAddress->set_x(_g6);
 		HX_STACK_LINE(159)
-		this->tfAssemblerAddress->set_text(HX_CSTRING(""));
+		::openfl::text::TextField _g1 = this->getBasicTextField();		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(159)
+		this->tfAssemblerOpcode = _g1;
 		HX_STACK_LINE(160)
-		this->tfAssemblerContainer->addChild(this->tfAssemblerAddress);
-		HX_STACK_LINE(162)
-		this->tfAssemblerContainer->set_x(((int)312 * ::AppConstants_obj::SCALE_FACTOR));
+		this->tfAssemblerOpcode->set_text(HX_CSTRING("NOP"));
+		HX_STACK_LINE(161)
+		this->tfAssemblerContainer->addChild(this->tfAssemblerOpcode);
 		HX_STACK_LINE(163)
-		this->tfAssemblerContainer->set_y(((int)455 * ::AppConstants_obj::SCALE_FACTOR));
+		::openfl::text::TextField _g2 = this->getBasicTextField();		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(163)
+		this->tfAssemblerAddress = _g2;
+		HX_STACK_LINE(164)
+		Float _g3 = this->tfAssemblerOpcode->get_x();		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(164)
+		Float _g4 = this->tfAssemblerOpcode->get_width();		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(164)
+		Float _g5 = (_g3 + _g4);		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(164)
+		Float _g6 = (_g5 + ((int)4 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(164)
+		this->tfAssemblerAddress->set_x(_g6);
 		HX_STACK_LINE(165)
+		this->tfAssemblerAddress->set_text(HX_CSTRING(""));
+		HX_STACK_LINE(166)
+		this->tfAssemblerContainer->addChild(this->tfAssemblerAddress);
+		HX_STACK_LINE(168)
+		this->tfAssemblerContainer->set_x(((int)312 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(169)
+		this->tfAssemblerContainer->set_y(((int)455 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(171)
 		this->addChild(this->tfAssemblerContainer);
 	}
 return null();
@@ -452,81 +452,81 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,createTfAssembler,(void))
 
 Void EnterInstruction_obj::createLineButtons( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","createLineButtons",0xa23c9b53,"view.component.EnterInstruction.createLineButtons","view/component/EnterInstruction.hx",168,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","createLineButtons",0xa23c9b53,"view.component.EnterInstruction.createLineButtons","view/component/EnterInstruction.hx",174,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(169)
+		HX_STACK_LINE(175)
 		::openfl::display::Sprite _g = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(169)
+		HX_STACK_LINE(175)
 		this->lineButtonsContainer = _g;
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		Array< ::Dynamic > _g1 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		this->lineButtons = _g1;
-		HX_STACK_LINE(171)
+		HX_STACK_LINE(177)
 		int id = (int)7;		HX_STACK_VAR(id,"id");
-		HX_STACK_LINE(172)
+		HX_STACK_LINE(178)
 		{
-			HX_STACK_LINE(172)
+			HX_STACK_LINE(178)
 			int _g2 = (int)0;		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(172)
+			HX_STACK_LINE(178)
 			while((true)){
-				HX_STACK_LINE(172)
+				HX_STACK_LINE(178)
 				if ((!(((_g2 < (int)8))))){
-					HX_STACK_LINE(172)
+					HX_STACK_LINE(178)
 					break;
 				}
-				HX_STACK_LINE(172)
-				int i = (_g2)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(173)
-				this->lineButtons[i] = ::openfl::display::Sprite_obj::__new();
-				HX_STACK_LINE(174)
-				::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)30 * ::AppConstants_obj::SCALE_FACTOR),((int)30 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
-				HX_STACK_LINE(175)
-				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->addChild(s);
-				HX_STACK_LINE(176)
-				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->set_name((HX_CSTRING("lineButton") + id));
-				HX_STACK_LINE(177)
-				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->buttonMode = true;
 				HX_STACK_LINE(178)
+				int i = (_g2)++;		HX_STACK_VAR(i,"i");
+				HX_STACK_LINE(179)
+				this->lineButtons[i] = ::openfl::display::Sprite_obj::__new();
+				HX_STACK_LINE(180)
+				::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(((int)30 * ::AppConstants_obj::SCALE_FACTOR),((int)30 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
+				HX_STACK_LINE(181)
+				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->addChild(s);
+				HX_STACK_LINE(182)
+				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->set_name((HX_CSTRING("lineButton") + id));
+				HX_STACK_LINE(183)
+				this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->buttonMode = true;
+				HX_STACK_LINE(184)
 				if (((i > (int)0))){
-					HX_STACK_LINE(179)
+					HX_STACK_LINE(185)
 					Float _g21 = this->lineButtons->__get((i - (int)1)).StaticCast< ::openfl::display::Sprite >()->get_x();		HX_STACK_VAR(_g21,"_g21");
-					HX_STACK_LINE(179)
+					HX_STACK_LINE(185)
 					Float _g3 = this->lineButtons->__get((i - (int)1)).StaticCast< ::openfl::display::Sprite >()->get_width();		HX_STACK_VAR(_g3,"_g3");
-					HX_STACK_LINE(179)
+					HX_STACK_LINE(185)
 					Float _g4 = (_g21 + _g3);		HX_STACK_VAR(_g4,"_g4");
-					HX_STACK_LINE(179)
+					HX_STACK_LINE(185)
 					Float _g5 = (_g4 + ((int)17 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g5,"_g5");
-					HX_STACK_LINE(179)
+					HX_STACK_LINE(185)
 					this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >()->set_x(_g5);
 				}
-				HX_STACK_LINE(181)
+				HX_STACK_LINE(187)
 				this->lineButtonsContainer->addChild(this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >());
-				HX_STACK_LINE(182)
+				HX_STACK_LINE(188)
 				(id)--;
 			}
 		}
-		HX_STACK_LINE(185)
-		this->lineButtons->__get((int)0).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton0Handler_dyn(),null(),null(),null());
-		HX_STACK_LINE(186)
-		this->lineButtons->__get((int)1).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton1Handler_dyn(),null(),null(),null());
-		HX_STACK_LINE(187)
-		this->lineButtons->__get((int)2).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton2Handler_dyn(),null(),null(),null());
-		HX_STACK_LINE(188)
-		this->lineButtons->__get((int)3).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton3Handler_dyn(),null(),null(),null());
-		HX_STACK_LINE(189)
-		this->lineButtons->__get((int)4).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton4Handler_dyn(),null(),null(),null());
-		HX_STACK_LINE(190)
-		this->lineButtons->__get((int)5).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton5Handler_dyn(),null(),null(),null());
 		HX_STACK_LINE(191)
-		this->lineButtons->__get((int)6).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton6Handler_dyn(),null(),null(),null());
+		this->lineButtons->__get((int)0).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton0Handler_dyn(),null(),null(),null());
 		HX_STACK_LINE(192)
-		this->lineButtons->__get((int)7).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton7Handler_dyn(),null(),null(),null());
+		this->lineButtons->__get((int)1).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton1Handler_dyn(),null(),null(),null());
 		HX_STACK_LINE(193)
-		this->lineButtonsContainer->set_x(((int)325 * ::AppConstants_obj::SCALE_FACTOR));
+		this->lineButtons->__get((int)2).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton2Handler_dyn(),null(),null(),null());
 		HX_STACK_LINE(194)
-		this->lineButtonsContainer->set_y(((int)512 * ::AppConstants_obj::SCALE_FACTOR));
+		this->lineButtons->__get((int)3).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton3Handler_dyn(),null(),null(),null());
 		HX_STACK_LINE(195)
+		this->lineButtons->__get((int)4).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton4Handler_dyn(),null(),null(),null());
+		HX_STACK_LINE(196)
+		this->lineButtons->__get((int)5).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton5Handler_dyn(),null(),null(),null());
+		HX_STACK_LINE(197)
+		this->lineButtons->__get((int)6).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton6Handler_dyn(),null(),null(),null());
+		HX_STACK_LINE(198)
+		this->lineButtons->__get((int)7).StaticCast< ::openfl::display::Sprite >()->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton7Handler_dyn(),null(),null(),null());
+		HX_STACK_LINE(199)
+		this->lineButtonsContainer->set_x(((int)325 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(200)
+		this->lineButtonsContainer->set_y(((int)512 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(201)
 		this->addChild(this->lineButtonsContainer);
 	}
 return null();
@@ -537,62 +537,62 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,createLineButtons,(void))
 
 Void EnterInstruction_obj::createCloseButton( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","createCloseButton",0x2da41a70,"view.component.EnterInstruction.createCloseButton","view/component/EnterInstruction.hx",198,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","createCloseButton",0x2da41a70,"view.component.EnterInstruction.createCloseButton","view/component/EnterInstruction.hx",204,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(199)
+		HX_STACK_LINE(205)
 		::view::elements::LabelButton _g = ::view::elements::LabelButton_obj::__new((int)100,HX_CSTRING("Schliessen"),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(199)
+		HX_STACK_LINE(205)
 		this->closeButton = _g;
-		HX_STACK_LINE(200)
+		HX_STACK_LINE(206)
 		Float _g1 = this->bg->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(200)
+		HX_STACK_LINE(206)
 		Float _g2 = this->bg->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(200)
+		HX_STACK_LINE(206)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(200)
+		HX_STACK_LINE(206)
 		Float _g4 = (_g3 - ((int)100 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(200)
+		HX_STACK_LINE(206)
 		this->closeButton->set_x(_g4);
-		HX_STACK_LINE(201)
+		HX_STACK_LINE(207)
 		Float _g5;		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(201)
+		HX_STACK_LINE(207)
 		{
-			HX_STACK_LINE(201)
+			HX_STACK_LINE(207)
 			Float a = this->bg->get_y();		HX_STACK_VAR(a,"a");
 			struct _Function_2_1{
 				inline static Float Block( ){
-					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",201,0xe2d6668c)
+					HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",207,0xe2d6668c)
 					{
-						HX_STACK_LINE(201)
+						HX_STACK_LINE(207)
 						int _int;		HX_STACK_VAR(_int,"int");
 						struct _Function_3_1{
 							inline static Float Block( ){
-								HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",201,0xe2d6668c)
+								HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",207,0xe2d6668c)
 								{
-									HX_STACK_LINE(201)
+									HX_STACK_LINE(207)
 									int int1 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(int1,"int1");
-									HX_STACK_LINE(201)
+									HX_STACK_LINE(207)
 									return (  (((int1 < (int)0))) ? Float((4294967296.0 + int1)) : Float((int1 + 0.0)) );
 								}
 								return null();
 							}
 						};
-						HX_STACK_LINE(201)
+						HX_STACK_LINE(207)
 						_int = _Function_3_1::Block();
-						HX_STACK_LINE(201)
+						HX_STACK_LINE(207)
 						return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 					}
 					return null();
 				}
 			};
-			HX_STACK_LINE(201)
+			HX_STACK_LINE(207)
 			_g5 = (a - _Function_2_1::Block());
 		}
-		HX_STACK_LINE(201)
+		HX_STACK_LINE(207)
 		this->closeButton->set_y(_g5);
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		this->closeButton->addEventListener(::events::AppEvent_obj::DATA,this->closeButtonHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(203)
+		HX_STACK_LINE(209)
 		this->addChild(this->closeButton);
 	}
 return null();
@@ -603,41 +603,41 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,createCloseButton,(void))
 
 Void EnterInstruction_obj::createBarriere( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","createBarriere",0xc8d24ae8,"view.component.EnterInstruction.createBarriere","view/component/EnterInstruction.hx",206,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","createBarriere",0xc8d24ae8,"view.component.EnterInstruction.createBarriere","view/component/EnterInstruction.hx",212,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(207)
+		HX_STACK_LINE(213)
 		::view::elements::SimpleRectangle _g = ::view::elements::SimpleRectangle_obj::__new(((int)100 * ::AppConstants_obj::SCALE_FACTOR),((int)5 * ::AppConstants_obj::SCALE_FACTOR),(int)14483456,null(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(207)
+		HX_STACK_LINE(213)
 		this->barriere = _g;
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g1 = this->bg->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g2 = this->bg->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g3 = (Float(_g2) / Float((int)2));		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g4 = (_g1 + _g3);		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g5 = this->barriere->get_width();		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g6 = (Float(_g5) / Float((int)2));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		Float _g7 = (_g4 - _g6);		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(208)
+		HX_STACK_LINE(214)
 		this->barriere->set_x(_g7);
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		Float _g8 = this->bg->get_y();		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		Float _g9 = this->bg->get_height();		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		Float _g10 = (_g8 + _g9);		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		Float _g11 = (_g10 - ((int)2 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g11,"_g11");
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		this->barriere->set_y(_g11);
-		HX_STACK_LINE(210)
+		HX_STACK_LINE(216)
 		this->barriere->set_visible(false);
-		HX_STACK_LINE(211)
+		HX_STACK_LINE(217)
 		this->addChild(this->barriere);
 	}
 return null();
@@ -648,81 +648,81 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,createBarriere,(void))
 
 Void EnterInstruction_obj::createOpcodeMenu( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","createOpcodeMenu",0x8b23aba7,"view.component.EnterInstruction.createOpcodeMenu","view/component/EnterInstruction.hx",214,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","createOpcodeMenu",0x8b23aba7,"view.component.EnterInstruction.createOpcodeMenu","view/component/EnterInstruction.hx",220,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		::view::elements::OpcodeMenu _g = ::view::elements::OpcodeMenu_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		this->opcodeMenu = _g;
-		HX_STACK_LINE(216)
+		HX_STACK_LINE(222)
 		this->opcodeMenu->set_x((this->posX - ((int)110 * ::AppConstants_obj::SCALE_FACTOR)));
 		struct _Function_1_1{
 			inline static Float Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",217,0xe2d6668c)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",223,0xe2d6668c)
 				{
-					HX_STACK_LINE(217)
+					HX_STACK_LINE(223)
 					int _int;		HX_STACK_VAR(_int,"int");
 					struct _Function_2_1{
 						inline static Float Block( ){
-							HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",217,0xe2d6668c)
+							HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",223,0xe2d6668c)
 							{
-								HX_STACK_LINE(217)
+								HX_STACK_LINE(223)
 								int int1 = ::view::elements::LabelButton_obj::BTN_HEIGHT;		HX_STACK_VAR(int1,"int1");
-								HX_STACK_LINE(217)
+								HX_STACK_LINE(223)
 								return (  (((int1 < (int)0))) ? Float((4294967296.0 + int1)) : Float((int1 + 0.0)) );
 							}
 							return null();
 						}
 					};
-					HX_STACK_LINE(217)
+					HX_STACK_LINE(223)
 					_int = _Function_2_1::Block();
-					HX_STACK_LINE(217)
+					HX_STACK_LINE(223)
 					return (  (((_int < (int)0))) ? Float((4294967296.0 + _int)) : Float((_int + 0.0)) );
 				}
 				return null();
 			}
 		};
-		HX_STACK_LINE(217)
-		this->opcodeMenu->set_y((this->posY - _Function_1_1::Block()));
-		HX_STACK_LINE(218)
-		this->opcodeMenu->set_visible(false);
-		HX_STACK_LINE(219)
-		this->opcodeMenu->addEventListener(::events::AppEvent_obj::DATA,this->opcodeMenuHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(220)
-		this->addChild(this->opcodeMenu);
-		HX_STACK_LINE(221)
-		::openfl::display::Sprite _g1 = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(221)
-		this->opcodeMenuButton = _g1;
-		HX_STACK_LINE(222)
-		Float _g2 = this->tfAssemblerOpcode->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(222)
-		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(_g2,((int)48 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
 		HX_STACK_LINE(223)
-		this->opcodeMenuButton->addChild(s);
+		this->opcodeMenu->set_y((this->posY - _Function_1_1::Block()));
 		HX_STACK_LINE(224)
-		this->opcodeMenuButton->buttonMode = true;
+		this->opcodeMenu->set_visible(false);
 		HX_STACK_LINE(225)
-		this->opcodeMenuButton->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->opcodeMenuButtonHandler_dyn(),null(),null(),null());
+		this->opcodeMenu->addEventListener(::events::AppEvent_obj::DATA,this->opcodeMenuHandler_dyn(),null(),null(),null());
 		HX_STACK_LINE(226)
-		Float _g3 = this->tfAssemblerContainer->get_x();		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(226)
-		Float _g4 = this->tfAssemblerOpcode->get_x();		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(226)
-		Float _g5 = (_g3 + _g4);		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(226)
-		this->opcodeMenuButton->set_x(_g5);
+		this->addChild(this->opcodeMenu);
 		HX_STACK_LINE(227)
-		Float _g6 = this->tfAssemblerContainer->get_y();		HX_STACK_VAR(_g6,"_g6");
+		::openfl::display::Sprite _g1 = ::openfl::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
 		HX_STACK_LINE(227)
-		Float _g7 = this->tfAssemblerOpcode->get_y();		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(227)
-		Float _g8 = (_g6 + _g7);		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(227)
-		Float _g9 = (_g8 - ((int)5 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(227)
-		this->opcodeMenuButton->set_y(_g9);
+		this->opcodeMenuButton = _g1;
 		HX_STACK_LINE(228)
+		Float _g2 = this->tfAssemblerOpcode->get_width();		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(228)
+		::view::elements::SimpleRectangle s = ::view::elements::SimpleRectangle_obj::__new(_g2,((int)48 * ::AppConstants_obj::SCALE_FACTOR),(int)16711935,(int)0,null(),null());		HX_STACK_VAR(s,"s");
+		HX_STACK_LINE(229)
+		this->opcodeMenuButton->addChild(s);
+		HX_STACK_LINE(230)
+		this->opcodeMenuButton->buttonMode = true;
+		HX_STACK_LINE(231)
+		this->opcodeMenuButton->addEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->opcodeMenuButtonHandler_dyn(),null(),null(),null());
+		HX_STACK_LINE(232)
+		Float _g3 = this->tfAssemblerContainer->get_x();		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(232)
+		Float _g4 = this->tfAssemblerOpcode->get_x();		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(232)
+		Float _g5 = (_g3 + _g4);		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(232)
+		this->opcodeMenuButton->set_x(_g5);
+		HX_STACK_LINE(233)
+		Float _g6 = this->tfAssemblerContainer->get_y();		HX_STACK_VAR(_g6,"_g6");
+		HX_STACK_LINE(233)
+		Float _g7 = this->tfAssemblerOpcode->get_y();		HX_STACK_VAR(_g7,"_g7");
+		HX_STACK_LINE(233)
+		Float _g8 = (_g6 + _g7);		HX_STACK_VAR(_g8,"_g8");
+		HX_STACK_LINE(233)
+		Float _g9 = (_g8 - ((int)5 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g9,"_g9");
+		HX_STACK_LINE(233)
+		this->opcodeMenuButton->set_y(_g9);
+		HX_STACK_LINE(234)
 		this->addChild(this->opcodeMenuButton);
 	}
 return null();
@@ -733,12 +733,12 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,createOpcodeMenu,(void))
 
 Void EnterInstruction_obj::opcodeMenuButtonHandler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","opcodeMenuButtonHandler",0x46c101ed,"view.component.EnterInstruction.opcodeMenuButtonHandler","view/component/EnterInstruction.hx",231,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","opcodeMenuButtonHandler",0x46c101ed,"view.component.EnterInstruction.opcodeMenuButtonHandler","view/component/EnterInstruction.hx",237,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(232)
+		HX_STACK_LINE(238)
 		bool _g = !(this->opcodeMenu->get_visible());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(232)
+		HX_STACK_LINE(238)
 		this->opcodeMenu->set_visible(_g);
 	}
 return null();
@@ -749,16 +749,16 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,opcodeMenuButtonHandler,(void))
 
 Void EnterInstruction_obj::opcodeMenuHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","opcodeMenuHandler",0xe501a3ff,"view.component.EnterInstruction.opcodeMenuHandler","view/component/EnterInstruction.hx",235,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","opcodeMenuHandler",0xe501a3ff,"view.component.EnterInstruction.opcodeMenuHandler","view/component/EnterInstruction.hx",241,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(236)
+		HX_STACK_LINE(242)
 		this->opcodeMenu->set_visible(false);
-		HX_STACK_LINE(237)
+		HX_STACK_LINE(243)
 		this->barriere->set_visible(true);
 		struct _Function_1_1{
 			inline static Dynamic Block( ::events::AppEvent &event){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",238,0xe2d6668c)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",244,0xe2d6668c)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , HX_CSTRING("opcodeMenu"),false);
@@ -769,9 +769,9 @@ Void EnterInstruction_obj::opcodeMenuHandler( ::events::AppEvent event){
 				return null();
 			}
 		};
-		HX_STACK_LINE(238)
+		HX_STACK_LINE(244)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(event),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(238)
+		HX_STACK_LINE(244)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -782,10 +782,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,opcodeMenuHandler,(void))
 
 Void EnterInstruction_obj::lineButton0Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton0Handler",0x998091fe,"view.component.EnterInstruction.lineButton0Handler","view/component/EnterInstruction.hx",245,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton0Handler",0x998091fe,"view.component.EnterInstruction.lineButton0Handler","view/component/EnterInstruction.hx",251,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(245)
+		HX_STACK_LINE(251)
 		this->lineButtonsHandler((int)7);
 	}
 return null();
@@ -796,10 +796,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton0Handler,(void))
 
 Void EnterInstruction_obj::lineButton1Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton1Handler",0xd2b3041d,"view.component.EnterInstruction.lineButton1Handler","view/component/EnterInstruction.hx",248,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton1Handler",0xd2b3041d,"view.component.EnterInstruction.lineButton1Handler","view/component/EnterInstruction.hx",254,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(248)
+		HX_STACK_LINE(254)
 		this->lineButtonsHandler((int)6);
 	}
 return null();
@@ -810,10 +810,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton1Handler,(void))
 
 Void EnterInstruction_obj::lineButton2Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton2Handler",0x0be5763c,"view.component.EnterInstruction.lineButton2Handler","view/component/EnterInstruction.hx",251,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton2Handler",0x0be5763c,"view.component.EnterInstruction.lineButton2Handler","view/component/EnterInstruction.hx",257,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(251)
+		HX_STACK_LINE(257)
 		this->lineButtonsHandler((int)5);
 	}
 return null();
@@ -824,10 +824,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton2Handler,(void))
 
 Void EnterInstruction_obj::lineButton3Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton3Handler",0x4517e85b,"view.component.EnterInstruction.lineButton3Handler","view/component/EnterInstruction.hx",254,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton3Handler",0x4517e85b,"view.component.EnterInstruction.lineButton3Handler","view/component/EnterInstruction.hx",260,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(254)
+		HX_STACK_LINE(260)
 		this->lineButtonsHandler((int)4);
 	}
 return null();
@@ -838,10 +838,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton3Handler,(void))
 
 Void EnterInstruction_obj::lineButton4Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton4Handler",0x7e4a5a7a,"view.component.EnterInstruction.lineButton4Handler","view/component/EnterInstruction.hx",257,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton4Handler",0x7e4a5a7a,"view.component.EnterInstruction.lineButton4Handler","view/component/EnterInstruction.hx",263,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(257)
+		HX_STACK_LINE(263)
 		this->lineButtonsHandler((int)3);
 	}
 return null();
@@ -852,10 +852,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton4Handler,(void))
 
 Void EnterInstruction_obj::lineButton5Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton5Handler",0xb77ccc99,"view.component.EnterInstruction.lineButton5Handler","view/component/EnterInstruction.hx",260,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton5Handler",0xb77ccc99,"view.component.EnterInstruction.lineButton5Handler","view/component/EnterInstruction.hx",266,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(260)
+		HX_STACK_LINE(266)
 		this->lineButtonsHandler((int)2);
 	}
 return null();
@@ -866,10 +866,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton5Handler,(void))
 
 Void EnterInstruction_obj::lineButton6Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton6Handler",0xf0af3eb8,"view.component.EnterInstruction.lineButton6Handler","view/component/EnterInstruction.hx",263,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton6Handler",0xf0af3eb8,"view.component.EnterInstruction.lineButton6Handler","view/component/EnterInstruction.hx",269,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(263)
+		HX_STACK_LINE(269)
 		this->lineButtonsHandler((int)1);
 	}
 return null();
@@ -880,10 +880,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton6Handler,(void))
 
 Void EnterInstruction_obj::lineButton7Handler( ::openfl::events::MouseEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButton7Handler",0x29e1b0d7,"view.component.EnterInstruction.lineButton7Handler","view/component/EnterInstruction.hx",266,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButton7Handler",0x29e1b0d7,"view.component.EnterInstruction.lineButton7Handler","view/component/EnterInstruction.hx",272,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(266)
+		HX_STACK_LINE(272)
 		this->lineButtonsHandler((int)0);
 	}
 return null();
@@ -894,23 +894,23 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButton7Handler,(void))
 
 Void EnterInstruction_obj::lineButtonsHandler( int id){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","lineButtonsHandler",0x91b4701b,"view.component.EnterInstruction.lineButtonsHandler","view/component/EnterInstruction.hx",269,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","lineButtonsHandler",0x91b4701b,"view.component.EnterInstruction.lineButtonsHandler","view/component/EnterInstruction.hx",275,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
-		HX_STACK_LINE(270)
+		HX_STACK_LINE(276)
 		bool on = false;		HX_STACK_VAR(on,"on");
-		HX_STACK_LINE(271)
+		HX_STACK_LINE(277)
 		::openfl::display::DisplayObject _g = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + id));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(271)
+		HX_STACK_LINE(277)
 		if (((_g != null()))){
-			HX_STACK_LINE(272)
+			HX_STACK_LINE(278)
 			on = true;
 		}
-		HX_STACK_LINE(274)
+		HX_STACK_LINE(280)
 		this->barriere->set_visible(true);
 		struct _Function_1_1{
 			inline static Dynamic Block( int &id,bool &on){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",275,0xe2d6668c)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",281,0xe2d6668c)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , id,false);
@@ -920,9 +920,9 @@ Void EnterInstruction_obj::lineButtonsHandler( int id){
 				return null();
 			}
 		};
-		HX_STACK_LINE(275)
+		HX_STACK_LINE(281)
 		::events::AppEvent _g1 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(id,on),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(275)
+		HX_STACK_LINE(281)
 		this->dispatchEvent(_g1);
 	}
 return null();
@@ -933,12 +933,12 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,lineButtonsHandler,(void))
 
 Void EnterInstruction_obj::closeButtonHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","closeButtonHandler",0xd281be9e,"view.component.EnterInstruction.closeButtonHandler","view/component/EnterInstruction.hx",278,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","closeButtonHandler",0xd281be9e,"view.component.EnterInstruction.closeButtonHandler","view/component/EnterInstruction.hx",284,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
 		struct _Function_1_1{
 			inline static Dynamic Block( ){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",279,0xe2d6668c)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/component/EnterInstruction.hx",285,0xe2d6668c)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , HX_CSTRING("closeButton"),false);
@@ -947,9 +947,9 @@ Void EnterInstruction_obj::closeButtonHandler( ::events::AppEvent event){
 				return null();
 			}
 		};
-		HX_STACK_LINE(279)
+		HX_STACK_LINE(285)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(279)
+		HX_STACK_LINE(285)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -959,23 +959,23 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,closeButtonHandler,(void))
 
 ::openfl::text::TextField EnterInstruction_obj::getBasicTextField( ){
-	HX_STACK_FRAME("view.component.EnterInstruction","getBasicTextField",0xa9e87bb7,"view.component.EnterInstruction.getBasicTextField","view/component/EnterInstruction.hx",282,0xe2d6668c)
+	HX_STACK_FRAME("view.component.EnterInstruction","getBasicTextField",0xa9e87bb7,"view.component.EnterInstruction.getBasicTextField","view/component/EnterInstruction.hx",288,0xe2d6668c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(283)
-	::openfl::text::TextField tf = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
-	HX_STACK_LINE(284)
-	::openfl::text::TextFormat _g = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Consolas Bold"),((int)40 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),::openfl::text::TextFormatAlign_obj::CENTER,null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(284)
-	tf->set_defaultTextFormat(_g);
-	HX_STACK_LINE(285)
-	tf->embedFonts = true;
-	HX_STACK_LINE(286)
-	tf->set_selectable(false);
-	HX_STACK_LINE(287)
-	tf->set_width(((int)190 * ::AppConstants_obj::SCALE_FACTOR));
-	HX_STACK_LINE(288)
-	tf->set_height(((int)50 * ::AppConstants_obj::SCALE_FACTOR));
 	HX_STACK_LINE(289)
+	::openfl::text::TextField tf = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
+	HX_STACK_LINE(290)
+	::openfl::text::TextFormat _g = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Consolas Bold"),((int)40 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),::openfl::text::TextFormatAlign_obj::CENTER,null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(290)
+	tf->set_defaultTextFormat(_g);
+	HX_STACK_LINE(291)
+	tf->embedFonts = true;
+	HX_STACK_LINE(292)
+	tf->set_selectable(false);
+	HX_STACK_LINE(293)
+	tf->set_width(((int)190 * ::AppConstants_obj::SCALE_FACTOR));
+	HX_STACK_LINE(294)
+	tf->set_height(((int)50 * ::AppConstants_obj::SCALE_FACTOR));
+	HX_STACK_LINE(295)
 	return tf;
 }
 
@@ -984,13 +984,13 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,getBasicTextField,return )
 
 Void EnterInstruction_obj::setInitialOutput( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","setInitialOutput",0xc636eba1,"view.component.EnterInstruction.setInitialOutput","view/component/EnterInstruction.hx",292,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","setInitialOutput",0xc636eba1,"view.component.EnterInstruction.setInitialOutput","view/component/EnterInstruction.hx",298,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(293)
+		HX_STACK_LINE(299)
 		this->setTfOpcode(this->initialInstruction->asmOpcode);
-		HX_STACK_LINE(294)
+		HX_STACK_LINE(300)
 		this->setTfAddress(this->initialInstruction->asmAddress);
-		HX_STACK_LINE(295)
+		HX_STACK_LINE(301)
 		this->showLines(this->initialInstruction->codeOpcode,this->initialInstruction->codeAddress);
 	}
 return null();
@@ -1000,37 +1000,37 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,setInitialOutput,(void))
 
 ::String EnterInstruction_obj::getOpcode( ){
-	HX_STACK_FRAME("view.component.EnterInstruction","getOpcode",0xe018e646,"view.component.EnterInstruction.getOpcode","view/component/EnterInstruction.hx",303,0xe2d6668c)
+	HX_STACK_FRAME("view.component.EnterInstruction","getOpcode",0xe018e646,"view.component.EnterInstruction.getOpcode","view/component/EnterInstruction.hx",309,0xe2d6668c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(304)
+	HX_STACK_LINE(310)
 	::String t = HX_CSTRING("");		HX_STACK_VAR(t,"t");
-	HX_STACK_LINE(305)
+	HX_STACK_LINE(311)
 	{
-		HX_STACK_LINE(305)
+		HX_STACK_LINE(311)
 		int _g = (int)4;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(305)
+		HX_STACK_LINE(311)
 		while((true)){
-			HX_STACK_LINE(305)
+			HX_STACK_LINE(311)
 			if ((!(((_g < (int)8))))){
-				HX_STACK_LINE(305)
+				HX_STACK_LINE(311)
 				break;
 			}
-			HX_STACK_LINE(305)
+			HX_STACK_LINE(311)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(306)
+			HX_STACK_LINE(312)
 			::openfl::display::DisplayObject _g1 = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(306)
+			HX_STACK_LINE(312)
 			if (((_g1 == null()))){
-				HX_STACK_LINE(307)
+				HX_STACK_LINE(313)
 				t = (HX_CSTRING("0") + t);
 			}
 			else{
-				HX_STACK_LINE(309)
+				HX_STACK_LINE(315)
 				t = (HX_CSTRING("1") + t);
 			}
 		}
 	}
-	HX_STACK_LINE(312)
+	HX_STACK_LINE(318)
 	return t;
 }
 
@@ -1038,37 +1038,37 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,setInitialOutput,(void))
 HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,getOpcode,return )
 
 ::String EnterInstruction_obj::getAddress( ){
-	HX_STACK_FRAME("view.component.EnterInstruction","getAddress",0xb89ecb3c,"view.component.EnterInstruction.getAddress","view/component/EnterInstruction.hx",315,0xe2d6668c)
+	HX_STACK_FRAME("view.component.EnterInstruction","getAddress",0xb89ecb3c,"view.component.EnterInstruction.getAddress","view/component/EnterInstruction.hx",321,0xe2d6668c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(316)
+	HX_STACK_LINE(322)
 	::String t = HX_CSTRING("");		HX_STACK_VAR(t,"t");
-	HX_STACK_LINE(317)
+	HX_STACK_LINE(323)
 	{
-		HX_STACK_LINE(317)
+		HX_STACK_LINE(323)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(317)
+		HX_STACK_LINE(323)
 		while((true)){
-			HX_STACK_LINE(317)
+			HX_STACK_LINE(323)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(317)
+				HX_STACK_LINE(323)
 				break;
 			}
-			HX_STACK_LINE(317)
+			HX_STACK_LINE(323)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(318)
+			HX_STACK_LINE(324)
 			::openfl::display::DisplayObject _g1 = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(318)
+			HX_STACK_LINE(324)
 			if (((_g1 == null()))){
-				HX_STACK_LINE(319)
+				HX_STACK_LINE(325)
 				t = (HX_CSTRING("0") + t);
 			}
 			else{
-				HX_STACK_LINE(321)
+				HX_STACK_LINE(327)
 				t = (HX_CSTRING("1") + t);
 			}
 		}
 	}
-	HX_STACK_LINE(324)
+	HX_STACK_LINE(330)
 	return t;
 }
 
@@ -1077,10 +1077,10 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,getAddress,return )
 
 Void EnterInstruction_obj::setTfOpcode( ::String value){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","setTfOpcode",0xe1083664,"view.component.EnterInstruction.setTfOpcode","view/component/EnterInstruction.hx",328,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","setTfOpcode",0xe1083664,"view.component.EnterInstruction.setTfOpcode","view/component/EnterInstruction.hx",334,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(328)
+		HX_STACK_LINE(334)
 		this->tfAssemblerOpcode->set_text(value);
 	}
 return null();
@@ -1091,10 +1091,10 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,setTfOpcode,(void))
 
 Void EnterInstruction_obj::setTfAddress( ::String value){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","setTfAddress",0x8915955e,"view.component.EnterInstruction.setTfAddress","view/component/EnterInstruction.hx",332,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","setTfAddress",0x8915955e,"view.component.EnterInstruction.setTfAddress","view/component/EnterInstruction.hx",338,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(332)
+		HX_STACK_LINE(338)
 		this->tfAssemblerAddress->set_text(value);
 	}
 return null();
@@ -1105,9 +1105,9 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,setTfAddress,(void))
 
 Void EnterInstruction_obj::hideBarriere( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","hideBarriere",0x80f5132e,"view.component.EnterInstruction.hideBarriere","view/component/EnterInstruction.hx",336,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","hideBarriere",0x80f5132e,"view.component.EnterInstruction.hideBarriere","view/component/EnterInstruction.hx",342,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(336)
+		HX_STACK_LINE(342)
 		this->barriere->set_visible(false);
 	}
 return null();
@@ -1118,45 +1118,45 @@ HX_DEFINE_DYNAMIC_FUNC0(EnterInstruction_obj,hideBarriere,(void))
 
 Void EnterInstruction_obj::showLines( ::String opcode,::String address){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","showLines",0xe6e5ea04,"view.component.EnterInstruction.showLines","view/component/EnterInstruction.hx",339,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","showLines",0xe6e5ea04,"view.component.EnterInstruction.showLines","view/component/EnterInstruction.hx",345,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(opcode,"opcode")
 		HX_STACK_ARG(address,"address")
-		HX_STACK_LINE(340)
+		HX_STACK_LINE(346)
 		Array< bool > codeArr = ::utilities::NumberFormat_obj::binaryToArray(((opcode + HX_CSTRING("")) + address),null());		HX_STACK_VAR(codeArr,"codeArr");
-		HX_STACK_LINE(341)
+		HX_STACK_LINE(347)
 		int pos = (int)7;		HX_STACK_VAR(pos,"pos");
-		HX_STACK_LINE(342)
+		HX_STACK_LINE(348)
 		{
-			HX_STACK_LINE(342)
+			HX_STACK_LINE(348)
 			int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(342)
+			HX_STACK_LINE(348)
 			while((true)){
-				HX_STACK_LINE(342)
+				HX_STACK_LINE(348)
 				if ((!(((_g < (int)8))))){
-					HX_STACK_LINE(342)
+					HX_STACK_LINE(348)
 					break;
 				}
-				HX_STACK_LINE(342)
+				HX_STACK_LINE(348)
 				int i = (_g)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(343)
+				HX_STACK_LINE(349)
 				::openfl::display::DisplayObject _g1 = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + pos));		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(343)
+				HX_STACK_LINE(349)
 				if (((_g1 == null()))){
-					HX_STACK_LINE(344)
+					HX_STACK_LINE(350)
 					if ((codeArr->__get(i))){
-						HX_STACK_LINE(345)
+						HX_STACK_LINE(351)
 						this->linesContainer->addChild(this->lines->__get(pos).StaticCast< ::openfl::display::Bitmap >());
 					}
 				}
 				else{
-					HX_STACK_LINE(347)
+					HX_STACK_LINE(353)
 					if ((!(codeArr->__get(i)))){
-						HX_STACK_LINE(348)
+						HX_STACK_LINE(354)
 						this->linesContainer->removeChild(this->lines->__get(pos).StaticCast< ::openfl::display::Bitmap >());
 					}
 				}
-				HX_STACK_LINE(350)
+				HX_STACK_LINE(356)
 				(pos)--;
 			}
 		}
@@ -1169,14 +1169,14 @@ HX_DEFINE_DYNAMIC_FUNC2(EnterInstruction_obj,showLines,(void))
 
 Void EnterInstruction_obj::showLine( int id){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","showLine",0x1367338f,"view.component.EnterInstruction.showLine","view/component/EnterInstruction.hx",354,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","showLine",0x1367338f,"view.component.EnterInstruction.showLine","view/component/EnterInstruction.hx",360,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
-		HX_STACK_LINE(355)
+		HX_STACK_LINE(361)
 		::openfl::display::DisplayObject _g = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + id));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(355)
+		HX_STACK_LINE(361)
 		if (((_g == null()))){
-			HX_STACK_LINE(356)
+			HX_STACK_LINE(362)
 			this->linesContainer->addChild(this->lines->__get(id).StaticCast< ::openfl::display::Bitmap >());
 		}
 	}
@@ -1188,14 +1188,14 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,showLine,(void))
 
 Void EnterInstruction_obj::hideLine( int id){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","hideLine",0x04ae59d4,"view.component.EnterInstruction.hideLine","view/component/EnterInstruction.hx",360,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","hideLine",0x04ae59d4,"view.component.EnterInstruction.hideLine","view/component/EnterInstruction.hx",366,0xe2d6668c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
-		HX_STACK_LINE(361)
+		HX_STACK_LINE(367)
 		::openfl::display::DisplayObject _g = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + id));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(361)
+		HX_STACK_LINE(367)
 		if (((_g != null()))){
-			HX_STACK_LINE(362)
+			HX_STACK_LINE(368)
 			this->linesContainer->removeChild(this->lines->__get(id).StaticCast< ::openfl::display::Bitmap >());
 		}
 	}
@@ -1207,71 +1207,71 @@ HX_DEFINE_DYNAMIC_FUNC1(EnterInstruction_obj,hideLine,(void))
 
 Void EnterInstruction_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.component.EnterInstruction","destroy",0xb6c45ebc,"view.component.EnterInstruction.destroy","view/component/EnterInstruction.hx",366,0xe2d6668c)
+		HX_STACK_FRAME("view.component.EnterInstruction","destroy",0xb6c45ebc,"view.component.EnterInstruction.destroy","view/component/EnterInstruction.hx",372,0xe2d6668c)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(367)
-		this->removeChild(this->bg);
-		HX_STACK_LINE(368)
-		this->closeButton->destroy();
-		HX_STACK_LINE(369)
-		this->removeChild(this->closeButton);
-		HX_STACK_LINE(370)
-		this->removeChild(this->barriere);
-		HX_STACK_LINE(371)
-		this->lineButtons->__get((int)0).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton0Handler_dyn(),null());
-		HX_STACK_LINE(372)
-		this->lineButtons->__get((int)1).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton1Handler_dyn(),null());
 		HX_STACK_LINE(373)
-		this->lineButtons->__get((int)2).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton2Handler_dyn(),null());
+		this->removeChild(this->bg);
 		HX_STACK_LINE(374)
-		this->lineButtons->__get((int)3).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton3Handler_dyn(),null());
+		this->closeButton->destroy();
 		HX_STACK_LINE(375)
-		this->lineButtons->__get((int)4).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton4Handler_dyn(),null());
+		this->removeChild(this->closeButton);
 		HX_STACK_LINE(376)
-		this->lineButtons->__get((int)5).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton5Handler_dyn(),null());
+		this->removeChild(this->barriere);
 		HX_STACK_LINE(377)
-		this->lineButtons->__get((int)6).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton6Handler_dyn(),null());
+		this->lineButtons->__get((int)0).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton0Handler_dyn(),null());
 		HX_STACK_LINE(378)
-		this->lineButtons->__get((int)7).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton7Handler_dyn(),null());
+		this->lineButtons->__get((int)1).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton1Handler_dyn(),null());
 		HX_STACK_LINE(379)
+		this->lineButtons->__get((int)2).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton2Handler_dyn(),null());
+		HX_STACK_LINE(380)
+		this->lineButtons->__get((int)3).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton3Handler_dyn(),null());
+		HX_STACK_LINE(381)
+		this->lineButtons->__get((int)4).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton4Handler_dyn(),null());
+		HX_STACK_LINE(382)
+		this->lineButtons->__get((int)5).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton5Handler_dyn(),null());
+		HX_STACK_LINE(383)
+		this->lineButtons->__get((int)6).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton6Handler_dyn(),null());
+		HX_STACK_LINE(384)
+		this->lineButtons->__get((int)7).StaticCast< ::openfl::display::Sprite >()->removeEventListener(::openfl::events::MouseEvent_obj::MOUSE_DOWN,this->lineButton7Handler_dyn(),null());
+		HX_STACK_LINE(385)
 		{
-			HX_STACK_LINE(379)
+			HX_STACK_LINE(385)
 			int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(379)
+			HX_STACK_LINE(385)
 			while((true)){
-				HX_STACK_LINE(379)
+				HX_STACK_LINE(385)
 				if ((!(((_g < (int)8))))){
-					HX_STACK_LINE(379)
+					HX_STACK_LINE(385)
 					break;
 				}
-				HX_STACK_LINE(379)
+				HX_STACK_LINE(385)
 				int i = (_g)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(380)
+				HX_STACK_LINE(386)
 				::openfl::display::DisplayObject _g1 = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + i));		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(380)
+				HX_STACK_LINE(386)
 				if (((_g1 != null()))){
-					HX_STACK_LINE(381)
+					HX_STACK_LINE(387)
 					::openfl::display::DisplayObject _g11 = this->linesContainer->getChildByName((HX_CSTRING("enterInstructionLine") + i));		HX_STACK_VAR(_g11,"_g11");
-					HX_STACK_LINE(381)
+					HX_STACK_LINE(387)
 					this->linesContainer->removeChild(_g11);
 				}
-				HX_STACK_LINE(383)
+				HX_STACK_LINE(389)
 				this->lineButtonsContainer->removeChild(this->lineButtons->__get(i).StaticCast< ::openfl::display::Sprite >());
 			}
 		}
-		HX_STACK_LINE(385)
-		this->removeChild(this->lineButtonsContainer);
-		HX_STACK_LINE(386)
-		this->removeChild(this->linesContainer);
-		HX_STACK_LINE(387)
-		this->tfAssemblerContainer->removeChild(this->tfAssemblerOpcode);
-		HX_STACK_LINE(388)
-		this->tfAssemblerContainer->removeChild(this->tfAssemblerAddress);
-		HX_STACK_LINE(389)
-		this->removeChild(this->tfAssemblerContainer);
-		HX_STACK_LINE(390)
-		this->opcodeMenu->destroy();
 		HX_STACK_LINE(391)
+		this->removeChild(this->lineButtonsContainer);
+		HX_STACK_LINE(392)
+		this->removeChild(this->linesContainer);
+		HX_STACK_LINE(393)
+		this->tfAssemblerContainer->removeChild(this->tfAssemblerOpcode);
+		HX_STACK_LINE(394)
+		this->tfAssemblerContainer->removeChild(this->tfAssemblerAddress);
+		HX_STACK_LINE(395)
+		this->removeChild(this->tfAssemblerContainer);
+		HX_STACK_LINE(396)
+		this->opcodeMenu->destroy();
+		HX_STACK_LINE(397)
 		this->removeChild(this->opcodeMenu);
 	}
 return null();

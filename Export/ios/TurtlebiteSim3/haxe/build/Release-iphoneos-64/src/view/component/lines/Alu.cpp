@@ -51,12 +51,12 @@ namespace lines{
 
 Void Alu_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Alu","new",0x4e2c3113,"view.component.lines.Alu.new","view/component/lines/Alu.hx",19,0xdb388ec0)
+HX_STACK_FRAME("view.component.lines.Alu","new",0x4e2c3113,"view.component.lines.Alu.new","view/component/lines/Alu.hx",25,0xdb388ec0)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	super::__construct();
-	HX_STACK_LINE(21)
+	HX_STACK_LINE(27)
 	this->addEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,20 +78,20 @@ Dynamic Alu_obj::__Create(hx::DynamicArray inArgs)
 
 Void Alu_obj::addedToStageHandler( ::openfl::_legacy::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","addedToStageHandler",0xba304e5a,"view.component.lines.Alu.addedToStageHandler","view/component/lines/Alu.hx",24,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","addedToStageHandler",0xba304e5a,"view.component.lines.Alu.addedToStageHandler","view/component/lines/Alu.hx",30,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->removeEventListener(::openfl::_legacy::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/ALU-out-0.png")),this->out0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/ALU-out-1.png")),this->out1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/ALU-out-2.png")),this->out2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/ALU-out-3.png")),this->out3LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		::openfl::_legacy::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/ALU-out-equal.png")),this->equalLoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -102,18 +102,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,addedToStageHandler,(void))
 
 Void Alu_obj::out0LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","out0LoadCompleteHandler",0x063ff5fc,"view.component.lines.Alu.out0LoadCompleteHandler","view/component/lines/Alu.hx",33,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","out0LoadCompleteHandler",0x063ff5fc,"view.component.lines.Alu.out0LoadCompleteHandler","view/component/lines/Alu.hx",39,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		this->out0 = _g;
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		this->out0->set_name(HX_CSTRING("aluOut0"));
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		Float _g1 = this->out0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->out0->set_scaleX(_g1);
 	}
 return null();
@@ -124,18 +124,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,out0LoadCompleteHandler,(void))
 
 Void Alu_obj::out1LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","out1LoadCompleteHandler",0x6ca49a9b,"view.component.lines.Alu.out1LoadCompleteHandler","view/component/lines/Alu.hx",39,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","out1LoadCompleteHandler",0x6ca49a9b,"view.component.lines.Alu.out1LoadCompleteHandler","view/component/lines/Alu.hx",45,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(40)
+		HX_STACK_LINE(46)
 		this->out1 = _g;
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(47)
 		this->out1->set_name(HX_CSTRING("aluOut1"));
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		Float _g1 = this->out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->out1->set_scaleX(_g1);
 	}
 return null();
@@ -146,18 +146,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,out1LoadCompleteHandler,(void))
 
 Void Alu_obj::out2LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","out2LoadCompleteHandler",0xd3093f3a,"view.component.lines.Alu.out2LoadCompleteHandler","view/component/lines/Alu.hx",45,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","out2LoadCompleteHandler",0xd3093f3a,"view.component.lines.Alu.out2LoadCompleteHandler","view/component/lines/Alu.hx",51,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		this->out2 = _g;
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		this->out2->set_name(HX_CSTRING("aluOut2"));
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		Float _g1 = this->out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		this->out2->set_scaleX(_g1);
 	}
 return null();
@@ -168,18 +168,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,out2LoadCompleteHandler,(void))
 
 Void Alu_obj::out3LoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","out3LoadCompleteHandler",0x396de3d9,"view.component.lines.Alu.out3LoadCompleteHandler","view/component/lines/Alu.hx",51,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","out3LoadCompleteHandler",0x396de3d9,"view.component.lines.Alu.out3LoadCompleteHandler","view/component/lines/Alu.hx",57,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->out3 = _g;
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		this->out3->set_name(HX_CSTRING("aluOut3"));
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		Float _g1 = this->out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->out3->set_scaleX(_g1);
 	}
 return null();
@@ -190,22 +190,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,out3LoadCompleteHandler,(void))
 
 Void Alu_obj::equalLoadCompleteHandler( ::openfl::_legacy::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","equalLoadCompleteHandler",0x713081a4,"view.component.lines.Alu.equalLoadCompleteHandler","view/component/lines/Alu.hx",57,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","equalLoadCompleteHandler",0x713081a4,"view.component.lines.Alu.equalLoadCompleteHandler","view/component/lines/Alu.hx",63,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		::openfl::_legacy::display::Bitmap _g = ::openfl::_legacy::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->equal = _g;
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		this->equal->set_name(HX_CSTRING("aluEqual"));
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		Float _g1 = this->equal->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		this->equal->set_scaleX(_g1);
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -216,29 +216,29 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,equalLoadCompleteHandler,(void))
 
 Void Alu_obj::showLines( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","showLines",0x0348acb5,"view.component.lines.Alu.showLines","view/component/lines/Alu.hx",64,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","showLines",0x0348acb5,"view.component.lines.Alu.showLines","view/component/lines/Alu.hx",70,0xdb388ec0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		this->hideLinesOut();
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(67)
+			HX_STACK_LINE(73)
 			this->addChild(this->out3);
 		}
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(75)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(70)
+			HX_STACK_LINE(76)
 			this->addChild(this->out2);
 		}
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(73)
+			HX_STACK_LINE(79)
 			this->addChild(this->out1);
 		}
-		HX_STACK_LINE(75)
+		HX_STACK_LINE(81)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(76)
+			HX_STACK_LINE(82)
 			this->addChild(this->out0);
 		}
 	}
@@ -250,13 +250,13 @@ HX_DEFINE_DYNAMIC_FUNC1(Alu_obj,showLines,(void))
 
 Void Alu_obj::showLineEqual( ){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","showLineEqual",0x393134d6,"view.component.lines.Alu.showLineEqual","view/component/lines/Alu.hx",80,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","showLineEqual",0x393134d6,"view.component.lines.Alu.showLineEqual","view/component/lines/Alu.hx",86,0xdb388ec0)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("aluEqual"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		if (((_g == null()))){
-			HX_STACK_LINE(82)
+			HX_STACK_LINE(88)
 			this->addChild(this->equal);
 		}
 	}
@@ -268,26 +268,26 @@ HX_DEFINE_DYNAMIC_FUNC0(Alu_obj,showLineEqual,(void))
 
 Void Alu_obj::hideLinesOut( ){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","hideLinesOut",0xf7c2f79e,"view.component.lines.Alu.hideLinesOut","view/component/lines/Alu.hx",86,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","hideLinesOut",0xf7c2f79e,"view.component.lines.Alu.hideLinesOut","view/component/lines/Alu.hx",92,0xdb388ec0)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		while((true)){
-			HX_STACK_LINE(86)
+			HX_STACK_LINE(92)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(86)
+				HX_STACK_LINE(92)
 				break;
 			}
-			HX_STACK_LINE(86)
+			HX_STACK_LINE(92)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(87)
+			HX_STACK_LINE(93)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName((HX_CSTRING("aluOut") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(87)
+			HX_STACK_LINE(93)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(88)
+				HX_STACK_LINE(94)
 				::openfl::_legacy::display::DisplayObject _g11 = this->getChildByName((HX_CSTRING("aluOut") + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(88)
+				HX_STACK_LINE(94)
 				this->removeChild(_g11);
 			}
 		}
@@ -300,15 +300,15 @@ HX_DEFINE_DYNAMIC_FUNC0(Alu_obj,hideLinesOut,(void))
 
 Void Alu_obj::hideLineEqual( ){
 {
-		HX_STACK_FRAME("view.component.lines.Alu","hideLineEqual",0x6ce03471,"view.component.lines.Alu.hideLineEqual","view/component/lines/Alu.hx",93,0xdb388ec0)
+		HX_STACK_FRAME("view.component.lines.Alu","hideLineEqual",0x6ce03471,"view.component.lines.Alu.hideLineEqual","view/component/lines/Alu.hx",99,0xdb388ec0)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		::openfl::_legacy::display::DisplayObject _g = this->getChildByName(HX_CSTRING("aluEqual"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		if (((_g != null()))){
-			HX_STACK_LINE(95)
+			HX_STACK_LINE(101)
 			::openfl::_legacy::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("aluEqual"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(95)
+			HX_STACK_LINE(101)
 			this->removeChild(_g1);
 		}
 	}

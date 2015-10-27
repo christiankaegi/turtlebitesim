@@ -114,11 +114,11 @@
 
 Void AppFacade_obj::__construct(::String key)
 {
-HX_STACK_FRAME("AppFacade","new",0x7eccbe2d,"AppFacade.new","AppFacade.hx",30,0x4200e5e3)
+HX_STACK_FRAME("AppFacade","new",0x7eccbe2d,"AppFacade.new","AppFacade.hx",36,0x4200e5e3)
 HX_STACK_THIS(this)
 HX_STACK_ARG(key,"key")
 {
-	HX_STACK_LINE(30)
+	HX_STACK_LINE(36)
 	super::__construct(key);
 }
 ;
@@ -146,10 +146,10 @@ hx::Object *AppFacade_obj::__ToInterface(const hx::type_info &inType) {
 
 Void AppFacade_obj::startup( ::App app){
 {
-		HX_STACK_FRAME("AppFacade","startup",0x50338f8a,"AppFacade.startup","AppFacade.hx",42,0x4200e5e3)
+		HX_STACK_FRAME("AppFacade","startup",0x50338f8a,"AppFacade.startup","AppFacade.hx",48,0x4200e5e3)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(app,"app")
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->sendNotification(::AppConstants_obj::PREPARE_MODEL,app,null());
 	}
 return null();
@@ -160,57 +160,57 @@ HX_DEFINE_DYNAMIC_FUNC1(AppFacade_obj,startup,(void))
 
 Void AppFacade_obj::initializeController( ){
 {
-		HX_STACK_FRAME("AppFacade","initializeController",0x10a64d9f,"AppFacade.initializeController","AppFacade.hx",45,0x4200e5e3)
+		HX_STACK_FRAME("AppFacade","initializeController",0x10a64d9f,"AppFacade.initializeController","AppFacade.hx",51,0x4200e5e3)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(46)
-		this->super::initializeController();
-		HX_STACK_LINE(47)
-		this->registerCommand(::AppConstants_obj::PREPARE_MODEL,hx::ClassOf< ::controller::startup::PrepareModelCommand >());
-		HX_STACK_LINE(48)
-		this->registerCommand(::AppConstants_obj::PROXY_INITIALIZED,hx::ClassOf< ::controller::startup::PrepareModelCommand >());
-		HX_STACK_LINE(49)
-		this->registerCommand(::AppConstants_obj::PREPARE_VIEW,hx::ClassOf< ::controller::startup::PrepareViewCommand >());
-		HX_STACK_LINE(50)
-		this->registerCommand(::AppConstants_obj::MEDIATOR_INITIALIZED,hx::ClassOf< ::controller::startup::PrepareViewCommand >());
-		HX_STACK_LINE(51)
-		this->registerCommand(::AppConstants_obj::CLOCK_SIGNAL,hx::ClassOf< ::controller::ClockSignalCommand >());
 		HX_STACK_LINE(52)
-		this->registerCommand(::AppConstants_obj::CHANGE_CLOCK_SPEED,hx::ClassOf< ::controller::ChangeClockSpeedCommand >());
+		this->super::initializeController();
 		HX_STACK_LINE(53)
-		this->registerCommand(::AppConstants_obj::STARTUP_COMPLETE,hx::ClassOf< ::controller::StartupCompleteCommand >());
+		this->registerCommand(::AppConstants_obj::PREPARE_MODEL,hx::ClassOf< ::controller::startup::PrepareModelCommand >());
 		HX_STACK_LINE(54)
-		this->registerCommand(::AppConstants_obj::OPCODE_MOV,hx::ClassOf< ::controller::instruction::OpcodeMOVCommand >());
+		this->registerCommand(::AppConstants_obj::PROXY_INITIALIZED,hx::ClassOf< ::controller::startup::PrepareModelCommand >());
 		HX_STACK_LINE(55)
-		this->registerCommand(::AppConstants_obj::OPCODE_LDI,hx::ClassOf< ::controller::instruction::OpcodeLDICommand >());
+		this->registerCommand(::AppConstants_obj::PREPARE_VIEW,hx::ClassOf< ::controller::startup::PrepareViewCommand >());
 		HX_STACK_LINE(56)
-		this->registerCommand(::AppConstants_obj::OPCODE_LDA,hx::ClassOf< ::controller::instruction::OpcodeLDACommand >());
+		this->registerCommand(::AppConstants_obj::MEDIATOR_INITIALIZED,hx::ClassOf< ::controller::startup::PrepareViewCommand >());
 		HX_STACK_LINE(57)
-		this->registerCommand(::AppConstants_obj::OPCODE_SDA,hx::ClassOf< ::controller::instruction::OpcodeSDACommand >());
+		this->registerCommand(::AppConstants_obj::CLOCK_SIGNAL,hx::ClassOf< ::controller::ClockSignalCommand >());
 		HX_STACK_LINE(58)
-		this->registerCommand(::AppConstants_obj::OPCODE_ALU,hx::ClassOf< ::controller::instruction::OpcodeALUCommand >());
+		this->registerCommand(::AppConstants_obj::CHANGE_CLOCK_SPEED,hx::ClassOf< ::controller::ChangeClockSpeedCommand >());
 		HX_STACK_LINE(59)
-		this->registerCommand(::AppConstants_obj::OPCODE_JE,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
+		this->registerCommand(::AppConstants_obj::STARTUP_COMPLETE,hx::ClassOf< ::controller::StartupCompleteCommand >());
 		HX_STACK_LINE(60)
-		this->registerCommand(::AppConstants_obj::OPCODE_JNE,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_MOV,hx::ClassOf< ::controller::instruction::OpcodeMOVCommand >());
 		HX_STACK_LINE(61)
-		this->registerCommand(::AppConstants_obj::OPCODE_JMP,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_LDI,hx::ClassOf< ::controller::instruction::OpcodeLDICommand >());
 		HX_STACK_LINE(62)
-		this->registerCommand(::AppConstants_obj::RESET,hx::ClassOf< ::controller::ResetCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_LDA,hx::ClassOf< ::controller::instruction::OpcodeLDACommand >());
 		HX_STACK_LINE(63)
-		this->registerCommand(::AppConstants_obj::POWER_OFF,hx::ClassOf< ::controller::ResetCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_SDA,hx::ClassOf< ::controller::instruction::OpcodeSDACommand >());
 		HX_STACK_LINE(64)
-		this->registerCommand(::AppConstants_obj::PLAY,hx::ClassOf< ::controller::PlayCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_ALU,hx::ClassOf< ::controller::instruction::OpcodeALUCommand >());
 		HX_STACK_LINE(65)
-		this->registerCommand(::AppConstants_obj::PAUSE,hx::ClassOf< ::controller::PauseCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_JE,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
 		HX_STACK_LINE(66)
-		this->registerCommand(::AppConstants_obj::EDIT_ROM,hx::ClassOf< ::controller::EditRomCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_JNE,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
 		HX_STACK_LINE(67)
-		this->registerCommand(::AppConstants_obj::MANUAL_MODE_ON,hx::ClassOf< ::controller::ManualModeOnCommand >());
+		this->registerCommand(::AppConstants_obj::OPCODE_JMP,hx::ClassOf< ::controller::instruction::OpcodeJumpCommand >());
 		HX_STACK_LINE(68)
-		this->registerCommand(::AppConstants_obj::PROGRAM_CHANGED,hx::ClassOf< ::controller::ProgramChangedCommand >());
+		this->registerCommand(::AppConstants_obj::RESET,hx::ClassOf< ::controller::ResetCommand >());
 		HX_STACK_LINE(69)
-		this->registerCommand(::AppConstants_obj::DETAIL_ACCUMULATOR,hx::ClassOf< ::controller::DetailAccumulatorCommand >());
+		this->registerCommand(::AppConstants_obj::POWER_OFF,hx::ClassOf< ::controller::ResetCommand >());
 		HX_STACK_LINE(70)
+		this->registerCommand(::AppConstants_obj::PLAY,hx::ClassOf< ::controller::PlayCommand >());
+		HX_STACK_LINE(71)
+		this->registerCommand(::AppConstants_obj::PAUSE,hx::ClassOf< ::controller::PauseCommand >());
+		HX_STACK_LINE(72)
+		this->registerCommand(::AppConstants_obj::EDIT_ROM,hx::ClassOf< ::controller::EditRomCommand >());
+		HX_STACK_LINE(73)
+		this->registerCommand(::AppConstants_obj::MANUAL_MODE_ON,hx::ClassOf< ::controller::ManualModeOnCommand >());
+		HX_STACK_LINE(74)
+		this->registerCommand(::AppConstants_obj::PROGRAM_CHANGED,hx::ClassOf< ::controller::ProgramChangedCommand >());
+		HX_STACK_LINE(75)
+		this->registerCommand(::AppConstants_obj::DETAIL_ACCUMULATOR,hx::ClassOf< ::controller::DetailAccumulatorCommand >());
+		HX_STACK_LINE(76)
 		this->registerCommand(::AppConstants_obj::ENTER_INSTRUCTION,hx::ClassOf< ::controller::EnterInstructionCommand >());
 	}
 return null();
@@ -218,16 +218,16 @@ return null();
 
 
 ::AppFacade AppFacade_obj::getInstance( ::String key){
-	HX_STACK_FRAME("AppFacade","getInstance",0x9fd3e518,"AppFacade.getInstance","AppFacade.hx",33,0x4200e5e3)
+	HX_STACK_FRAME("AppFacade","getInstance",0x9fd3e518,"AppFacade.getInstance","AppFacade.hx",39,0x4200e5e3)
 	HX_STACK_ARG(key,"key")
-	HX_STACK_LINE(34)
+	HX_STACK_LINE(40)
 	if ((!(::org::puremvc::haxe::multicore::patterns::facade::Facade_obj::instanceMap->exists(key)))){
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::AppFacade _g = ::AppFacade_obj::__new(key);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(35)
+		HX_STACK_LINE(41)
 		::org::puremvc::haxe::multicore::patterns::facade::Facade_obj::instanceMap->set(key,_g);
 	}
-	HX_STACK_LINE(37)
+	HX_STACK_LINE(43)
 	return hx::TCast< AppFacade >::cast(::org::puremvc::haxe::multicore::patterns::facade::Facade_obj::instanceMap->get(key));
 }
 

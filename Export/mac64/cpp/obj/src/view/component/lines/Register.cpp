@@ -51,12 +51,12 @@ namespace lines{
 
 Void Register_obj::__construct()
 {
-HX_STACK_FRAME("view.component.lines.Register","new",0xf6b77b7e,"view.component.lines.Register.new","view/component/lines/Register.hx",23,0x80a735cf)
+HX_STACK_FRAME("view.component.lines.Register","new",0xf6b77b7e,"view.component.lines.Register.new","view/component/lines/Register.hx",29,0x80a735cf)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	super::__construct();
-	HX_STACK_LINE(25)
+	HX_STACK_LINE(31)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -78,26 +78,26 @@ Dynamic Register_obj::__Create(hx::DynamicArray inArgs)
 
 Void Register_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.lines.Register","addedToStageHandler",0x9f585ec5,"view.component.lines.Register.addedToStageHandler","view/component/lines/Register.hx",28,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","addedToStageHandler",0x9f585ec5,"view.component.lines.Register.addedToStageHandler","view/component/lines/Register.hx",34,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(29)
-		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(30)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-0.png")),this->r1out0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(31)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-1.png")),this->r1out1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(32)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-2.png")),this->r1out2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(33)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-3.png")),this->r1out3LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(35)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-0.png")),this->r2out0LoadCompleteHandler_dyn(),null());
+		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
 		HX_STACK_LINE(36)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-1.png")),this->r2out1LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-0.png")),this->r1out0LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(37)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-2.png")),this->r2out2LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-1.png")),this->r1out1LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(38)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-2.png")),this->r1out2LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(39)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R1-out-3.png")),this->r1out3LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(41)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-0.png")),this->r2out0LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(42)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-1.png")),this->r2out1LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(43)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-2.png")),this->r2out2LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(44)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/R2-out-3.png")),this->r2out3LoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -108,18 +108,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,addedToStageHandler,(void))
 
 Void Register_obj::r1out0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r1out0LoadCompleteHandler",0xc2ad87c8,"view.component.lines.Register.r1out0LoadCompleteHandler","view/component/lines/Register.hx",46,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r1out0LoadCompleteHandler",0xc2ad87c8,"view.component.lines.Register.r1out0LoadCompleteHandler","view/component/lines/Register.hx",52,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(47)
+		HX_STACK_LINE(53)
 		this->r1out0 = _g;
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		this->r1out0->set_name(HX_CSTRING("r1Out0"));
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		Float _g1 = this->r1out0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->r1out0->set_scaleX(_g1);
 	}
 return null();
@@ -130,18 +130,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r1out0LoadCompleteHandler,(void))
 
 Void Register_obj::r1out1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r1out1LoadCompleteHandler",0x29122c67,"view.component.lines.Register.r1out1LoadCompleteHandler","view/component/lines/Register.hx",52,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r1out1LoadCompleteHandler",0x29122c67,"view.component.lines.Register.r1out1LoadCompleteHandler","view/component/lines/Register.hx",58,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		this->r1out1 = _g;
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->r1out1->set_name(HX_CSTRING("r1Out1"));
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		Float _g1 = this->r1out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		this->r1out1->set_scaleX(_g1);
 	}
 return null();
@@ -152,18 +152,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r1out1LoadCompleteHandler,(void))
 
 Void Register_obj::r1out2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r1out2LoadCompleteHandler",0x8f76d106,"view.component.lines.Register.r1out2LoadCompleteHandler","view/component/lines/Register.hx",58,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r1out2LoadCompleteHandler",0x8f76d106,"view.component.lines.Register.r1out2LoadCompleteHandler","view/component/lines/Register.hx",64,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		this->r1out2 = _g;
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		this->r1out2->set_name(HX_CSTRING("r1Out2"));
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		Float _g1 = this->r1out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		this->r1out2->set_scaleX(_g1);
 	}
 return null();
@@ -174,18 +174,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r1out2LoadCompleteHandler,(void))
 
 Void Register_obj::r1out3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r1out3LoadCompleteHandler",0xf5db75a5,"view.component.lines.Register.r1out3LoadCompleteHandler","view/component/lines/Register.hx",64,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r1out3LoadCompleteHandler",0xf5db75a5,"view.component.lines.Register.r1out3LoadCompleteHandler","view/component/lines/Register.hx",70,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(71)
 		this->r1out3 = _g;
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->r1out3->set_name(HX_CSTRING("r1Out3"));
-		HX_STACK_LINE(67)
+		HX_STACK_LINE(73)
 		Float _g1 = this->r1out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(67)
+		HX_STACK_LINE(73)
 		this->r1out3->set_scaleX(_g1);
 	}
 return null();
@@ -196,18 +196,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r1out3LoadCompleteHandler,(void))
 
 Void Register_obj::r2out0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r2out0LoadCompleteHandler",0x6eea67e7,"view.component.lines.Register.r2out0LoadCompleteHandler","view/component/lines/Register.hx",74,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r2out0LoadCompleteHandler",0x6eea67e7,"view.component.lines.Register.r2out0LoadCompleteHandler","view/component/lines/Register.hx",80,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(75)
+		HX_STACK_LINE(81)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(75)
+		HX_STACK_LINE(81)
 		this->r2out0 = _g;
-		HX_STACK_LINE(76)
+		HX_STACK_LINE(82)
 		this->r2out0->set_name(HX_CSTRING("r2Out0"));
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		Float _g1 = this->r2out0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(77)
+		HX_STACK_LINE(83)
 		this->r2out0->set_scaleX(_g1);
 	}
 return null();
@@ -218,18 +218,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r2out0LoadCompleteHandler,(void))
 
 Void Register_obj::r2out1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r2out1LoadCompleteHandler",0xd54f0c86,"view.component.lines.Register.r2out1LoadCompleteHandler","view/component/lines/Register.hx",80,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r2out1LoadCompleteHandler",0xd54f0c86,"view.component.lines.Register.r2out1LoadCompleteHandler","view/component/lines/Register.hx",86,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		this->r2out1 = _g;
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		this->r2out1->set_name(HX_CSTRING("r2Out1"));
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		Float _g1 = this->r2out1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		this->r2out1->set_scaleX(_g1);
 	}
 return null();
@@ -240,18 +240,18 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r2out1LoadCompleteHandler,(void))
 
 Void Register_obj::r2out2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r2out2LoadCompleteHandler",0x3bb3b125,"view.component.lines.Register.r2out2LoadCompleteHandler","view/component/lines/Register.hx",86,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r2out2LoadCompleteHandler",0x3bb3b125,"view.component.lines.Register.r2out2LoadCompleteHandler","view/component/lines/Register.hx",92,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		this->r2out2 = _g;
-		HX_STACK_LINE(88)
+		HX_STACK_LINE(94)
 		this->r2out2->set_name(HX_CSTRING("r2Out2"));
-		HX_STACK_LINE(89)
+		HX_STACK_LINE(95)
 		Float _g1 = this->r2out2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(89)
+		HX_STACK_LINE(95)
 		this->r2out2->set_scaleX(_g1);
 	}
 return null();
@@ -262,22 +262,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r2out2LoadCompleteHandler,(void))
 
 Void Register_obj::r2out3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.lines.Register","r2out3LoadCompleteHandler",0xa21855c4,"view.component.lines.Register.r2out3LoadCompleteHandler","view/component/lines/Register.hx",92,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","r2out3LoadCompleteHandler",0xa21855c4,"view.component.lines.Register.r2out3LoadCompleteHandler","view/component/lines/Register.hx",98,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(93)
+		HX_STACK_LINE(99)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(93)
+		HX_STACK_LINE(99)
 		this->r2out3 = _g;
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		this->r2out3->set_name(HX_CSTRING("r2Out3"));
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		Float _g1 = this->r2out3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		this->r2out3->set_scaleX(_g1);
-		HX_STACK_LINE(96)
+		HX_STACK_LINE(102)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(96)
+		HX_STACK_LINE(102)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -288,29 +288,29 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,r2out3LoadCompleteHandler,(void))
 
 Void Register_obj::showLinesRegister1( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.component.lines.Register","showLinesRegister1",0x86a68aee,"view.component.lines.Register.showLinesRegister1","view/component/lines/Register.hx",103,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","showLinesRegister1",0x86a68aee,"view.component.lines.Register.showLinesRegister1","view/component/lines/Register.hx",109,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(104)
+		HX_STACK_LINE(110)
 		this->hideLines(HX_CSTRING("1"));
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(106)
+			HX_STACK_LINE(112)
 			this->addChild(this->r1out3);
 		}
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(109)
+			HX_STACK_LINE(115)
 			this->addChild(this->r1out2);
 		}
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(117)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(112)
+			HX_STACK_LINE(118)
 			this->addChild(this->r1out1);
 		}
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(115)
+			HX_STACK_LINE(121)
 			this->addChild(this->r1out0);
 		}
 	}
@@ -322,29 +322,29 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,showLinesRegister1,(void))
 
 Void Register_obj::showLinesRegister2( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.component.lines.Register","showLinesRegister2",0x86a68aef,"view.component.lines.Register.showLinesRegister2","view/component/lines/Register.hx",119,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","showLinesRegister2",0x86a68aef,"view.component.lines.Register.showLinesRegister2","view/component/lines/Register.hx",125,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(126)
 		this->hideLines(HX_CSTRING("2"));
-		HX_STACK_LINE(121)
+		HX_STACK_LINE(127)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(122)
+			HX_STACK_LINE(128)
 			this->addChild(this->r2out3);
 		}
-		HX_STACK_LINE(124)
+		HX_STACK_LINE(130)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(125)
+			HX_STACK_LINE(131)
 			this->addChild(this->r2out2);
 		}
-		HX_STACK_LINE(127)
+		HX_STACK_LINE(133)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(128)
+			HX_STACK_LINE(134)
 			this->addChild(this->r2out1);
 		}
-		HX_STACK_LINE(130)
+		HX_STACK_LINE(136)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(131)
+			HX_STACK_LINE(137)
 			this->addChild(this->r2out0);
 		}
 	}
@@ -356,27 +356,27 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,showLinesRegister2,(void))
 
 Void Register_obj::hideLines( ::String id){
 {
-		HX_STACK_FRAME("view.component.lines.Register","hideLines",0xe8da6f7b,"view.component.lines.Register.hideLines","view/component/lines/Register.hx",136,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","hideLines",0xe8da6f7b,"view.component.lines.Register.hideLines","view/component/lines/Register.hx",142,0x80a735cf)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(id,"id")
-		HX_STACK_LINE(136)
+		HX_STACK_LINE(142)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(136)
+		HX_STACK_LINE(142)
 		while((true)){
-			HX_STACK_LINE(136)
+			HX_STACK_LINE(142)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(136)
+				HX_STACK_LINE(142)
 				break;
 			}
-			HX_STACK_LINE(136)
+			HX_STACK_LINE(142)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(137)
+			HX_STACK_LINE(143)
 			::openfl::display::DisplayObject _g1 = this->getChildByName((((HX_CSTRING("r") + id) + HX_CSTRING("Out")) + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(137)
+			HX_STACK_LINE(143)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(138)
+				HX_STACK_LINE(144)
 				::openfl::display::DisplayObject _g11 = this->getChildByName((((HX_CSTRING("r") + id) + HX_CSTRING("Out")) + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(138)
+				HX_STACK_LINE(144)
 				this->removeChild(_g11);
 			}
 		}
@@ -389,11 +389,11 @@ HX_DEFINE_DYNAMIC_FUNC1(Register_obj,hideLines,(void))
 
 Void Register_obj::hideAllLines( ){
 {
-		HX_STACK_FRAME("view.component.lines.Register","hideAllLines",0x1af42122,"view.component.lines.Register.hideAllLines","view/component/lines/Register.hx",143,0x80a735cf)
+		HX_STACK_FRAME("view.component.lines.Register","hideAllLines",0x1af42122,"view.component.lines.Register.hideAllLines","view/component/lines/Register.hx",149,0x80a735cf)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(144)
+		HX_STACK_LINE(150)
 		this->hideLines(HX_CSTRING("1"));
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(151)
 		this->hideLines(HX_CSTRING("2"));
 	}
 return null();

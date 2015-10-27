@@ -47,12 +47,12 @@ namespace elements{
 
 Void DetailAccumulatorLines_obj::__construct()
 {
-HX_STACK_FRAME("view.elements.DetailAccumulatorLines","new",0x369cd9ea,"view.elements.DetailAccumulatorLines.new","view/elements/DetailAccumulatorLines.hx",45,0x52981ce6)
+HX_STACK_FRAME("view.elements.DetailAccumulatorLines","new",0x369cd9ea,"view.elements.DetailAccumulatorLines.new","view/elements/DetailAccumulatorLines.hx",51,0x52981ce6)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(52)
 	super::__construct();
-	HX_STACK_LINE(47)
+	HX_STACK_LINE(53)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -74,38 +74,38 @@ Dynamic DetailAccumulatorLines_obj::__Create(hx::DynamicArray inArgs)
 
 Void DetailAccumulatorLines_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","addedToStageHandler",0x7f365531,"view.elements.DetailAccumulatorLines.addedToStageHandler","view/elements/DetailAccumulatorLines.hx",50,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","addedToStageHandler",0x7f365531,"view.elements.DetailAccumulatorLines.addedToStageHandler","view/elements/DetailAccumulatorLines.hx",56,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(51)
-		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(52)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_0.png")),this->enablerOut0LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(53)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_1.png")),this->enablerOut1LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(54)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_2.png")),this->enablerOut2LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(55)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_3.png")),this->enablerOut3LoadCompleteHandler_dyn(),null());
-		HX_STACK_LINE(56)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_0.png")),this->memoryIn0LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(57)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_1.png")),this->memoryIn1LoadCompleteHandler_dyn(),null());
+		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
 		HX_STACK_LINE(58)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_2.png")),this->memoryIn2LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_0.png")),this->enablerOut0LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(59)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_3.png")),this->memoryIn3LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_1.png")),this->enablerOut1LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(60)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_0.png")),this->memoryOut0LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_2.png")),this->enablerOut2LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(61)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_1.png")),this->memoryOut1LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_out_3.png")),this->enablerOut3LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(62)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_2.png")),this->memoryOut2LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_0.png")),this->memoryIn0LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(63)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_3.png")),this->memoryOut3LoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_1.png")),this->memoryIn1LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(64)
-		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_set.png")),this->memorySetLoadCompleteHandler_dyn(),null());
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_2.png")),this->memoryIn2LoadCompleteHandler_dyn(),null());
 		HX_STACK_LINE(65)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_in_3.png")),this->memoryIn3LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(66)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_0.png")),this->memoryOut0LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(67)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_1.png")),this->memoryOut1LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(68)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_2.png")),this->memoryOut2LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(69)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_out_3.png")),this->memoryOut3LoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(70)
+		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_memory_set.png")),this->memorySetLoadCompleteHandler_dyn(),null());
+		HX_STACK_LINE(71)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/accuPopup_enabler_enable.png")),this->enableLoadCompleteHandler_dyn(),null());
 	}
 return null();
@@ -116,20 +116,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,addedToStageHandler,(void))
 
 Void DetailAccumulatorLines_obj::enablerOut0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut0LoadCompleteHandler",0x34ac79b0,"view.elements.DetailAccumulatorLines.enablerOut0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",72,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut0LoadCompleteHandler",0x34ac79b0,"view.elements.DetailAccumulatorLines.enablerOut0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",78,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(79)
 		this->enablerOut0BmpData = bmd;
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->enablerOut0BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(74)
+		HX_STACK_LINE(80)
 		this->enablerOut0 = _g;
-		HX_STACK_LINE(75)
+		HX_STACK_LINE(81)
 		this->enablerOut0->set_name(HX_CSTRING("enablerOut0"));
-		HX_STACK_LINE(76)
+		HX_STACK_LINE(82)
 		Float _g1 = this->enablerOut0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(76)
+		HX_STACK_LINE(82)
 		this->enablerOut0->set_scaleX(_g1);
 	}
 return null();
@@ -140,20 +140,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,enablerOut0LoadCompleteHandle
 
 Void DetailAccumulatorLines_obj::enablerOut1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut1LoadCompleteHandler",0x9b111e4f,"view.elements.DetailAccumulatorLines.enablerOut1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",79,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut1LoadCompleteHandler",0x9b111e4f,"view.elements.DetailAccumulatorLines.enablerOut1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",85,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(80)
+		HX_STACK_LINE(86)
 		this->enablerOut1BmpData = bmd;
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->enablerOut1BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(81)
+		HX_STACK_LINE(87)
 		this->enablerOut1 = _g;
-		HX_STACK_LINE(82)
+		HX_STACK_LINE(88)
 		this->enablerOut1->set_name(HX_CSTRING("enablerOut1"));
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		Float _g1 = this->enablerOut1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(83)
+		HX_STACK_LINE(89)
 		this->enablerOut1->set_scaleX(_g1);
 	}
 return null();
@@ -164,20 +164,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,enablerOut1LoadCompleteHandle
 
 Void DetailAccumulatorLines_obj::enablerOut2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut2LoadCompleteHandler",0x0175c2ee,"view.elements.DetailAccumulatorLines.enablerOut2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",86,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut2LoadCompleteHandler",0x0175c2ee,"view.elements.DetailAccumulatorLines.enablerOut2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",92,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(87)
+		HX_STACK_LINE(93)
 		this->enablerOut2BmpData = bmd;
-		HX_STACK_LINE(88)
+		HX_STACK_LINE(94)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->enablerOut2BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(88)
+		HX_STACK_LINE(94)
 		this->enablerOut2 = _g;
-		HX_STACK_LINE(89)
+		HX_STACK_LINE(95)
 		this->enablerOut2->set_name(HX_CSTRING("enablerOut2"));
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		Float _g1 = this->enablerOut2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		this->enablerOut2->set_scaleX(_g1);
 	}
 return null();
@@ -188,20 +188,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,enablerOut2LoadCompleteHandle
 
 Void DetailAccumulatorLines_obj::enablerOut3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut3LoadCompleteHandler",0x67da678d,"view.elements.DetailAccumulatorLines.enablerOut3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",93,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enablerOut3LoadCompleteHandler",0x67da678d,"view.elements.DetailAccumulatorLines.enablerOut3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",99,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		this->enablerOut3BmpData = bmd;
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->enablerOut3BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		this->enablerOut3 = _g;
-		HX_STACK_LINE(96)
+		HX_STACK_LINE(102)
 		this->enablerOut3->set_name(HX_CSTRING("enablerOut3"));
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		Float _g1 = this->enablerOut3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(103)
 		this->enablerOut3->set_scaleX(_g1);
 	}
 return null();
@@ -212,20 +212,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,enablerOut3LoadCompleteHandle
 
 Void DetailAccumulatorLines_obj::memoryIn0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn0LoadCompleteHandler",0xe05e43b7,"view.elements.DetailAccumulatorLines.memoryIn0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",104,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn0LoadCompleteHandler",0xe05e43b7,"view.elements.DetailAccumulatorLines.memoryIn0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",110,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		this->memoryIn0BmpData = bmd;
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryIn0BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(106)
+		HX_STACK_LINE(112)
 		this->memoryIn0 = _g;
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(113)
 		this->memoryIn0->set_name(HX_CSTRING("memoryIn0"));
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		Float _g1 = this->memoryIn0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(114)
 		this->memoryIn0->set_scaleX(_g1);
 	}
 return null();
@@ -236,20 +236,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryIn0LoadCompleteHandler,
 
 Void DetailAccumulatorLines_obj::memoryIn1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn1LoadCompleteHandler",0x46c2e856,"view.elements.DetailAccumulatorLines.memoryIn1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",111,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn1LoadCompleteHandler",0x46c2e856,"view.elements.DetailAccumulatorLines.memoryIn1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",117,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(118)
 		this->memoryIn1BmpData = bmd;
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryIn1BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		this->memoryIn1 = _g;
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		this->memoryIn1->set_name(HX_CSTRING("memoryIn1"));
-		HX_STACK_LINE(115)
+		HX_STACK_LINE(121)
 		Float _g1 = this->memoryIn1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(115)
+		HX_STACK_LINE(121)
 		this->memoryIn1->set_scaleX(_g1);
 	}
 return null();
@@ -260,20 +260,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryIn1LoadCompleteHandler,
 
 Void DetailAccumulatorLines_obj::memoryIn2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn2LoadCompleteHandler",0xad278cf5,"view.elements.DetailAccumulatorLines.memoryIn2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",118,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn2LoadCompleteHandler",0xad278cf5,"view.elements.DetailAccumulatorLines.memoryIn2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",124,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		this->memoryIn2BmpData = bmd;
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(126)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryIn2BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(126)
 		this->memoryIn2 = _g;
-		HX_STACK_LINE(121)
+		HX_STACK_LINE(127)
 		this->memoryIn2->set_name(HX_CSTRING("memoryIn2"));
-		HX_STACK_LINE(122)
+		HX_STACK_LINE(128)
 		Float _g1 = this->memoryIn2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(122)
+		HX_STACK_LINE(128)
 		this->memoryIn2->set_scaleX(_g1);
 	}
 return null();
@@ -284,20 +284,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryIn2LoadCompleteHandler,
 
 Void DetailAccumulatorLines_obj::memoryIn3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn3LoadCompleteHandler",0x138c3194,"view.elements.DetailAccumulatorLines.memoryIn3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",125,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryIn3LoadCompleteHandler",0x138c3194,"view.elements.DetailAccumulatorLines.memoryIn3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",131,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(126)
+		HX_STACK_LINE(132)
 		this->memoryIn3BmpData = bmd;
-		HX_STACK_LINE(127)
+		HX_STACK_LINE(133)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryIn3BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(127)
+		HX_STACK_LINE(133)
 		this->memoryIn3 = _g;
-		HX_STACK_LINE(128)
+		HX_STACK_LINE(134)
 		this->memoryIn3->set_name(HX_CSTRING("memoryIn3"));
-		HX_STACK_LINE(129)
+		HX_STACK_LINE(135)
 		Float _g1 = this->memoryIn3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(129)
+		HX_STACK_LINE(135)
 		this->memoryIn3->set_scaleX(_g1);
 	}
 return null();
@@ -308,20 +308,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryIn3LoadCompleteHandler,
 
 Void DetailAccumulatorLines_obj::memoryOut0LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut0LoadCompleteHandler",0x77ea94d2,"view.elements.DetailAccumulatorLines.memoryOut0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",136,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut0LoadCompleteHandler",0x77ea94d2,"view.elements.DetailAccumulatorLines.memoryOut0LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",142,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(137)
+		HX_STACK_LINE(143)
 		this->memoryOut0BmpData = bmd;
-		HX_STACK_LINE(138)
+		HX_STACK_LINE(144)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryOut0BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(138)
+		HX_STACK_LINE(144)
 		this->memoryOut0 = _g;
-		HX_STACK_LINE(139)
+		HX_STACK_LINE(145)
 		this->memoryOut0->set_name(HX_CSTRING("memoryOut0"));
-		HX_STACK_LINE(140)
+		HX_STACK_LINE(146)
 		Float _g1 = this->memoryOut0->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(140)
+		HX_STACK_LINE(146)
 		this->memoryOut0->set_scaleX(_g1);
 	}
 return null();
@@ -332,20 +332,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryOut0LoadCompleteHandler
 
 Void DetailAccumulatorLines_obj::memoryOut1LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut1LoadCompleteHandler",0xde4f3971,"view.elements.DetailAccumulatorLines.memoryOut1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",143,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut1LoadCompleteHandler",0xde4f3971,"view.elements.DetailAccumulatorLines.memoryOut1LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",149,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(144)
+		HX_STACK_LINE(150)
 		this->memoryOut1BmpData = bmd;
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(151)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryOut1BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(145)
+		HX_STACK_LINE(151)
 		this->memoryOut1 = _g;
-		HX_STACK_LINE(146)
+		HX_STACK_LINE(152)
 		this->memoryOut1->set_name(HX_CSTRING("memoryOut1"));
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		Float _g1 = this->memoryOut1->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(147)
+		HX_STACK_LINE(153)
 		this->memoryOut1->set_scaleX(_g1);
 	}
 return null();
@@ -356,20 +356,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryOut1LoadCompleteHandler
 
 Void DetailAccumulatorLines_obj::memoryOut2LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut2LoadCompleteHandler",0x44b3de10,"view.elements.DetailAccumulatorLines.memoryOut2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",150,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut2LoadCompleteHandler",0x44b3de10,"view.elements.DetailAccumulatorLines.memoryOut2LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",156,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(151)
+		HX_STACK_LINE(157)
 		this->memoryOut2BmpData = bmd;
-		HX_STACK_LINE(152)
+		HX_STACK_LINE(158)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryOut2BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(152)
+		HX_STACK_LINE(158)
 		this->memoryOut2 = _g;
-		HX_STACK_LINE(153)
+		HX_STACK_LINE(159)
 		this->memoryOut2->set_name(HX_CSTRING("memoryOut2"));
-		HX_STACK_LINE(154)
+		HX_STACK_LINE(160)
 		Float _g1 = this->memoryOut2->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(154)
+		HX_STACK_LINE(160)
 		this->memoryOut2->set_scaleX(_g1);
 	}
 return null();
@@ -380,20 +380,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryOut2LoadCompleteHandler
 
 Void DetailAccumulatorLines_obj::memoryOut3LoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut3LoadCompleteHandler",0xab1882af,"view.elements.DetailAccumulatorLines.memoryOut3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",157,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memoryOut3LoadCompleteHandler",0xab1882af,"view.elements.DetailAccumulatorLines.memoryOut3LoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",163,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(158)
+		HX_STACK_LINE(164)
 		this->memoryOut3BmpData = bmd;
-		HX_STACK_LINE(159)
+		HX_STACK_LINE(165)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memoryOut3BmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(159)
+		HX_STACK_LINE(165)
 		this->memoryOut3 = _g;
-		HX_STACK_LINE(160)
+		HX_STACK_LINE(166)
 		this->memoryOut3->set_name(HX_CSTRING("memoryOut3"));
-		HX_STACK_LINE(161)
+		HX_STACK_LINE(167)
 		Float _g1 = this->memoryOut3->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(161)
+		HX_STACK_LINE(167)
 		this->memoryOut3->set_scaleX(_g1);
 	}
 return null();
@@ -404,20 +404,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memoryOut3LoadCompleteHandler
 
 Void DetailAccumulatorLines_obj::enableLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enableLoadCompleteHandler",0xb77de0d2,"view.elements.DetailAccumulatorLines.enableLoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",168,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","enableLoadCompleteHandler",0xb77de0d2,"view.elements.DetailAccumulatorLines.enableLoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",174,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(169)
+		HX_STACK_LINE(175)
 		this->enableBmpData = bmd;
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->enableBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(170)
+		HX_STACK_LINE(176)
 		this->enable = _g;
-		HX_STACK_LINE(171)
+		HX_STACK_LINE(177)
 		this->enable->set_name(HX_CSTRING("enable"));
-		HX_STACK_LINE(172)
+		HX_STACK_LINE(178)
 		Float _g1 = this->enable->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(172)
+		HX_STACK_LINE(178)
 		this->enable->set_scaleX(_g1);
 	}
 return null();
@@ -428,20 +428,20 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,enableLoadCompleteHandler,(vo
 
 Void DetailAccumulatorLines_obj::memorySetLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memorySetLoadCompleteHandler",0xff224b20,"view.elements.DetailAccumulatorLines.memorySetLoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",175,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","memorySetLoadCompleteHandler",0xff224b20,"view.elements.DetailAccumulatorLines.memorySetLoadCompleteHandler","view/elements/DetailAccumulatorLines.hx",181,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(176)
+		HX_STACK_LINE(182)
 		this->memorySetBmpData = bmd;
-		HX_STACK_LINE(177)
+		HX_STACK_LINE(183)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(this->memorySetBmpData,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(177)
+		HX_STACK_LINE(183)
 		this->memorySet = _g;
-		HX_STACK_LINE(178)
+		HX_STACK_LINE(184)
 		this->memorySet->set_name(HX_CSTRING("memorySet"));
-		HX_STACK_LINE(179)
+		HX_STACK_LINE(185)
 		Float _g1 = this->memorySet->set_scaleY(::AppConstants_obj::SCALE_FACTOR);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(179)
+		HX_STACK_LINE(185)
 		this->memorySet->set_scaleX(_g1);
 	}
 return null();
@@ -452,42 +452,42 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,memorySetLoadCompleteHandler,
 
 Void DetailAccumulatorLines_obj::hideMemoryOutLines( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideMemoryOutLines",0x72aef4ca,"view.elements.DetailAccumulatorLines.hideMemoryOutLines","view/elements/DetailAccumulatorLines.hx",182,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideMemoryOutLines",0x72aef4ca,"view.elements.DetailAccumulatorLines.hideMemoryOutLines","view/elements/DetailAccumulatorLines.hx",188,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(183)
+		HX_STACK_LINE(189)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("memoryOut0"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(183)
+		HX_STACK_LINE(189)
 		if (((_g != null()))){
-			HX_STACK_LINE(184)
+			HX_STACK_LINE(190)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("memoryOut0"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(184)
+			HX_STACK_LINE(190)
 			this->removeChild(_g1);
 		}
-		HX_STACK_LINE(186)
+		HX_STACK_LINE(192)
 		::openfl::display::DisplayObject _g2 = this->getChildByName(HX_CSTRING("memoryOut1"));		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(186)
+		HX_STACK_LINE(192)
 		if (((_g2 != null()))){
-			HX_STACK_LINE(187)
+			HX_STACK_LINE(193)
 			::openfl::display::DisplayObject _g3 = this->getChildByName(HX_CSTRING("memoryOut1"));		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(187)
+			HX_STACK_LINE(193)
 			this->removeChild(_g3);
 		}
-		HX_STACK_LINE(189)
+		HX_STACK_LINE(195)
 		::openfl::display::DisplayObject _g4 = this->getChildByName(HX_CSTRING("memoryOut2"));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(189)
+		HX_STACK_LINE(195)
 		if (((_g4 != null()))){
-			HX_STACK_LINE(190)
+			HX_STACK_LINE(196)
 			::openfl::display::DisplayObject _g5 = this->getChildByName(HX_CSTRING("memoryOut2"));		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(190)
+			HX_STACK_LINE(196)
 			this->removeChild(_g5);
 		}
-		HX_STACK_LINE(192)
+		HX_STACK_LINE(198)
 		::openfl::display::DisplayObject _g6 = this->getChildByName(HX_CSTRING("memoryOut3"));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(192)
+		HX_STACK_LINE(198)
 		if (((_g6 != null()))){
-			HX_STACK_LINE(193)
+			HX_STACK_LINE(199)
 			::openfl::display::DisplayObject _g7 = this->getChildByName(HX_CSTRING("memoryOut3"));		HX_STACK_VAR(_g7,"_g7");
-			HX_STACK_LINE(193)
+			HX_STACK_LINE(199)
 			this->removeChild(_g7);
 		}
 	}
@@ -499,51 +499,51 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,hideMemoryOutLines,(void))
 
 Void DetailAccumulatorLines_obj::showInputLines( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showInputLines",0x15c42ba8,"view.elements.DetailAccumulatorLines.showInputLines","view/elements/DetailAccumulatorLines.hx",201,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showInputLines",0x15c42ba8,"view.elements.DetailAccumulatorLines.showInputLines","view/elements/DetailAccumulatorLines.hx",207,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(202)
+		HX_STACK_LINE(208)
 		this->hideAllInputLines();
-		HX_STACK_LINE(203)
+		HX_STACK_LINE(209)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(204)
+			HX_STACK_LINE(210)
 			this->addChild(this->memoryIn3);
 		}
-		HX_STACK_LINE(206)
+		HX_STACK_LINE(212)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(207)
+			HX_STACK_LINE(213)
 			this->addChild(this->memoryIn2);
 		}
-		HX_STACK_LINE(209)
+		HX_STACK_LINE(215)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(210)
+			HX_STACK_LINE(216)
 			this->addChild(this->memoryIn1);
 		}
-		HX_STACK_LINE(212)
+		HX_STACK_LINE(218)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(213)
+			HX_STACK_LINE(219)
 			this->addChild(this->memoryIn0);
 		}
-		HX_STACK_LINE(215)
+		HX_STACK_LINE(221)
 		this->hideMemoryOutLines();
-		HX_STACK_LINE(216)
+		HX_STACK_LINE(222)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(217)
+			HX_STACK_LINE(223)
 			this->addChild(this->memoryOut3);
 		}
-		HX_STACK_LINE(219)
+		HX_STACK_LINE(225)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(220)
+			HX_STACK_LINE(226)
 			this->addChild(this->memoryOut2);
 		}
-		HX_STACK_LINE(222)
+		HX_STACK_LINE(228)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(223)
+			HX_STACK_LINE(229)
 			this->addChild(this->memoryOut1);
 		}
-		HX_STACK_LINE(225)
+		HX_STACK_LINE(231)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(226)
+			HX_STACK_LINE(232)
 			this->addChild(this->memoryOut0);
 		}
 	}
@@ -555,26 +555,26 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,showInputLines,(void))
 
 Void DetailAccumulatorLines_obj::hideAllInputLines( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideAllInputLines",0x0d2a66fe,"view.elements.DetailAccumulatorLines.hideAllInputLines","view/elements/DetailAccumulatorLines.hx",231,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideAllInputLines",0x0d2a66fe,"view.elements.DetailAccumulatorLines.hideAllInputLines","view/elements/DetailAccumulatorLines.hx",237,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(231)
+		HX_STACK_LINE(237)
 		int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(231)
+		HX_STACK_LINE(237)
 		while((true)){
-			HX_STACK_LINE(231)
+			HX_STACK_LINE(237)
 			if ((!(((_g < (int)4))))){
-				HX_STACK_LINE(231)
+				HX_STACK_LINE(237)
 				break;
 			}
-			HX_STACK_LINE(231)
+			HX_STACK_LINE(237)
 			int i = (_g)++;		HX_STACK_VAR(i,"i");
-			HX_STACK_LINE(232)
+			HX_STACK_LINE(238)
 			::openfl::display::DisplayObject _g1 = this->getChildByName((HX_CSTRING("memoryIn") + i));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(232)
+			HX_STACK_LINE(238)
 			if (((_g1 != null()))){
-				HX_STACK_LINE(233)
+				HX_STACK_LINE(239)
 				::openfl::display::DisplayObject _g11 = this->getChildByName((HX_CSTRING("memoryIn") + i));		HX_STACK_VAR(_g11,"_g11");
-				HX_STACK_LINE(233)
+				HX_STACK_LINE(239)
 				this->removeChild(_g11);
 			}
 		}
@@ -587,29 +587,29 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,hideAllInputLines,(void))
 
 Void DetailAccumulatorLines_obj::showEnablerOutLines( Array< bool > codeArr){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showEnablerOutLines",0x025ee74d,"view.elements.DetailAccumulatorLines.showEnablerOutLines","view/elements/DetailAccumulatorLines.hx",238,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showEnablerOutLines",0x025ee74d,"view.elements.DetailAccumulatorLines.showEnablerOutLines","view/elements/DetailAccumulatorLines.hx",244,0x52981ce6)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(codeArr,"codeArr")
-		HX_STACK_LINE(239)
+		HX_STACK_LINE(245)
 		this->hideEnablerOutLines();
-		HX_STACK_LINE(240)
+		HX_STACK_LINE(246)
 		if (((codeArr->__get((int)4) == true))){
-			HX_STACK_LINE(241)
+			HX_STACK_LINE(247)
 			this->addChild(this->enablerOut3);
 		}
-		HX_STACK_LINE(243)
+		HX_STACK_LINE(249)
 		if (((codeArr->__get((int)5) == true))){
-			HX_STACK_LINE(244)
+			HX_STACK_LINE(250)
 			this->addChild(this->enablerOut2);
 		}
-		HX_STACK_LINE(246)
+		HX_STACK_LINE(252)
 		if (((codeArr->__get((int)6) == true))){
-			HX_STACK_LINE(247)
+			HX_STACK_LINE(253)
 			this->addChild(this->enablerOut1);
 		}
-		HX_STACK_LINE(249)
+		HX_STACK_LINE(255)
 		if (((codeArr->__get((int)7) == true))){
-			HX_STACK_LINE(250)
+			HX_STACK_LINE(256)
 			this->addChild(this->enablerOut0);
 		}
 	}
@@ -621,42 +621,42 @@ HX_DEFINE_DYNAMIC_FUNC1(DetailAccumulatorLines_obj,showEnablerOutLines,(void))
 
 Void DetailAccumulatorLines_obj::hideEnablerOutLines( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideEnablerOutLines",0x3b560d28,"view.elements.DetailAccumulatorLines.hideEnablerOutLines","view/elements/DetailAccumulatorLines.hx",254,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideEnablerOutLines",0x3b560d28,"view.elements.DetailAccumulatorLines.hideEnablerOutLines","view/elements/DetailAccumulatorLines.hx",260,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(255)
+		HX_STACK_LINE(261)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("enablerOut0"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(255)
+		HX_STACK_LINE(261)
 		if (((_g != null()))){
-			HX_STACK_LINE(256)
+			HX_STACK_LINE(262)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("enablerOut0"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(256)
+			HX_STACK_LINE(262)
 			this->removeChild(_g1);
 		}
-		HX_STACK_LINE(258)
+		HX_STACK_LINE(264)
 		::openfl::display::DisplayObject _g2 = this->getChildByName(HX_CSTRING("enablerOut1"));		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(258)
+		HX_STACK_LINE(264)
 		if (((_g2 != null()))){
-			HX_STACK_LINE(259)
+			HX_STACK_LINE(265)
 			::openfl::display::DisplayObject _g3 = this->getChildByName(HX_CSTRING("enablerOut1"));		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(259)
+			HX_STACK_LINE(265)
 			this->removeChild(_g3);
 		}
-		HX_STACK_LINE(261)
+		HX_STACK_LINE(267)
 		::openfl::display::DisplayObject _g4 = this->getChildByName(HX_CSTRING("enablerOut2"));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(261)
+		HX_STACK_LINE(267)
 		if (((_g4 != null()))){
-			HX_STACK_LINE(262)
+			HX_STACK_LINE(268)
 			::openfl::display::DisplayObject _g5 = this->getChildByName(HX_CSTRING("enablerOut2"));		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(262)
+			HX_STACK_LINE(268)
 			this->removeChild(_g5);
 		}
-		HX_STACK_LINE(264)
+		HX_STACK_LINE(270)
 		::openfl::display::DisplayObject _g6 = this->getChildByName(HX_CSTRING("enablerOut3"));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(264)
+		HX_STACK_LINE(270)
 		if (((_g6 != null()))){
-			HX_STACK_LINE(265)
+			HX_STACK_LINE(271)
 			::openfl::display::DisplayObject _g7 = this->getChildByName(HX_CSTRING("enablerOut3"));		HX_STACK_VAR(_g7,"_g7");
-			HX_STACK_LINE(265)
+			HX_STACK_LINE(271)
 			this->removeChild(_g7);
 		}
 	}
@@ -668,11 +668,11 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,hideEnablerOutLines,(void))
 
 Void DetailAccumulatorLines_obj::showEnableLine( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showEnableLine",0xc388762a,"view.elements.DetailAccumulatorLines.showEnableLine","view/elements/DetailAccumulatorLines.hx",269,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showEnableLine",0xc388762a,"view.elements.DetailAccumulatorLines.showEnableLine","view/elements/DetailAccumulatorLines.hx",275,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(270)
+		HX_STACK_LINE(276)
 		this->hideEnableLine();
-		HX_STACK_LINE(272)
+		HX_STACK_LINE(278)
 		this->addChild(this->enable);
 	}
 return null();
@@ -683,15 +683,15 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,showEnableLine,(void))
 
 Void DetailAccumulatorLines_obj::hideEnableLine( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideEnableLine",0xc8f91e2f,"view.elements.DetailAccumulatorLines.hideEnableLine","view/elements/DetailAccumulatorLines.hx",275,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideEnableLine",0xc8f91e2f,"view.elements.DetailAccumulatorLines.hideEnableLine","view/elements/DetailAccumulatorLines.hx",281,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(276)
+		HX_STACK_LINE(282)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("enable"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(276)
+		HX_STACK_LINE(282)
 		if (((_g != null()))){
-			HX_STACK_LINE(277)
+			HX_STACK_LINE(283)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("enable"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(277)
+			HX_STACK_LINE(283)
 			this->removeChild(_g1);
 		}
 	}
@@ -703,57 +703,57 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,hideEnableLine,(void))
 
 Void DetailAccumulatorLines_obj::showSetLine( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showSetLine",0x43ef98c3,"view.elements.DetailAccumulatorLines.showSetLine","view/elements/DetailAccumulatorLines.hx",281,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","showSetLine",0x43ef98c3,"view.elements.DetailAccumulatorLines.showSetLine","view/elements/DetailAccumulatorLines.hx",287,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(282)
+		HX_STACK_LINE(288)
 		this->addChild(this->memorySet);
-		HX_STACK_LINE(283)
+		HX_STACK_LINE(289)
 		this->hideMemoryOutLines();
-		HX_STACK_LINE(284)
+		HX_STACK_LINE(290)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("memoryIn0"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(284)
+		HX_STACK_LINE(290)
 		if (((_g != null()))){
-			HX_STACK_LINE(285)
+			HX_STACK_LINE(291)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("memoryOut0"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(285)
+			HX_STACK_LINE(291)
 			if (((_g1 == null()))){
-				HX_STACK_LINE(286)
+				HX_STACK_LINE(292)
 				this->addChild(this->memoryOut0);
 			}
 		}
-		HX_STACK_LINE(289)
+		HX_STACK_LINE(295)
 		::openfl::display::DisplayObject _g2 = this->getChildByName(HX_CSTRING("memoryIn1"));		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(289)
+		HX_STACK_LINE(295)
 		if (((_g2 != null()))){
-			HX_STACK_LINE(290)
+			HX_STACK_LINE(296)
 			::openfl::display::DisplayObject _g3 = this->getChildByName(HX_CSTRING("memoryOut1"));		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(290)
+			HX_STACK_LINE(296)
 			if (((_g3 == null()))){
-				HX_STACK_LINE(291)
+				HX_STACK_LINE(297)
 				this->addChild(this->memoryOut1);
 			}
 		}
-		HX_STACK_LINE(294)
+		HX_STACK_LINE(300)
 		::openfl::display::DisplayObject _g4 = this->getChildByName(HX_CSTRING("memoryIn2"));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(294)
+		HX_STACK_LINE(300)
 		if (((_g4 != null()))){
-			HX_STACK_LINE(295)
+			HX_STACK_LINE(301)
 			::openfl::display::DisplayObject _g5 = this->getChildByName(HX_CSTRING("memoryOut2"));		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(295)
+			HX_STACK_LINE(301)
 			if (((_g5 == null()))){
-				HX_STACK_LINE(296)
+				HX_STACK_LINE(302)
 				this->addChild(this->memoryOut2);
 			}
 		}
-		HX_STACK_LINE(299)
+		HX_STACK_LINE(305)
 		::openfl::display::DisplayObject _g6 = this->getChildByName(HX_CSTRING("memoryIn3"));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(299)
+		HX_STACK_LINE(305)
 		if (((_g6 != null()))){
-			HX_STACK_LINE(300)
+			HX_STACK_LINE(306)
 			::openfl::display::DisplayObject _g7 = this->getChildByName(HX_CSTRING("memoryOut3"));		HX_STACK_VAR(_g7,"_g7");
-			HX_STACK_LINE(300)
+			HX_STACK_LINE(306)
 			if (((_g7 == null()))){
-				HX_STACK_LINE(301)
+				HX_STACK_LINE(307)
 				this->addChild(this->memoryOut3);
 			}
 		}
@@ -766,15 +766,15 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,showSetLine,(void))
 
 Void DetailAccumulatorLines_obj::hideSetLine( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideSetLine",0x64bfeb9e,"view.elements.DetailAccumulatorLines.hideSetLine","view/elements/DetailAccumulatorLines.hx",306,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","hideSetLine",0x64bfeb9e,"view.elements.DetailAccumulatorLines.hideSetLine","view/elements/DetailAccumulatorLines.hx",312,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(307)
+		HX_STACK_LINE(313)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("memorySet"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(307)
+		HX_STACK_LINE(313)
 		if (((_g != null()))){
-			HX_STACK_LINE(308)
+			HX_STACK_LINE(314)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("memorySet"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(308)
+			HX_STACK_LINE(314)
 			this->removeChild(_g1);
 		}
 	}
@@ -786,92 +786,92 @@ HX_DEFINE_DYNAMIC_FUNC0(DetailAccumulatorLines_obj,hideSetLine,(void))
 
 Void DetailAccumulatorLines_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","destroy",0xc3d3c384,"view.elements.DetailAccumulatorLines.destroy","view/elements/DetailAccumulatorLines.hx",312,0x52981ce6)
+		HX_STACK_FRAME("view.elements.DetailAccumulatorLines","destroy",0xc3d3c384,"view.elements.DetailAccumulatorLines.destroy","view/elements/DetailAccumulatorLines.hx",318,0x52981ce6)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(313)
-		this->enablerOut0BmpData->dispose();
-		HX_STACK_LINE(314)
-		this->enablerOut1BmpData->dispose();
-		HX_STACK_LINE(315)
-		this->enablerOut2BmpData->dispose();
-		HX_STACK_LINE(316)
-		this->enablerOut3BmpData->dispose();
-		HX_STACK_LINE(318)
-		this->memoryIn0BmpData->dispose();
 		HX_STACK_LINE(319)
-		this->memoryIn1BmpData->dispose();
+		this->enablerOut0BmpData->dispose();
 		HX_STACK_LINE(320)
-		this->memoryIn2BmpData->dispose();
+		this->enablerOut1BmpData->dispose();
 		HX_STACK_LINE(321)
-		this->memoryIn3BmpData->dispose();
-		HX_STACK_LINE(323)
-		this->memoryOut0BmpData->dispose();
+		this->enablerOut2BmpData->dispose();
+		HX_STACK_LINE(322)
+		this->enablerOut3BmpData->dispose();
 		HX_STACK_LINE(324)
-		this->memoryOut1BmpData->dispose();
+		this->memoryIn0BmpData->dispose();
 		HX_STACK_LINE(325)
-		this->memoryOut2BmpData->dispose();
+		this->memoryIn1BmpData->dispose();
 		HX_STACK_LINE(326)
-		this->memoryOut3BmpData->dispose();
-		HX_STACK_LINE(328)
-		this->enableBmpData->dispose();
+		this->memoryIn2BmpData->dispose();
+		HX_STACK_LINE(327)
+		this->memoryIn3BmpData->dispose();
 		HX_STACK_LINE(329)
+		this->memoryOut0BmpData->dispose();
+		HX_STACK_LINE(330)
+		this->memoryOut1BmpData->dispose();
+		HX_STACK_LINE(331)
+		this->memoryOut2BmpData->dispose();
+		HX_STACK_LINE(332)
+		this->memoryOut3BmpData->dispose();
+		HX_STACK_LINE(334)
+		this->enableBmpData->dispose();
+		HX_STACK_LINE(335)
 		this->memorySetBmpData->dispose();
-		HX_STACK_LINE(332)
+		HX_STACK_LINE(338)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("memoryIn0"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(332)
+		HX_STACK_LINE(338)
 		if (((_g != null()))){
-			HX_STACK_LINE(333)
+			HX_STACK_LINE(339)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("memoryIn0"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(333)
+			HX_STACK_LINE(339)
 			this->removeChild(_g1);
 		}
-		HX_STACK_LINE(335)
+		HX_STACK_LINE(341)
 		::openfl::display::DisplayObject _g2 = this->getChildByName(HX_CSTRING("memoryIn1"));		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(335)
+		HX_STACK_LINE(341)
 		if (((_g2 != null()))){
-			HX_STACK_LINE(336)
+			HX_STACK_LINE(342)
 			::openfl::display::DisplayObject _g3 = this->getChildByName(HX_CSTRING("memoryIn1"));		HX_STACK_VAR(_g3,"_g3");
-			HX_STACK_LINE(336)
+			HX_STACK_LINE(342)
 			this->removeChild(_g3);
 		}
-		HX_STACK_LINE(338)
+		HX_STACK_LINE(344)
 		::openfl::display::DisplayObject _g4 = this->getChildByName(HX_CSTRING("memoryIn2"));		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(338)
+		HX_STACK_LINE(344)
 		if (((_g4 != null()))){
-			HX_STACK_LINE(339)
+			HX_STACK_LINE(345)
 			::openfl::display::DisplayObject _g5 = this->getChildByName(HX_CSTRING("memoryIn2"));		HX_STACK_VAR(_g5,"_g5");
-			HX_STACK_LINE(339)
+			HX_STACK_LINE(345)
 			this->removeChild(_g5);
 		}
-		HX_STACK_LINE(341)
+		HX_STACK_LINE(347)
 		::openfl::display::DisplayObject _g6 = this->getChildByName(HX_CSTRING("memoryIn3"));		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(341)
+		HX_STACK_LINE(347)
 		if (((_g6 != null()))){
-			HX_STACK_LINE(342)
+			HX_STACK_LINE(348)
 			::openfl::display::DisplayObject _g7 = this->getChildByName(HX_CSTRING("memoryIn3"));		HX_STACK_VAR(_g7,"_g7");
-			HX_STACK_LINE(342)
+			HX_STACK_LINE(348)
 			this->removeChild(_g7);
 		}
-		HX_STACK_LINE(344)
+		HX_STACK_LINE(350)
 		this->hideMemoryOutLines();
-		HX_STACK_LINE(345)
+		HX_STACK_LINE(351)
 		this->hideEnablerOutLines();
-		HX_STACK_LINE(346)
+		HX_STACK_LINE(352)
 		::openfl::display::DisplayObject _g8 = this->getChildByName(HX_CSTRING("enable"));		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(346)
+		HX_STACK_LINE(352)
 		if (((_g8 != null()))){
-			HX_STACK_LINE(347)
+			HX_STACK_LINE(353)
 			::openfl::display::DisplayObject _g9 = this->getChildByName(HX_CSTRING("enable"));		HX_STACK_VAR(_g9,"_g9");
-			HX_STACK_LINE(347)
+			HX_STACK_LINE(353)
 			this->removeChild(_g9);
 		}
-		HX_STACK_LINE(349)
+		HX_STACK_LINE(355)
 		::openfl::display::DisplayObject _g10 = this->getChildByName(HX_CSTRING("memorySet"));		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(349)
+		HX_STACK_LINE(355)
 		if (((_g10 != null()))){
-			HX_STACK_LINE(350)
+			HX_STACK_LINE(356)
 			::openfl::display::DisplayObject _g11 = this->getChildByName(HX_CSTRING("memorySet"));		HX_STACK_VAR(_g11,"_g11");
-			HX_STACK_LINE(350)
+			HX_STACK_LINE(356)
 			this->removeChild(_g11);
 		}
 	}

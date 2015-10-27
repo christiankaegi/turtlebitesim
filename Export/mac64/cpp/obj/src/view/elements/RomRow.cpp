@@ -47,27 +47,27 @@ namespace elements{
 
 Void RomRow_obj::__construct(::model::vo::InstructionVO instruction)
 {
-HX_STACK_FRAME("view.elements.RomRow","new",0x1c65d84a,"view.elements.RomRow.new","view/elements/RomRow.hx",22,0x978cca86)
+HX_STACK_FRAME("view.elements.RomRow","new",0x1c65d84a,"view.elements.RomRow.new","view/elements/RomRow.hx",28,0x978cca86)
 HX_STACK_THIS(this)
 HX_STACK_ARG(instruction,"instruction")
 {
-	HX_STACK_LINE(23)
-	super::__construct();
-	HX_STACK_LINE(24)
-	this->createTfPointer();
-	HX_STACK_LINE(25)
-	this->createTfOpcode();
-	HX_STACK_LINE(26)
-	this->createTfAddress();
-	HX_STACK_LINE(27)
-	this->createTfCode();
-	HX_STACK_LINE(28)
-	this->createTfHex();
 	HX_STACK_LINE(29)
-	this->createTfDescription();
+	super::__construct();
 	HX_STACK_LINE(30)
+	this->createTfPointer();
+	HX_STACK_LINE(31)
+	this->createTfOpcode();
+	HX_STACK_LINE(32)
+	this->createTfAddress();
+	HX_STACK_LINE(33)
+	this->createTfCode();
+	HX_STACK_LINE(34)
+	this->createTfHex();
+	HX_STACK_LINE(35)
+	this->createTfDescription();
+	HX_STACK_LINE(36)
 	if (((instruction != null()))){
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->populate(instruction);
 	}
 }
@@ -90,15 +90,15 @@ Dynamic RomRow_obj::__Create(hx::DynamicArray inArgs)
 
 Void RomRow_obj::createTfPointer( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfPointer",0x1357edb9,"view.elements.RomRow.createTfPointer","view/elements/RomRow.hx",35,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfPointer",0x1357edb9,"view.elements.RomRow.createTfPointer","view/elements/RomRow.hx",41,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		::openfl::text::TextField _g = this->getBasicTextField();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->tfPointer = _g;
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(43)
 		this->tfPointer->set_width(((int)35 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		this->addChild(this->tfPointer);
 	}
 return null();
@@ -109,25 +109,25 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfPointer,(void))
 
 Void RomRow_obj::createTfOpcode( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfOpcode",0x91a23d52,"view.elements.RomRow.createTfOpcode","view/elements/RomRow.hx",41,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfOpcode",0x91a23d52,"view.elements.RomRow.createTfOpcode","view/elements/RomRow.hx",47,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		::openfl::text::TextField _g = this->getBasicTextField();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->tfOpcode = _g;
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		this->tfOpcode->set_width(((int)60 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		Float _g1 = this->tfPointer->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		Float _g2 = this->tfPointer->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->tfOpcode->set_x(_g3);
-		HX_STACK_LINE(45)
+		HX_STACK_LINE(51)
 		this->tfOpcode->set_textColor((int)16711680);
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		this->addChild(this->tfOpcode);
 	}
 return null();
@@ -138,25 +138,25 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfOpcode,(void))
 
 Void RomRow_obj::createTfAddress( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfAddress",0x5f419eb0,"view.elements.RomRow.createTfAddress","view/elements/RomRow.hx",49,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfAddress",0x5f419eb0,"view.elements.RomRow.createTfAddress","view/elements/RomRow.hx",55,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		::openfl::text::TextField _g = this->getBasicTextField();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(50)
+		HX_STACK_LINE(56)
 		this->tfAddress = _g;
-		HX_STACK_LINE(51)
+		HX_STACK_LINE(57)
 		this->tfAddress->set_width(((int)90 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		Float _g1 = this->tfOpcode->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		Float _g2 = this->tfOpcode->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->tfAddress->set_x(_g3);
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		this->tfAddress->set_textColor((int)16711680);
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		this->addChild(this->tfAddress);
 	}
 return null();
@@ -167,25 +167,25 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfAddress,(void))
 
 Void RomRow_obj::createTfCode( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfCode",0x0a3eceb1,"view.elements.RomRow.createTfCode","view/elements/RomRow.hx",57,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfCode",0x0a3eceb1,"view.elements.RomRow.createTfCode","view/elements/RomRow.hx",63,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		::openfl::text::TextField _g = this->getBasicTextField();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(64)
 		this->tfCode = _g;
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		this->tfCode->set_width(((int)106 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		Float _g1 = this->tfAddress->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		Float _g2 = this->tfAddress->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		this->tfCode->set_x(_g3);
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(67)
 		this->tfCode->set_textColor((int)65280);
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		this->addChild(this->tfCode);
 	}
 return null();
@@ -196,25 +196,25 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfCode,(void))
 
 Void RomRow_obj::createTfHex( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfHex",0x203441d7,"view.elements.RomRow.createTfHex","view/elements/RomRow.hx",65,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfHex",0x203441d7,"view.elements.RomRow.createTfHex","view/elements/RomRow.hx",71,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		::openfl::text::TextField _g = this->getBasicTextField();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(66)
+		HX_STACK_LINE(72)
 		this->tfHex = _g;
-		HX_STACK_LINE(67)
+		HX_STACK_LINE(73)
 		this->tfHex->set_width(((int)43 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		Float _g1 = this->tfCode->get_x();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		Float _g2 = this->tfCode->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		Float _g3 = (_g1 + _g2);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		this->tfHex->set_x(_g3);
-		HX_STACK_LINE(69)
+		HX_STACK_LINE(75)
 		this->tfHex->set_textColor((int)4494335);
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		this->addChild(this->tfHex);
 	}
 return null();
@@ -225,35 +225,35 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfHex,(void))
 
 Void RomRow_obj::createTfDescription( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","createTfDescription",0x2ed363f8,"view.elements.RomRow.createTfDescription","view/elements/RomRow.hx",73,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","createTfDescription",0x2ed363f8,"view.elements.RomRow.createTfDescription","view/elements/RomRow.hx",79,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(74)
-		::openfl::text::TextField _g = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(74)
-		this->tfDescription = _g;
-		HX_STACK_LINE(75)
-		::openfl::text::TextFormat _g1 = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Myriad Pro"),((int)14 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),null(),null(),null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(75)
-		this->tfDescription->set_defaultTextFormat(_g1);
-		HX_STACK_LINE(76)
-		this->tfDescription->embedFonts = true;
-		HX_STACK_LINE(77)
-		this->tfDescription->set_selectable(false);
-		HX_STACK_LINE(78)
-		this->tfDescription->set_width(((int)465 * ::AppConstants_obj::SCALE_FACTOR));
-		HX_STACK_LINE(79)
-		Float _g2 = this->tfHex->get_x();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(79)
-		Float _g3 = this->tfHex->get_width();		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(79)
-		Float _g4 = (_g2 + _g3);		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(79)
-		Float _g5 = (_g4 + ((int)5 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(79)
-		this->tfDescription->set_x(_g5);
 		HX_STACK_LINE(80)
-		this->tfDescription->set_y(((int)2 * ::AppConstants_obj::SCALE_FACTOR));
+		::openfl::text::TextField _g = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(_g,"_g");
+		HX_STACK_LINE(80)
+		this->tfDescription = _g;
 		HX_STACK_LINE(81)
+		::openfl::text::TextFormat _g1 = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Myriad Pro"),((int)14 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),null(),null(),null(),null(),null());		HX_STACK_VAR(_g1,"_g1");
+		HX_STACK_LINE(81)
+		this->tfDescription->set_defaultTextFormat(_g1);
+		HX_STACK_LINE(82)
+		this->tfDescription->embedFonts = true;
+		HX_STACK_LINE(83)
+		this->tfDescription->set_selectable(false);
+		HX_STACK_LINE(84)
+		this->tfDescription->set_width(((int)465 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(85)
+		Float _g2 = this->tfHex->get_x();		HX_STACK_VAR(_g2,"_g2");
+		HX_STACK_LINE(85)
+		Float _g3 = this->tfHex->get_width();		HX_STACK_VAR(_g3,"_g3");
+		HX_STACK_LINE(85)
+		Float _g4 = (_g2 + _g3);		HX_STACK_VAR(_g4,"_g4");
+		HX_STACK_LINE(85)
+		Float _g5 = (_g4 + ((int)5 * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g5,"_g5");
+		HX_STACK_LINE(85)
+		this->tfDescription->set_x(_g5);
+		HX_STACK_LINE(86)
+		this->tfDescription->set_y(((int)2 * ::AppConstants_obj::SCALE_FACTOR));
+		HX_STACK_LINE(87)
 		this->addChild(this->tfDescription);
 	}
 return null();
@@ -263,21 +263,21 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,createTfDescription,(void))
 
 ::openfl::text::TextField RomRow_obj::getBasicTextField( ){
-	HX_STACK_FRAME("view.elements.RomRow","getBasicTextField",0xca0610df,"view.elements.RomRow.getBasicTextField","view/elements/RomRow.hx",84,0x978cca86)
+	HX_STACK_FRAME("view.elements.RomRow","getBasicTextField",0xca0610df,"view.elements.RomRow.getBasicTextField","view/elements/RomRow.hx",90,0x978cca86)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(85)
-	::openfl::text::TextField tf = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
-	HX_STACK_LINE(86)
-	::openfl::text::TextFormat _g = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Consolas Bold"),((int)18 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),::openfl::text::TextFormatAlign_obj::CENTER,null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(86)
-	tf->set_defaultTextFormat(_g);
-	HX_STACK_LINE(87)
-	tf->embedFonts = true;
-	HX_STACK_LINE(88)
-	tf->set_selectable(false);
 	HX_STACK_LINE(91)
-	tf->set_height(((int)22 * ::AppConstants_obj::SCALE_FACTOR));
+	::openfl::text::TextField tf = ::openfl::text::TextField_obj::__new();		HX_STACK_VAR(tf,"tf");
 	HX_STACK_LINE(92)
+	::openfl::text::TextFormat _g = ::openfl::text::TextFormat_obj::__new(HX_CSTRING("Consolas Bold"),((int)18 * ::AppConstants_obj::SCALE_FACTOR),(int)16777215,null(),null(),null(),null(),null(),::openfl::text::TextFormatAlign_obj::CENTER,null(),null(),null(),null());		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(92)
+	tf->set_defaultTextFormat(_g);
+	HX_STACK_LINE(93)
+	tf->embedFonts = true;
+	HX_STACK_LINE(94)
+	tf->set_selectable(false);
+	HX_STACK_LINE(97)
+	tf->set_height(((int)22 * ::AppConstants_obj::SCALE_FACTOR));
+	HX_STACK_LINE(98)
 	return tf;
 }
 
@@ -286,24 +286,24 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,getBasicTextField,return )
 
 Void RomRow_obj::populate( ::model::vo::InstructionVO instruction){
 {
-		HX_STACK_FRAME("view.elements.RomRow","populate",0x6d1ec6c0,"view.elements.RomRow.populate","view/elements/RomRow.hx",99,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","populate",0x6d1ec6c0,"view.elements.RomRow.populate","view/elements/RomRow.hx",105,0x978cca86)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(instruction,"instruction")
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		::String _g = ::Std_obj::string(instruction->pointer);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(100)
+		HX_STACK_LINE(106)
 		this->tfPointer->set_text(_g);
-		HX_STACK_LINE(101)
+		HX_STACK_LINE(107)
 		this->tfOpcode->set_text(instruction->asmOpcode);
-		HX_STACK_LINE(102)
+		HX_STACK_LINE(108)
 		this->tfAddress->set_text(instruction->asmAddress);
-		HX_STACK_LINE(103)
+		HX_STACK_LINE(109)
 		this->tfCode->set_text(((instruction->codeOpcode + HX_CSTRING(" ")) + instruction->codeAddress));
-		HX_STACK_LINE(104)
+		HX_STACK_LINE(110)
 		this->tfHex->set_text(instruction->hex);
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		::String _g1 = instruction->description.split(HX_CSTRING("x"))->join(instruction->asmAddress);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(105)
+		HX_STACK_LINE(111)
 		this->tfDescription->set_text(_g1);
 	}
 return null();
@@ -314,19 +314,19 @@ HX_DEFINE_DYNAMIC_FUNC1(RomRow_obj,populate,(void))
 
 Void RomRow_obj::clear( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","clear",0x12eec7f7,"view.elements.RomRow.clear","view/elements/RomRow.hx",108,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","clear",0x12eec7f7,"view.elements.RomRow.clear","view/elements/RomRow.hx",114,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(109)
+		HX_STACK_LINE(115)
 		this->tfPointer->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(110)
+		HX_STACK_LINE(116)
 		this->tfOpcode->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(111)
+		HX_STACK_LINE(117)
 		this->tfAddress->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(112)
+		HX_STACK_LINE(118)
 		this->tfCode->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(113)
+		HX_STACK_LINE(119)
 		this->tfHex->set_text(HX_CSTRING(""));
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(120)
 		this->tfDescription->set_text(HX_CSTRING(""));
 	}
 return null();
@@ -337,19 +337,19 @@ HX_DEFINE_DYNAMIC_FUNC0(RomRow_obj,clear,(void))
 
 Void RomRow_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.elements.RomRow","destroy",0x3b6b71e4,"view.elements.RomRow.destroy","view/elements/RomRow.hx",117,0x978cca86)
+		HX_STACK_FRAME("view.elements.RomRow","destroy",0x3b6b71e4,"view.elements.RomRow.destroy","view/elements/RomRow.hx",123,0x978cca86)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(118)
+		HX_STACK_LINE(124)
 		this->removeChild(this->tfPointer);
-		HX_STACK_LINE(119)
+		HX_STACK_LINE(125)
 		this->removeChild(this->tfOpcode);
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(126)
 		this->removeChild(this->tfAddress);
-		HX_STACK_LINE(121)
+		HX_STACK_LINE(127)
 		this->removeChild(this->tfCode);
-		HX_STACK_LINE(122)
+		HX_STACK_LINE(128)
 		this->removeChild(this->tfHex);
-		HX_STACK_LINE(123)
+		HX_STACK_LINE(129)
 		this->removeChild(this->tfDescription);
 	}
 return null();

@@ -43,8 +43,8 @@ class GatesMediator extends Mediator {
             AppConstants.ALU_EQUAL_OFF,
             AppConstants.POWER_ON,
             AppConstants.POWER_OFF,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

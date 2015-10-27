@@ -66,40 +66,40 @@
 
 Void App_obj::__construct()
 {
-HX_STACK_FRAME("App","new",0xf28829f3,"App.new","App.hx",11,0xc43e94dd)
+HX_STACK_FRAME("App","new",0xf28829f3,"App.new","App.hx",16,0xc43e94dd)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(16)
+	HX_STACK_LINE(21)
 	this->isZoomed = false;
-	HX_STACK_LINE(19)
-	super::__construct();
-	HX_STACK_LINE(23)
-	this->get_stage()->set_scaleMode(::openfl::display::StageScaleMode_obj::NO_SCALE);
 	HX_STACK_LINE(24)
-	this->get_stage()->set_align(::openfl::display::StageAlign_obj::TOP_LEFT);
+	super::__construct();
 	HX_STACK_LINE(25)
-	::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(25)
-	this->zoomContainer = _g;
+	this->get_stage()->set_scaleMode(::openfl::display::StageScaleMode_obj::NO_SCALE);
 	HX_STACK_LINE(26)
-	this->addChild(this->zoomContainer);
+	this->get_stage()->set_align(::openfl::display::StageAlign_obj::TOP_LEFT);
 	HX_STACK_LINE(27)
-	this->zoomContainer->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->mouseDownHandler_dyn(),null(),null(),null());
+	::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
+	HX_STACK_LINE(27)
+	this->zoomContainer = _g;
 	HX_STACK_LINE(28)
-	this->zoomContainer->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_UP,this->mouseUpHandler_dyn(),null(),null(),null());
+	this->addChild(this->zoomContainer);
 	HX_STACK_LINE(29)
-	::openfl::_legacy::display::Sprite _g1 = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
-	HX_STACK_LINE(29)
-	this->detailPopupContainer = _g1;
+	this->zoomContainer->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_DOWN,this->mouseDownHandler_dyn(),null(),null(),null());
 	HX_STACK_LINE(30)
-	this->addChild(this->detailPopupContainer);
+	this->zoomContainer->addEventListener(::openfl::_legacy::events::MouseEvent_obj::MOUSE_UP,this->mouseUpHandler_dyn(),null(),null(),null());
 	HX_STACK_LINE(31)
-	::openfl::_legacy::display::Sprite _g2 = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g2,"_g2");
+	::openfl::_legacy::display::Sprite _g1 = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g1,"_g1");
 	HX_STACK_LINE(31)
-	this->navigContainer = _g2;
+	this->detailPopupContainer = _g1;
 	HX_STACK_LINE(32)
-	this->addChild(this->navigContainer);
+	this->addChild(this->detailPopupContainer);
 	HX_STACK_LINE(33)
+	::openfl::_legacy::display::Sprite _g2 = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g2,"_g2");
+	HX_STACK_LINE(33)
+	this->navigContainer = _g2;
+	HX_STACK_LINE(34)
+	this->addChild(this->navigContainer);
+	HX_STACK_LINE(35)
 	::AppFacade_obj::getInstance(::AppConstants_obj::APP_NAME)->startup(hx::ObjectPtr<OBJ_>(this));
 }
 ;
@@ -121,10 +121,10 @@ Dynamic App_obj::__Create(hx::DynamicArray inArgs)
 
 Void App_obj::addZoomView( ::openfl::_legacy::display::DisplayObject view){
 {
-		HX_STACK_FRAME("App","addZoomView",0x2cfc62ec,"App.addZoomView","App.hx",37,0xc43e94dd)
+		HX_STACK_FRAME("App","addZoomView",0x2cfc62ec,"App.addZoomView","App.hx",39,0xc43e94dd)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(view,"view")
-		HX_STACK_LINE(37)
+		HX_STACK_LINE(39)
 		this->zoomContainer->addChild(view);
 	}
 return null();
@@ -135,10 +135,10 @@ HX_DEFINE_DYNAMIC_FUNC1(App_obj,addZoomView,(void))
 
 Void App_obj::addDetailPopupView( ::openfl::_legacy::display::DisplayObject view){
 {
-		HX_STACK_FRAME("App","addDetailPopupView",0xfd48188c,"App.addDetailPopupView","App.hx",41,0xc43e94dd)
+		HX_STACK_FRAME("App","addDetailPopupView",0xfd48188c,"App.addDetailPopupView","App.hx",43,0xc43e94dd)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(view,"view")
-		HX_STACK_LINE(41)
+		HX_STACK_LINE(43)
 		this->detailPopupContainer->addChild(view);
 	}
 return null();
@@ -149,10 +149,10 @@ HX_DEFINE_DYNAMIC_FUNC1(App_obj,addDetailPopupView,(void))
 
 Void App_obj::addNavigView( ::openfl::_legacy::display::DisplayObject view){
 {
-		HX_STACK_FRAME("App","addNavigView",0x72b39832,"App.addNavigView","App.hx",45,0xc43e94dd)
+		HX_STACK_FRAME("App","addNavigView",0x72b39832,"App.addNavigView","App.hx",47,0xc43e94dd)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(view,"view")
-		HX_STACK_LINE(45)
+		HX_STACK_LINE(47)
 		this->navigContainer->addChild(view);
 	}
 return null();
@@ -163,14 +163,14 @@ HX_DEFINE_DYNAMIC_FUNC1(App_obj,addNavigView,(void))
 
 Void App_obj::mouseDownHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("App","mouseDownHandler",0xc10a8ff0,"App.mouseDownHandler","App.hx",49,0xc43e94dd)
+		HX_STACK_FRAME("App","mouseDownHandler",0xc10a8ff0,"App.mouseDownHandler","App.hx",51,0xc43e94dd)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(51)
 		if ((this->isZoomed)){
-			HX_STACK_LINE(50)
+			HX_STACK_LINE(52)
 			::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DRAG_START,null(),null(),null());		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(50)
+			HX_STACK_LINE(52)
 			this->dispatchEvent(_g);
 		}
 	}
@@ -182,14 +182,14 @@ HX_DEFINE_DYNAMIC_FUNC1(App_obj,mouseDownHandler,(void))
 
 Void App_obj::mouseUpHandler( ::openfl::_legacy::events::MouseEvent event){
 {
-		HX_STACK_FRAME("App","mouseUpHandler",0xf3c05917,"App.mouseUpHandler","App.hx",55,0xc43e94dd)
+		HX_STACK_FRAME("App","mouseUpHandler",0xf3c05917,"App.mouseUpHandler","App.hx",57,0xc43e94dd)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(57)
 		if ((this->isZoomed)){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(58)
 			::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DRAG_STOP,null(),null(),null());		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(58)
 			this->dispatchEvent(_g);
 		}
 	}
@@ -201,9 +201,9 @@ HX_DEFINE_DYNAMIC_FUNC1(App_obj,mouseUpHandler,(void))
 
 Void App_obj::dragStart( ){
 {
-		HX_STACK_FRAME("App","dragStart",0x4eb12da1,"App.dragStart","App.hx",61,0xc43e94dd)
+		HX_STACK_FRAME("App","dragStart",0x4eb12da1,"App.dragStart","App.hx",63,0xc43e94dd)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(61)
+		HX_STACK_LINE(63)
 		this->zoomContainer->startDrag(null(),null());
 	}
 return null();
@@ -214,9 +214,9 @@ HX_DEFINE_DYNAMIC_FUNC0(App_obj,dragStart,(void))
 
 Void App_obj::dragStop( ){
 {
-		HX_STACK_FRAME("App","dragStop",0x453b63a3,"App.dragStop","App.hx",65,0xc43e94dd)
+		HX_STACK_FRAME("App","dragStop",0x453b63a3,"App.dragStop","App.hx",67,0xc43e94dd)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(65)
+		HX_STACK_LINE(67)
 		this->zoomContainer->stopDrag();
 	}
 return null();
@@ -227,41 +227,41 @@ HX_DEFINE_DYNAMIC_FUNC0(App_obj,dragStop,(void))
 
 Void App_obj::zoomIn( ){
 {
-		HX_STACK_FRAME("App","zoomIn",0x9629b225,"App.zoomIn","App.hx",68,0xc43e94dd)
+		HX_STACK_FRAME("App","zoomIn",0x9629b225,"App.zoomIn","App.hx",70,0xc43e94dd)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(69)
-		this->isZoomed = true;
-		HX_STACK_LINE(70)
-		this->zoomContainer->set_scaleX((int)2);
 		HX_STACK_LINE(71)
+		this->isZoomed = true;
+		HX_STACK_LINE(72)
+		this->zoomContainer->set_scaleX((int)2);
+		HX_STACK_LINE(73)
 		this->zoomContainer->set_scaleY((int)2);
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		int _g = this->get_stage()->get_stageWidth();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		Float _g1 = (_g * 0.5);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		Float _g2 = this->zoomContainer->get_width();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		Float _g3 = (_g2 * 0.5);		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		Float _g4 = (_g1 - _g3);		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		int _g5 = ::Math_obj::floor(_g4);		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(74)
 		this->zoomContainer->set_x(_g5);
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		int _g6 = this->get_stage()->get_stageHeight();		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		Float _g7 = (_g6 * 0.5);		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		Float _g8 = this->zoomContainer->get_height();		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		Float _g9 = (_g8 * 0.5);		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		Float _g10 = (_g7 - _g9);		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		int _g11 = ::Math_obj::floor(_g10);		HX_STACK_VAR(_g11,"_g11");
-		HX_STACK_LINE(73)
+		HX_STACK_LINE(75)
 		this->zoomContainer->set_y(_g11);
 	}
 return null();
@@ -272,17 +272,17 @@ HX_DEFINE_DYNAMIC_FUNC0(App_obj,zoomIn,(void))
 
 Void App_obj::resetZoom( ){
 {
-		HX_STACK_FRAME("App","resetZoom",0xff34f655,"App.resetZoom","App.hx",76,0xc43e94dd)
+		HX_STACK_FRAME("App","resetZoom",0xff34f655,"App.resetZoom","App.hx",78,0xc43e94dd)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(77)
-		this->isZoomed = false;
-		HX_STACK_LINE(78)
-		this->zoomContainer->set_scaleX((int)1);
 		HX_STACK_LINE(79)
-		this->zoomContainer->set_scaleY((int)1);
+		this->isZoomed = false;
 		HX_STACK_LINE(80)
-		this->zoomContainer->set_x((int)0);
+		this->zoomContainer->set_scaleX((int)1);
 		HX_STACK_LINE(81)
+		this->zoomContainer->set_scaleY((int)1);
+		HX_STACK_LINE(82)
+		this->zoomContainer->set_x((int)0);
+		HX_STACK_LINE(83)
 		this->zoomContainer->set_y((int)0);
 	}
 return null();

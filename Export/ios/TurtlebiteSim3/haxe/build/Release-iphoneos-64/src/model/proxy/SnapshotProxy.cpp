@@ -35,11 +35,11 @@ namespace proxy{
 
 Void SnapshotProxy_obj::__construct(::model::data::SnapshotData data)
 {
-HX_STACK_FRAME("model.proxy.SnapshotProxy","new",0xddee2797,"model.proxy.SnapshotProxy.new","model/proxy/SnapshotProxy.hx",12,0x76f1b27b)
+HX_STACK_FRAME("model.proxy.SnapshotProxy","new",0xddee2797,"model.proxy.SnapshotProxy.new","model/proxy/SnapshotProxy.hx",18,0x76f1b27b)
 HX_STACK_THIS(this)
 HX_STACK_ARG(data,"data")
 {
-	HX_STACK_LINE(12)
+	HX_STACK_LINE(18)
 	super::__construct(::model::proxy::SnapshotProxy_obj::NAME,data);
 }
 ;
@@ -61,9 +61,9 @@ Dynamic SnapshotProxy_obj::__Create(hx::DynamicArray inArgs)
 
 Void SnapshotProxy_obj::onRegister( ){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","onRegister",0x869b884b,"model.proxy.SnapshotProxy.onRegister","model/proxy/SnapshotProxy.hx",16,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","onRegister",0x869b884b,"model.proxy.SnapshotProxy.onRegister","model/proxy/SnapshotProxy.hx",22,0x76f1b27b)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->sendNotification(::AppConstants_obj::PROXY_INITIALIZED,null(),::model::proxy::SnapshotProxy_obj::NAME);
 	}
 return null();
@@ -72,12 +72,12 @@ return null();
 
 Void SnapshotProxy_obj::setRegister1( ::String value){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRegister1",0x1d443a55,"model.proxy.SnapshotProxy.setRegister1","model/proxy/SnapshotProxy.hx",19,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRegister1",0x1d443a55,"model.proxy.SnapshotProxy.setRegister1","model/proxy/SnapshotProxy.hx",25,0x76f1b27b)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		::model::vo::SnapshotVO _g = this->getSnapshot(value);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->getData()->__FieldRef(HX_CSTRING("register1")) = _g;
 	}
 return null();
@@ -87,9 +87,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(SnapshotProxy_obj,setRegister1,(void))
 
 ::model::vo::SnapshotVO SnapshotProxy_obj::getRegister1( ){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRegister1",0x084b16e1,"model.proxy.SnapshotProxy.getRegister1","model/proxy/SnapshotProxy.hx",24,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRegister1",0x084b16e1,"model.proxy.SnapshotProxy.getRegister1","model/proxy/SnapshotProxy.hx",30,0x76f1b27b)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	return this->getData()->__Field(HX_CSTRING("register1"),true);
 }
 
@@ -98,12 +98,12 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,getRegister1,return )
 
 Void SnapshotProxy_obj::setRegister2( ::String value){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRegister2",0x1d443a56,"model.proxy.SnapshotProxy.setRegister2","model/proxy/SnapshotProxy.hx",27,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRegister2",0x1d443a56,"model.proxy.SnapshotProxy.setRegister2","model/proxy/SnapshotProxy.hx",33,0x76f1b27b)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::model::vo::SnapshotVO _g = this->getSnapshot(value);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->getData()->__FieldRef(HX_CSTRING("register2")) = _g;
 	}
 return null();
@@ -113,9 +113,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(SnapshotProxy_obj,setRegister2,(void))
 
 ::model::vo::SnapshotVO SnapshotProxy_obj::getRegister2( ){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRegister2",0x084b16e2,"model.proxy.SnapshotProxy.getRegister2","model/proxy/SnapshotProxy.hx",32,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRegister2",0x084b16e2,"model.proxy.SnapshotProxy.getRegister2","model/proxy/SnapshotProxy.hx",38,0x76f1b27b)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(38)
 	return this->getData()->__Field(HX_CSTRING("register2"),true);
 }
 
@@ -124,12 +124,12 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,getRegister2,return )
 
 Void SnapshotProxy_obj::setAccumulator( ::String value){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","setAccumulator",0xdf641aed,"model.proxy.SnapshotProxy.setAccumulator","model/proxy/SnapshotProxy.hx",35,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","setAccumulator",0xdf641aed,"model.proxy.SnapshotProxy.setAccumulator","model/proxy/SnapshotProxy.hx",41,0x76f1b27b)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(value,"value")
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		::model::vo::SnapshotVO _g = this->getSnapshot(value);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		this->getData()->__FieldRef(HX_CSTRING("accumulator")) = _g;
 	}
 return null();
@@ -139,9 +139,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(SnapshotProxy_obj,setAccumulator,(void))
 
 ::model::vo::SnapshotVO SnapshotProxy_obj::getAccumulator( ){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getAccumulator",0xbf443279,"model.proxy.SnapshotProxy.getAccumulator","model/proxy/SnapshotProxy.hx",40,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getAccumulator",0xbf443279,"model.proxy.SnapshotProxy.getAccumulator","model/proxy/SnapshotProxy.hx",46,0x76f1b27b)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(40)
+	HX_STACK_LINE(46)
 	return this->getData()->__Field(HX_CSTRING("accumulator"),true);
 }
 
@@ -150,11 +150,11 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,getAccumulator,return )
 
 Void SnapshotProxy_obj::setRam( ::model::vo::SnapshotVO vo,int pointer){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRam",0x33ff2885,"model.proxy.SnapshotProxy.setRam","model/proxy/SnapshotProxy.hx",44,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","setRam",0x33ff2885,"model.proxy.SnapshotProxy.setRam","model/proxy/SnapshotProxy.hx",50,0x76f1b27b)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(vo,"vo")
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		hx::IndexRef((this->getData()->__Field(HX_CSTRING("ram"),true)).mPtr,pointer) = vo;
 	}
 return null();
@@ -164,9 +164,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC2(SnapshotProxy_obj,setRam,(void))
 
 Array< ::Dynamic > SnapshotProxy_obj::getRam( ){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRam",0x67b6d411,"model.proxy.SnapshotProxy.getRam","model/proxy/SnapshotProxy.hx",48,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getRam",0x67b6d411,"model.proxy.SnapshotProxy.getRam","model/proxy/SnapshotProxy.hx",54,0x76f1b27b)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(48)
+	HX_STACK_LINE(54)
 	return this->getData()->__Field(HX_CSTRING("ram"),true);
 }
 
@@ -175,9 +175,9 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,getRam,return )
 
 Void SnapshotProxy_obj::reset( ){
 {
-		HX_STACK_FRAME("model.proxy.SnapshotProxy","reset",0x21101cc6,"model.proxy.SnapshotProxy.reset","model/proxy/SnapshotProxy.hx",52,0x76f1b27b)
+		HX_STACK_FRAME("model.proxy.SnapshotProxy","reset",0x21101cc6,"model.proxy.SnapshotProxy.reset","model/proxy/SnapshotProxy.hx",58,0x76f1b27b)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->getData()->__Field(HX_CSTRING("reset"),true)();
 	}
 return null();
@@ -187,12 +187,12 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,reset,(void))
 
 ::model::vo::SnapshotVO SnapshotProxy_obj::getSnapshot( ::String value){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getSnapshot",0xabcec131,"model.proxy.SnapshotProxy.getSnapshot","model/proxy/SnapshotProxy.hx",55,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getSnapshot",0xabcec131,"model.proxy.SnapshotProxy.getSnapshot","model/proxy/SnapshotProxy.hx",61,0x76f1b27b)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(value,"value")
-	HX_STACK_LINE(56)
+	HX_STACK_LINE(62)
 	::model::vo::DecHexVO decHex = ::utilities::NumberFormat_obj::binaryToDecimal(value);		HX_STACK_VAR(decHex,"decHex");
-	HX_STACK_LINE(57)
+	HX_STACK_LINE(63)
 	return ::model::vo::SnapshotVO_obj::__new(value,decHex->hex,decHex->dec);
 }
 
@@ -200,9 +200,9 @@ HX_DEFINE_DYNAMIC_FUNC0(SnapshotProxy_obj,reset,(void))
 HX_DEFINE_DYNAMIC_FUNC1(SnapshotProxy_obj,getSnapshot,return )
 
 Dynamic SnapshotProxy_obj::getData( ){
-	HX_STACK_FRAME("model.proxy.SnapshotProxy","getData",0x4f01c497,"model.proxy.SnapshotProxy.getData","model/proxy/SnapshotProxy.hx",61,0x76f1b27b)
+	HX_STACK_FRAME("model.proxy.SnapshotProxy","getData",0x4f01c497,"model.proxy.SnapshotProxy.getData","model/proxy/SnapshotProxy.hx",67,0x76f1b27b)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(61)
+	HX_STACK_LINE(67)
 	return this->data;
 }
 

@@ -79,10 +79,10 @@ namespace controller{
 
 Void EnterInstructionCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.EnterInstructionCommand","new",0x49fe4095,"controller.EnterInstructionCommand.new","controller/EnterInstructionCommand.hx",15,0xe60665bc)
+HX_STACK_FRAME("controller.EnterInstructionCommand","new",0x49fe4095,"controller.EnterInstructionCommand.new","controller/EnterInstructionCommand.hx",21,0xe60665bc)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	super::__construct();
 }
 ;
@@ -104,38 +104,38 @@ Dynamic EnterInstructionCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void EnterInstructionCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.EnterInstructionCommand","execute",0x97ec38ea,"controller.EnterInstructionCommand.execute","controller/EnterInstructionCommand.hx",20,0xe60665bc)
+		HX_STACK_FRAME("controller.EnterInstructionCommand","execute",0x97ec38ea,"controller.EnterInstructionCommand.execute","controller/EnterInstructionCommand.hx",26,0xe60665bc)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		if ((!(this->get_facade()->hasMediator(HX_CSTRING("EnterInstructionMediator"))))){
-			HX_STACK_LINE(22)
-			::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-			HX_STACK_LINE(22)
-			appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-			HX_STACK_LINE(23)
-			::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-			HX_STACK_LINE(23)
-			programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-			HX_STACK_LINE(24)
-			::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-			HX_STACK_LINE(24)
-			clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-			HX_STACK_LINE(26)
-			appProxy->setAutoClockOn(false);
-			HX_STACK_LINE(27)
-			clockProxy->stopClock();
 			HX_STACK_LINE(28)
-			this->sendNotification(::AppConstants_obj::PAUSE,null(),null());
+			::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
+			HX_STACK_LINE(28)
+			appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
 			HX_STACK_LINE(29)
+			::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
+			HX_STACK_LINE(29)
+			programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
+			HX_STACK_LINE(30)
+			::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
+			HX_STACK_LINE(30)
+			clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
+			HX_STACK_LINE(32)
+			appProxy->setAutoClockOn(false);
+			HX_STACK_LINE(33)
+			clockProxy->stopClock();
+			HX_STACK_LINE(34)
+			this->sendNotification(::AppConstants_obj::PAUSE,null(),null());
+			HX_STACK_LINE(35)
 			appProxy->setEnterInstructionActive(true);
-			HX_STACK_LINE(30)
+			HX_STACK_LINE(36)
 			::model::vo::InstructionVO _g = programProxy->getManualInstruction();		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(30)
+			HX_STACK_LINE(36)
 			::view::component::EnterInstruction _g1 = ::view::component::EnterInstruction_obj::__new(_g);		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(30)
+			HX_STACK_LINE(36)
 			::view::mediator::EnterInstructionMediator _g2 = ::view::mediator::EnterInstructionMediator_obj::__new(_g1);		HX_STACK_VAR(_g2,"_g2");
-			HX_STACK_LINE(30)
+			HX_STACK_LINE(36)
 			this->get_facade()->registerMediator(_g2);
 		}
 	}

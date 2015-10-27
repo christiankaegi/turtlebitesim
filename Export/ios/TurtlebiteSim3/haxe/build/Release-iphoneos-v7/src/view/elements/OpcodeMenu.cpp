@@ -41,12 +41,12 @@ namespace elements{
 
 Void OpcodeMenu_obj::__construct()
 {
-HX_STACK_FRAME("view.elements.OpcodeMenu","new",0xd11bfa6d,"view.elements.OpcodeMenu.new","view/elements/OpcodeMenu.hx",17,0xe23c0dc3)
+HX_STACK_FRAME("view.elements.OpcodeMenu","new",0xd11bfa6d,"view.elements.OpcodeMenu.new","view/elements/OpcodeMenu.hx",23,0xe23c0dc3)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(24)
 	super::__construct();
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(25)
 	this->createMenu();
 }
 ;
@@ -68,109 +68,109 @@ Dynamic OpcodeMenu_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeMenu_obj::createMenu( ){
 {
-		HX_STACK_FRAME("view.elements.OpcodeMenu","createMenu",0xe167e84e,"view.elements.OpcodeMenu.createMenu","view/elements/OpcodeMenu.hx",22,0xe23c0dc3)
+		HX_STACK_FRAME("view.elements.OpcodeMenu","createMenu",0xe167e84e,"view.elements.OpcodeMenu.createMenu","view/elements/OpcodeMenu.hx",28,0xe23c0dc3)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		::openfl::_legacy::display::Sprite _g = ::openfl::_legacy::display::Sprite_obj::__new();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->menuContainer = _g;
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		Array< ::Dynamic > _g1 = Array_obj< ::Dynamic >::__new();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->menuButtons = _g1;
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		Float w = (int)50;		HX_STACK_VAR(w,"w");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		int i = (int)0;		HX_STACK_VAR(i,"i");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		int _g2 = (i)++;		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->menuButtons[_g2] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("NOP"),null(),null());
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		int _g3 = (i)++;		HX_STACK_VAR(_g3,"_g3");
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->menuButtons[_g3] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("MOV"),null(),null());
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		int _g4 = (i)++;		HX_STACK_VAR(_g4,"_g4");
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->menuButtons[_g4] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("LDI"),null(),null());
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		int _g5 = (i)++;		HX_STACK_VAR(_g5,"_g5");
-		HX_STACK_LINE(30)
+		HX_STACK_LINE(36)
 		this->menuButtons[_g5] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("ADD"),null(),null());
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		int _g6 = (i)++;		HX_STACK_VAR(_g6,"_g6");
-		HX_STACK_LINE(31)
+		HX_STACK_LINE(37)
 		this->menuButtons[_g6] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("SUB"),null(),null());
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		int _g7 = (i)++;		HX_STACK_VAR(_g7,"_g7");
-		HX_STACK_LINE(32)
+		HX_STACK_LINE(38)
 		this->menuButtons[_g7] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("INC"),null(),null());
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		int _g8 = (i)++;		HX_STACK_VAR(_g8,"_g8");
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		this->menuButtons[_g8] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("DEC"),null(),null());
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		int _g9 = (i)++;		HX_STACK_VAR(_g9,"_g9");
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		this->menuButtons[_g9] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("SDA"),null(),null());
-		HX_STACK_LINE(35)
-		int _g10 = (i)++;		HX_STACK_VAR(_g10,"_g10");
-		HX_STACK_LINE(35)
-		this->menuButtons[_g10] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("LDA"),null(),null());
-		HX_STACK_LINE(36)
-		int _g11 = (i)++;		HX_STACK_VAR(_g11,"_g11");
-		HX_STACK_LINE(36)
-		this->menuButtons[_g11] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("INP"),null(),null());
-		HX_STACK_LINE(37)
-		int _g12 = (i)++;		HX_STACK_VAR(_g12,"_g12");
-		HX_STACK_LINE(37)
-		this->menuButtons[_g12] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("OUT"),null(),null());
-		HX_STACK_LINE(38)
-		int _g13 = (i)++;		HX_STACK_VAR(_g13,"_g13");
-		HX_STACK_LINE(38)
-		this->menuButtons[_g13] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JE"),null(),null());
-		HX_STACK_LINE(39)
-		int _g14 = (i)++;		HX_STACK_VAR(_g14,"_g14");
-		HX_STACK_LINE(39)
-		this->menuButtons[_g14] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JNE"),null(),null());
-		HX_STACK_LINE(40)
-		int _g15 = (i)++;		HX_STACK_VAR(_g15,"_g15");
-		HX_STACK_LINE(40)
-		this->menuButtons[_g15] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JMP"),null(),null());
 		HX_STACK_LINE(41)
+		int _g10 = (i)++;		HX_STACK_VAR(_g10,"_g10");
+		HX_STACK_LINE(41)
+		this->menuButtons[_g10] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("LDA"),null(),null());
+		HX_STACK_LINE(42)
+		int _g11 = (i)++;		HX_STACK_VAR(_g11,"_g11");
+		HX_STACK_LINE(42)
+		this->menuButtons[_g11] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("INP"),null(),null());
+		HX_STACK_LINE(43)
+		int _g12 = (i)++;		HX_STACK_VAR(_g12,"_g12");
+		HX_STACK_LINE(43)
+		this->menuButtons[_g12] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("OUT"),null(),null());
+		HX_STACK_LINE(44)
+		int _g13 = (i)++;		HX_STACK_VAR(_g13,"_g13");
+		HX_STACK_LINE(44)
+		this->menuButtons[_g13] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JE"),null(),null());
+		HX_STACK_LINE(45)
+		int _g14 = (i)++;		HX_STACK_VAR(_g14,"_g14");
+		HX_STACK_LINE(45)
+		this->menuButtons[_g14] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JNE"),null(),null());
+		HX_STACK_LINE(46)
+		int _g15 = (i)++;		HX_STACK_VAR(_g15,"_g15");
+		HX_STACK_LINE(46)
+		this->menuButtons[_g15] = ::view::elements::LabelButton_obj::__new(w,HX_CSTRING("JMP"),null(),null());
+		HX_STACK_LINE(47)
 		{
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			int _g16 = (int)0;		HX_STACK_VAR(_g16,"_g16");
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			int _g17 = this->menuButtons->length;		HX_STACK_VAR(_g17,"_g17");
-			HX_STACK_LINE(41)
+			HX_STACK_LINE(47)
 			while((true)){
-				HX_STACK_LINE(41)
+				HX_STACK_LINE(47)
 				if ((!(((_g16 < _g17))))){
-					HX_STACK_LINE(41)
+					HX_STACK_LINE(47)
 					break;
 				}
-				HX_STACK_LINE(41)
+				HX_STACK_LINE(47)
 				int i1 = (_g16)++;		HX_STACK_VAR(i1,"i1");
-				HX_STACK_LINE(42)
+				HX_STACK_LINE(48)
 				this->menuContainer->addChild(this->menuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >());
-				HX_STACK_LINE(43)
+				HX_STACK_LINE(49)
 				this->menuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >()->set_name((HX_CSTRING("opcodeMenuButton") + i1));
-				HX_STACK_LINE(44)
+				HX_STACK_LINE(50)
 				this->menuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >()->addEventListener(::events::AppEvent_obj::DATA,this->dataEventHandler_dyn(),null(),null(),null());
-				HX_STACK_LINE(45)
+				HX_STACK_LINE(51)
 				if (((i1 > (int)0))){
-					HX_STACK_LINE(46)
+					HX_STACK_LINE(52)
 					Float _g161 = this->menuButtons->__get((i1 - (int)1)).StaticCast< ::view::elements::LabelButton >()->get_x();		HX_STACK_VAR(_g161,"_g161");
-					HX_STACK_LINE(46)
+					HX_STACK_LINE(52)
 					Float _g171 = (_g161 + (w * ::AppConstants_obj::SCALE_FACTOR));		HX_STACK_VAR(_g171,"_g171");
-					HX_STACK_LINE(46)
+					HX_STACK_LINE(52)
 					this->menuButtons->__get(i1).StaticCast< ::view::elements::LabelButton >()->set_x(_g171);
 				}
 			}
 		}
-		HX_STACK_LINE(49)
+		HX_STACK_LINE(55)
 		this->addChild(this->menuContainer);
 	}
 return null();
@@ -181,89 +181,89 @@ HX_DEFINE_DYNAMIC_FUNC0(OpcodeMenu_obj,createMenu,(void))
 
 Void OpcodeMenu_obj::dataEventHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.elements.OpcodeMenu","dataEventHandler",0x2990b1ed,"view.elements.OpcodeMenu.dataEventHandler","view/elements/OpcodeMenu.hx",52,0xe23c0dc3)
+		HX_STACK_FRAME("view.elements.OpcodeMenu","dataEventHandler",0x2990b1ed,"view.elements.OpcodeMenu.dataEventHandler","view/elements/OpcodeMenu.hx",58,0xe23c0dc3)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		::String opcode = HX_CSTRING("");		HX_STACK_VAR(opcode,"opcode");
-		HX_STACK_LINE(54)
+		HX_STACK_LINE(60)
 		::String address = HX_CSTRING("");		HX_STACK_VAR(address,"address");
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(61)
 		{
-			HX_STACK_LINE(55)
+			HX_STACK_LINE(61)
 			Dynamic _g = event->data->__Field(HX_CSTRING("id"),true);		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(55)
+			HX_STACK_LINE(61)
 			Dynamic _switch_1 = (_g);
 			if (  ( _switch_1==HX_CSTRING("opcodeMenuButton0"))){
-				HX_STACK_LINE(57)
+				HX_STACK_LINE(63)
 				opcode = HX_CSTRING("0000");
-				HX_STACK_LINE(58)
+				HX_STACK_LINE(64)
 				address = HX_CSTRING("0000");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton1"))){
-				HX_STACK_LINE(60)
+				HX_STACK_LINE(66)
 				opcode = HX_CSTRING("0001");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton2"))){
-				HX_STACK_LINE(62)
+				HX_STACK_LINE(68)
 				opcode = HX_CSTRING("0010");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton3"))){
-				HX_STACK_LINE(64)
-				opcode = HX_CSTRING("0011");
-				HX_STACK_LINE(65)
-				address = HX_CSTRING("0000");
-			}
-			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton4"))){
-				HX_STACK_LINE(67)
-				opcode = HX_CSTRING("0011");
-				HX_STACK_LINE(68)
-				address = HX_CSTRING("0001");
-			}
-			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton5"))){
 				HX_STACK_LINE(70)
 				opcode = HX_CSTRING("0011");
 				HX_STACK_LINE(71)
-				address = HX_CSTRING("0010");
+				address = HX_CSTRING("0000");
 			}
-			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton6"))){
+			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton4"))){
 				HX_STACK_LINE(73)
 				opcode = HX_CSTRING("0011");
 				HX_STACK_LINE(74)
+				address = HX_CSTRING("0001");
+			}
+			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton5"))){
+				HX_STACK_LINE(76)
+				opcode = HX_CSTRING("0011");
+				HX_STACK_LINE(77)
+				address = HX_CSTRING("0010");
+			}
+			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton6"))){
+				HX_STACK_LINE(79)
+				opcode = HX_CSTRING("0011");
+				HX_STACK_LINE(80)
 				address = HX_CSTRING("0011");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton7"))){
-				HX_STACK_LINE(76)
+				HX_STACK_LINE(82)
 				opcode = HX_CSTRING("0100");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton8"))){
-				HX_STACK_LINE(78)
+				HX_STACK_LINE(84)
 				opcode = HX_CSTRING("0101");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton9"))){
-				HX_STACK_LINE(80)
+				HX_STACK_LINE(86)
 				opcode = HX_CSTRING("0110");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton10"))){
-				HX_STACK_LINE(82)
+				HX_STACK_LINE(88)
 				opcode = HX_CSTRING("0111");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton11"))){
-				HX_STACK_LINE(84)
+				HX_STACK_LINE(90)
 				opcode = HX_CSTRING("1000");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton12"))){
-				HX_STACK_LINE(86)
+				HX_STACK_LINE(92)
 				opcode = HX_CSTRING("1001");
 			}
 			else if (  ( _switch_1==HX_CSTRING("opcodeMenuButton13"))){
-				HX_STACK_LINE(88)
+				HX_STACK_LINE(94)
 				opcode = HX_CSTRING("1010");
 			}
 		}
 		struct _Function_1_1{
 			inline static Dynamic Block( ::String &address,::String &opcode,::events::AppEvent &event){
-				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/OpcodeMenu.hx",90,0xe23c0dc3)
+				HX_STACK_FRAME("*","closure",0x5bdab937,"*.closure","view/elements/OpcodeMenu.hx",96,0xe23c0dc3)
 				{
 					hx::Anon __result = hx::Anon_obj::Create();
 					__result->Add(HX_CSTRING("id") , event->data->__Field(HX_CSTRING("id"),true),false);
@@ -274,9 +274,9 @@ Void OpcodeMenu_obj::dataEventHandler( ::events::AppEvent event){
 				return null();
 			}
 		};
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		::events::AppEvent _g = ::events::AppEvent_obj::__new(::events::AppEvent_obj::DATA,_Function_1_1::Block(address,opcode,event),null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(90)
+		HX_STACK_LINE(96)
 		this->dispatchEvent(_g);
 	}
 return null();
@@ -287,30 +287,30 @@ HX_DEFINE_DYNAMIC_FUNC1(OpcodeMenu_obj,dataEventHandler,(void))
 
 Void OpcodeMenu_obj::destroy( ){
 {
-		HX_STACK_FRAME("view.elements.OpcodeMenu","destroy",0x49e0e187,"view.elements.OpcodeMenu.destroy","view/elements/OpcodeMenu.hx",97,0xe23c0dc3)
+		HX_STACK_FRAME("view.elements.OpcodeMenu","destroy",0x49e0e187,"view.elements.OpcodeMenu.destroy","view/elements/OpcodeMenu.hx",103,0xe23c0dc3)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(98)
+		HX_STACK_LINE(104)
 		{
-			HX_STACK_LINE(98)
+			HX_STACK_LINE(104)
 			int _g1 = (int)0;		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(98)
+			HX_STACK_LINE(104)
 			int _g = this->menuButtons->length;		HX_STACK_VAR(_g,"_g");
-			HX_STACK_LINE(98)
+			HX_STACK_LINE(104)
 			while((true)){
-				HX_STACK_LINE(98)
+				HX_STACK_LINE(104)
 				if ((!(((_g1 < _g))))){
-					HX_STACK_LINE(98)
+					HX_STACK_LINE(104)
 					break;
 				}
-				HX_STACK_LINE(98)
+				HX_STACK_LINE(104)
 				int i = (_g1)++;		HX_STACK_VAR(i,"i");
-				HX_STACK_LINE(99)
+				HX_STACK_LINE(105)
 				this->menuButtons->__get(i).StaticCast< ::view::elements::LabelButton >()->destroy();
-				HX_STACK_LINE(100)
+				HX_STACK_LINE(106)
 				this->menuContainer->removeChild(this->menuButtons->__get(i).StaticCast< ::view::elements::LabelButton >());
 			}
 		}
-		HX_STACK_LINE(102)
+		HX_STACK_LINE(108)
 		this->removeChild(this->menuContainer);
 	}
 return null();

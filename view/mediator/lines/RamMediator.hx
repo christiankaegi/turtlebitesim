@@ -29,8 +29,8 @@ class RamMediator extends Mediator {
             AppConstants.CLOCK_ON,
             AppConstants.BROADCAST_SDA,
             AppConstants.BROADCAST_LDA,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

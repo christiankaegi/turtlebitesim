@@ -47,7 +47,7 @@ namespace elements{
 
 Void SimpleRectangle_obj::__construct(Float width,Float height,Dynamic __o_color,Dynamic __o_alpha,Dynamic __o_hasLine,Dynamic __o_lineColor)
 {
-HX_STACK_FRAME("view.elements.SimpleRectangle","new",0x869fb6e1,"view.elements.SimpleRectangle.new","view/elements/SimpleRectangle.hx",6,0x7dfa6f8f)
+HX_STACK_FRAME("view.elements.SimpleRectangle","new",0x869fb6e1,"view.elements.SimpleRectangle.new","view/elements/SimpleRectangle.hx",12,0x7dfa6f8f)
 HX_STACK_THIS(this)
 HX_STACK_ARG(width,"width")
 HX_STACK_ARG(height,"height")
@@ -60,24 +60,24 @@ Dynamic alpha = __o_alpha.Default(1.0);
 Dynamic hasLine = __o_hasLine.Default(false);
 Dynamic lineColor = __o_lineColor.Default(5592405);
 {
-	HX_STACK_LINE(7)
+	HX_STACK_LINE(13)
 	super::__construct();
-	HX_STACK_LINE(8)
+	HX_STACK_LINE(14)
 	::openfl::display::Shape s = ::openfl::display::Shape_obj::__new();		HX_STACK_VAR(s,"s");
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	::openfl::display::Shape _g = ::openfl::display::Shape_obj::__new();		HX_STACK_VAR(_g,"_g");
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	s = _g;
-	HX_STACK_LINE(10)
+	HX_STACK_LINE(16)
 	if ((hasLine)){
-		HX_STACK_LINE(11)
+		HX_STACK_LINE(17)
 		s->get_graphics()->lineStyle(::AppConstants_obj::SCALE_FACTOR,lineColor,null(),null(),null(),null(),null(),null());
 	}
-	HX_STACK_LINE(13)
+	HX_STACK_LINE(19)
 	s->get_graphics()->beginFill(color,alpha);
-	HX_STACK_LINE(14)
+	HX_STACK_LINE(20)
 	s->get_graphics()->drawRect((int)0,(int)0,width,height);
-	HX_STACK_LINE(15)
+	HX_STACK_LINE(21)
 	this->addChild(s);
 }
 ;

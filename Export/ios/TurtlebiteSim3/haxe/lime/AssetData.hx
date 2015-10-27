@@ -286,12 +286,6 @@ class AssetData {
 			type.set ("assets/images/top_layer2048.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/top_layer_colored.png", "assets/images/top_layer_colored.png");
 			type.set ("assets/images/top_layer_colored.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tbsimlogo.svg", "assets/tbsimlogo.svg");
-			type.set ("assets/tbsimlogo.svg", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/tbsimlogo2.svg", "assets/tbsimlogo2.svg");
-			type.set ("assets/tbsimlogo2.svg", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/tbsimlogo3.svg", "assets/tbsimlogo3.svg");
-			type.set ("assets/tbsimlogo3.svg", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("fonts/Consolas Bold.eot", "fonts/Consolas Bold.eot");
 			type.set ("fonts/Consolas Bold.eot", Reflect.field (AssetType, "binary".toUpperCase ()));
 			path.set ("fonts/Consolas Bold.svg", "fonts/Consolas Bold.svg");

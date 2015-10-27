@@ -78,11 +78,11 @@ namespace lines{
 
 Void ProgramcounterMediator_obj::__construct(::view::component::lines::Programcounter viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","new",0x0a36213e,"view.mediator.lines.ProgramcounterMediator.new","view/mediator/lines/ProgramcounterMediator.hx",19,0xff9a59f1)
+HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","new",0x0a36213e,"view.mediator.lines.ProgramcounterMediator.new","view/mediator/lines/ProgramcounterMediator.hx",25,0xff9a59f1)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(25)
 	super::__construct(HX_CSTRING("ProgramcounterMediator"),viewComponent);
 }
 ;
@@ -104,25 +104,25 @@ Dynamic ProgramcounterMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void ProgramcounterMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","onRegister",0xe21d2184,"view.mediator.lines.ProgramcounterMediator.onRegister","view/mediator/lines/ProgramcounterMediator.hx",22,0xff9a59f1)
+		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","onRegister",0xe21d2184,"view.mediator.lines.ProgramcounterMediator.onRegister","view/mediator/lines/ProgramcounterMediator.hx",28,0xff9a59f1)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->appProxy = _g;
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::model::proxy::SnapshotProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		_g1 = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->snapshotProxy = _g1;
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::view::component::lines::Programcounter _g2 = this->getView();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g2,null());
 	}
 return null();
@@ -130,51 +130,51 @@ return null();
 
 
 Array< ::String > ProgramcounterMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","listNotificationInterests",0x985e303e,"view.mediator.lines.ProgramcounterMediator.listNotificationInterests","view/mediator/lines/ProgramcounterMediator.hx",30,0xff9a59f1)
+	HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","listNotificationInterests",0x985e303e,"view.mediator.lines.ProgramcounterMediator.listNotificationInterests","view/mediator/lines/ProgramcounterMediator.hx",36,0xff9a59f1)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(30)
+	HX_STACK_LINE(36)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::BROADCAST_JUMP).Add(::AppConstants_obj::MODEL_RESET_COMPLETE).Add(::AppConstants_obj::DETAIL_POPUP_ACTIVE);
 }
 
 
 Void ProgramcounterMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","handleNotification",0xd720fb95,"view.mediator.lines.ProgramcounterMediator.handleNotification","view/mediator/lines/ProgramcounterMediator.hx",39,0xff9a59f1)
+		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","handleNotification",0xd720fb95,"view.mediator.lines.ProgramcounterMediator.handleNotification","view/mediator/lines/ProgramcounterMediator.hx",45,0xff9a59f1)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(42)
+			HX_STACK_LINE(48)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(43)
-				::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-				HX_STACK_LINE(43)
-				instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-				HX_STACK_LINE(44)
-				::String _g1 = ::utilities::NumberFormat_obj::decimalToBinary(instruction->pointer);		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(44)
-				Array< bool > codeArr = ::utilities::NumberFormat_obj::binaryToArray(_g1,(int)4);		HX_STACK_VAR(codeArr,"codeArr");
-				HX_STACK_LINE(45)
-				codeArr->unshift(false);
-				HX_STACK_LINE(46)
-				codeArr->unshift(false);
-				HX_STACK_LINE(47)
-				codeArr->unshift(false);
-				HX_STACK_LINE(48)
-				codeArr->unshift(false);
 				HX_STACK_LINE(49)
+				::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
+				HX_STACK_LINE(49)
+				instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
+				HX_STACK_LINE(50)
+				::String _g1 = ::utilities::NumberFormat_obj::decimalToBinary(instruction->pointer);		HX_STACK_VAR(_g1,"_g1");
+				HX_STACK_LINE(50)
+				Array< bool > codeArr = ::utilities::NumberFormat_obj::binaryToArray(_g1,(int)4);		HX_STACK_VAR(codeArr,"codeArr");
+				HX_STACK_LINE(51)
+				codeArr->unshift(false);
+				HX_STACK_LINE(52)
+				codeArr->unshift(false);
+				HX_STACK_LINE(53)
+				codeArr->unshift(false);
+				HX_STACK_LINE(54)
+				codeArr->unshift(false);
+				HX_STACK_LINE(55)
 				this->getView()->showLines(codeArr);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(52)
+			HX_STACK_LINE(58)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::DETAIL_POPUP_ACTIVE)){
-			HX_STACK_LINE(54)
+			HX_STACK_LINE(60)
 			this->getView()->hideAllLines();
 		}
 	}
@@ -184,10 +184,10 @@ return null();
 
 Void ProgramcounterMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","viewReadyHandler",0x5912580e,"view.mediator.lines.ProgramcounterMediator.viewReadyHandler","view/mediator/lines/ProgramcounterMediator.hx",59,0xff9a59f1)
+		HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","viewReadyHandler",0x5912580e,"view.mediator.lines.ProgramcounterMediator.viewReadyHandler","view/mediator/lines/ProgramcounterMediator.hx",65,0xff9a59f1)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(59)
+		HX_STACK_LINE(65)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("ProgramcounterMediator"));
 	}
 return null();
@@ -197,9 +197,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ProgramcounterMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::Programcounter ProgramcounterMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","getView",0xa510f9f9,"view.mediator.lines.ProgramcounterMediator.getView","view/mediator/lines/ProgramcounterMediator.hx",63,0xff9a59f1)
+	HX_STACK_FRAME("view.mediator.lines.ProgramcounterMediator","getView",0xa510f9f9,"view.mediator.lines.ProgramcounterMediator.getView","view/mediator/lines/ProgramcounterMediator.hx",69,0xff9a59f1)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(63)
+	HX_STACK_LINE(69)
 	return this->viewComponent;
 }
 

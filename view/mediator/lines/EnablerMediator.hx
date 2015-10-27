@@ -36,8 +36,8 @@ class EnablerMediator extends Mediator {
             AppConstants.BROADCAST_LDA,
             AppConstants.CLOCK_ON,
             AppConstants.CHANGE_CLOCK_SPEED,
-            AppConstants.MODEL_RESET_COMPLETE,
-            AppConstants.DETAIL_POPUP_ACTIVE
+            AppConstants.MODEL_RESET_COMPLETE
+            //AppConstants.DETAIL_POPUP_ACTIVE
         ];
     }
 

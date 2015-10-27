@@ -44,10 +44,10 @@ namespace instruction{
 
 Void OpcodeLDICommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.instruction.OpcodeLDICommand","new",0xc8cab24c,"controller.instruction.OpcodeLDICommand.new","controller/instruction/OpcodeLDICommand.hx",11,0x97ee5662)
+HX_STACK_FRAME("controller.instruction.OpcodeLDICommand","new",0xc8cab24c,"controller.instruction.OpcodeLDICommand.new","controller/instruction/OpcodeLDICommand.hx",17,0x97ee5662)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	super::__construct();
 }
 ;
@@ -69,24 +69,24 @@ Dynamic OpcodeLDICommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void OpcodeLDICommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.instruction.OpcodeLDICommand","execute",0x12995221,"controller.instruction.OpcodeLDICommand.execute","controller/instruction/OpcodeLDICommand.hx",14,0x97ee5662)
+		HX_STACK_FRAME("controller.instruction.OpcodeLDICommand","execute",0x12995221,"controller.instruction.OpcodeLDICommand.execute","controller/instruction/OpcodeLDICommand.hx",20,0x97ee5662)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		::model::proxy::ProgramProxy programProxy;		HX_STACK_VAR(programProxy,"programProxy");
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		programProxy = hx::TCast< model::proxy::ProgramProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ProgramProxy_obj::NAME));
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		::model::proxy::SnapshotProxy snapshotProxy;		HX_STACK_VAR(snapshotProxy,"snapshotProxy");
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		snapshotProxy = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		::String _g = programProxy->getAddressOrData();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(19)
+		HX_STACK_LINE(25)
 		snapshotProxy->setAccumulator(_g);
-		HX_STACK_LINE(20)
+		HX_STACK_LINE(26)
 		this->sendNotification(::AppConstants_obj::BROADCAST_LDI,programProxy->getInstruction()->codeArr,null());
-		HX_STACK_LINE(21)
+		HX_STACK_LINE(27)
 		this->sendNotification(::AppConstants_obj::ACCUMULATOR_CHANGED,programProxy->getInstruction()->codeArr,null());
 	}
 return null();

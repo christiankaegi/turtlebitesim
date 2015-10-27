@@ -35,11 +35,11 @@ namespace proxy{
 
 Void ProgramProxy_obj::__construct(::model::data::ProgramData data)
 {
-HX_STACK_FRAME("model.proxy.ProgramProxy","new",0xc8b05581,"model.proxy.ProgramProxy.new","model/proxy/ProgramProxy.hx",11,0xf695088d)
+HX_STACK_FRAME("model.proxy.ProgramProxy","new",0xc8b05581,"model.proxy.ProgramProxy.new","model/proxy/ProgramProxy.hx",17,0xf695088d)
 HX_STACK_THIS(this)
 HX_STACK_ARG(data,"data")
 {
-	HX_STACK_LINE(11)
+	HX_STACK_LINE(17)
 	super::__construct(::model::proxy::ProgramProxy_obj::NAME,data);
 }
 ;
@@ -61,15 +61,15 @@ Dynamic ProgramProxy_obj::__Create(hx::DynamicArray inArgs)
 
 Void ProgramProxy_obj::onRegister( ){
 {
-		HX_STACK_FRAME("model.proxy.ProgramProxy","onRegister",0x7e454ba1,"model.proxy.ProgramProxy.onRegister","model/proxy/ProgramProxy.hx",14,0xf695088d)
+		HX_STACK_FRAME("model.proxy.ProgramProxy","onRegister",0x7e454ba1,"model.proxy.ProgramProxy.onRegister","model/proxy/ProgramProxy.hx",20,0xf695088d)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(15)
+		HX_STACK_LINE(21)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(15)
+		HX_STACK_LINE(21)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(15)
+		HX_STACK_LINE(21)
 		this->appProxy = _g;
-		HX_STACK_LINE(16)
+		HX_STACK_LINE(22)
 		this->sendNotification(::AppConstants_obj::PROXY_INITIALIZED,null(),::model::proxy::ProgramProxy_obj::NAME);
 	}
 return null();
@@ -77,9 +77,9 @@ return null();
 
 
 int ProgramProxy_obj::getNumberOfInstructions( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getNumberOfInstructions",0x93c74a5c,"model.proxy.ProgramProxy.getNumberOfInstructions","model/proxy/ProgramProxy.hx",20,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getNumberOfInstructions",0x93c74a5c,"model.proxy.ProgramProxy.getNumberOfInstructions","model/proxy/ProgramProxy.hx",26,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	return this->getData()->__Field(HX_CSTRING("getCurrentInstructions"),true)()->__Field(HX_CSTRING("length"),true);
 }
 
@@ -87,9 +87,9 @@ int ProgramProxy_obj::getNumberOfInstructions( ){
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getNumberOfInstructions,return )
 
 Array< ::Dynamic > ProgramProxy_obj::getCurrentInstructions( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getCurrentInstructions",0x53c6b107,"model.proxy.ProgramProxy.getCurrentInstructions","model/proxy/ProgramProxy.hx",24,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getCurrentInstructions",0x53c6b107,"model.proxy.ProgramProxy.getCurrentInstructions","model/proxy/ProgramProxy.hx",30,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(24)
+	HX_STACK_LINE(30)
 	return this->getData()->__Field(HX_CSTRING("getCurrentInstructions"),true)();
 }
 
@@ -97,10 +97,10 @@ Array< ::Dynamic > ProgramProxy_obj::getCurrentInstructions( ){
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getCurrentInstructions,return )
 
 Array< ::Dynamic > ProgramProxy_obj::getInstructionsByProgramPointer( int pointer){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstructionsByProgramPointer",0x2e713dec,"model.proxy.ProgramProxy.getInstructionsByProgramPointer","model/proxy/ProgramProxy.hx",28,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstructionsByProgramPointer",0x2e713dec,"model.proxy.ProgramProxy.getInstructionsByProgramPointer","model/proxy/ProgramProxy.hx",34,0xf695088d)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(pointer,"pointer")
-	HX_STACK_LINE(28)
+	HX_STACK_LINE(34)
 	return this->getData()->__Field(HX_CSTRING("getInstructionsByProgramPointer"),true)(pointer);
 }
 
@@ -108,22 +108,22 @@ Array< ::Dynamic > ProgramProxy_obj::getInstructionsByProgramPointer( int pointe
 HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,getInstructionsByProgramPointer,return )
 
 ::model::vo::InstructionVO ProgramProxy_obj::getInstruction( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstruction",0xd4e2c597,"model.proxy.ProgramProxy.getInstruction","model/proxy/ProgramProxy.hx",31,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstruction",0xd4e2c597,"model.proxy.ProgramProxy.getInstruction","model/proxy/ProgramProxy.hx",37,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(32)
+	HX_STACK_LINE(38)
 	::model::vo::InstructionVO t;		HX_STACK_VAR(t,"t");
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(39)
 	if ((this->appProxy->getEnterInstructionActive())){
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		t = this->getData()->__Field(HX_CSTRING("manualInstruction"),true);
 	}
 	else{
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		::model::vo::InstructionVO _g = this->getData()->__Field(HX_CSTRING("getInstruction"),true)(this->getData()->__Field(HX_CSTRING("instructionPointer"),true));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(36)
+		HX_STACK_LINE(42)
 		t = _g;
 	}
-	HX_STACK_LINE(38)
+	HX_STACK_LINE(44)
 	return t;
 }
 
@@ -131,9 +131,9 @@ HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,getInstructionsByProgramPointer,return 
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getInstruction,return )
 
 ::model::vo::InstructionVO ProgramProxy_obj::getManualInstruction( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getManualInstruction",0x8b5eb5b1,"model.proxy.ProgramProxy.getManualInstruction","model/proxy/ProgramProxy.hx",42,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getManualInstruction",0x8b5eb5b1,"model.proxy.ProgramProxy.getManualInstruction","model/proxy/ProgramProxy.hx",48,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(42)
+	HX_STACK_LINE(48)
 	return this->getData()->__Field(HX_CSTRING("manualInstruction"),true);
 }
 
@@ -141,16 +141,16 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getInstruction,return )
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getManualInstruction,return )
 
 ::model::vo::InstructionVO ProgramProxy_obj::getPreviousInstruction( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getPreviousInstruction",0x2b5edfa0,"model.proxy.ProgramProxy.getPreviousInstruction","model/proxy/ProgramProxy.hx",45,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getPreviousInstruction",0x2b5edfa0,"model.proxy.ProgramProxy.getPreviousInstruction","model/proxy/ProgramProxy.hx",51,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(46)
+	HX_STACK_LINE(52)
 	int prev = (this->getData()->__Field(HX_CSTRING("instructionPointer"),true) - (int)1);		HX_STACK_VAR(prev,"prev");
-	HX_STACK_LINE(47)
+	HX_STACK_LINE(53)
 	if (((prev == (int)-1))){
-		HX_STACK_LINE(48)
+		HX_STACK_LINE(54)
 		prev = (this->getData()->__Field(HX_CSTRING("getCurrentInstructions"),true)()->__Field(HX_CSTRING("length"),true) - (int)1);
 	}
-	HX_STACK_LINE(50)
+	HX_STACK_LINE(56)
 	return this->getData()->__Field(HX_CSTRING("getInstruction"),true)(prev);
 }
 
@@ -158,10 +158,10 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getManualInstruction,return )
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getPreviousInstruction,return )
 
 Array< ::Dynamic > ProgramProxy_obj::getProgram( int pointer){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getProgram",0x1349a18d,"model.proxy.ProgramProxy.getProgram","model/proxy/ProgramProxy.hx",54,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getProgram",0x1349a18d,"model.proxy.ProgramProxy.getProgram","model/proxy/ProgramProxy.hx",60,0xf695088d)
 	HX_STACK_THIS(this)
 	HX_STACK_ARG(pointer,"pointer")
-	HX_STACK_LINE(54)
+	HX_STACK_LINE(60)
 	return this->getData()->__Field(HX_CSTRING("programs"),true)->__GetItem(pointer);
 }
 
@@ -169,26 +169,26 @@ Array< ::Dynamic > ProgramProxy_obj::getProgram( int pointer){
 HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,getProgram,return )
 
 ::String ProgramProxy_obj::getOpcode( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getOpcode",0x14ebd3e5,"model.proxy.ProgramProxy.getOpcode","model/proxy/ProgramProxy.hx",57,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getOpcode",0x14ebd3e5,"model.proxy.ProgramProxy.getOpcode","model/proxy/ProgramProxy.hx",63,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(58)
+	HX_STACK_LINE(64)
 	::String t;		HX_STACK_VAR(t,"t");
-	HX_STACK_LINE(59)
+	HX_STACK_LINE(65)
 	if ((this->appProxy->getEnterInstructionActive())){
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		::String _g = this->getData()->__Field(HX_CSTRING("manualInstruction"),true)->__Field(HX_CSTRING("code"),true)->__Field(HX_CSTRING("substr"),true)((int)0,(int)4);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(60)
+		HX_STACK_LINE(66)
 		t = _g;
 	}
 	else{
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		Array< ::Dynamic > _g1 = this->getData()->__Field(HX_CSTRING("getCurrentInstructions"),true)();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		::String _g2 = _g1->__get(this->getData()->__Field(HX_CSTRING("instructionPointer"),true)).StaticCast< ::model::vo::InstructionVO >()->code.substr((int)0,(int)4);		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(62)
+		HX_STACK_LINE(68)
 		t = _g2;
 	}
-	HX_STACK_LINE(64)
+	HX_STACK_LINE(70)
 	return t;
 }
 
@@ -196,26 +196,26 @@ HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,getProgram,return )
 HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getOpcode,return )
 
 ::String ProgramProxy_obj::getAddressOrData( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getAddressOrData",0xd1d6998a,"model.proxy.ProgramProxy.getAddressOrData","model/proxy/ProgramProxy.hx",67,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getAddressOrData",0xd1d6998a,"model.proxy.ProgramProxy.getAddressOrData","model/proxy/ProgramProxy.hx",73,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(68)
+	HX_STACK_LINE(74)
 	::String t;		HX_STACK_VAR(t,"t");
-	HX_STACK_LINE(69)
+	HX_STACK_LINE(75)
 	if ((this->appProxy->getEnterInstructionActive())){
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		::String _g = this->getData()->__Field(HX_CSTRING("manualInstruction"),true)->__Field(HX_CSTRING("code"),true)->__Field(HX_CSTRING("substr"),true)((int)4,(int)4);		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(70)
+		HX_STACK_LINE(76)
 		t = _g;
 	}
 	else{
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		Array< ::Dynamic > _g1 = this->getData()->__Field(HX_CSTRING("getCurrentInstructions"),true)();		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		::String _g2 = _g1->__get(this->getData()->__Field(HX_CSTRING("instructionPointer"),true)).StaticCast< ::model::vo::InstructionVO >()->code.substr((int)4,(int)4);		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(72)
+		HX_STACK_LINE(78)
 		t = _g2;
 	}
-	HX_STACK_LINE(74)
+	HX_STACK_LINE(80)
 	return t;
 }
 
@@ -224,10 +224,10 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getAddressOrData,return )
 
 Void ProgramProxy_obj::setInstructionPointer( int pointer){
 {
-		HX_STACK_FRAME("model.proxy.ProgramProxy","setInstructionPointer",0x6c6ce1f2,"model.proxy.ProgramProxy.setInstructionPointer","model/proxy/ProgramProxy.hx",78,0xf695088d)
+		HX_STACK_FRAME("model.proxy.ProgramProxy","setInstructionPointer",0x6c6ce1f2,"model.proxy.ProgramProxy.setInstructionPointer","model/proxy/ProgramProxy.hx",84,0xf695088d)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(78)
+		HX_STACK_LINE(84)
 		this->getData()->__FieldRef(HX_CSTRING("instructionPointer")) = pointer;
 	}
 return null();
@@ -237,9 +237,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,setInstructionPointer,(void))
 
 int ProgramProxy_obj::getInstructionPointer( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstructionPointer",0x186413e6,"model.proxy.ProgramProxy.getInstructionPointer","model/proxy/ProgramProxy.hx",82,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getInstructionPointer",0x186413e6,"model.proxy.ProgramProxy.getInstructionPointer","model/proxy/ProgramProxy.hx",88,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(82)
+	HX_STACK_LINE(88)
 	return this->getData()->__Field(HX_CSTRING("instructionPointer"),true);
 }
 
@@ -248,10 +248,10 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getInstructionPointer,return )
 
 Void ProgramProxy_obj::setProgramPointer( int pointer){
 {
-		HX_STACK_FRAME("model.proxy.ProgramProxy","setProgramPointer",0x54461abc,"model.proxy.ProgramProxy.setProgramPointer","model/proxy/ProgramProxy.hx",86,0xf695088d)
+		HX_STACK_FRAME("model.proxy.ProgramProxy","setProgramPointer",0x54461abc,"model.proxy.ProgramProxy.setProgramPointer","model/proxy/ProgramProxy.hx",92,0xf695088d)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(pointer,"pointer")
-		HX_STACK_LINE(86)
+		HX_STACK_LINE(92)
 		this->getData()->__FieldRef(HX_CSTRING("programPointer")) = pointer;
 	}
 return null();
@@ -261,9 +261,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,setProgramPointer,(void))
 
 int ProgramProxy_obj::getProgramPointer( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getProgramPointer",0x30d842b0,"model.proxy.ProgramProxy.getProgramPointer","model/proxy/ProgramProxy.hx",90,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getProgramPointer",0x30d842b0,"model.proxy.ProgramProxy.getProgramPointer","model/proxy/ProgramProxy.hx",96,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(90)
+	HX_STACK_LINE(96)
 	return this->getData()->__Field(HX_CSTRING("programPointer"),true);
 }
 
@@ -272,13 +272,13 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,getProgramPointer,return )
 
 Void ProgramProxy_obj::reset( ){
 {
-		HX_STACK_FRAME("model.proxy.ProgramProxy","reset",0xe3291930,"model.proxy.ProgramProxy.reset","model/proxy/ProgramProxy.hx",93,0xf695088d)
+		HX_STACK_FRAME("model.proxy.ProgramProxy","reset",0xe3291930,"model.proxy.ProgramProxy.reset","model/proxy/ProgramProxy.hx",99,0xf695088d)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(94)
+		HX_STACK_LINE(100)
 		this->getData()->__FieldRef(HX_CSTRING("instructionPointer")) = (int)0;
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		::model::vo::InstructionVO _g = ::model::vo::InstructionVO_obj::__new((int)0,HX_CSTRING("NOP"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(95)
+		HX_STACK_LINE(101)
 		this->getData()->__FieldRef(HX_CSTRING("manualInstruction")) = _g;
 	}
 return null();
@@ -289,10 +289,10 @@ HX_DEFINE_DYNAMIC_FUNC0(ProgramProxy_obj,reset,(void))
 
 Void ProgramProxy_obj::setManualInstruction( ::model::vo::InstructionVO instruction){
 {
-		HX_STACK_FRAME("model.proxy.ProgramProxy","setManualInstruction",0x58166d25,"model.proxy.ProgramProxy.setManualInstruction","model/proxy/ProgramProxy.hx",99,0xf695088d)
+		HX_STACK_FRAME("model.proxy.ProgramProxy","setManualInstruction",0x58166d25,"model.proxy.ProgramProxy.setManualInstruction","model/proxy/ProgramProxy.hx",105,0xf695088d)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(instruction,"instruction")
-		HX_STACK_LINE(99)
+		HX_STACK_LINE(105)
 		this->getData()->__FieldRef(HX_CSTRING("manualInstruction")) = instruction;
 	}
 return null();
@@ -302,9 +302,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(ProgramProxy_obj,setManualInstruction,(void))
 
 Dynamic ProgramProxy_obj::getData( ){
-	HX_STACK_FRAME("model.proxy.ProgramProxy","getData",0x86a22f81,"model.proxy.ProgramProxy.getData","model/proxy/ProgramProxy.hx",103,0xf695088d)
+	HX_STACK_FRAME("model.proxy.ProgramProxy","getData",0x86a22f81,"model.proxy.ProgramProxy.getData","model/proxy/ProgramProxy.hx",109,0xf695088d)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(103)
+	HX_STACK_LINE(109)
 	return this->data;
 }
 

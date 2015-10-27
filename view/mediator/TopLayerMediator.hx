@@ -46,8 +46,6 @@ class TopLayerMediator extends Mediator {
                 getView().hideClock();
             case AppConstants.RESET :
                 getView().hideClock();
-            case AppConstants.DETAIL_POPUP_ACTIVE :
-                getView().hideClock();
         }
     }
 

@@ -15,14 +15,14 @@
 
 Void __ASSET__assets_fonts_consolas_bold_ttf_obj::__construct()
 {
-HX_STACK_FRAME("__ASSET__assets_fonts_consolas_bold_ttf","new",0xf86444d6,"__ASSET__assets_fonts_consolas_bold_ttf.new","DefaultAssetLibrary.hx",2050,0x0fc48912)
+HX_STACK_FRAME("__ASSET__assets_fonts_consolas_bold_ttf","new",0xf86444d6,"__ASSET__assets_fonts_consolas_bold_ttf.new","DefaultAssetLibrary.hx",2023,0x0fc48912)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(2050)
+	HX_STACK_LINE(2023)
 	super::__construct(null(),null(),null());
-	HX_STACK_LINE(2050)
+	HX_STACK_LINE(2023)
 	this->__fontPath = HX_CSTRING("assets/fonts/Consolas Bold.ttf");
-	HX_STACK_LINE(2050)
+	HX_STACK_LINE(2023)
 	this->fontName = HX_CSTRING("Consolas Bold");
 }
 ;

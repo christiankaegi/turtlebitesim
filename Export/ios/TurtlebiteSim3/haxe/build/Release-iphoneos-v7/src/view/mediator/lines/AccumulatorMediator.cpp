@@ -75,11 +75,11 @@ namespace lines{
 
 Void AccumulatorMediator_obj::__construct(::view::component::lines::Accumulator viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","new",0xe89814ea,"view.mediator.lines.AccumulatorMediator.new","view/mediator/lines/AccumulatorMediator.hx",22,0xa04ac667)
+HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","new",0xe89814ea,"view.mediator.lines.AccumulatorMediator.new","view/mediator/lines/AccumulatorMediator.hx",28,0xa04ac667)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(22)
+	HX_STACK_LINE(28)
 	super::__construct(HX_CSTRING("AccumulatorMediator"),viewComponent);
 }
 ;
@@ -101,25 +101,25 @@ Dynamic AccumulatorMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void AccumulatorMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","onRegister",0x52143b58,"view.mediator.lines.AccumulatorMediator.onRegister","view/mediator/lines/AccumulatorMediator.hx",25,0xa04ac667)
+		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","onRegister",0x52143b58,"view.mediator.lines.AccumulatorMediator.onRegister","view/mediator/lines/AccumulatorMediator.hx",31,0xa04ac667)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::model::proxy::SnapshotProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		_g = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->snapshotProxy = _g;
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::model::proxy::AppProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		_g1 = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		this->appProxy = _g1;
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		::view::component::lines::Accumulator _g2 = this->getView();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(35)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g2,null());
 	}
 return null();
@@ -127,50 +127,50 @@ return null();
 
 
 Array< ::String > AccumulatorMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","listNotificationInterests",0x5e2d44ea,"view.mediator.lines.AccumulatorMediator.listNotificationInterests","view/mediator/lines/AccumulatorMediator.hx",33,0xa04ac667)
+	HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","listNotificationInterests",0x5e2d44ea,"view.mediator.lines.AccumulatorMediator.listNotificationInterests","view/mediator/lines/AccumulatorMediator.hx",39,0xa04ac667)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(33)
+	HX_STACK_LINE(39)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::ACCUMULATOR_CHANGED).Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::CLOCK_OFF).Add(::AppConstants_obj::MODEL_RESET_COMPLETE).Add(::AppConstants_obj::DETAIL_POPUP_ACTIVE);
 }
 
 
 Void AccumulatorMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","handleNotification",0xd9440969,"view.mediator.lines.AccumulatorMediator.handleNotification","view/mediator/lines/AccumulatorMediator.hx",43,0xa04ac667)
+		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","handleNotification",0xd9440969,"view.mediator.lines.AccumulatorMediator.handleNotification","view/mediator/lines/AccumulatorMediator.hx",49,0xa04ac667)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(43)
+		HX_STACK_LINE(49)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::ACCUMULATOR_CHANGED)){
-			HX_STACK_LINE(46)
+			HX_STACK_LINE(52)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(47)
+				HX_STACK_LINE(53)
 				Dynamic _g1 = note->getBody();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(47)
+				HX_STACK_LINE(53)
 				this->getView()->showLines(_g1);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(50)
+			HX_STACK_LINE(56)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(51)
+				HX_STACK_LINE(57)
 				Array< bool > _g1 = this->snapshotProxy->getAccumulator()->getCodeArr();		HX_STACK_VAR(_g1,"_g1");
-				HX_STACK_LINE(51)
+				HX_STACK_LINE(57)
 				this->getView()->showLines(_g1);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CLOCK_OFF)){
-			HX_STACK_LINE(54)
+			HX_STACK_LINE(60)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(56)
+			HX_STACK_LINE(62)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::DETAIL_POPUP_ACTIVE)){
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->getView()->hideAllLines();
 		}
 	}
@@ -180,10 +180,10 @@ return null();
 
 Void AccumulatorMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","viewReadyHandler",0xa4a888e2,"view.mediator.lines.AccumulatorMediator.viewReadyHandler","view/mediator/lines/AccumulatorMediator.hx",63,0xa04ac667)
+		HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","viewReadyHandler",0xa4a888e2,"view.mediator.lines.AccumulatorMediator.viewReadyHandler","view/mediator/lines/AccumulatorMediator.hx",69,0xa04ac667)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(69)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("AccumulatorMediator"));
 	}
 return null();
@@ -193,9 +193,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(AccumulatorMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::Accumulator AccumulatorMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","getView",0x2fd433a5,"view.mediator.lines.AccumulatorMediator.getView","view/mediator/lines/AccumulatorMediator.hx",67,0xa04ac667)
+	HX_STACK_FRAME("view.mediator.lines.AccumulatorMediator","getView",0x2fd433a5,"view.mediator.lines.AccumulatorMediator.getView","view/mediator/lines/AccumulatorMediator.hx",73,0xa04ac667)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(67)
+	HX_STACK_LINE(73)
 	return this->viewComponent;
 }
 

@@ -84,11 +84,11 @@ namespace lines{
 
 Void GatesMediator_obj::__construct(::view::component::lines::Gates viewComponent)
 {
-HX_STACK_FRAME("view.mediator.lines.GatesMediator","new",0x277a756c,"view.mediator.lines.GatesMediator.new","view/mediator/lines/GatesMediator.hx",20,0x80e14d65)
+HX_STACK_FRAME("view.mediator.lines.GatesMediator","new",0x277a756c,"view.mediator.lines.GatesMediator.new","view/mediator/lines/GatesMediator.hx",26,0x80e14d65)
 HX_STACK_THIS(this)
 HX_STACK_ARG(viewComponent,"viewComponent")
 {
-	HX_STACK_LINE(20)
+	HX_STACK_LINE(26)
 	super::__construct(HX_CSTRING("GatesMediator"),viewComponent);
 }
 ;
@@ -110,25 +110,25 @@ Dynamic GatesMediator_obj::__Create(hx::DynamicArray inArgs)
 
 Void GatesMediator_obj::onRegister( ){
 {
-		HX_STACK_FRAME("view.mediator.lines.GatesMediator","onRegister",0x89dbcf16,"view.mediator.lines.GatesMediator.onRegister","view/mediator/lines/GatesMediator.hx",23,0x80e14d65)
+		HX_STACK_FRAME("view.mediator.lines.GatesMediator","onRegister",0x89dbcf16,"view.mediator.lines.GatesMediator.onRegister","view/mediator/lines/GatesMediator.hx",29,0x80e14d65)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		this->getView()->addEventListener(::events::AppEvent_obj::VIEW_READY,this->viewReadyHandler_dyn(),null(),null(),null());
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		::model::proxy::AppProxy _g;		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		_g = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(25)
+		HX_STACK_LINE(31)
 		this->appProxy = _g;
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		::model::proxy::SnapshotProxy _g1;		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		_g1 = hx::TCast< model::proxy::SnapshotProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::SnapshotProxy_obj::NAME));
-		HX_STACK_LINE(26)
+		HX_STACK_LINE(32)
 		this->snapshotProxy = _g1;
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		::view::component::lines::Gates _g2 = this->getView();		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(27)
+		HX_STACK_LINE(33)
 		this->sendNotification(::AppConstants_obj::ADD_TO_ZOOM_VIEW,_g2,null());
 	}
 return null();
@@ -136,104 +136,104 @@ return null();
 
 
 Array< ::String > GatesMediator_obj::listNotificationInterests( ){
-	HX_STACK_FRAME("view.mediator.lines.GatesMediator","listNotificationInterests",0x7ba196ec,"view.mediator.lines.GatesMediator.listNotificationInterests","view/mediator/lines/GatesMediator.hx",31,0x80e14d65)
+	HX_STACK_FRAME("view.mediator.lines.GatesMediator","listNotificationInterests",0x7ba196ec,"view.mediator.lines.GatesMediator.listNotificationInterests","view/mediator/lines/GatesMediator.hx",37,0x80e14d65)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(31)
+	HX_STACK_LINE(37)
 	return Array_obj< ::String >::__new().Add(::AppConstants_obj::CLOCK_ON).Add(::AppConstants_obj::CLOCK_OFF).Add(::AppConstants_obj::CHANGE_CLOCK_SPEED).Add(::AppConstants_obj::MULTIPLEXER_OUT_CHANGED).Add(::AppConstants_obj::ALU_EQUAL_ON).Add(::AppConstants_obj::ALU_EQUAL_OFF).Add(::AppConstants_obj::POWER_ON).Add(::AppConstants_obj::POWER_OFF).Add(::AppConstants_obj::MODEL_RESET_COMPLETE).Add(::AppConstants_obj::DETAIL_POPUP_ACTIVE);
 }
 
 
 Void GatesMediator_obj::handleNotification( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("view.mediator.lines.GatesMediator","handleNotification",0xde828b27,"view.mediator.lines.GatesMediator.handleNotification","view/mediator/lines/GatesMediator.hx",46,0x80e14d65)
+		HX_STACK_FRAME("view.mediator.lines.GatesMediator","handleNotification",0xde828b27,"view.mediator.lines.GatesMediator.handleNotification","view/mediator/lines/GatesMediator.hx",52,0x80e14d65)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		::String _g = note->getName();		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(46)
+		HX_STACK_LINE(52)
 		::String _switch_1 = (_g);
 		if (  ( _switch_1==::AppConstants_obj::CLOCK_ON)){
-			HX_STACK_LINE(49)
+			HX_STACK_LINE(55)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(50)
+				HX_STACK_LINE(56)
 				::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-				HX_STACK_LINE(50)
+				HX_STACK_LINE(56)
 				instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-				HX_STACK_LINE(51)
+				HX_STACK_LINE(57)
 				if (((instruction->codeOpcode == ::AppConstants_obj::OPCODE_LDA))){
-					HX_STACK_LINE(52)
+					HX_STACK_LINE(58)
 					::String _g1 = instruction->code.substr((int)4,(int)4);		HX_STACK_VAR(_g1,"_g1");
-					HX_STACK_LINE(52)
+					HX_STACK_LINE(58)
 					::model::vo::DecHexVO pointer = ::utilities::NumberFormat_obj::binaryToDecimal(_g1);		HX_STACK_VAR(pointer,"pointer");
-					HX_STACK_LINE(53)
+					HX_STACK_LINE(59)
 					Array< ::Dynamic > _g11 = this->snapshotProxy->getRam();		HX_STACK_VAR(_g11,"_g11");
-					HX_STACK_LINE(53)
+					HX_STACK_LINE(59)
 					::model::vo::SnapshotVO _g2 = _g11->__get(pointer->dec).StaticCast< ::model::vo::SnapshotVO >();		HX_STACK_VAR(_g2,"_g2");
-					HX_STACK_LINE(53)
+					HX_STACK_LINE(59)
 					this->getView()->showLines(instruction,null(),null(),_g2);
 				}
 				else{
-					HX_STACK_LINE(55)
+					HX_STACK_LINE(61)
 					::model::vo::SnapshotVO _g3 = this->snapshotProxy->getAccumulator();		HX_STACK_VAR(_g3,"_g3");
-					HX_STACK_LINE(55)
+					HX_STACK_LINE(61)
 					::model::vo::SnapshotVO _g4 = this->snapshotProxy->getRegister1();		HX_STACK_VAR(_g4,"_g4");
-					HX_STACK_LINE(55)
+					HX_STACK_LINE(61)
 					this->getView()->showLines(instruction,_g3,_g4,null());
 				}
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CLOCK_OFF)){
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			::model::vo::InstructionVO instruction;		HX_STACK_VAR(instruction,"instruction");
-			HX_STACK_LINE(59)
+			HX_STACK_LINE(65)
 			instruction = hx::TCast< model::vo::InstructionVO >::cast(note->getBody());
-			HX_STACK_LINE(60)
+			HX_STACK_LINE(66)
 			if (((bool((instruction->codeOpcode != ::AppConstants_obj::OPCODE_ALU)) && bool((instruction->codeOpcode != ::AppConstants_obj::OPCODE_LDI))))){
-				HX_STACK_LINE(61)
+				HX_STACK_LINE(67)
 				this->getView()->hideLinesG1();
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MULTIPLEXER_OUT_CHANGED)){
-			HX_STACK_LINE(64)
+			HX_STACK_LINE(70)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(65)
+				HX_STACK_LINE(71)
 				Dynamic _g5 = note->getBody();		HX_STACK_VAR(_g5,"_g5");
-				HX_STACK_LINE(65)
+				HX_STACK_LINE(71)
 				this->getView()->showLinesG1(_g5);
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::CHANGE_CLOCK_SPEED)){
-			HX_STACK_LINE(68)
+			HX_STACK_LINE(74)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::ALU_EQUAL_ON)){
-			HX_STACK_LINE(70)
+			HX_STACK_LINE(76)
 			this->getView()->hideLineG6();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::ALU_EQUAL_OFF)){
-			HX_STACK_LINE(72)
+			HX_STACK_LINE(78)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(73)
+				HX_STACK_LINE(79)
 				this->getView()->showLineG6();
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_ON)){
-			HX_STACK_LINE(76)
+			HX_STACK_LINE(82)
 			if ((!(this->appProxy->getDetailPopupActive()))){
-				HX_STACK_LINE(77)
+				HX_STACK_LINE(83)
 				this->getView()->showLineG6();
 			}
 		}
 		else if (  ( _switch_1==::AppConstants_obj::POWER_OFF)){
-			HX_STACK_LINE(80)
+			HX_STACK_LINE(86)
 			this->getView()->hideLineG6();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::MODEL_RESET_COMPLETE)){
-			HX_STACK_LINE(82)
+			HX_STACK_LINE(88)
 			this->getView()->hideAllLines();
 		}
 		else if (  ( _switch_1==::AppConstants_obj::DETAIL_POPUP_ACTIVE)){
-			HX_STACK_LINE(84)
+			HX_STACK_LINE(90)
 			this->getView()->hideAllLines();
 		}
 	}
@@ -243,10 +243,10 @@ return null();
 
 Void GatesMediator_obj::viewReadyHandler( ::events::AppEvent event){
 {
-		HX_STACK_FRAME("view.mediator.lines.GatesMediator","viewReadyHandler",0x1bce7f20,"view.mediator.lines.GatesMediator.viewReadyHandler","view/mediator/lines/GatesMediator.hx",89,0x80e14d65)
+		HX_STACK_FRAME("view.mediator.lines.GatesMediator","viewReadyHandler",0x1bce7f20,"view.mediator.lines.GatesMediator.viewReadyHandler","view/mediator/lines/GatesMediator.hx",95,0x80e14d65)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(89)
+		HX_STACK_LINE(95)
 		this->sendNotification(::AppConstants_obj::MEDIATOR_INITIALIZED,null(),HX_CSTRING("GatesMediator"));
 	}
 return null();
@@ -256,9 +256,9 @@ return null();
 HX_DEFINE_DYNAMIC_FUNC1(GatesMediator_obj,viewReadyHandler,(void))
 
 ::view::component::lines::Gates GatesMediator_obj::getView( ){
-	HX_STACK_FRAME("view.mediator.lines.GatesMediator","getView",0xd97dfd27,"view.mediator.lines.GatesMediator.getView","view/mediator/lines/GatesMediator.hx",93,0x80e14d65)
+	HX_STACK_FRAME("view.mediator.lines.GatesMediator","getView",0xd97dfd27,"view.mediator.lines.GatesMediator.getView","view/mediator/lines/GatesMediator.hx",99,0x80e14d65)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(93)
+	HX_STACK_LINE(99)
 	return this->viewComponent;
 }
 

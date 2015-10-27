@@ -37,10 +37,10 @@ namespace controller{
 
 Void PlayCommand_obj::__construct()
 {
-HX_STACK_FRAME("controller.PlayCommand","new",0x234b1637,"controller.PlayCommand.new","controller/PlayCommand.hx",9,0xa5367cda)
+HX_STACK_FRAME("controller.PlayCommand","new",0x234b1637,"controller.PlayCommand.new","controller/PlayCommand.hx",15,0xa5367cda)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(9)
+	HX_STACK_LINE(15)
 	super::__construct();
 }
 ;
@@ -62,20 +62,20 @@ Dynamic PlayCommand_obj::__Create(hx::DynamicArray inArgs)
 
 Void PlayCommand_obj::execute( ::org::puremvc::haxe::multicore::interfaces::INotification note){
 {
-		HX_STACK_FRAME("controller.PlayCommand","execute",0xa7b1878c,"controller.PlayCommand.execute","controller/PlayCommand.hx",12,0xa5367cda)
+		HX_STACK_FRAME("controller.PlayCommand","execute",0xa7b1878c,"controller.PlayCommand.execute","controller/PlayCommand.hx",18,0xa5367cda)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(note,"note")
-		HX_STACK_LINE(14)
+		HX_STACK_LINE(20)
 		::model::proxy::AppProxy appProxy;		HX_STACK_VAR(appProxy,"appProxy");
-		HX_STACK_LINE(14)
+		HX_STACK_LINE(20)
 		appProxy = hx::TCast< model::proxy::AppProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::AppProxy_obj::NAME));
-		HX_STACK_LINE(15)
+		HX_STACK_LINE(21)
 		::model::proxy::ClockProxy clockProxy;		HX_STACK_VAR(clockProxy,"clockProxy");
-		HX_STACK_LINE(15)
+		HX_STACK_LINE(21)
 		clockProxy = hx::TCast< model::proxy::ClockProxy >::cast(this->get_facade()->retrieveProxy(::model::proxy::ClockProxy_obj::NAME));
-		HX_STACK_LINE(17)
+		HX_STACK_LINE(23)
 		appProxy->setAutoClockOn(true);
-		HX_STACK_LINE(18)
+		HX_STACK_LINE(24)
 		clockProxy->startClock();
 	}
 return null();

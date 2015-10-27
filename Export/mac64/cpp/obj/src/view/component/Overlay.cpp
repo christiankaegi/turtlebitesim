@@ -50,12 +50,12 @@ namespace component{
 
 Void Overlay_obj::__construct()
 {
-HX_STACK_FRAME("view.component.Overlay","new",0xc26d1268,"view.component.Overlay.new","view/component/Overlay.hx",17,0xc6ed03ca)
+HX_STACK_FRAME("view.component.Overlay","new",0xc26d1268,"view.component.Overlay.new","view/component/Overlay.hx",23,0xc6ed03ca)
 HX_STACK_THIS(this)
 {
-	HX_STACK_LINE(18)
+	HX_STACK_LINE(24)
 	super::__construct();
-	HX_STACK_LINE(19)
+	HX_STACK_LINE(25)
 	this->addEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null(),null(),null());
 }
 ;
@@ -77,14 +77,14 @@ Dynamic Overlay_obj::__Create(hx::DynamicArray inArgs)
 
 Void Overlay_obj::addedToStageHandler( ::openfl::events::Event event){
 {
-		HX_STACK_FRAME("view.component.Overlay","addedToStageHandler",0x74f7e9af,"view.component.Overlay.addedToStageHandler","view/component/Overlay.hx",22,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","addedToStageHandler",0x74f7e9af,"view.component.Overlay.addedToStageHandler","view/component/Overlay.hx",28,0xc6ed03ca)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(event,"event")
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(29)
 		this->removeEventListener(::openfl::events::Event_obj::ADDED_TO_STAGE,this->addedToStageHandler_dyn(),null());
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(30)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/FlowArrows2048.png")),this->flowArrowsLoadCompleteHandler_dyn(),true);
-		HX_STACK_LINE(28)
+		HX_STACK_LINE(34)
 		::openfl::Assets_obj::loadBitmapData(((HX_CSTRING("assets/") + ::AppConstants_obj::ASSET_FOLDER) + HX_CSTRING("/MarkUnits.png")),this->markUnitsLoadCompleteHandler_dyn(),true);
 	}
 return null();
@@ -95,14 +95,14 @@ HX_DEFINE_DYNAMIC_FUNC1(Overlay_obj,addedToStageHandler,(void))
 
 Void Overlay_obj::markUnitsLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.Overlay","markUnitsLoadCompleteHandler",0xefb01081,"view.component.Overlay.markUnitsLoadCompleteHandler","view/component/Overlay.hx",32,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","markUnitsLoadCompleteHandler",0xefb01081,"view.component.Overlay.markUnitsLoadCompleteHandler","view/component/Overlay.hx",38,0xc6ed03ca)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(33)
+		HX_STACK_LINE(39)
 		this->bmpMarkUnits = _g;
-		HX_STACK_LINE(34)
+		HX_STACK_LINE(40)
 		this->bmpMarkUnits->set_name(HX_CSTRING("markUnits"));
 	}
 return null();
@@ -113,22 +113,22 @@ HX_DEFINE_DYNAMIC_FUNC1(Overlay_obj,markUnitsLoadCompleteHandler,(void))
 
 Void Overlay_obj::flowArrowsLoadCompleteHandler( ::openfl::display::BitmapData bmd){
 {
-		HX_STACK_FRAME("view.component.Overlay","flowArrowsLoadCompleteHandler",0xc666025b,"view.component.Overlay.flowArrowsLoadCompleteHandler","view/component/Overlay.hx",37,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","flowArrowsLoadCompleteHandler",0xc666025b,"view.component.Overlay.flowArrowsLoadCompleteHandler","view/component/Overlay.hx",43,0xc6ed03ca)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(bmd,"bmd")
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		::openfl::display::Bitmap _g = ::openfl::display::Bitmap_obj::__new(bmd,null(),null());		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(38)
+		HX_STACK_LINE(44)
 		this->bmpFlowArrows = _g;
-		HX_STACK_LINE(39)
+		HX_STACK_LINE(45)
 		this->bmpFlowArrows->set_name(HX_CSTRING("flowArrows"));
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		Float _g1 = this->bmpFlowArrows->set_scaleY(0.5);		HX_STACK_VAR(_g1,"_g1");
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(48)
 		this->bmpFlowArrows->set_scaleX(_g1);
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		::events::AppEvent _g2 = ::events::AppEvent_obj::__new(::events::AppEvent_obj::VIEW_READY,null(),null(),null());		HX_STACK_VAR(_g2,"_g2");
-		HX_STACK_LINE(44)
+		HX_STACK_LINE(50)
 		this->dispatchEvent(_g2);
 	}
 return null();
@@ -139,11 +139,11 @@ HX_DEFINE_DYNAMIC_FUNC1(Overlay_obj,flowArrowsLoadCompleteHandler,(void))
 
 Void Overlay_obj::showUnits( ){
 {
-		HX_STACK_FRAME("view.component.Overlay","showUnits",0x856e473a,"view.component.Overlay.showUnits","view/component/Overlay.hx",51,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","showUnits",0x856e473a,"view.component.Overlay.showUnits","view/component/Overlay.hx",57,0xc6ed03ca)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(52)
+		HX_STACK_LINE(58)
 		this->hideUnits();
-		HX_STACK_LINE(53)
+		HX_STACK_LINE(59)
 		this->addChild(this->bmpMarkUnits);
 	}
 return null();
@@ -154,15 +154,15 @@ HX_DEFINE_DYNAMIC_FUNC0(Overlay_obj,showUnits,(void))
 
 Void Overlay_obj::hideUnits( ){
 {
-		HX_STACK_FRAME("view.component.Overlay","hideUnits",0xb2689d55,"view.component.Overlay.hideUnits","view/component/Overlay.hx",56,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","hideUnits",0xb2689d55,"view.component.Overlay.hideUnits","view/component/Overlay.hx",62,0xc6ed03ca)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("markUnits"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(57)
+		HX_STACK_LINE(63)
 		if (((_g != null()))){
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("markUnits"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(58)
+			HX_STACK_LINE(64)
 			this->removeChild(_g1);
 		}
 	}
@@ -174,11 +174,11 @@ HX_DEFINE_DYNAMIC_FUNC0(Overlay_obj,hideUnits,(void))
 
 Void Overlay_obj::showFlow( ){
 {
-		HX_STACK_FRAME("view.component.Overlay","showFlow",0x6f373c83,"view.component.Overlay.showFlow","view/component/Overlay.hx",62,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","showFlow",0x6f373c83,"view.component.Overlay.showFlow","view/component/Overlay.hx",68,0xc6ed03ca)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(63)
+		HX_STACK_LINE(69)
 		this->hideFlow();
-		HX_STACK_LINE(64)
+		HX_STACK_LINE(70)
 		this->addChild(this->bmpFlowArrows);
 	}
 return null();
@@ -189,15 +189,15 @@ HX_DEFINE_DYNAMIC_FUNC0(Overlay_obj,showFlow,(void))
 
 Void Overlay_obj::hideFlow( ){
 {
-		HX_STACK_FRAME("view.component.Overlay","hideFlow",0x607e62c8,"view.component.Overlay.hideFlow","view/component/Overlay.hx",67,0xc6ed03ca)
+		HX_STACK_FRAME("view.component.Overlay","hideFlow",0x607e62c8,"view.component.Overlay.hideFlow","view/component/Overlay.hx",73,0xc6ed03ca)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		::openfl::display::DisplayObject _g = this->getChildByName(HX_CSTRING("flowArrows"));		HX_STACK_VAR(_g,"_g");
-		HX_STACK_LINE(68)
+		HX_STACK_LINE(74)
 		if (((_g != null()))){
-			HX_STACK_LINE(69)
+			HX_STACK_LINE(75)
 			::openfl::display::DisplayObject _g1 = this->getChildByName(HX_CSTRING("flowArrows"));		HX_STACK_VAR(_g1,"_g1");
-			HX_STACK_LINE(69)
+			HX_STACK_LINE(75)
 			this->removeChild(_g1);
 		}
 	}
